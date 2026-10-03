@@ -1,0 +1,10 @@
+{
+  "violations_by_requirement": {
+    "REQ-PATH-001": 2,
+    "REQ-THREAT-001": 2
+  },
+  "unresolved_by_requirement": {
+    "REQ-PATH-001": 2,
+    "REQ-THREAT-001": 2
+  }
+}
