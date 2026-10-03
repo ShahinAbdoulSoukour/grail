@@ -1,0 +1,147 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.8",
+  "clause_name": "Audit Log Management",
+  "goal_name": "Audit log management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Collect, alert, review, and retain audit logs of events that could help detect, understand, or recover from an attack.",
+      "goal_name": "Collect, alert, review, and retain audit logs of events that could help detect, understand, or recover from an attack",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.8.1",
+          "control_name": "Retain Audit Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Retain Audit Logs",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.8.2",
+          "control_name": "Collect Audit Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Collect Audit Logs",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.8.3",
+          "control_name": "Ensure Adequate Audit Log Storage",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Ensure Adequate Audit Log Storage",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.8.4",
+          "control_name": "Standardize Time Synchronization",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Standardize Time Synchronization",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.8.5",
+          "control_name": "Collect Detailed Audit Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Collect Detailed Audit Logs",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.8.6",
+          "control_name": "Collect DNS Query Audit Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Collect DNS Query Audit Logs",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.8.7",
+          "control_name": "Collect URL Request Audit Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Collect URL Request Audit Logs",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.8.8",
+          "control_name": "Collect Command-Line Audit Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Collect Command-Line Audit Logs",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.8.9",
+          "control_name": "Centralize Audit Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Centralize Audit Logs",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "CIS.8.11",
+          "control_name": "Conduct Audit Log Reviews",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Conduct Audit Log Reviews",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "CIS.8.12",
+          "control_name": "Collect Service Provider Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Collect Service Provider Logs",
+              "class": "TECH"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

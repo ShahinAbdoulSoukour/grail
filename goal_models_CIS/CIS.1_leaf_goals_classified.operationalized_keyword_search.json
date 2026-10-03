@@ -1,0 +1,86 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.1",
+  "clause_name": "Inventory and Control of Enterprise Assets",
+  "goal_name": "Ensure inventory and control of enterprise assets",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Actively manage (inventory, track, and correct) all enterprise assets (end-user devices, including portable and mobile; network devices; non-computing/Internet of Things (IoT) devices; and servers) connected to the infrastructure physically, virtually, remotely, and those within cloud environments, to accurately know the totality of assets that need to be monitored and protected within the enterprise. This will also support identifying unauthorized and unmanaged assets to remove or remediate.",
+      "goal_name": "Actively manage all enterprise assets connected to the infrastructure physically, virtually, remotely, and those within cloud environments, to accurately know the totality of assets that need to be monitored and protected within the enterprise",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.1.1",
+          "control_name": "Establish and Maintain Detailed Enterprise Asset Inventory",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish Detailed Enterprise Asset Inventory",
+              "class": "ORG",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain Detailed Enterprise Asset Inventory",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.1.2",
+          "control_name": "Address Unauthorized Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Address Unauthorized Assets",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.1.3",
+          "control_name": "Utilize an Active Discovery Tool",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Utilize an Active Discovery Tool",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.1.4",
+          "control_name": "Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.1.5",
+          "control_name": "Use a Passive Asset Discovery Tool",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Use a Passive Asset Discovery Tool",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

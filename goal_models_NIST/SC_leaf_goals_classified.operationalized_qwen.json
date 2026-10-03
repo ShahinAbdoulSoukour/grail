@@ -1,0 +1,1136 @@
+{
+  "goal_id": "G0",
+  "clause_id": "SC",
+  "clause_name": "Protect Systems and Communications",
+  "goal_name": "Protect systems and communications",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure secure and protected system communications.",
+      "goal_name": "Ensure secure and protected system communications",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "SC-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate system and communications protection controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate system and communications protection controls",
+              "class": "TECH",
+              "embedding_context": "Develop policy and procedures to facilitate system and communications protection controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.504218
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.486047
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.480323
+                  },
+                  {
+                    "id": "D3-ANAA",
+                    "name": "Administrative Network Activity Analysis",
+                    "similarity_score": 0.478861
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.473134
+                  },
+                  {
+                    "id": "D3-MH",
+                    "name": "Message Hardening",
+                    "similarity_score": 0.472106
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.471893
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.47187
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.456056
+                  },
+                  {
+                    "id": "D3-CFI",
+                    "name": "Control Flow Integrity",
+                    "similarity_score": 0.452482
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.519015
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.474913
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.461049
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.458591
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.449524
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.436875
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.428076
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.420064
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.415427
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.407033
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "reason": "Access Policy Administration directly supports developing policies for system and communications protection by defining and managing access control policies."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "reason": "Network Resource Access Mediation isolates network resources, contributing to system protection controls through controlled access to organizational systems."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Principle of least privilege enforces strict access control policies, aligning with system protection procedures to limit user permissions."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "reason": "Resource isolation techniques (e.g., virtualization) prevent unauthorized manipulation of shared resources, supporting system protection controls."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MH",
+                  "name": "Message Hardening",
+                  "description": "The application of security controls to user-to-user and system-to-system communications so messages remain confidential, unaltered, and verifiable while resisting injection, replay, and tampering.",
+                  "reason": "Message Hardening secures communications by ensuring confidentiality and integrity, directly addressing communications protection controls."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate system and communications protection controls",
+              "class": "PHYS",
+              "embedding_context": "Document policy and procedures to facilitate system and communications protection controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.5128
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.498982
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.489129
+                  },
+                  {
+                    "id": "D3-MH",
+                    "name": "Message Hardening",
+                    "similarity_score": 0.488272
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.473283
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.470271
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.469957
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.466952
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.464327
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.463514
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.482887
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.475356
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.451469
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.448047
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.447983
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.446212
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.427851
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.4202
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.419675
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.416299
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "reason": "Access Policy Administration directly supports documenting access control policies, which is essential for system and communications protection."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Enforcing the principle of least privilege through access control mechanisms requires documented procedures to limit privileges, aligning with the goal."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NTPM",
+                  "name": "Network Traffic Policy Mapping",
+                  "description": "Network traffic policy mapping identifies and models the allowed pathways of data at the network, transport, and/or application levels.",
+                  "reason": "Network Traffic Policy Mapping directly contributes to documenting allowed data pathways, ensuring structured communication controls."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate system and communications protection controls",
+              "class": "PHYS",
+              "embedding_context": "Disseminate policy and procedures to facilitate system and communications protection controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.495401
+                  },
+                  {
+                    "id": "D3-MH",
+                    "name": "Message Hardening",
+                    "similarity_score": 0.460376
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.446691
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.445467
+                  },
+                  {
+                    "id": "D3-ANAA",
+                    "name": "Administrative Network Activity Analysis",
+                    "similarity_score": 0.444052
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.442188
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.437407
+                  },
+                  {
+                    "id": "D3-CFI",
+                    "name": "Control Flow Integrity",
+                    "similarity_score": 0.433595
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.431763
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.42447
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.481132
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.459513
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.453957
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.446576
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.431391
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.42382
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.412481
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.405661
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.397725
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.393069
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "reason": "Access Policy Administration directly supports disseminating access control policies to enforce system protection controls."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MH",
+                  "name": "Message Hardening",
+                  "description": "The application of security controls to user-to-user and system-to-system communications so messages remain confidential, unaltered, and verifiable while resisting injection, replay, and tampering.",
+                  "reason": "Message Hardening implements security controls for communications, directly supporting the goal's communications protection aspect."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Principle of least privilege enforces strict access control policies, aligning with disseminating system protection procedures."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "reason": "Network Resource Access Mediation controls access to systems, supporting the implementation of protection controls through policy enforcement."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0033",
+                  "name": "Network Restrictions",
+                  "description": "Limit LLM access to resources and APIs.",
+                  "reason": "Network Restrictions limit resource access, directly contributing to system protection controls through policy implementation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "SC-7",
+          "control_name": "Monitor and control communications at external boundaries and key internal boundaries.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Monitor communications at external boundaries and key internal boundaries",
+              "class": "TECH",
+              "embedding_context": "Monitor communications at external boundaries and key internal boundaries",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-EHB",
+                    "name": "Endpoint Health Beacon",
+                    "similarity_score": 0.495397
+                  },
+                  {
+                    "id": "D3-RTA",
+                    "name": "RPC Traffic Analysis",
+                    "similarity_score": 0.43887
+                  },
+                  {
+                    "id": "D3-NTCD",
+                    "name": "Network Traffic Community Deviation",
+                    "similarity_score": 0.428267
+                  },
+                  {
+                    "id": "D3-RPA",
+                    "name": "Relay Pattern Analysis",
+                    "similarity_score": 0.421579
+                  },
+                  {
+                    "id": "D3-IPCTA",
+                    "name": "IPC Traffic Analysis",
+                    "similarity_score": 0.41843
+                  },
+                  {
+                    "id": "D3-PMAD",
+                    "name": "Protocol Metadata Anomaly Detection",
+                    "similarity_score": 0.410678
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.407677
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.400391
+                  },
+                  {
+                    "id": "D3-ET",
+                    "name": "Encrypted Tunnels",
+                    "similarity_score": 0.397951
+                  },
+                  {
+                    "id": "D3-CAA",
+                    "name": "Connection Attempt Analysis",
+                    "similarity_score": 0.395068
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.414039
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.39902
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.396001
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.393783
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                    "similarity_score": 0.370906
+                  },
+                  {
+                    "id": "CAPEC.M0002",
+                    "name": "Implement deep packet inspection (DPI)",
+                    "similarity_score": 0.34758
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.326663
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.325812
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.318219
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.313099
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RPA",
+                  "name": "Relay Pattern Analysis",
+                  "description": "The detection of an internal host relaying traffic between the internal network and the external network.",
+                  "reason": "Detects internal hosts relaying traffic between internal and external networks, directly addressing external boundary monitoring."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NTCD",
+                  "name": "Network Traffic Community Deviation",
+                  "description": "Establishing baseline communities of network hosts and identifying statistically divergent inter-community communication.",
+                  "reason": "Identifies statistically divergent inter-community communication, directly supporting internal boundary traffic analysis."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PMAD",
+                  "name": "Protocol Metadata Anomaly Detection",
+                  "description": "Collecting network communication protocol metadata and identifying statistical outliers.",
+                  "reason": "Detects protocol metadata anomalies in network traffic, contributing to monitoring both external and internal boundaries."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Control communications at external boundaries and key internal boundaries",
+              "class": "PHYS",
+              "embedding_context": "Control communications at external boundaries and key internal boundaries",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-RAM",
+                    "name": "Routing Access Mediation",
+                    "similarity_score": 0.367677
+                  },
+                  {
+                    "id": "D3-ET",
+                    "name": "Encrypted Tunnels",
+                    "similarity_score": 0.34877
+                  },
+                  {
+                    "id": "D3-MH",
+                    "name": "Message Hardening",
+                    "similarity_score": 0.346143
+                  },
+                  {
+                    "id": "D3-DNL",
+                    "name": "Directional Network Link",
+                    "similarity_score": 0.344969
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.344209
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.333765
+                  },
+                  {
+                    "id": "D3-IHN",
+                    "name": "Integrated Honeynet",
+                    "similarity_score": 0.327109
+                  },
+                  {
+                    "id": "D3-CFI",
+                    "name": "Control Flow Integrity",
+                    "similarity_score": 0.324043
+                  },
+                  {
+                    "id": "D3-NM",
+                    "name": "Network Mapping",
+                    "similarity_score": 0.322982
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.322841
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.358737
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.344835
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                    "similarity_score": 0.338713
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.330129
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.317409
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.316176
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.312584
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.307311
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.305275
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.298351
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RAM",
+                  "name": "Routing Access Mediation",
+                  "description": "Routing access mediation is a network security approach that manages and controls access at the network layer using VPNs, tunneling protocols, firewall rules, and traffic inspection to ensure secure and efficient data routing.",
+                  "reason": "Routing Access Mediation controls access at network layer boundaries using firewalls and traffic inspection, directly managing external/internal communication paths."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DNL",
+                  "name": "Directional Network Link",
+                  "description": "Enforce one-way network communication by preventing two-way communication.",
+                  "reason": "Directional Network Link enforces one-way communication at physical/technical boundaries, preventing bidirectional traffic that could bypass controls."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NAM",
+                  "name": "Network Access Mediation",
+                  "description": "Network access mediation is the control method for authorizing access to a system by a user (or a process acting on behalf of a user) communicating through a network, including a local area network, a wide area network, and the Internet.",
+                  "reason": "Network Access Mediation authorizes and isolates network communications, directly controlling access to systems through both external and internal network boundaries."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0001",
+                  "name": "Employ network segmentation",
+                  "description": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                  "reason": "Network segmentation isolates critical components from external traffic, directly limiting communication paths at both external and internal boundaries."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "reason": "Resource isolation techniques like virtualization/containerization separate internal systems, preventing unauthorized communication between isolated environments."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "SC-8",
+          "control_name": "Protect the confidentiality and integrity of transmitted information.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Protect the confidentiality and integrity of transmitted information",
+              "class": "TECH",
+              "embedding_context": "Protect the confidentiality and integrity of transmitted information",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-MAN",
+                    "name": "Message Authentication",
+                    "similarity_score": 0.511125
+                  },
+                  {
+                    "id": "D3-TAAN",
+                    "name": "Transfer Agent Authentication",
+                    "similarity_score": 0.495764
+                  },
+                  {
+                    "id": "D3-MH",
+                    "name": "Message Hardening",
+                    "similarity_score": 0.49564
+                  },
+                  {
+                    "id": "D3-MENCR",
+                    "name": "Message Encryption",
+                    "similarity_score": 0.492622
+                  },
+                  {
+                    "id": "D3-ET",
+                    "name": "Encrypted Tunnels",
+                    "similarity_score": 0.489764
+                  },
+                  {
+                    "id": "D3-CTS",
+                    "name": "Credential Transmission Scoping",
+                    "similarity_score": 0.468641
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.466585
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.45246
+                  },
+                  {
+                    "id": "D3-BMA",
+                    "name": "Bus Message Authentication",
+                    "similarity_score": 0.452437
+                  },
+                  {
+                    "id": "D3-PAN",
+                    "name": "Pointer Authentication",
+                    "similarity_score": 0.451061
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.560233
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.556092
+                  },
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.546995
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.545367
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.526246
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.519438
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.51073
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.510166
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.500906
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.499927
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MENCR",
+                  "name": "Message Encryption",
+                  "description": "Encrypting a message body using a cryptographic key.",
+                  "reason": "Encrypts message bodies using cryptographic keys, directly protecting confidentiality."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MAN",
+                  "name": "Message Authentication",
+                  "description": "Authenticating the sender of a message and ensuring message integrity.",
+                  "reason": "Authenticates senders and ensures message integrity through cryptographic verification."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0003",
+                  "name": "End-to-end encryption",
+                  "description": "Implement end-to-end encryption (e.g., TLS, HTTPS) to protect the integrity and confidentiality of communications between AI systems.",
+                  "reason": "End-to-end encryption protects both confidentiality and integrity of communications."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0026",
+                  "name": "Secure communication channels",
+                  "description": "Communication channels between the model and the interface responsible for displaying the results should be secured using secure protocols such as SSL/TLS.",
+                  "reason": "Secures communication channels with SSL/TLS, ensuring confidentiality and integrity."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "SC-12",
+          "control_name": "Establish and manage cryptographic keys for the system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish cryptographic keys for the system",
+              "class": "TECH",
+              "embedding_context": "Establish cryptographic keys for the system",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-MENCR",
+                    "name": "Message Encryption",
+                    "similarity_score": 0.334909
+                  },
+                  {
+                    "id": "D3-SFV",
+                    "name": "System Firmware Verification",
+                    "similarity_score": 0.331539
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.328065
+                  },
+                  {
+                    "id": "D3-PAN",
+                    "name": "Pointer Authentication",
+                    "similarity_score": 0.322506
+                  },
+                  {
+                    "id": "D3-BA",
+                    "name": "Bootloader Authentication",
+                    "similarity_score": 0.315427
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.311437
+                  },
+                  {
+                    "id": "D3-BMA",
+                    "name": "Bus Message Authentication",
+                    "similarity_score": 0.311286
+                  },
+                  {
+                    "id": "D3-MAN",
+                    "name": "Message Authentication",
+                    "similarity_score": 0.307831
+                  },
+                  {
+                    "id": "D3-CBAN",
+                    "name": "Certificate-based Authentication",
+                    "similarity_score": 0.307276
+                  },
+                  {
+                    "id": "D3-FV",
+                    "name": "Firmware Verification",
+                    "similarity_score": 0.306902
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.421384
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.405198
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.359049
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.357205
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.357143
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.356737
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.35246
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.349642
+                  },
+                  {
+                    "id": "AML.M0033",
+                    "name": "Malicious Logic Detection in hardware",
+                    "similarity_score": 0.331561
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.32911
+                  }
+                ]
+              },
+              "actions": []
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Manage cryptographic keys for the system",
+              "class": "TECH",
+              "embedding_context": "Manage cryptographic keys for the system",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.328009
+                  },
+                  {
+                    "id": "D3-SCP",
+                    "name": "System Configuration Permissions",
+                    "similarity_score": 0.314407
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.299272
+                  },
+                  {
+                    "id": "D3-CERO",
+                    "name": "Certificate Rotation",
+                    "similarity_score": 0.292751
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.287179
+                  },
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.281955
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.280537
+                  },
+                  {
+                    "id": "D3-MENCR",
+                    "name": "Message Encryption",
+                    "similarity_score": 0.259771
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.257565
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.254097
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.368149
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.316027
+                  },
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.296652
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.29221
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.287466
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.277488
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.265308
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.262102
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.258178
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.256905
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CERO",
+                  "name": "Certificate Rotation",
+                  "description": "Certificate rotation involves replacing digital certificates and their private keys to maintain cryptographic integrity and trust, mitigating key compromise risks and ensuring continuous secure communications.",
+                  "reason": "Certificate rotation directly supports managing cryptographic keys by replacing compromised or expired certificates and their private keys, maintaining cryptographic integrity and trust."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

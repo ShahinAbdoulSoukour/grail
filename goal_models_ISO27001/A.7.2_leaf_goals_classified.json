@@ -1,0 +1,53 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.7.2",
+  "clause_name": "Manage information security responsibilities",
+  "goal_name": "Manage information security responsibilities",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure that employees and contractors are aware of and fulfil their information security responsibilities.",
+      "goal_name": "Ensure that employees and contractors are aware of and fulfil their information security responsibilities",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.7.2.1",
+          "control_name": "Management shall require all employees and contractors to apply information security in accordance with the established policies and procedures of the organization.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Require all employees and contractors to apply information security in accordance with the established policies and procedures of the organization",
+              "agent": "Management",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.7.2.2",
+          "control_name": "All employees of the organization and, where relevant, contractors shall receive appropriate awareness education and training and regular updates in organizational policies and procedures, as relevant for their job function.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Receive appropriate awareness education and training and regular updates in organizational policies and procedures, as relevant for their job function",
+              "agent": "All employees of the organization and, where relevant, contractors",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.7.2.3",
+          "control_name": "There shall be a formal and communicated disciplinary process in place to take action against employees who have committed an information security breach.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Establish a formal and communicated disciplinary process in place to take action against employees who have committed an information security breach",
+              "class": "ORG"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

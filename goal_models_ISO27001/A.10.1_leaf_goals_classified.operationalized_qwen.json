@@ -1,0 +1,569 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.10.1",
+  "clause_name": "Cryptographic controls",
+  "goal_name": "Apply cryptographic controls",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure proper and effective use of cryptography to protect the confidentiality, authenticity and/or integrity of information.",
+      "goal_name": "Ensure proper and effective use of cryptography to protect the confidentiality, authenticity and/or integrity of information",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.10.1.1",
+          "control_name": "A policy on the use of cryptographic controls for protection of information shall be developed and implemented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop a policy on the use of cryptographic controls for protection of information",
+              "class": "TECH",
+              "embedding_context": "Develop a policy on the use of cryptographic controls for protection of information",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-MENCR",
+                    "name": "Message Encryption",
+                    "similarity_score": 0.48274
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.468633
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.462439
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.432547
+                  },
+                  {
+                    "id": "D3-CFI",
+                    "name": "Control Flow Integrity",
+                    "similarity_score": 0.432417
+                  },
+                  {
+                    "id": "D3-MH",
+                    "name": "Message Hardening",
+                    "similarity_score": 0.43131
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.426097
+                  },
+                  {
+                    "id": "D3-OVAR",
+                    "name": "OT Variable Access Restriction",
+                    "similarity_score": 0.424301
+                  },
+                  {
+                    "id": "D3-MAN",
+                    "name": "Message Authentication",
+                    "similarity_score": 0.423078
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.422237
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.552569
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.545337
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.531753
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.527849
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.526861
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.519671
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.515594
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.509828
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.507871
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.506229
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MENCR",
+                  "name": "Message Encryption",
+                  "description": "Encrypting a message body using a cryptographic key.",
+                  "reason": "Message Encryption directly supports cryptographic controls by encrypting messages to protect information confidentiality."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FE",
+                  "name": "File Encryption",
+                  "description": "Encrypting a file using a cryptographic key.",
+                  "reason": "File Encryption ensures data protection through cryptographic controls by encrypting files."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0012",
+                  "name": "Encrypt Sensitive Information",
+                  "description": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "reason": "Encrypting sensitive information explicitly aligns with cryptographic controls for information protection."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0026",
+                  "name": "Secure communication channels",
+                  "description": "Communication channels between the model and the interface responsible for displaying the results should be secured using secure protocols such as SSL/TLS.",
+                  "reason": "Secure communication channels using protocols like SSL/TLS are cryptographic controls to protect data in transit."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MAN",
+                  "name": "Message Authentication",
+                  "description": "Authenticating the sender of a message and ensuring message integrity.",
+                  "reason": "Message Authentication ensures integrity and authenticity of messages, a core cryptographic control requirement."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Implement a policy on the use of cryptographic controls for protection of information",
+              "class": "TECH",
+              "embedding_context": "Implement a policy on the use of cryptographic controls for protection of information",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-MENCR",
+                    "name": "Message Encryption",
+                    "similarity_score": 0.482232
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.475198
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.461052
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.452025
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.449556
+                  },
+                  {
+                    "id": "D3-CFI",
+                    "name": "Control Flow Integrity",
+                    "similarity_score": 0.447469
+                  },
+                  {
+                    "id": "D3-OVAR",
+                    "name": "OT Variable Access Restriction",
+                    "similarity_score": 0.445408
+                  },
+                  {
+                    "id": "D3-MH",
+                    "name": "Message Hardening",
+                    "similarity_score": 0.438567
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.437
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.436353
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.563141
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.555877
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.548523
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.544583
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.534692
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.532248
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.527814
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.522473
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.51965
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.51964
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MENCR",
+                  "name": "Message Encryption",
+                  "description": "Encrypting a message body using a cryptographic key.",
+                  "reason": "Message Encryption directly implements cryptographic controls to protect information in transit by encrypting message bodies."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FE",
+                  "name": "File Encryption",
+                  "description": "Encrypting a file using a cryptographic key.",
+                  "reason": "File Encryption applies cryptographic controls to protect information at rest by encrypting files."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "reason": "Access Policy Administration defines and manages policies for cryptographic controls, aligning with the goal of implementing protective measures."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0012",
+                  "name": "Encrypt Sensitive Information",
+                  "description": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "reason": "Encrypt Sensitive Information directly enforces cryptographic controls to protect data through encryption, complementing other techniques."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.10.1.2",
+          "control_name": "A policy on the use, protection and lifetime of cryptographic keys shall be developed and implemented through their whole lifecycle.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Develop a policy on the use, protection and lifetime of cryptographic keys",
+              "class": "TECH",
+              "embedding_context": "Develop a policy on the use, protection and lifetime of cryptographic keys",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.377466
+                  },
+                  {
+                    "id": "D3-CERO",
+                    "name": "Certificate Rotation",
+                    "similarity_score": 0.367023
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.351702
+                  },
+                  {
+                    "id": "D3-MENCR",
+                    "name": "Message Encryption",
+                    "similarity_score": 0.348406
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.344569
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.343862
+                  },
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.329926
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.315037
+                  },
+                  {
+                    "id": "D3-SPP",
+                    "name": "Strong Password Policy",
+                    "similarity_score": 0.31472
+                  },
+                  {
+                    "id": "D3-PAN",
+                    "name": "Pointer Authentication",
+                    "similarity_score": 0.312786
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.435377
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.407942
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.38948
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.379256
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.378913
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.376783
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.369422
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.367268
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.367216
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.361243
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CERO",
+                  "name": "Certificate Rotation",
+                  "description": "Certificate rotation involves replacing digital certificates and their private keys to maintain cryptographic integrity and trust, mitigating key compromise risks and ensuring continuous secure communications.",
+                  "reason": "Certificate rotation directly addresses key lifetime management by replacing compromised or expired keys, ensuring cryptographic integrity and reducing risks associated with key compromise."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "reason": "Access policy administration defines and manages access control policies, which is critical for protecting cryptographic keys by specifying who can access them and under what conditions."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Implement a policy on the use, protection and lifetime of cryptographic keys through their whole lifecycle",
+              "class": "TECH",
+              "embedding_context": "Implement a policy on the use, protection and lifetime of cryptographic keys through their whole lifecycle",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-CERO",
+                    "name": "Certificate Rotation",
+                    "similarity_score": 0.387125
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.378773
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.357919
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.347307
+                  },
+                  {
+                    "id": "D3-MENCR",
+                    "name": "Message Encryption",
+                    "similarity_score": 0.346286
+                  },
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.341922
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.326004
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.320629
+                  },
+                  {
+                    "id": "D3-PAN",
+                    "name": "Pointer Authentication",
+                    "similarity_score": 0.319371
+                  },
+                  {
+                    "id": "D3-SPP",
+                    "name": "Strong Password Policy",
+                    "similarity_score": 0.317244
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.442539
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.386709
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.382472
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.378326
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.376128
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.373535
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.372478
+                  },
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.370105
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.368419
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.362303
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CERO",
+                  "name": "Certificate Rotation",
+                  "description": "Certificate rotation involves replacing digital certificates and their private keys to maintain cryptographic integrity and trust, mitigating key compromise risks and ensuring continuous secure communications.",
+                  "reason": "Certificate rotation directly supports cryptographic key lifecycle management by replacing compromised keys and maintaining secure communications, aligning with the goal's requirement for key protection and operational continuity."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

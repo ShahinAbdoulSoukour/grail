@@ -1,0 +1,92 @@
+{
+  "A.2": {
+    "title": "AI policy",
+    "objective": "The organization shall establish an AI policy.",
+    "controls": {
+      "A.2.2": "The organization shall establish an AI policy.",
+      "A.2.3": "The AI policy shall be aligned with other relevant organizational policies.",
+      "A.2.4": "The AI policy shall be reviewed at planned intervals and when significant changes occur."
+    }
+  },
+  "A.3": {
+    "title": "Roles and responsibilities for AI",
+    "objective": "Roles and responsibilities for AI shall be defined and assigned.",
+    "controls": {
+      "A.3.2": "Roles and responsibilities for AI shall be defined and assigned.",
+      "A.3.3": "AI issues shall be reported, escalated, and addressed.",
+      "A.3.4": "Responsibilities toward affected interested parties shall be defined."
+    }
+  },
+  "A.4": {
+    "title": "Resources",
+    "objective": "Appropriate resources for AI systems shall be determined and provided.",
+    "controls": {
+      "A.4.2": "Appropriate resources for AI systems shall be determined and provided.",
+      "A.4.3": "Competence required for AI-related roles shall be established and maintained.",
+      "A.4.4": "Personnel shall be aware of AI policy, risks, and responsibilities."
+    }
+  },
+  "A.5": {
+    "title": "AI system impact assessment",
+    "objective": "Impact assessments shall be performed for AI systems.",
+    "controls": {
+      "A.5.2": "Impact assessments shall be performed for AI systems.",
+      "A.5.3": "Impact assessments shall be performed at appropriate times across the AI lifecycle.",
+      "A.5.4": "Impact assessment results shall be reviewed and updated when needed.",
+      "A.5.5": "Records of impact assessments shall be retained."
+    }
+  },
+  "A.6": {
+    "title": "AI system design and development",
+    "objective": "AI systems shall be designed and developed according to defined requirements.",
+    "controls": {
+      "A.6.2": "AI systems shall be designed and developed according to defined requirements.",
+      "A.6.3": "AI systems shall be verified and validated before use.",
+      "A.6.4": "Deployment of AI systems shall be controlled.",
+      "A.6.5": "AI systems shall be operated and monitored.",
+      "A.6.6": "AI systems shall be maintained over their lifecycle."
+    }
+  },
+  "A.7": {
+    "title": "Data acquisition",
+    "objective": "Data used for AI systems shall be acquired appropriately.",
+    "controls": {
+      "A.7.2": "Data used for AI systems shall be acquired appropriately.",
+      "A.7.3": "Data quality requirements shall be defined and checked.",
+      "A.7.4": "Data preparation activities shall be controlled.",
+      "A.7.5": "Data provenance shall be tracked and maintained.",
+      "A.7.6": "Data selection criteria shall be defined and applied.",
+      "A.7.7": "Data shall be handled securely and appropriately."
+    }
+  },
+  "A.8": {
+    "title": "Information to interested parties",
+    "objective": "Relevant information about AI systems shall be provided to interested parties.",
+    "controls": {
+      "A.8.2": "Relevant information about AI systems shall be provided to interested parties.",
+      "A.8.3": "Information provided shall support transparency of AI system behavior.",
+      "A.8.4": "Appropriate explainability information shall be made available.",
+      "A.8.5": "Users shall receive guidance for the intended use of AI systems."
+    }
+  },
+  "A.9": {
+    "title": "Responsible use",
+    "objective": "AI systems shall be used responsibly.",
+    "controls": {
+      "A.9.2": "AI systems shall be used responsibly.",
+      "A.9.3": "Human oversight shall be defined and implemented.",
+      "A.9.4": "Use of AI systems shall be monitored for unintended behavior.",
+      "A.9.5": "Inputs and outputs of AI systems shall be monitored as needed."
+    }
+  },
+  "A.10": {
+    "title": "Supplier requirements",
+    "objective": "Requirements for suppliers and external providers shall be defined.",
+    "controls": {
+      "A.10.2": "Requirements for suppliers and external providers shall be defined.",
+      "A.10.3": "Requirements from customers and users shall be identified and addressed.",
+      "A.10.4": "Third-party relationships shall be monitored and reviewed.",
+      "A.10.5": "Appropriate contractual controls shall be established."
+    }
+  }
+}

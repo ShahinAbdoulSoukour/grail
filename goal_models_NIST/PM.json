@@ -1,0 +1,45 @@
+{
+  "goal_id": "G0",
+  "clause_id": "PM",
+  "clause_name": "Program Management",
+  "goal_name": "Ensure program management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure effective planning and allocation of security and privacy resources.",
+      "goal_name": "Ensure effective planning and allocation of security and privacy resources",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "PM-1",
+          "control_name": "Develop, document, and disseminate an organization-wide information security program plan.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop an organization-wide information security program plan"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document an organization-wide information security program plan"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate an organization-wide information security program plan"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "PM-3",
+          "control_name": "Plan for and allocate security and privacy resources.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Plan for and allocate security and privacy resources"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

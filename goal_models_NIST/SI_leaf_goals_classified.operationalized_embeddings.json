@@ -1,0 +1,354 @@
+{
+  "goal_id": "G0",
+  "clause_id": "SI",
+  "clause_name": "Maintain System and Information Integrity",
+  "goal_name": "Maintain system and information integrity",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure the integrity, security, and timely detection of system threats.",
+      "goal_name": "Ensure the integrity, security, and timely detection of system threats",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "SI-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate system and information integrity controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate system and information integrity controls",
+              "class": "ORG",
+              "embedding_context": "Develop policy and procedures to facilitate system and information integrity controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.422426
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0032",
+                "name": "Utilize integrity controls in hardware",
+                "similarity_score": 0.447863
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate system and information integrity controls",
+              "class": "ORG",
+              "embedding_context": "Document policy and procedures to facilitate system and information integrity controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.420979
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0032",
+                "name": "Utilize integrity controls in hardware",
+                "similarity_score": 0.409372
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate system and information integrity controls",
+              "class": "ORG",
+              "embedding_context": "Disseminate policy and procedures to facilitate system and information integrity controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.415068
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0032",
+                "name": "Utilize integrity controls in hardware",
+                "similarity_score": 0.45882
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0032",
+                  "name": "Utilize integrity controls in hardware",
+                  "description": "Utilize tamper-evident packaging, secure shipping protocols, and block chain-based tracking systems to ensure the integrity of hardware and software during distribution, preventing unauthorized access or modifications.",
+                  "similarity_score": 0.45882
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "SI-2",
+          "control_name": "Identify, report, and correct system flaws in a timely manner.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Identify system flaws in a timely manner",
+              "class": "TECH",
+              "embedding_context": "Identify system flaws in a timely manner",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.461152
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0016",
+                "name": "Vulnerability Scanning",
+                "similarity_score": 0.393754
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.461152
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Report system flaws in a timely manner",
+              "class": "ORG",
+              "embedding_context": "Report system flaws in a timely manner",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.333108
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0034",
+                "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                "similarity_score": 0.291563
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Correct system flaws in a timely manner",
+              "class": "TECH",
+              "embedding_context": "Correct system flaws in a timely manner",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.425533
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0034",
+                "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                "similarity_score": 0.414478
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "SI-3",
+          "control_name": "Implement malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Implement malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code",
+              "class": "TECH",
+              "embedding_context": "Implement malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FH",
+                "name": "File Hashing",
+                "similarity_score": 0.581898
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0033",
+                "name": "Malicious Logic Detection in hardware",
+                "similarity_score": 0.560538
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FH",
+                  "name": "File Hashing",
+                  "description": "Employing file hash comparisons to detect known malware.",
+                  "similarity_score": 0.581898
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MBT",
+                  "name": "Memory Boundary Tracking",
+                  "description": "Analyzing a call stack for return addresses which point to unexpected  memory locations.",
+                  "similarity_score": 0.52226
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OSM",
+                  "name": "Operating System Monitoring",
+                  "description": "The operating system software, for D3FEND's purposes, includes the kernel and its process management functions, hardware drivers, initialization or boot logic. It also includes and other key system daemons and their configuration. The monitoring or analysis of these components for unauthorized activity constitute **Operating System Monitoring**.",
+                  "similarity_score": 0.519985
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-KBPI",
+                  "name": "Kernel-based Process Isolation",
+                  "description": "Using kernel-level capabilities to isolate processes.",
+                  "similarity_score": 0.516465
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DA",
+                  "name": "Dynamic Analysis",
+                  "description": "Executing or opening a file in a synthetic \"sandbox\" environment to determine if the file is a malicious program or if the file exploits another program such as a document reader.",
+                  "similarity_score": 0.514904
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0033",
+                  "name": "Malicious Logic Detection in hardware",
+                  "description": "Implement comprehensive hardware and firmware security validation processes, including regular integrity checks and the use of cryptographic signing, to detect and prevent the insertion of malicious logic.",
+                  "similarity_score": 0.560538
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0013",
+                  "name": "Code Signing",
+                  "description": "Enforce binary and application integrity with digital signature verification to prevent untrusted code from executing. Adversaries can embed malicious code in ML software, models and Library. Enforcement of code signing can prevent the compromise of the machine learning supply chain and prevent execution of malicious code.",
+                  "similarity_score": 0.525191
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.51891
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0035",
+                  "name": "Protection from Reverse Engineering",
+                  "description": "Protect against reverse engineering by using obfuscation techniques, encryption of sensitive hardware components, and applying intellectual property protection measures to prevent the exploitation of vulnerabilities and unauthorized copying.",
+                  "similarity_score": 0.510864
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0034",
+                  "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                  "description": "",
+                  "similarity_score": 0.498655
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "SI-4",
+          "control_name": "Monitor the system to detect attacks and indicators of potential attacks.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Monitor the system to detect attacks and indicators of potential attacks",
+              "class": "TECH",
+              "embedding_context": "Monitor the system to detect attacks and indicators of potential attacks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OSM",
+                "name": "Operating System Monitoring",
+                "similarity_score": 0.589933
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0014",
+                "name": "Resource Monitoring",
+                "similarity_score": 0.554279
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OSM",
+                  "name": "Operating System Monitoring",
+                  "description": "The operating system software, for D3FEND's purposes, includes the kernel and its process management functions, hardware drivers, initialization or boot logic. It also includes and other key system daemons and their configuration. The monitoring or analysis of these components for unauthorized activity constitute **Operating System Monitoring**.",
+                  "similarity_score": 0.589933
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SDM",
+                  "name": "System Daemon Monitoring",
+                  "description": "Tracking changes to the state or configuration of critical system level processes.",
+                  "similarity_score": 0.565888
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EHB",
+                  "name": "Endpoint Health Beacon",
+                  "description": "Monitoring the security status of an endpoint by sending periodic messages with health status, where absence of a response may indicate that the endpoint has been compromised.",
+                  "similarity_score": 0.556732
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.517402
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "similarity_score": 0.512771
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0014",
+                  "name": "Resource Monitoring",
+                  "description": "Continuously monitor resource usage.",
+                  "similarity_score": 0.554279
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "similarity_score": 0.552341
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0017",
+                  "name": "Anomaly detection",
+                  "description": "Sign models and code, apply anomaly detection, and monitor.",
+                  "similarity_score": 0.549939
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0024",
+                  "name": "Monitoring and auditing",
+                  "description": "Regularly monitoring and auditing the model’s use can help detect and prevent theft by detecting when an attacker is attempting to access or steal the model.",
+                  "similarity_score": 0.491422
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

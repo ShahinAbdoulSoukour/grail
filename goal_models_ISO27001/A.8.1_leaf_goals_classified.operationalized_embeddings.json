@@ -1,0 +1,242 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.8.1",
+  "clause_name": "Responsibility for assets",
+  "goal_name": "Assign responsibility for assets",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To identify organizational assets and define appropriate protection responsibilities.",
+      "goal_name": "Identify organizational assets and define appropriate protection responsibilities",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.8.1.1",
+          "control_name": "Assets associated with information and information processing facilities shall be identified and an inventory of these assets shall be drawn up and maintained.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Identify assets associated with information and information processing facilities and an inventory of these assets shall be drawn up",
+              "class": "ORG",
+              "embedding_context": "Identify assets associated with information and information processing facilities and an inventory of these assets shall be drawn up",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.525885
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.42723
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "similarity_score": 0.525885
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "similarity_score": 0.486866
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NNI",
+                  "name": "Network Node Inventory",
+                  "description": "Network node inventorying identifies and records all the network nodes (hosts, routers, switches, firewalls, etc.) in the organization's architecture.",
+                  "similarity_score": 0.482017
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-HCI",
+                  "name": "Hardware Component Inventory",
+                  "description": "Hardware component inventorying identifies and records the hardware items in the organization's architecture.",
+                  "similarity_score": 0.480931
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "similarity_score": 0.473183
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain assets associated with information and information processing facilities",
+              "class": "ORG",
+              "embedding_context": "Maintain assets associated with information and information processing facilities",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.438945
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.42307
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.8.1.2",
+          "control_name": "Assets maintained in the inventory shall be owned.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Ensure assets maintained in the inventory are owned",
+              "class": "ORG",
+              "embedding_context": "Ensure assets maintained in the inventory are owned",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AI",
+                "name": "Asset Inventory",
+                "similarity_score": 0.504369
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.543718
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AI",
+                  "name": "Asset Inventory",
+                  "description": "Asset inventorying identifies and records the organization's assets and enriches each inventory item with knowledge about their vulnerabilities.",
+                  "similarity_score": 0.504369
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.466225
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.543718
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.8.1.3",
+          "control_name": "Rules for the acceptable use of information and of assets associated with information and information processing facilities shall be identified, documented and implemented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Identify rules for the acceptable use of information and of assets associated with information and information processing facilities",
+              "class": "ORG",
+              "embedding_context": "Identify rules for the acceptable use of information and of assets associated with information and information processing facilities",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.408309
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.406224
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Document rules for the acceptable use of information and of assets associated with information and information processing facilities",
+              "class": "ORG",
+              "embedding_context": "Document rules for the acceptable use of information and of assets associated with information and information processing facilities",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.397689
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.366826
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.3.3",
+              "goal_name": "Implement rules for the acceptable use of information and of assets associated with information and information processing facilities",
+              "class": "ORG",
+              "embedding_context": "Implement rules for the acceptable use of information and of assets associated with information and information processing facilities",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.387845
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0021",
+                "name": "Data Access Control",
+                "similarity_score": 0.411175
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.8.1.4",
+          "control_name": "All employees and external party users shall return all of the organizational assets in their possession upon termination of their employment, contract or agreement.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Return all of the organizational assets in their possession upon termination of their employment, contract or agreement",
+              "agent": "All employees and external party users",
+              "class": "ORG",
+              "embedding_context": "Return all of the organizational assets in their possession upon termination of their employment, contract or agreement",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ULA",
+                "name": "Unlock Account",
+                "similarity_score": 0.299473
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.165985
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

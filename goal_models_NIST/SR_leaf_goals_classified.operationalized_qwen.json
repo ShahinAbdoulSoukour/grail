@@ -1,0 +1,1022 @@
+{
+  "goal_id": "G0",
+  "clause_id": "SR",
+  "clause_name": "Manage Supply Chain Risks",
+  "goal_name": "Manage supply chain risks",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure effective management of supply chain risks.",
+      "goal_name": "Ensure effective management of supply chain risks",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "SR-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate supply chain risk management controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate supply chain risk management controls",
+              "class": "ORG",
+              "embedding_context": "Develop policy and procedures to facilitate supply chain risk management controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.35548
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.337146
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.33342
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.319264
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.300966
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.283338
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.278134
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.274835
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.273307
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.266442
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.435258
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.424303
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.412398
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.303185
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.283222
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.246367
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.245825
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.24397
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.216176
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.211461
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AI",
+                  "name": "Asset Inventory",
+                  "description": "Asset inventorying identifies and records the organization's assets and enriches each inventory item with knowledge about their vulnerabilities.",
+                  "reason": "Asset Inventory directly supports supply chain risk management by systematically recording organizational assets, which is foundational for developing policies to manage supply chain components."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0007",
+                  "name": "Supply Chain Verification",
+                  "description": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "reason": "Supply Chain Verification directly addresses the goal by requiring verification of external data sources and maintaining ML-BOM records, which are critical for managing supply chain risks."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Inventory Management directly supports the goal by ensuring up-to-date inventories of assets, which is essential for tracking and managing supply chain risks through policies."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "reason": "Asset Vulnerability Enumeration enriches inventory items with vulnerability data, directly aiding risk assessment and policy development for supply chain controls."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0032",
+                  "name": "Utilize integrity controls in hardware",
+                  "description": "Utilize tamper-evident packaging, secure shipping protocols, and block chain-based tracking systems to ensure the integrity of hardware and software during distribution, preventing unauthorized access or modifications.",
+                  "reason": "Integrity controls in hardware ensure supply chain integrity during distribution, aligning with the goal of managing risks through procedural safeguards."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate supply chain risk management controls",
+              "class": "ORG",
+              "embedding_context": "Document policy and procedures to facilitate supply chain risk management controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.377178
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.366817
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.361786
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.352369
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.33334
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.320182
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.316634
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.301305
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.297878
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.282831
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.440449
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.435497
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.388545
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.290457
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.272032
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.251953
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.240816
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.22908
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.222843
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.217675
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0007",
+                  "name": "Supply Chain Verification",
+                  "description": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "reason": "Verifying external data sources and maintaining ML-BOM records directly supports documenting supply chain risk management procedures by ensuring traceability of components."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Maintaining an up-to-date inventory is a foundational policy requirement for documenting supply chain risk management controls and procedures."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate supply chain risk management controls",
+              "class": "ORG",
+              "embedding_context": "Disseminate policy and procedures to facilitate supply chain risk management controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.340551
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.338884
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.336287
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.322763
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.305454
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.298729
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.292478
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.282815
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.277678
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.263954
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.43534
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.428736
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.390065
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.308878
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.285091
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.264603
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.263485
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.253688
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.246877
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.225307
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "SR-2",
+          "control_name": "Develop a supply chain risk management plan for the system, system component, or service.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Develop a supply chain risk management plan for the system, system component, or service",
+              "class": "ORG",
+              "embedding_context": "Develop a supply chain risk management plan for the system, system component, or service",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.44773
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.423725
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.413211
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.399804
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.396247
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.366
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.36561
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.354587
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.35227
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.347402
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.446841
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.425572
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.400746
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.304919
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.27884
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.264695
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.26391
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.263069
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.259875
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.254946
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "System Vulnerability Assessment evaluates vulnerabilities across components and design, directly supporting risk identification in supply chain dependencies."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0007",
+                  "name": "Supply Chain Verification",
+                  "description": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "reason": "Supply Chain Verification ensures external data sources are validated, aligning with the need to assess third-party risks in the supply chain."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "reason": "Asset Vulnerability Enumeration enriches inventory items with vulnerability data, critical for identifying risks in supply chain assets."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Inventory Management maintains up-to-date records of assets, foundational for tracking and managing supply chain components."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0032",
+                  "name": "Utilize integrity controls in hardware",
+                  "description": "Utilize tamper-evident packaging, secure shipping protocols, and block chain-based tracking systems to ensure the integrity of hardware and software during distribution, preventing unauthorized access or modifications.",
+                  "reason": "Integrity controls in hardware ensure secure distribution practices, mitigating risks from tampered hardware in the supply chain."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "SR-3",
+          "control_name": "Establish, document, and implement controls and processes for managing supply chain risks.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Establish controls and processes for managing supply chain risks",
+              "class": "ORG",
+              "embedding_context": "Establish controls and processes for managing supply chain risks",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.37376
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.370416
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.347941
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.342739
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.326032
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.325466
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.323723
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.297127
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.296207
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.288174
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.454385
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.434919
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.407117
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.315504
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.283813
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.239581
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.230608
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.213131
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.211327
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.206556
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0007",
+                  "name": "Supply Chain Verification",
+                  "description": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "reason": "Directly addresses supply chain verification by validating external data sources and maintaining ML-BOM records, which is critical for managing supply chain risks."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Maintains an up-to-date inventory, a core control for tracking assets and identifying vulnerabilities in the supply chain."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AI",
+                  "name": "Asset Inventory",
+                  "description": "Asset inventorying identifies and records the organization's assets and enriches each inventory item with knowledge about their vulnerabilities.",
+                  "reason": "Enriches asset inventory with vulnerability knowledge, directly supporting risk assessment and mitigation in supply chain management."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "reason": "Software inventorying ensures visibility into software components, enabling risk management for third-party dependencies in the supply chain."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-HCI",
+                  "name": "Hardware Component Inventory",
+                  "description": "Hardware component inventorying identifies and records the hardware items in the organization's architecture.",
+                  "reason": "Hardware component inventorying provides detailed tracking of physical assets, critical for identifying and mitigating risks in hardware supply chains."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Document controls and processes for managing supply chain risks",
+              "class": "ORG",
+              "embedding_context": "Document controls and processes for managing supply chain risks",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.404211
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.403893
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.388439
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.379698
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.373642
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.341225
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.334128
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.331101
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.31098
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.298388
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.493949
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.473659
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.395269
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.325766
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.289866
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.281925
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.260673
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.240674
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.237475
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.234602
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AI",
+                  "name": "Asset Inventory",
+                  "description": "Asset inventorying identifies and records the organization's assets and enriches each inventory item with knowledge about their vulnerabilities.",
+                  "reason": "Asset Inventory directly supports documenting controls by recording organizational assets and their vulnerabilities, which is foundational for supply chain risk management."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0007",
+                  "name": "Supply Chain Verification",
+                  "description": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "reason": "Supply Chain Verification directly addresses documenting controls by verifying external data sources and maintaining ML-BOM records, which are critical for managing supply chain risks."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Inventory Management directly supports the goal by maintaining up-to-date inventories, which is essential for documenting processes to manage supply chain risks."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "reason": "Software Inventory directly contributes to documenting controls by identifying and recording software items, ensuring visibility into supply chain components."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-HCI",
+                  "name": "Hardware Component Inventory",
+                  "description": "Hardware component inventorying identifies and records the hardware items in the organization's architecture.",
+                  "reason": "Hardware Component Inventory directly supports the goal by identifying and recording hardware items, which is necessary for documenting supply chain controls."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.3.3",
+              "goal_name": "Implement controls and processes for managing supply chain risks",
+              "class": "ORG",
+              "embedding_context": "Implement controls and processes for managing supply chain risks",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.380678
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.375345
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.36127
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.348561
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.334442
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.327482
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.320273
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.301896
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.292373
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.290816
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.448087
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.440776
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.425088
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.325051
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.309046
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.252648
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.245688
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.227626
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.226011
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.221772
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0007",
+                  "name": "Supply Chain Verification",
+                  "description": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "reason": "Directly addresses supply chain verification by ensuring external data sources are validated and ML-BOM records are maintained."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Maintains up-to-date inventory of assets, critical for tracking supply chain components and their risks."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AI",
+                  "name": "Asset Inventory",
+                  "description": "Asset inventorying identifies and records the organization's assets and enriches each inventory item with knowledge about their vulnerabilities.",
+                  "reason": "Asset inventorying enriches assets with vulnerability knowledge, supporting risk assessment of supply chain components."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "reason": "Enumerates asset vulnerabilities, directly contributing to identifying risks in third-party components."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0031",
+                  "name": "Implement Security Control during hardware manufacturing",
+                  "description": "Implement strict security controls and auditing processes during the manufacturing phase, including secure supply chain practices and hardware verification methods, to prevent unauthorized modifications to hardware components or firmware.",
+                  "reason": "Implements security controls during hardware manufacturing, mitigating supply chain tampering risks."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,959 @@
+{
+  "goal_id": "G0",
+  "clause_id": "MA",
+  "clause_name": "Manage System Maintenance",
+  "goal_name": "Manage system maintenance",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure controlled and secure system maintenance.",
+      "goal_name": "Ensure controlled and secure system maintenance",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "MA-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate maintenance controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate maintenance controls",
+              "class": "ORG",
+              "embedding_context": "Develop policy and procedures to facilitate maintenance controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.399501
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.39561
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.335537
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.319059
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.317529
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.317338
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.314006
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.312667
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.310603
+                  },
+                  {
+                    "id": "D3-PUM",
+                    "name": "Platform Uptime Monitoring",
+                    "similarity_score": 0.30954
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.361859
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.339159
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.275023
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.259954
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.258648
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.2559
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.237252
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.227021
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.225018
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.222833
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Maintaining an up-to-date inventory directly supports developing procedures for maintenance controls by ensuring all assets are documented."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "reason": "Access policy administration defines user permissions, which is critical for controlling who can perform maintenance actions."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0014",
+                  "name": "Resource Monitoring",
+                  "description": "Continuously monitor resource usage.",
+                  "reason": "Resource monitoring ensures that maintenance activities do not exceed allocated resources, supporting controlled procedures."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "reason": "Configuration inventory provides a baseline for system states, enabling structured maintenance procedures."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "reason": "Operational process monitoring tracks maintenance activities, ensuring adherence to established policies and procedures."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate maintenance controls",
+              "class": "ORG",
+              "embedding_context": "Document policy and procedures to facilitate maintenance controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.43607
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.369595
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.356552
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.34961
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.336216
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.331026
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.316957
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.306133
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.304145
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.299888
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.360614
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.28495
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.26047
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.258823
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.257575
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.237081
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.219656
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.219321
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.214236
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.212442
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Inventory Management directly supports documenting policies and procedures by maintaining an up-to-date inventory, which is essential for maintenance controls."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate maintenance controls",
+              "class": "ORG",
+              "embedding_context": "Disseminate policy and procedures to facilitate maintenance controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.404356
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.386229
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.373194
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.323748
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.322499
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.315678
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.313044
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.307289
+                  },
+                  {
+                    "id": "D3-PUM",
+                    "name": "Platform Uptime Monitoring",
+                    "similarity_score": 0.306572
+                  },
+                  {
+                    "id": "D3-CFI",
+                    "name": "Control Flow Integrity",
+                    "similarity_score": 0.303894
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.382924
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.340025
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.304211
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.278351
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.268036
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.266401
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.2634
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.261508
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.256645
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.252235
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "MA-2",
+          "control_name": "Perform maintenance on system components in a controlled manner.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Perform maintenance on system components in a controlled manner",
+              "class": "TECH",
+              "embedding_context": "Perform maintenance on system components in a controlled manner",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.434409
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.405719
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.389157
+                  },
+                  {
+                    "id": "D3-PUM",
+                    "name": "Platform Uptime Monitoring",
+                    "similarity_score": 0.382913
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.37634
+                  },
+                  {
+                    "id": "D3-SICA",
+                    "name": "System Init Config Analysis",
+                    "similarity_score": 0.370613
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.370056
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.366519
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.362845
+                  },
+                  {
+                    "id": "D3-SYSDM",
+                    "name": "System Dependency Mapping",
+                    "similarity_score": 0.360697
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.359809
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.319261
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.304968
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.288966
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.274057
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.269814
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.267427
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.265228
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.263646
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.2482
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SU",
+                  "name": "Software Update",
+                  "description": "Replacing old software on a computer system component.",
+                  "reason": "Software Update directly replaces old software on system components, enabling controlled maintenance through structured updates."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Inventory Management ensures up-to-date records of system components, enabling controlled maintenance planning and tracking."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "reason": "Resource isolation techniques prevent resource manipulation during maintenance, ensuring controlled environment for component updates."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "reason": "Operational Process Monitoring tracks operator actions during maintenance, ensuring controlled execution of maintenance tasks."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "MA-3",
+          "control_name": "Approve, control, and monitor maintenance tools.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Approve maintenance tools",
+              "class": "TECH",
+              "embedding_context": "Approve maintenance tools",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.356418
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.352101
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.337678
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.303682
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.28127
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.280194
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.276949
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.27456
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.266238
+                  },
+                  {
+                    "id": "D3-OMM",
+                    "name": "Operating Mode Monitoring",
+                    "similarity_score": 0.263976
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.324079
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.311627
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.30298
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.291787
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.291767
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.282669
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.282473
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.27286
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.26117
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.255831
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0002",
+                  "name": "Human Approval",
+                  "description": "Require user consent for privileged actions.",
+                  "reason": "Requires user consent for privileged actions, directly aligning with approving maintenance tools."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0022",
+                  "name": "User Confirmation",
+                  "description": "Require manual authorization for sensitive actions.",
+                  "reason": "Requires manual authorization for sensitive actions, ensuring approval before tool usage."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0035",
+                  "name": "Secure Deployment of Models",
+                  "description": "Secure deployment with approval workflows.",
+                  "reason": "Secure deployment with approval workflows directly supports the approval process for maintenance tools."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Control maintenance tools",
+              "class": "TECH",
+              "embedding_context": "Control maintenance tools",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.482485
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.408291
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.394597
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.383357
+                  },
+                  {
+                    "id": "D3-PUM",
+                    "name": "Platform Uptime Monitoring",
+                    "similarity_score": 0.37409
+                  },
+                  {
+                    "id": "D3-OMM",
+                    "name": "Operating Mode Monitoring",
+                    "similarity_score": 0.369963
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.355561
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.351414
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.345806
+                  },
+                  {
+                    "id": "D3-SFA",
+                    "name": "System File Analysis",
+                    "similarity_score": 0.334495
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.34135
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.339612
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.303788
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.300122
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.29732
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.273948
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.27323
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.270307
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.269428
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.241533
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "reason": "Monitors operator actions related to operational environments, ensuring authorized use of maintenance tools."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0037",
+                  "name": "Hardware security modules",
+                  "description": "Conduct thorough risk assessments and enforce usage policies to limit the misuse of hardware functionalities, alongside implementing hardware security modules (HSMs) to ensure only intended uses of hardware features.",
+                  "reason": "Hardware security modules enforce secure usage policies for maintenance tools' hardware components."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0014",
+                  "name": "Resource Monitoring",
+                  "description": "Continuously monitor resource usage.",
+                  "reason": "Resource monitoring detects abnormal usage patterns of maintenance tools, preventing misuse."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0032",
+                  "name": "Utilize integrity controls in hardware",
+                  "description": "Utilize tamper-evident packaging, secure shipping protocols, and block chain-based tracking systems to ensure the integrity of hardware and software during distribution, preventing unauthorized access or modifications.",
+                  "reason": "Integrity controls ensure maintenance tools' hardware and software remain unaltered during distribution."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.3.3",
+              "goal_name": "Monitor maintenance tools",
+              "class": "TECH",
+              "embedding_context": "Monitor maintenance tools",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.463781
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.405549
+                  },
+                  {
+                    "id": "D3-PUM",
+                    "name": "Platform Uptime Monitoring",
+                    "similarity_score": 0.393941
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.392885
+                  },
+                  {
+                    "id": "D3-APM",
+                    "name": "Application Performance Monitoring",
+                    "similarity_score": 0.369635
+                  },
+                  {
+                    "id": "D3-EHB",
+                    "name": "Endpoint Health Beacon",
+                    "similarity_score": 0.36762
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.343465
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.336395
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.324508
+                  },
+                  {
+                    "id": "D3-MSM",
+                    "name": "Motion Sensor Monitoring",
+                    "similarity_score": 0.322798
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.312652
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.285516
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.254203
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.239928
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.239186
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.231466
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.229261
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.211125
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.204608
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.200686
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "reason": "Operational Process Monitoring directly monitors physical parameters and operator actions related to maintenance tools, aligning with the goal of tracking tool usage and status."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

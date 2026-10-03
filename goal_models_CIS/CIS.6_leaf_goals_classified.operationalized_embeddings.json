@@ -1,0 +1,734 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.6",
+  "clause_name": "Access Control Management",
+  "goal_name": "Ensure access control management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Use processes and tools to create, assign, manage, and revoke access credentials and privileges for user, administrator, and service accounts for enterprise assets and software.",
+      "goal_name": "Use processes and tools to create, assign, manage, and revoke access credentials and privileges for user, administrator, and service accounts for enterprise assets and software",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.6.1",
+          "control_name": "Establish an Access Granting Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish an Access Granting Process",
+              "class": "TECH",
+              "embedding_context": "Establish an Access Granting Process",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AMED",
+                "name": "Access Mediation",
+                "similarity_score": 0.540657
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0001",
+                "name": "Privilege Control",
+                "similarity_score": 0.496773
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.540657
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "similarity_score": 0.514224
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.504692
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NAM",
+                  "name": "Network Access Mediation",
+                  "description": "Network access mediation is the control method for authorizing access to a system by a user (or a process acting on behalf of a user) communicating through a network, including a local area network, a wide area network, and the Internet.",
+                  "similarity_score": 0.46152
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.46
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "similarity_score": 0.496773
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0029",
+                  "name": "Downstream Authorization",
+                  "description": "Implement authorization in downstream systems.",
+                  "similarity_score": 0.474303
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.46839
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "similarity_score": 0.467848
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0002",
+                  "name": "Human Approval",
+                  "description": "Require user consent for privileged actions.",
+                  "similarity_score": 0.466071
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.6.2",
+          "control_name": "Establish an Access Revoking Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish an Access Revoking Process",
+              "class": "TECH",
+              "embedding_context": "Establish an Access Revoking Process",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AMED",
+                "name": "Access Mediation",
+                "similarity_score": 0.554183
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0001",
+                "name": "Privilege Control",
+                "similarity_score": 0.434989
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.554183
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "similarity_score": 0.530257
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RIC",
+                  "name": "Reissue Credential",
+                  "description": "Issue a new credential to a user which supercedes their old credential.",
+                  "similarity_score": 0.520976
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AL",
+                  "name": "Account Locking",
+                  "description": "The process of temporarily disabling user accounts on a system or domain.",
+                  "similarity_score": 0.514013
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.511701
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.6.3",
+          "control_name": "Require MFA for Externally-Exposed Applications",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Require MFA for Externally-Exposed Applications",
+              "class": "PHYS",
+              "embedding_context": "Require MFA for Externally-Exposed Applications",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CTS",
+                "name": "Credential Transmission Scoping",
+                "similarity_score": 0.411984
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0023",
+                "name": "Authentication Identities",
+                "similarity_score": 0.443181
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.6.4",
+          "control_name": "Require MFA for Remote Network Access",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Require MFA for Remote Network Access",
+              "class": "PHYS",
+              "embedding_context": "Require MFA for Remote Network Access",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-MFA",
+                "name": "Multi-factor Authentication",
+                "similarity_score": 0.448203
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0022",
+                "name": "User Confirmation",
+                "similarity_score": 0.398199
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.6.5",
+          "control_name": "Require MFA for Administrative Access",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Require MFA for Administrative Access",
+              "class": "PHYS",
+              "embedding_context": "Require MFA for Administrative Access",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-PAM",
+                "name": "Physical Access Mediation",
+                "similarity_score": 0.479964
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0022",
+                "name": "User Confirmation",
+                "similarity_score": 0.455566
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "similarity_score": 0.479964
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0022",
+                  "name": "User Confirmation",
+                  "description": "Require manual authorization for sensitive actions.",
+                  "similarity_score": 0.455566
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.6.6",
+          "control_name": "Establish and Maintain an Inventory of Authentication and Authorization Systems",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Establish an Inventory of Authentication and Authorization Systems",
+              "class": "TECH",
+              "embedding_context": "Establish an Inventory of Authentication and Authorization Systems",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.535203
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.586913
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.535203
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AZET",
+                  "name": "Authorization Event Thresholding",
+                  "description": "Collecting authorization events, creating a baseline user profile, and determining whether authorization events are consistent with the baseline profile.",
+                  "similarity_score": 0.495762
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.477735
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ANET",
+                  "name": "Authentication Event Thresholding",
+                  "description": "Collecting authentication events, creating a baseline user profile, and determining whether authentication events are consistent with the baseline profile.",
+                  "similarity_score": 0.471043
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CCSA",
+                  "name": "Credential Compromise Scope Analysis",
+                  "description": "Determining which credentials may have been compromised by analyzing the user logon history of a particular system.",
+                  "similarity_score": 0.460814
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.586913
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0029",
+                  "name": "Downstream Authorization",
+                  "description": "Implement authorization in downstream systems.",
+                  "similarity_score": 0.541785
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0007",
+                  "name": "Supply Chain Verification",
+                  "description": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "similarity_score": 0.51163
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0023",
+                  "name": "Authentication Identities",
+                  "description": "Use OAuth2 and API Keys for custom authorization.",
+                  "similarity_score": 0.474338
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "similarity_score": 0.467334
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.6.2",
+              "goal_name": "Maintain an Inventory of Authentication and Authorization Systems",
+              "class": "TECH",
+              "embedding_context": "Maintain an Inventory of Authentication and Authorization Systems",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.50057
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.630859
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.50057
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.464488
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AZET",
+                  "name": "Authorization Event Thresholding",
+                  "description": "Collecting authorization events, creating a baseline user profile, and determining whether authorization events are consistent with the baseline profile.",
+                  "similarity_score": 0.455834
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NNI",
+                  "name": "Network Node Inventory",
+                  "description": "Network node inventorying identifies and records all the network nodes (hosts, routers, switches, firewalls, etc.) in the organization's architecture.",
+                  "similarity_score": 0.454259
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "similarity_score": 0.452175
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.630859
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0007",
+                  "name": "Supply Chain Verification",
+                  "description": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "similarity_score": 0.514408
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0029",
+                  "name": "Downstream Authorization",
+                  "description": "Implement authorization in downstream systems.",
+                  "similarity_score": 0.499983
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.6.7",
+          "control_name": "Centralize Access Control",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Centralize Access Control",
+              "class": "TECH",
+              "embedding_context": "Centralize Access Control",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.588686
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0001",
+                "name": "Privilege Control",
+                "similarity_score": 0.558566
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.588686
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.569878
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.52758
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NAM",
+                  "name": "Network Access Mediation",
+                  "description": "Network access mediation is the control method for authorizing access to a system by a user (or a process acting on behalf of a user) communicating through a network, including a local area network, a wide area network, and the Internet.",
+                  "similarity_score": 0.525832
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3F-UGPH",
+                  "name": "User Group Permissions",
+                  "description": "Access control where access is determined based on attributes associated with users and the objects being accessed.",
+                  "similarity_score": 0.506545
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "similarity_score": 0.558566
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "similarity_score": 0.555275
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.544343
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "similarity_score": 0.526169
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0029",
+                  "name": "Downstream Authorization",
+                  "description": "Implement authorization in downstream systems.",
+                  "similarity_score": 0.503285
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.6.8",
+          "control_name": "Define and Maintain Role-Based Access Control",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Define Role-Based Access Control",
+              "class": "PHYS",
+              "embedding_context": "Define Role-Based Access Control",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.593225
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0001",
+                "name": "Privilege Control",
+                "similarity_score": 0.600187
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.593225
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3F-UGPH",
+                  "name": "User Group Permissions",
+                  "description": "Access control where access is determined based on attributes associated with users and the objects being accessed.",
+                  "similarity_score": 0.576802
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.549563
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "similarity_score": 0.540704
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.540416
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "similarity_score": 0.600187
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.565179
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "similarity_score": 0.552169
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "similarity_score": 0.533283
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0029",
+                  "name": "Downstream Authorization",
+                  "description": "Implement authorization in downstream systems.",
+                  "similarity_score": 0.478635
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.8.2",
+              "goal_name": "Maintain Role-Based Access Control",
+              "class": "TECH",
+              "embedding_context": "Maintain Role-Based Access Control",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.590762
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0001",
+                "name": "Privilege Control",
+                "similarity_score": 0.629019
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.590762
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3F-UGPH",
+                  "name": "User Group Permissions",
+                  "description": "Access control where access is determined based on attributes associated with users and the objects being accessed.",
+                  "similarity_score": 0.560317
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.514032
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.513328
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.496741
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "similarity_score": 0.629019
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.586554
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "similarity_score": 0.577678
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "similarity_score": 0.503988
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0029",
+                  "name": "Downstream Authorization",
+                  "description": "Implement authorization in downstream systems.",
+                  "similarity_score": 0.485465
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

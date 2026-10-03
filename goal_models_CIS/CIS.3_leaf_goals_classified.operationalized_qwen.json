@@ -1,0 +1,2005 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.3",
+  "clause_name": "Data Protection",
+  "goal_name": "Ensure data protection",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Develop processes and technical controls to identify, classify, securely handle, retain, and dispose of data.",
+      "goal_name": "Develop processes and technical controls to identify, classify, securely handle, retain, and dispose of data",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.3.1",
+          "control_name": "Encrypt Sensitive Data in Transit",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Encrypt Sensitive Data in Transit",
+              "class": "PHYS",
+              "embedding_context": "Encrypt Sensitive Data in Transit",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-MENCR",
+                    "name": "Message Encryption",
+                    "similarity_score": 0.393672
+                  },
+                  {
+                    "id": "D3-ET",
+                    "name": "Encrypted Tunnels",
+                    "similarity_score": 0.369939
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.358774
+                  },
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.348656
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.306085
+                  },
+                  {
+                    "id": "D3-RAM",
+                    "name": "Routing Access Mediation",
+                    "similarity_score": 0.276082
+                  },
+                  {
+                    "id": "D3-CQ",
+                    "name": "Content Quarantine",
+                    "similarity_score": 0.274739
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.257361
+                  },
+                  {
+                    "id": "D3-MAN",
+                    "name": "Message Authentication",
+                    "similarity_score": 0.254151
+                  },
+                  {
+                    "id": "D3-CERO",
+                    "name": "Certificate Rotation",
+                    "similarity_score": 0.253533
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.425117
+                  },
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.407432
+                  },
+                  {
+                    "id": "AML.M0020",
+                    "name": "Encryption",
+                    "similarity_score": 0.336326
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.280122
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.279413
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.268216
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.257666
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.253804
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.251148
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.248344
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ET",
+                  "name": "Encrypted Tunnels",
+                  "description": "Encrypted encapsulation of routable network traffic.",
+                  "reason": "Encrypted Tunnels directly encrypt network traffic in transit, aligning with the goal of securing data during transmission."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0003",
+                  "name": "End-to-end encryption",
+                  "description": "Implement end-to-end encryption (e.g., TLS, HTTPS) to protect the integrity and confidentiality of communications between AI systems.",
+                  "reason": "End-to-end encryption explicitly protects communications between systems, ensuring data confidentiality during transit."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0026",
+                  "name": "Secure communication channels",
+                  "description": "Communication channels between the model and the interface responsible for displaying the results should be secured using secure protocols such as SSL/TLS.",
+                  "reason": "Secure communication channels using SSL/TLS directly encrypt data in transit between models and interfaces."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.3.2",
+          "control_name": "Establish and Maintain a Data Inventory",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Data Inventory",
+              "class": "ORG",
+              "embedding_context": "Establish a Data Inventory",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.662804
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.49015
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.458754
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.445183
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.441894
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.4112
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.394953
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.357713
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.348016
+                  },
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.344813
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.500217
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.401151
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.316274
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.305023
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.260723
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.253177
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.247161
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.238378
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.233816
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.233033
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "reason": "The 'Data Inventory' technique directly addresses identifying and recording data schemas, formats, volumes, and locations, which is the core requirement of the leaf goal."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Data Inventory",
+              "class": "TECH",
+              "embedding_context": "Maintain a Data Inventory",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.66891
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.502393
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.450239
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.449522
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.441477
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.397734
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.393998
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.336432
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.313296
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.273086
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.579792
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.364895
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.299853
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.234751
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.226514
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.216814
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.21224
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.208498
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.202068
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.191645
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "reason": "The Data Inventory technique directly identifies and records data schemas, formats, volumes, and locations, which is the core requirement of the 'Maintain a Data Inventory' goal."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.3.3",
+          "control_name": "Configure Data Access Control Lists",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Configure Data Access Control Lists",
+              "class": "TECH",
+              "embedding_context": "Configure Data Access Control Lists",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.520903
+                  },
+                  {
+                    "id": "D3-OVAR",
+                    "name": "OT Variable Access Restriction",
+                    "similarity_score": 0.490295
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.449986
+                  },
+                  {
+                    "id": "D3-LFP",
+                    "name": "Local File Permissions",
+                    "similarity_score": 0.423152
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.411274
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.39858
+                  },
+                  {
+                    "id": "D3-UAP",
+                    "name": "User Account Permissions",
+                    "similarity_score": 0.393591
+                  },
+                  {
+                    "id": "D3-FAPA",
+                    "name": "File Access Pattern Analysis",
+                    "similarity_score": 0.371256
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.371058
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.370698
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.606049
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.544188
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.510888
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.453257
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.435833
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.430777
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.423263
+                  },
+                  {
+                    "id": "OWASP.M0025",
+                    "name": "Plugin Scope Control",
+                    "similarity_score": 0.398495
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.388554
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.383135
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access Modeling directly supports configuring data access control lists by capturing and recording access permissions for identities and systems."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3F-UGPH",
+                  "name": "User Group Permissions",
+                  "description": "Access control where access is determined based on attributes associated with users and the objects being accessed.",
+                  "reason": "User Group Permissions restricts access based on attributes, aligning with configuring data access control lists through role-based policies."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-LFP",
+                  "name": "Local File Permissions",
+                  "description": "Local file permissions is the systematic process of defining, implementing, and managing access control policies that dictate user permissions for accessing files on a local system through the configuration of operating system functionality.",
+                  "reason": "Local File Permissions restricts file-level access, directly contributing to configuring data access control lists for local resources."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "reason": "Data Access Control limits external data source access, directly supporting the configuration of data access control lists."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "reason": "Permissions Control enforces minimum required permissions, aligning with the principle of least privilege in configuring data access control lists."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.3.4",
+          "control_name": "Enforce Data Retention",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Enforce Data Retention",
+              "class": "TECH",
+              "embedding_context": "Enforce Data Retention",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.440244
+                  },
+                  {
+                    "id": "D3-ER",
+                    "name": "Email Removal",
+                    "similarity_score": 0.397521
+                  },
+                  {
+                    "id": "D3-OVAR",
+                    "name": "OT Variable Access Restriction",
+                    "similarity_score": 0.377806
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.364173
+                  },
+                  {
+                    "id": "D3-CQ",
+                    "name": "Content Quarantine",
+                    "similarity_score": 0.364037
+                  },
+                  {
+                    "id": "D3-DKF",
+                    "name": "Disk Formatting",
+                    "similarity_score": 0.344596
+                  },
+                  {
+                    "id": "D3-RN",
+                    "name": "Reference Nullification",
+                    "similarity_score": 0.34445
+                  },
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.33815
+                  },
+                  {
+                    "id": "D3-FEV",
+                    "name": "File Eviction",
+                    "similarity_score": 0.337878
+                  },
+                  {
+                    "id": "D3-AL",
+                    "name": "Account Locking",
+                    "similarity_score": 0.326221
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.435269
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.429681
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.411029
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.395824
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.387596
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.38344
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.367393
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.360846
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.360626
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.360285
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "reason": "Data Inventory directly supports enforcing data retention by identifying and recording data locations, ensuring comprehensive visibility for retention policy implementation."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "reason": "Regular backups ensure data is retained even if deleted, directly supporting the goal of enforcing data retention through persistent storage mechanisms."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.3.5",
+          "control_name": "Securely Dispose of Data",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Securely Dispose of Data",
+              "class": "TECH",
+              "embedding_context": "Securely Dispose of Data",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.529086
+                  },
+                  {
+                    "id": "D3-FEV",
+                    "name": "File Eviction",
+                    "similarity_score": 0.518754
+                  },
+                  {
+                    "id": "D3-ER",
+                    "name": "Email Removal",
+                    "similarity_score": 0.461475
+                  },
+                  {
+                    "id": "D3-DKF",
+                    "name": "Disk Formatting",
+                    "similarity_score": 0.431296
+                  },
+                  {
+                    "id": "D3-RN",
+                    "name": "Reference Nullification",
+                    "similarity_score": 0.428735
+                  },
+                  {
+                    "id": "D3-OE",
+                    "name": "Object Eviction",
+                    "similarity_score": 0.416235
+                  },
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.39505
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.381982
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.375116
+                  },
+                  {
+                    "id": "D3-CQ",
+                    "name": "Content Quarantine",
+                    "similarity_score": 0.370903
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.367707
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.363118
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.351755
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.35035
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.342475
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.341582
+                  },
+                  {
+                    "id": "AML.M0020",
+                    "name": "Encryption",
+                    "similarity_score": 0.315366
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.314126
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.307064
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.306148
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DKE",
+                  "name": "Disk Erasure",
+                  "description": "Disk Erasure is the process of securely deleting all data on a disk to ensure that it cannot be recovered by any means.",
+                  "reason": "Disk Erasure directly satisfies 'Securely Dispose of Data' by securely deleting all data on a disk to ensure it cannot be recovered."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.3.6",
+          "control_name": "Encrypt Data on End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Encrypt Data on End-User Devices",
+              "class": "TECH",
+              "embedding_context": "Encrypt Data on End-User Devices",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.406062
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.36616
+                  },
+                  {
+                    "id": "D3-MENCR",
+                    "name": "Message Encryption",
+                    "similarity_score": 0.299184
+                  },
+                  {
+                    "id": "D3-ET",
+                    "name": "Encrypted Tunnels",
+                    "similarity_score": 0.271044
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.270021
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.264188
+                  },
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.261704
+                  },
+                  {
+                    "id": "D3-CDP",
+                    "name": "Change Default Password",
+                    "similarity_score": 0.249341
+                  },
+                  {
+                    "id": "D3-HBWP",
+                    "name": "Hardware-based Write Protection",
+                    "similarity_score": 0.244764
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.244482
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.415257
+                  },
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.376876
+                  },
+                  {
+                    "id": "AML.M0020",
+                    "name": "Encryption",
+                    "similarity_score": 0.347745
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.303397
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.302998
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.298863
+                  },
+                  {
+                    "id": "AML.M0017",
+                    "name": "Model Distribution Methods",
+                    "similarity_score": 0.274127
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.271375
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.267099
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.266423
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DENCR",
+                  "name": "Disk Encryption",
+                  "description": "Encrypting a hard disk partition to prevent cleartext access to a file system.",
+                  "reason": "Disk Encryption directly encrypts storage media to protect data at rest on end-user devices, aligning with the goal of encrypting data stored on these devices."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.3.7",
+          "control_name": "Establish and Maintain a Data Classification Scheme",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Establish a Data Classification Scheme",
+              "class": "TECH",
+              "embedding_context": "Establish a Data Classification Scheme",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.329221
+                  },
+                  {
+                    "id": "D3-IRA",
+                    "name": "Identifier Reputation Analysis",
+                    "similarity_score": 0.328326
+                  },
+                  {
+                    "id": "D3-SRA",
+                    "name": "Sender Reputation Analysis",
+                    "similarity_score": 0.323805
+                  },
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.319803
+                  },
+                  {
+                    "id": "D3-DNRA",
+                    "name": "Domain Name Reputation Analysis",
+                    "similarity_score": 0.316569
+                  },
+                  {
+                    "id": "D3-IPRA",
+                    "name": "IP Reputation Analysis",
+                    "similarity_score": 0.301079
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.296555
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.294939
+                  },
+                  {
+                    "id": "D3-NTCD",
+                    "name": "Network Traffic Community Deviation",
+                    "similarity_score": 0.294448
+                  },
+                  {
+                    "id": "D3-PMAD",
+                    "name": "Protocol Metadata Anomaly Detection",
+                    "similarity_score": 0.293784
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.331062
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.329206
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.328861
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.323585
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.309421
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.302911
+                  },
+                  {
+                    "id": "AML.M0029",
+                    "name": "Reducing the training data",
+                    "similarity_score": 0.299522
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.29599
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.294793
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.294154
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "reason": "Data Inventory directly supports establishing a data classification scheme by identifying and recording data schemas, formats, volumes, and locations, which are foundational for categorizing data assets."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.7.2",
+              "goal_name": "Maintain a Data Classification Scheme",
+              "class": "TECH",
+              "embedding_context": "Maintain a Data Classification Scheme",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.290339
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.275832
+                  },
+                  {
+                    "id": "D3-IRA",
+                    "name": "Identifier Reputation Analysis",
+                    "similarity_score": 0.272828
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.264582
+                  },
+                  {
+                    "id": "D3-RO",
+                    "name": "Restore Object",
+                    "similarity_score": 0.26329
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.247521
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.246521
+                  },
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.241089
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.239076
+                  },
+                  {
+                    "id": "D3-DNRA",
+                    "name": "Domain Name Reputation Analysis",
+                    "similarity_score": 0.237729
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.379039
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.369871
+                  },
+                  {
+                    "id": "AML.M0029",
+                    "name": "Reducing the training data",
+                    "similarity_score": 0.338536
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.327849
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.315697
+                  },
+                  {
+                    "id": "AML.M0027",
+                    "name": "Model training on randomized or shuffled data",
+                    "similarity_score": 0.307938
+                  },
+                  {
+                    "id": "AML.M0025",
+                    "name": "Model retraining",
+                    "similarity_score": 0.303777
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.303331
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.296835
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.281813
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "reason": "Data Inventory directly supports maintaining a data classification scheme by identifying and recording data schemas, formats, volumes, and locations, which are foundational for classification."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DEM",
+                  "name": "Data Exchange Mapping",
+                  "description": "Data exchange mapping identifies and models the organization's intended design for the flows of the data types, formats, and volumes between systems at the application layer.",
+                  "reason": "Data Exchange Mapping models data flows between systems, ensuring consistency in classification across application layers and preventing misclassification during transfers."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ODM",
+                  "name": "Operational Dependency Mapping",
+                  "description": "Operational dependency mapping identifies and models the dependencies of the organization's activities on each other and on the organization's performers (people, systems, and services.)  This may include modeling the higher- and lower-level activities of an organization forming a hierarchy, or layering, of the dependencies in an organization's activities.",
+                  "reason": "Operational Dependency Mapping identifies dependencies between activities and systems, enabling alignment of data classifications with operational requirements and risk exposure."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.3.8",
+          "control_name": "Document Data Flows",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Document Data Flows",
+              "class": "ORG",
+              "embedding_context": "Document Data Flows",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.445199
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.430284
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.354204
+                  },
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.348044
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.339683
+                  },
+                  {
+                    "id": "D3-FMCV",
+                    "name": "File Metadata Consistency Validation",
+                    "similarity_score": 0.301932
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.291296
+                  },
+                  {
+                    "id": "D3-FC",
+                    "name": "File Carving",
+                    "similarity_score": 0.2909
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.287352
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.282985
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.27852
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.266615
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.252587
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.248741
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.242815
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.239943
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.236781
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.226073
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.224432
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.223837
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DEM",
+                  "name": "Data Exchange Mapping",
+                  "description": "Data exchange mapping identifies and models the organization's intended design for the flows of the data types, formats, and volumes between systems at the application layer.",
+                  "reason": "Data Exchange Mapping directly models data flows between systems at the application layer, which aligns with documenting data flows as specified in the goal."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.3.9",
+          "control_name": "Encrypt Data on Removable Media",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Encrypt Data on Removable Media",
+              "class": "TECH",
+              "embedding_context": "Encrypt Data on Removable Media",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.495642
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.477355
+                  },
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.414456
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.412651
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.388694
+                  },
+                  {
+                    "id": "D3-DKF",
+                    "name": "Disk Formatting",
+                    "similarity_score": 0.377458
+                  },
+                  {
+                    "id": "D3-MENCR",
+                    "name": "Message Encryption",
+                    "similarity_score": 0.376592
+                  },
+                  {
+                    "id": "D3-HBWP",
+                    "name": "Hardware-based Write Protection",
+                    "similarity_score": 0.375746
+                  },
+                  {
+                    "id": "D3-LFP",
+                    "name": "Local File Permissions",
+                    "similarity_score": 0.330784
+                  },
+                  {
+                    "id": "D3-DKP",
+                    "name": "Disk Partitioning",
+                    "similarity_score": 0.321389
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.324845
+                  },
+                  {
+                    "id": "AML.M0020",
+                    "name": "Encryption",
+                    "similarity_score": 0.285999
+                  },
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.254
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.235189
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.218259
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.216446
+                  },
+                  {
+                    "id": "AML.M0022",
+                    "name": "Model Obfuscation",
+                    "similarity_score": 0.192679
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.191038
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.167115
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.15769
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FE",
+                  "name": "File Encryption",
+                  "description": "Encrypting a file using a cryptographic key.",
+                  "reason": "File Encryption directly encrypts data stored on removable media by encrypting individual files, aligning with the goal of protecting data on such devices."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-IOPR",
+                  "name": "IO Port Restriction",
+                  "description": "Limiting access to computer input/output (IO) ports to restrict unauthorized devices.",
+                  "reason": "IO Port Restriction limits access to removable media devices, indirectly supporting encryption by restricting unauthorized physical access to storage media."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "CIS.3.11",
+          "control_name": "Encrypt Sensitive Data at Rest",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Encrypt Sensitive Data at Rest",
+              "class": "TECH",
+              "embedding_context": "Encrypt Sensitive Data at Rest",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.388726
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.366425
+                  },
+                  {
+                    "id": "D3-MENCR",
+                    "name": "Message Encryption",
+                    "similarity_score": 0.341898
+                  },
+                  {
+                    "id": "D3-ET",
+                    "name": "Encrypted Tunnels",
+                    "similarity_score": 0.294358
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.281503
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.272811
+                  },
+                  {
+                    "id": "D3-HBWP",
+                    "name": "Hardware-based Write Protection",
+                    "similarity_score": 0.258913
+                  },
+                  {
+                    "id": "D3-CERO",
+                    "name": "Certificate Rotation",
+                    "similarity_score": 0.256852
+                  },
+                  {
+                    "id": "D3-CRO",
+                    "name": "Credential Rotation",
+                    "similarity_score": 0.24998
+                  },
+                  {
+                    "id": "D3-EPL",
+                    "name": "Physical Locking",
+                    "similarity_score": 0.227428
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.450499
+                  },
+                  {
+                    "id": "AML.M0020",
+                    "name": "Encryption",
+                    "similarity_score": 0.376896
+                  },
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.368824
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.329583
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.294716
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.269904
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.252674
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.242003
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.233951
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.23188
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DENCR",
+                  "name": "Disk Encryption",
+                  "description": "Encrypting a hard disk partition to prevent cleartext access to a file system.",
+                  "reason": "Disk Encryption directly encrypts storage media to protect data at rest, aligning with the goal of preventing cleartext access to stored data."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "CIS.3.12",
+          "control_name": "Segment Data Processing and Storage Based on Sensitivity",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Segment Data Processing and Storage Based on Sensitivity",
+              "class": "TECH",
+              "embedding_context": "Segment Data Processing and Storage Based on Sensitivity",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.220613
+                  },
+                  {
+                    "id": "D3-DKP",
+                    "name": "Disk Partitioning",
+                    "similarity_score": 0.215657
+                  },
+                  {
+                    "id": "D3-SAOR",
+                    "name": "Segment Address Offset Randomization",
+                    "similarity_score": 0.207722
+                  },
+                  {
+                    "id": "D3-MBT",
+                    "name": "Memory Boundary Tracking",
+                    "similarity_score": 0.198114
+                  },
+                  {
+                    "id": "D3-MBSV",
+                    "name": "Memory Block Start Validation",
+                    "similarity_score": 0.194658
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.191459
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.179724
+                  },
+                  {
+                    "id": "D3-FC",
+                    "name": "File Carving",
+                    "similarity_score": 0.179439
+                  },
+                  {
+                    "id": "D3-FA",
+                    "name": "File Analysis",
+                    "similarity_score": 0.178809
+                  },
+                  {
+                    "id": "D3-IDA",
+                    "name": "Input Device Analysis",
+                    "similarity_score": 0.174478
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0009",
+                    "name": "Use Multi-Modal Sensors",
+                    "similarity_score": 0.258174
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.255816
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.237916
+                  },
+                  {
+                    "id": "AML.M0029",
+                    "name": "Reducing the training data",
+                    "similarity_score": 0.226127
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Hardware fault-tolerant architectures",
+                    "similarity_score": 0.209151
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.203951
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.202034
+                  },
+                  {
+                    "id": "AML.M0033",
+                    "name": "Malicious Logic Detection in hardware",
+                    "similarity_score": 0.201073
+                  },
+                  {
+                    "id": "AML.M0028",
+                    "name": "Regularization",
+                    "similarity_score": 0.198763
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.198592
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DKP",
+                  "name": "Disk Partitioning",
+                  "description": "Disk Partitioning is the process of dividing a disk into multiple distinct sections, known as partitions.",
+                  "reason": "Disk Partitioning directly supports segmenting data storage into distinct sections, enabling separation of data based on sensitivity levels."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.12",
+          "control_id": "CIS.3.13",
+          "control_name": "Deploy a Data Loss Prevention Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.12.1",
+              "goal_name": "Deploy a Data Loss Prevention Solution",
+              "class": "TECH",
+              "embedding_context": "Deploy a Data Loss Prevention Solution",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.49032
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.482697
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.474487
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.462092
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.448101
+                  },
+                  {
+                    "id": "D3-HBWP",
+                    "name": "Hardware-based Write Protection",
+                    "similarity_score": 0.442454
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.440163
+                  },
+                  {
+                    "id": "D3-RDI",
+                    "name": "Restore Disk Image",
+                    "similarity_score": 0.432911
+                  },
+                  {
+                    "id": "D3-FIM",
+                    "name": "File Integrity Monitoring",
+                    "similarity_score": 0.430131
+                  },
+                  {
+                    "id": "D3-RD",
+                    "name": "Restore Database",
+                    "similarity_score": 0.42282
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.497329
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.479179
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.448527
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.434269
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.420688
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.404472
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.391714
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.388744
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.388558
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.383097
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FE",
+                  "name": "File Encryption",
+                  "description": "Encrypting a file using a cryptographic key.",
+                  "reason": "File Encryption directly prevents unauthorized access to sensitive data by encrypting individual files, a core component of Data Loss Prevention."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DENCR",
+                  "name": "Disk Encryption",
+                  "description": "Encrypting a hard disk partition to prevent cleartext access to a file system.",
+                  "reason": "Disk Encryption protects all data stored on secondary storage devices, ensuring data at rest cannot be accessed without the encryption key, aligning with DLP objectives."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0012",
+                  "name": "Encrypt Sensitive Information",
+                  "description": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "reason": "Encrypting sensitive information explicitly safeguards against unauthorized access or exfiltration of critical data, directly supporting DLP deployment."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.13",
+          "control_id": "CIS.3.14",
+          "control_name": "Log Sensitive Data Access",
+          "subgoals": [
+            {
+              "goal_id": "G1.13.1",
+              "goal_name": "Log Sensitive Data Access",
+              "class": "TECH",
+              "embedding_context": "Log Sensitive Data Access",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.418164
+                  },
+                  {
+                    "id": "D3-OVAR",
+                    "name": "OT Variable Access Restriction",
+                    "similarity_score": 0.337551
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.324863
+                  },
+                  {
+                    "id": "D3-LFP",
+                    "name": "Local File Permissions",
+                    "similarity_score": 0.321599
+                  },
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.317061
+                  },
+                  {
+                    "id": "D3-LFAM",
+                    "name": "Local File Access Mediation",
+                    "similarity_score": 0.30801
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.302712
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.299595
+                  },
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.296626
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.284949
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.486996
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.422038
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.410693
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.393922
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.379684
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.36622
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.3597
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.353644
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.331268
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.320263
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "reason": "Directly monitors access logs, which is essential for logging sensitive data access events."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

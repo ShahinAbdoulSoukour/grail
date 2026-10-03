@@ -1,0 +1,156 @@
+{
+  "goal_id": "G0",
+  "clause_id": "SI",
+  "clause_name": "Maintain System and Information Integrity",
+  "goal_name": "Maintain system and information integrity",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure the integrity, security, and timely detection of system threats.",
+      "goal_name": "Ensure the integrity, security, and timely detection of system threats",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "SI-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate system and information integrity controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate system and information integrity controls",
+              "class": "ORG",
+              "actions": [
+                {
+                  "id": "AML.M0032",
+                  "label": "Utilize integrity controls in hardware",
+                  "phases": [
+                    "HardwareSecurityEngineering"
+                  ],
+                  "definition": "Utilize tamper-evident packaging, secure shipping protocols, and block chain-based tracking systems to ensure the integrity of hardware and software during distribution, preventing unauthorized access or modifications.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate system and information integrity controls",
+              "class": "ORG",
+              "actions": [
+                {
+                  "id": "AML.M0032",
+                  "label": "Utilize integrity controls in hardware",
+                  "phases": [
+                    "HardwareSecurityEngineering"
+                  ],
+                  "definition": "Utilize tamper-evident packaging, secure shipping protocols, and block chain-based tracking systems to ensure the integrity of hardware and software during distribution, preventing unauthorized access or modifications.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate system and information integrity controls",
+              "class": "ORG",
+              "actions": [
+                {
+                  "id": "AML.M0032",
+                  "label": "Utilize integrity controls in hardware",
+                  "phases": [
+                    "HardwareSecurityEngineering"
+                  ],
+                  "definition": "Utilize tamper-evident packaging, secure shipping protocols, and block chain-based tracking systems to ensure the integrity of hardware and software during distribution, preventing unauthorized access or modifications.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "SI-2",
+          "control_name": "Identify, report, and correct system flaws in a timely manner.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Identify system flaws in a timely manner",
+              "class": "TECH",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Report system flaws in a timely manner",
+              "class": "ORG",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Correct system flaws in a timely manner",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "SI-3",
+          "control_name": "Implement malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Implement malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code",
+              "class": "TECH",
+              "attack": "CAPEC.A0004",
+              "actions": [
+                {
+                  "id": "AML.M0013",
+                  "label": "Code Signing",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Enforce binary and application integrity with digital signature verification to prevent untrusted code from executing. Adversaries can embed malicious code in ML software, models and Library. Enforcement of code signing can prevent the compromise of the machine learning supply chain and prevent execution of malicious code.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0031",
+                  "label": "Implement Security Control during hardware manufacturing",
+                  "phases": [
+                    "HardwareSecurityEngineering"
+                  ],
+                  "definition": "Implement strict security controls and auditing processes during the manufacturing phase, including secure supply chain practices and hardware verification methods, to prevent unauthorized modifications to hardware components or firmware.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0033",
+                  "label": "Malicious Logic Detection in hardware",
+                  "phases": [
+                    "HardwareSecurityEngineering"
+                  ],
+                  "definition": "Implement comprehensive hardware and firmware security validation processes, including regular integrity checks and the use of cryptographic signing, to detect and prevent the insertion of malicious logic.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "SI-4",
+          "control_name": "Monitor the system to detect attacks and indicators of potential attacks.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Monitor the system to detect attacks and indicators of potential attacks",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

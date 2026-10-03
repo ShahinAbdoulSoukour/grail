@@ -1,0 +1,236 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.1",
+  "clause_name": "Inventory and Control of Enterprise Assets",
+  "goal_name": "Ensure inventory and control of enterprise assets",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Actively manage (inventory, track, and correct) all enterprise assets (end-user devices, including portable and mobile; network devices; non-computing/Internet of Things (IoT) devices; and servers) connected to the infrastructure physically, virtually, remotely, and those within cloud environments, to accurately know the totality of assets that need to be monitored and protected within the enterprise. This will also support identifying unauthorized and unmanaged assets to remove or remediate.",
+      "goal_name": "Actively manage all enterprise assets connected to the infrastructure physically, virtually, remotely, and those within cloud environments, to accurately know the totality of assets that need to be monitored and protected within the enterprise",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.1.1",
+          "control_name": "Establish and Maintain Detailed Enterprise Asset Inventory",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish Detailed Enterprise Asset Inventory",
+              "class": "ORG",
+              "embedding_context": "Establish Detailed Enterprise Asset Inventory",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.543487
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.53755
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "similarity_score": 0.543487
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "similarity_score": 0.464275
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.462012
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NNI",
+                  "name": "Network Node Inventory",
+                  "description": "Network node inventorying identifies and records all the network nodes (hosts, routers, switches, firewalls, etc.) in the organization's architecture.",
+                  "similarity_score": 0.454855
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.53755
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain Detailed Enterprise Asset Inventory",
+              "class": "ORG",
+              "embedding_context": "Maintain Detailed Enterprise Asset Inventory",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.533836
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.570972
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "similarity_score": 0.533836
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "similarity_score": 0.453449
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.570972
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.1.2",
+          "control_name": "Address Unauthorized Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Address Unauthorized Assets",
+              "class": "PHYS",
+              "embedding_context": "Address Unauthorized Assets",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-LFP",
+                "name": "Local File Permissions",
+                "similarity_score": 0.441773
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0027",
+                "name": "Permissions Control",
+                "similarity_score": 0.338806
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.1.3",
+          "control_name": "Utilize an Active Discovery Tool",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Utilize an Active Discovery Tool",
+              "class": "TECH",
+              "embedding_context": "Utilize an Active Discovery Tool",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-JFAPA",
+                "name": "Job Function Access Pattern Analysis",
+                "similarity_score": 0.342918
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.300435
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.1.4",
+          "control_name": "Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory",
+              "class": "TECH",
+              "embedding_context": "Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NNI",
+                "name": "Network Node Inventory",
+                "similarity_score": 0.464139
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.42793
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NNI",
+                  "name": "Network Node Inventory",
+                  "description": "Network node inventorying identifies and records all the network nodes (hosts, routers, switches, firewalls, etc.) in the organization's architecture.",
+                  "similarity_score": 0.464139
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.1.5",
+          "control_name": "Use a Passive Asset Discovery Tool",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Use a Passive Asset Discovery Tool",
+              "class": "TECH",
+              "embedding_context": "Use a Passive Asset Discovery Tool",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CIA",
+                "name": "Container Image Analysis",
+                "similarity_score": 0.440885
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0024",
+                "name": "Monitoring and auditing",
+                "similarity_score": 0.253405
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

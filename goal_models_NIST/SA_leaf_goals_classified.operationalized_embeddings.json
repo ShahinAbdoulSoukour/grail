@@ -1,0 +1,353 @@
+{
+  "goal_id": "G0",
+  "clause_id": "SA",
+  "clause_name": "Acquire Secure Systems and Services",
+  "goal_name": "Acquire secure systems and services",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure secure and privacy-aware system and service acquisition.",
+      "goal_name": "Ensure secure and privacy-aware system and service acquisition",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "SA-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate system and services acquisition controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate system and services acquisition controls",
+              "class": "ORG",
+              "embedding_context": "Develop policy and procedures to facilitate system and services acquisition controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSM",
+                "name": "System Mapping",
+                "similarity_score": 0.367646
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.331702
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate system and services acquisition controls",
+              "class": "ORG",
+              "embedding_context": "Document policy and procedures to facilitate system and services acquisition controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CI",
+                "name": "Configuration Inventory",
+                "similarity_score": 0.399475
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.340708
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate system and services acquisition controls",
+              "class": "ORG",
+              "embedding_context": "Disseminate policy and procedures to facilitate system and services acquisition controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.382588
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.352326
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "SA-2",
+          "control_name": "Determine, document, and allocate resources required to protect the system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Determine resources required to protect the system",
+              "class": "TECH",
+              "embedding_context": "Determine resources required to protect the system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.584644
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0014",
+                "name": "Resource Monitoring",
+                "similarity_score": 0.553749
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.584644
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "similarity_score": 0.496643
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OSM",
+                  "name": "Operating System Monitoring",
+                  "description": "The operating system software, for D3FEND's purposes, includes the kernel and its process management functions, hardware drivers, initialization or boot logic. It also includes and other key system daemons and their configuration. The monitoring or analysis of these components for unauthorized activity constitute **Operating System Monitoring**.",
+                  "similarity_score": 0.483618
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.473576
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NNI",
+                  "name": "Network Node Inventory",
+                  "description": "Network node inventorying identifies and records all the network nodes (hosts, routers, switches, firewalls, etc.) in the organization's architecture.",
+                  "similarity_score": 0.462244
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0014",
+                  "name": "Resource Monitoring",
+                  "description": "Continuously monitor resource usage.",
+                  "similarity_score": 0.553749
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "similarity_score": 0.537952
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0005",
+                  "name": "Resource allocation limits",
+                  "description": "Implement resource allocation limits and quotas to prevent any single process or user from consuming excessive resources.",
+                  "similarity_score": 0.5228
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.469272
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0011",
+                  "name": "Resource Caps",
+                  "description": "Limit resource use per request.",
+                  "similarity_score": 0.464915
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Document resources required to protect the system",
+              "class": "TECH",
+              "embedding_context": "Document resources required to protect the system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.471174
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0036",
+                "name": "Principle of least privilege",
+                "similarity_score": 0.442801
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.471174
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FE",
+                  "name": "File Encryption",
+                  "description": "Encrypting a file using a cryptographic key.",
+                  "similarity_score": 0.461683
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.456609
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.451126
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Allocate resources required to protect the system",
+              "class": "TECH",
+              "embedding_context": "Allocate resources required to protect the system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.544176
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "CAPEC.M0005",
+                "name": "Resource allocation limits",
+                "similarity_score": 0.677966
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.544176
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SCF",
+                  "name": "System Call Filtering",
+                  "description": "Controlling access to local computer system resources with kernel-level capabilities.",
+                  "similarity_score": 0.484264
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0005",
+                  "name": "Resource allocation limits",
+                  "description": "Implement resource allocation limits and quotas to prevent any single process or user from consuming excessive resources.",
+                  "similarity_score": 0.677966
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "similarity_score": 0.583385
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0014",
+                  "name": "Resource Monitoring",
+                  "description": "Continuously monitor resource usage.",
+                  "similarity_score": 0.581727
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0011",
+                  "name": "Resource Caps",
+                  "description": "Limit resource use per request.",
+                  "similarity_score": 0.551915
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.498962
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "SA-3",
+          "control_name": "Manage the system using a system development life cycle.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Manage the system using a system development life cycle",
+              "class": "ORG",
+              "embedding_context": "Manage the system using a system development life cycle",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSM",
+                "name": "System Mapping",
+                "similarity_score": 0.396914
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.273584
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "SA-4",
+          "control_name": "Include security and privacy requirements in acquisition contracts and related documents.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Include security and privacy requirements in acquisition contracts and related documents",
+              "class": "ORG",
+              "embedding_context": "Include security and privacy requirements in acquisition contracts and related documents",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.350521
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0002",
+                "name": "Human Approval",
+                "similarity_score": 0.417436
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

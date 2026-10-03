@@ -1,0 +1,82 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.7.3",
+  "clause_name": "Termination and change of employment",
+  "goal_name": "Manage termination and change of employment",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To protect the organization's interests as part of the process of changing or terminating employment.",
+      "goal_name": "Protect the organization's interests as part of the process of changing or terminating employment",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.7.3.1",
+          "control_name": "Information security responsibilities and duties that remain valid after termination or change of employment shall be defined, communicated to the employee or contractor and enforced.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Define information security responsibilities and duties that remain valid after termination or change of employment",
+              "class": "ORG",
+              "embedding_context": "Define information security responsibilities and duties that remain valid after termination or change of employment",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.356249
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.360714
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Communicate information security responsibilities and duties that remain valid after termination or change of employment to the employee or contractor",
+              "class": "ORG",
+              "embedding_context": "Communicate information security responsibilities and duties that remain valid after termination or change of employment to the employee or contractor",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.329106
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.340969
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Enforce information security responsibilities and duties that remain valid after termination or change of employment",
+              "class": "ORG",
+              "embedding_context": "Enforce information security responsibilities and duties that remain valid after termination or change of employment",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NRAM",
+                "name": "Network Resource Access Mediation",
+                "similarity_score": 0.344003
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.366529
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.13",
+  "clause_name": "Network Monitoring and Defense",
+  "goal_name": "Ensure network monitoring and defense",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Operate processes and tooling to establish and maintain comprehensive network monitoring and defense against security threats across the enterprise’s network infrastructure and user base.",
+      "goal_name": "Operate processes and tooling to establish and maintain comprehensive network monitoring and defense against security threats across the enterprise’s network infrastructure and user base",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.13.1",
+          "control_name": "Perform Application Layer Filtering",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Perform Application Layer Filtering",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.13.2",
+          "control_name": "Deploy a Host-Based Intrusion Detection Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Deploy a Host-Based Intrusion Detection Solution",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.13.3",
+          "control_name": "Deploy a Network Intrusion Detection Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Deploy a Network Intrusion Detection Solution",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.13.4",
+          "control_name": "Perform Traffic Filtering Between Network Segments",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Perform Traffic Filtering Between Network Segments",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.13.5",
+          "control_name": "Manage Access Control for Remote Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Manage Access Control for Remote Assets",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.13.6",
+          "control_name": "Collect Network Traffic Flow Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Collect Network Traffic Flow Logs",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.13.7",
+          "control_name": "Deploy a Host-Based Intrusion Prevention Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Deploy a Host-Based Intrusion Prevention Solution",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.13.8",
+          "control_name": "Deploy a Network Intrusion Prevention Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Deploy a Network Intrusion Prevention Solution",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.13.9",
+          "control_name": "Deploy Port-Level Access Control",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Deploy Port-Level Access Control",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "CIS.13.11",
+          "control_name": "Tune Security Event Alerting Thresholds",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Ensure tune Security Event Alerting Thresholds",
+              "class": "TECH"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

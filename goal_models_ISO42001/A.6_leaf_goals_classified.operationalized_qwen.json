@@ -1,0 +1,1214 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.6",
+  "clause_name": "AI system design and development",
+  "goal_name": "Ensure AI system design and development",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "AI systems shall be designed and developed according to defined requirements.",
+      "goal_name": "Design AI systems and Develop AI systems according to defined requirements",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.6.2",
+          "control_name": "AI systems shall be designed and developed according to defined requirements.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Design AI systems",
+              "class": "TECH",
+              "embedding_context": "Design AI systems",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.237325
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.214529
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.207544
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.199135
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.186401
+                  },
+                  {
+                    "id": "D3-BAN",
+                    "name": "Biometric Authentication",
+                    "similarity_score": 0.17845
+                  },
+                  {
+                    "id": "D3-IRA",
+                    "name": "Identifier Reputation Analysis",
+                    "similarity_score": 0.173386
+                  },
+                  {
+                    "id": "D3-SHN",
+                    "name": "Standalone Honeynet",
+                    "similarity_score": 0.168773
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.167459
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.167132
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.423265
+                  },
+                  {
+                    "id": "OWASP.M0019",
+                    "name": "Input Validation",
+                    "similarity_score": 0.40681
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.398359
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.389982
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.380495
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.379368
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.378572
+                  },
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.37324
+                  },
+                  {
+                    "id": "OWASP.M0020",
+                    "name": "Fine-Tuning Caution",
+                    "similarity_score": 0.371058
+                  },
+                  {
+                    "id": "AML.M0025",
+                    "name": "Model retraining",
+                    "similarity_score": 0.370935
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSM",
+                  "name": "System Mapping",
+                  "description": "System mapping encompasses the techniques to identify the organization's systems, how they are configured and decomposed into subsystems and components, how they are dependent on one another, and where they are physically located.",
+                  "reason": "System mapping helps identify and decompose system components during design, ensuring structured and secure architecture."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0019",
+                  "name": "Input Validation",
+                  "description": "Filter malicious inputs to avoid model poisoning.",
+                  "reason": "Input validation mitigates model poisoning risks during AI system design by filtering malicious inputs."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Use-case specific training ensures AI models are tailored to secure and accurate operational requirements."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "reason": "Advanced verification mechanisms prevent AI systems from using spoofed data, ensuring decision integrity."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "System vulnerability assessment identifies design flaws and risks in the AI system's architecture."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Develop AI systems according to defined requirements",
+              "class": "ORG",
+              "embedding_context": "Develop AI systems according to defined requirements",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.23597
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.220732
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.208005
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.207136
+                  },
+                  {
+                    "id": "D3-SYSDM",
+                    "name": "System Dependency Mapping",
+                    "similarity_score": 0.200887
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.199038
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.19107
+                  },
+                  {
+                    "id": "D3-DLV",
+                    "name": "Domain Logic Validation",
+                    "similarity_score": 0.173948
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.169959
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.165398
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.417422
+                  },
+                  {
+                    "id": "OWASP.M0019",
+                    "name": "Input Validation",
+                    "similarity_score": 0.386996
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.378141
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.378121
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.374155
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.367738
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.361479
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.348781
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.347214
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.346991
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DLV",
+                  "name": "Domain Logic Validation",
+                  "description": "Validation of variable state in the context of the domain application.",
+                  "reason": "Validates domain logic to ensure AI systems adhere to defined functional and operational requirements."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "reason": "Validates ML models for backdoor triggers and adversarial bias, ensuring they meet defined performance and security requirements."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PCSV",
+                  "name": "Process Code Segment Verification",
+                  "description": "Comparing the \"text\" or \"code\" memory segments to a source of truth.",
+                  "reason": "Verifies process code segments against a source of truth, ensuring implementation aligns with defined system specifications."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "reason": "Ensures data legitimacy throughout training stages, preventing model poisoning and ensuring training data compliance with requirements."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.6.3",
+          "control_name": "AI systems shall be verified and validated before use.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Verify AI systems",
+              "class": "TECH",
+              "embedding_context": "Verify AI systems",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.325543
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.295304
+                  },
+                  {
+                    "id": "D3-SFV",
+                    "name": "System Firmware Verification",
+                    "similarity_score": 0.283386
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.27603
+                  },
+                  {
+                    "id": "D3-DLV",
+                    "name": "Domain Logic Validation",
+                    "similarity_score": 0.270107
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.267025
+                  },
+                  {
+                    "id": "D3-SBV",
+                    "name": "Service Binary Verification",
+                    "similarity_score": 0.266834
+                  },
+                  {
+                    "id": "D3-FV",
+                    "name": "Firmware Verification",
+                    "similarity_score": 0.245925
+                  },
+                  {
+                    "id": "D3-BAN",
+                    "name": "Biometric Authentication",
+                    "similarity_score": 0.245129
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.225282
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.585086
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.582302
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.572527
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.552379
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.515092
+                  },
+                  {
+                    "id": "OWASP.M0019",
+                    "name": "Input Validation",
+                    "similarity_score": 0.506542
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.469145
+                  },
+                  {
+                    "id": "AML.M0013",
+                    "name": "Code Signing",
+                    "similarity_score": 0.455816
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.450318
+                  },
+                  {
+                    "id": "OWASP.M0031",
+                    "name": "Cross-Check",
+                    "similarity_score": 0.445531
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0014",
+                  "name": "Verify ML Artifacts",
+                  "description": "Verify the cryptographic checksum of all machine learning artifacts to verify that the file or repositiory was not modified by an attacker.",
+                  "reason": "Verifies ML artifacts' cryptographic checksums, ensuring AI system components have not been tampered with."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "reason": "Validates ML models for backdoor triggers and adversarial bias, ensuring they operate as intended."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PCSV",
+                  "name": "Process Code Segment Verification",
+                  "description": "Comparing the \"text\" or \"code\" memory segments to a source of truth.",
+                  "reason": "Verifies process code segments against a source of truth, ensuring AI system code integrity."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "reason": "Deploys advanced content verification mechanisms to prevent AI systems from using spoofed data."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0013",
+                  "name": "Code Signing",
+                  "description": "Enforce binary and application integrity with digital signature verification to prevent untrusted code from executing. Adversaries can embed malicious code in ML software, models and Library. Enforcement of code signing can prevent the compromise of the machine learning supply chain and prevent execution of malicious code.",
+                  "reason": "Enforces code signing for binaries, preventing untrusted code execution in AI systems."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Validate AI systems before use",
+              "class": "TECH",
+              "embedding_context": "Validate AI systems before use",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.352046
+                  },
+                  {
+                    "id": "D3-DLV",
+                    "name": "Domain Logic Validation",
+                    "similarity_score": 0.327333
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.304886
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.298495
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.282292
+                  },
+                  {
+                    "id": "D3-BAN",
+                    "name": "Biometric Authentication",
+                    "similarity_score": 0.278196
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.274479
+                  },
+                  {
+                    "id": "D3-IRV",
+                    "name": "Integer Range Validation",
+                    "similarity_score": 0.252945
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.249802
+                  },
+                  {
+                    "id": "D3-DQSA",
+                    "name": "Database Query String Analysis",
+                    "similarity_score": 0.243068
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0019",
+                    "name": "Input Validation",
+                    "similarity_score": 0.593033
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.591606
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.574849
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.525939
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.521911
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.505421
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.500824
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.499656
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.496873
+                  },
+                  {
+                    "id": "AML.M0013",
+                    "name": "Code Signing",
+                    "similarity_score": 0.489876
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "reason": "Validates ML models for backdoor triggers and adversarial bias, directly addressing AI system validation."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0019",
+                  "name": "Input Validation",
+                  "description": "Filter malicious inputs to avoid model poisoning.",
+                  "reason": "Filters malicious inputs to prevent model poisoning, ensuring data legitimacy for AI systems."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0030",
+                  "name": "Verify the authenticity of feedback data",
+                  "description": "Use techniques such as digital signatures and checksums to verify that the feedback data received by the system is genuine, and reject any data that does not match the expected format.",
+                  "reason": "Verifies feedback data authenticity using digital signatures, preventing spoofed data from affecting AI systems."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0014",
+                  "name": "Verify ML Artifacts",
+                  "description": "Verify the cryptographic checksum of all machine learning artifacts to verify that the file or repositiory was not modified by an attacker.",
+                  "reason": "Checks cryptographic checksums of ML artifacts to ensure they haven't been tampered with."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PCSV",
+                  "name": "Process Code Segment Verification",
+                  "description": "Comparing the \"text\" or \"code\" memory segments to a source of truth.",
+                  "reason": "Verifies process code segments to ensure AI system code integrity and prevent unauthorized modifications."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.6.4",
+          "control_name": "Deployment of AI systems shall be controlled.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Control deployment of AI systems",
+              "class": "TECH",
+              "embedding_context": "Control deployment of AI systems",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.298432
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.294904
+                  },
+                  {
+                    "id": "D3-SYSDM",
+                    "name": "System Dependency Mapping",
+                    "similarity_score": 0.290083
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.287097
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.281977
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.279921
+                  },
+                  {
+                    "id": "D3-IHN",
+                    "name": "Integrated Honeynet",
+                    "similarity_score": 0.273875
+                  },
+                  {
+                    "id": "D3-SICA",
+                    "name": "System Init Config Analysis",
+                    "similarity_score": 0.273636
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.26993
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.268782
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.566136
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                    "similarity_score": 0.477391
+                  },
+                  {
+                    "id": "AML.M0017",
+                    "name": "Model Distribution Methods",
+                    "similarity_score": 0.45975
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.457173
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.456952
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.454265
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.451673
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.450709
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.448836
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.447538
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0035",
+                  "name": "Secure Deployment of Models",
+                  "description": "Secure deployment with approval workflows.",
+                  "reason": "Secure deployment with approval workflows directly supports controlling AI system deployment by enforcing structured validation processes."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "reason": "Human-in-the-Loop requires human approval for actions, providing direct control over AI deployment decisions and mitigating unauthorized deployments."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.6.5",
+          "control_name": "AI systems shall be operated and monitored.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Operate AI systems",
+              "class": "TECH",
+              "embedding_context": "Operate AI systems",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.251681
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.239938
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.229252
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.221784
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.220739
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.217929
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.215046
+                  },
+                  {
+                    "id": "D3-SEA",
+                    "name": "Script Execution Analysis",
+                    "similarity_score": 0.2036
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.202703
+                  },
+                  {
+                    "id": "D3-OMM",
+                    "name": "Operating Mode Monitoring",
+                    "similarity_score": 0.19997
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.440642
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.438188
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.426144
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.413304
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.410237
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Hardware fault-tolerant architectures",
+                    "similarity_score": 0.405837
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.404846
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.401765
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.401381
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                    "similarity_score": 0.401136
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "reason": "Monitors operational processes and events to ensure AI systems function within expected parameters and detect anomalies."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "Evaluates system vulnerabilities to identify and mitigate risks that could disrupt AI system operations."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "reason": "Prevents AI systems from using spoofed data by verifying content authenticity through digital signatures and trusted identities."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Creates use-case-specific models to enhance AI system reliability and security for targeted operations."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "reason": "Isolates resources to prevent denial-of-service attacks and data leakage in shared environments where AI systems operate."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Monitor AI systems",
+              "class": "TECH",
+              "embedding_context": "Monitor AI systems",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.423821
+                  },
+                  {
+                    "id": "D3-APM",
+                    "name": "Application Performance Monitoring",
+                    "similarity_score": 0.355197
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.352201
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.350615
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.349938
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.341272
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.321963
+                  },
+                  {
+                    "id": "D3-SICA",
+                    "name": "System Init Config Analysis",
+                    "similarity_score": 0.3173
+                  },
+                  {
+                    "id": "D3-PA",
+                    "name": "Process Analysis",
+                    "similarity_score": 0.312645
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.311092
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.536165
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.49944
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.485559
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.455482
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.454832
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.447082
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.445897
+                  },
+                  {
+                    "id": "OWASP.M0019",
+                    "name": "Input Validation",
+                    "similarity_score": 0.444307
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.43208
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                    "similarity_score": 0.429037
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APM",
+                  "name": "Application Performance Monitoring",
+                  "description": "Monitoring the count and duration of the application or program cycle.",
+                  "reason": "Application Performance Monitoring directly supports monitoring AI systems by tracking application cycle durations, which is critical for detecting anomalies in AI workloads."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0024",
+                  "name": "Monitoring and auditing",
+                  "description": "Regularly monitoring and auditing the model’s use can help detect and prevent theft by detecting when an attacker is attempting to access or steal the model.",
+                  "reason": "Monitoring and auditing AI models aligns with the goal of detecting unauthorized access or theft attempts in AI systems."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0014",
+                  "name": "Resource Monitoring",
+                  "description": "Continuously monitor resource usage.",
+                  "reason": "Resource monitoring ensures AI systems' computational resources are tracked for potential misuse or anomalies."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0017",
+                  "name": "Anomaly detection",
+                  "description": "Sign models and code, apply anomaly detection, and monitor.",
+                  "reason": "Anomaly detection in AI systems helps identify deviations from normal behavior, which is essential for monitoring security and performance."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AEM",
+                  "name": "Application Exception Monitoring",
+                  "description": "Monitoring the failures of system counters and timers.",
+                  "reason": "Application Exception Monitoring directly supports detecting failures or attacks on AI systems by tracking exceptions and errors."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "A.6.6",
+          "control_name": "AI systems shall be maintained over their lifecycle.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Maintain AI systems over their lifecycle",
+              "class": "TECH",
+              "embedding_context": "Maintain AI systems over their lifecycle",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.266804
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.249775
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.240691
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.233583
+                  },
+                  {
+                    "id": "D3-SICA",
+                    "name": "System Init Config Analysis",
+                    "similarity_score": 0.228447
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.221559
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.219745
+                  },
+                  {
+                    "id": "D3-PLA",
+                    "name": "Process Lineage Analysis",
+                    "similarity_score": 0.21665
+                  },
+                  {
+                    "id": "D3-DCE",
+                    "name": "Dead Code Elimination",
+                    "similarity_score": 0.210519
+                  },
+                  {
+                    "id": "D3-USICA",
+                    "name": "User Session Init Config Analysis",
+                    "similarity_score": 0.208571
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.517365
+                  },
+                  {
+                    "id": "AML.M0025",
+                    "name": "Model retraining",
+                    "similarity_score": 0.398865
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.374381
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.373924
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.373846
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.373363
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.365933
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.36584
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.359562
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.352765
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "System Vulnerability Assessment directly supports maintaining AI systems by identifying vulnerabilities in their design and components throughout their lifecycle."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SU",
+                  "name": "Software Update",
+                  "description": "Replacing old software on a computer system component.",
+                  "reason": "Software Update ensures AI systems remain secure and functional by replacing outdated software components over their operational lifecycle."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "reason": "Configuration Inventory maintains AI systems by tracking hardware/software configurations, enabling consistent management and rapid remediation of changes."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "reason": "Regular backups directly support lifecycle maintenance by ensuring recoverability of AI models and data from theft or corruption."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0024",
+                  "name": "Monitoring and auditing",
+                  "description": "Regularly monitoring and auditing the model’s use can help detect and prevent theft by detecting when an attacker is attempting to access or steal the model.",
+                  "reason": "Monitoring and auditing detect unauthorized access or theft attempts, ensuring continuous security during the AI system's operational lifecycle."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

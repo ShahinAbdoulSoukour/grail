@@ -1,0 +1,225 @@
+{
+  "goal_id": "G0",
+  "clause_id": "SR",
+  "clause_name": "Manage Supply Chain Risks",
+  "goal_name": "Manage supply chain risks",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure effective management of supply chain risks.",
+      "goal_name": "Ensure effective management of supply chain risks",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "SR-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate supply chain risk management controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate supply chain risk management controls",
+              "class": "ORG",
+              "attack": "AML.A0011",
+              "actions": [
+                {
+                  "id": "OWASP.M0007",
+                  "label": "Supply Chain Verification",
+                  "phases": [
+                    "Business&DataUnderstanding"
+                  ],
+                  "definition": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate supply chain risk management controls",
+              "class": "ORG",
+              "attack": "AML.A0011",
+              "actions": [
+                {
+                  "id": "OWASP.M0007",
+                  "label": "Supply Chain Verification",
+                  "phases": [
+                    "Business&DataUnderstanding"
+                  ],
+                  "definition": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate supply chain risk management controls",
+              "class": "ORG",
+              "attack": "AML.A0011",
+              "actions": [
+                {
+                  "id": "OWASP.M0007",
+                  "label": "Supply Chain Verification",
+                  "phases": [
+                    "Business&DataUnderstanding"
+                  ],
+                  "definition": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0001",
+                  "label": "Limit Release of Public Information",
+                  "phases": [
+                    "AccessManagement"
+                  ],
+                  "definition": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0016",
+                  "label": "Vulnerability Scanning",
+                  "phases": [
+                    "ModelEvaluation",
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "SR-2",
+          "control_name": "Develop a supply chain risk management plan for the system, system component, or service.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Develop a supply chain risk management plan for the system, system component, or service",
+              "class": "ORG",
+              "attack": "AML.A0011",
+              "actions": [
+                {
+                  "id": "OWASP.M0007",
+                  "label": "Supply Chain Verification",
+                  "phases": [
+                    "Business&DataUnderstanding"
+                  ],
+                  "definition": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "SR-3",
+          "control_name": "Establish, document, and implement controls and processes for managing supply chain risks.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Establish controls and processes for managing supply chain risks",
+              "class": "ORG",
+              "attack": "AML.A0011",
+              "actions": [
+                {
+                  "id": "OWASP.M0007",
+                  "label": "Supply Chain Verification",
+                  "phases": [
+                    "Business&DataUnderstanding"
+                  ],
+                  "definition": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0001",
+                  "label": "Limit Release of Public Information",
+                  "phases": [
+                    "AccessManagement"
+                  ],
+                  "definition": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0016",
+                  "label": "Vulnerability Scanning",
+                  "phases": [
+                    "ModelEvaluation",
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Document controls and processes for managing supply chain risks",
+              "class": "ORG",
+              "attack": "AML.A0011",
+              "actions": [
+                {
+                  "id": "OWASP.M0007",
+                  "label": "Supply Chain Verification",
+                  "phases": [
+                    "Business&DataUnderstanding"
+                  ],
+                  "definition": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.3.3",
+              "goal_name": "Implement controls and processes for managing supply chain risks",
+              "class": "ORG",
+              "attack": "AML.A0011",
+              "actions": [
+                {
+                  "id": "OWASP.M0007",
+                  "label": "Supply Chain Verification",
+                  "phases": [
+                    "Business&DataUnderstanding"
+                  ],
+                  "definition": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0001",
+                  "label": "Limit Release of Public Information",
+                  "phases": [
+                    "AccessManagement"
+                  ],
+                  "definition": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0016",
+                  "label": "Vulnerability Scanning",
+                  "phases": [
+                    "ModelEvaluation",
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

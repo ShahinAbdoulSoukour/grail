@@ -1,0 +1,1180 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.9.2",
+  "clause_name": "User access management",
+  "goal_name": "Ensure user access management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure authorized user access and to prevent unauthorized access to systems and services.",
+      "goal_name": "Ensure authorized user access and prevent unauthorized access to systems and services",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.9.2.1",
+          "control_name": "A formal user registration and de-registration process shall be implemented to enable assignment of access rights.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Implement a formal user registration and de-registration process to enable assignment of access rights",
+              "class": "TECH",
+              "embedding_context": "Implement a formal user registration and de-registration process to enable assignment of access rights",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.605276
+                  },
+                  {
+                    "id": "D3-AL",
+                    "name": "Account Locking",
+                    "similarity_score": 0.473677
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.46229
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.447007
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.446174
+                  },
+                  {
+                    "id": "D3-CTS",
+                    "name": "Credential Transmission Scoping",
+                    "similarity_score": 0.445919
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.444175
+                  },
+                  {
+                    "id": "D3-UAP",
+                    "name": "User Account Permissions",
+                    "similarity_score": 0.440479
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.435039
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.433658
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.508944
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.507634
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.498656
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.495953
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.45536
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.446561
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.442609
+                  },
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.439187
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.426668
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.404829
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access modeling directly supports formal user registration by capturing and recording access permissions for identities, enabling structured assignment of access rights."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "reason": "Permissions control ensures access rights are limited to the minimum required during user registration, aligning with formal process requirements."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-UAP",
+                  "name": "User Account Permissions",
+                  "description": "Restricting a user account's access to resources.",
+                  "reason": "User account permissions directly restrict access to resources, enabling precise assignment of access rights during registration."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.9.2.2",
+          "control_name": "A formal user access provisioning process shall be implemented to assign or revoke access rights for all user types to all systems and services.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Implement a formal user access provisioning process to assign or revoke access rights for all user types to all systems and services",
+              "class": "TECH",
+              "embedding_context": "Implement a formal user access provisioning process to assign or revoke access rights for all user types to all systems and services",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.584223
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.462098
+                  },
+                  {
+                    "id": "D3-AL",
+                    "name": "Account Locking",
+                    "similarity_score": 0.46111
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.452964
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.450459
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.445712
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.445091
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.442419
+                  },
+                  {
+                    "id": "D3-UAP",
+                    "name": "User Account Permissions",
+                    "similarity_score": 0.425806
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.410154
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.53067
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.529684
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.506813
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.502202
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.465525
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.451496
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.449595
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.431031
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.429182
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.424808
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access Modeling directly supports creating formal access control configurations by mapping user types to systems/services, which is foundational for provisioning."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Access Mediation enforces least privilege and scoped access durations, directly enabling revocation and JIT access management for all user types."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-UAP",
+                  "name": "User Account Permissions",
+                  "description": "Restricting a user account's access to resources.",
+                  "reason": "User Account Permissions restricts access to resources, ensuring explicit permission boundaries for all user types across systems."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Principle of least privilege ensures minimal permissions are granted, aligning with formal provisioning to prevent over-privilege."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0002",
+                  "name": "Human Approval",
+                  "description": "Require user consent for privileged actions.",
+                  "reason": "Human Approval mandates manual consent for privileged actions, ensuring accountability in access assignment/revocation processes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.9.2.3",
+          "control_name": "The allocation and use of privileged access rights shall be restricted and controlled.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Restrict the allocation and use of privileged access rights",
+              "class": "TECH",
+              "embedding_context": "Restrict the allocation and use of privileged access rights",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.530449
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.528119
+                  },
+                  {
+                    "id": "D3-UAP",
+                    "name": "User Account Permissions",
+                    "similarity_score": 0.519574
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.514516
+                  },
+                  {
+                    "id": "D3-OVAR",
+                    "name": "OT Variable Access Restriction",
+                    "similarity_score": 0.510225
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.499825
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.497597
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.477705
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.467655
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.450475
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.625291
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.603233
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.602593
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.590738
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.480332
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.47955
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.479475
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.46528
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.460444
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.459598
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3F-UGPH",
+                  "name": "User Group Permissions",
+                  "description": "Access control where access is determined based on attributes associated with users and the objects being accessed.",
+                  "reason": "Restricts access based on user attributes and groups, directly limiting privileged access allocation."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-UAP",
+                  "name": "User Account Permissions",
+                  "description": "Restricting a user account's access to resources.",
+                  "reason": "Restricts user account permissions to resources, directly controlling privileged access allocation."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Enforces least privilege and scoped access durations, preventing privilege creep and misuse."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "reason": "Limits LLM access and applies role-based permissions, directly restricting privileged rights allocation."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Enforces the principle of least privilege to minimize unnecessary access rights allocation."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Control the allocation and use of privileged access rights",
+              "class": "TECH",
+              "embedding_context": "Control the allocation and use of privileged access rights",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.544729
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.521814
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.499924
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.495839
+                  },
+                  {
+                    "id": "D3-UAP",
+                    "name": "User Account Permissions",
+                    "similarity_score": 0.481245
+                  },
+                  {
+                    "id": "D3-OVAR",
+                    "name": "OT Variable Access Restriction",
+                    "similarity_score": 0.478351
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.474331
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.470851
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.467696
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.461941
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.633231
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.631885
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.602314
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.578708
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.491434
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.489613
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.474123
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.456887
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.451693
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.441203
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Access mediation enforces least privilege and JIT access, directly controlling privileged access usage as required by the goal."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "reason": "Permissions Control explicitly limits permissions to minimum required, directly addressing privileged access allocation."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-UAP",
+                  "name": "User Account Permissions",
+                  "description": "Restricting a user account's access to resources.",
+                  "reason": "User Account Permissions restricts access to resources, directly controlling privileged access allocation."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Principle of least privilege directly aligns with controlling privileged access allocation and use."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "reason": "Privilege Control applies role-based permissions, directly managing privileged access allocation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.9.2.4",
+          "control_name": "The allocation of secret authentication information shall be controlled through a formal management process.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Control the allocation of secret authentication information through a formal management process",
+              "class": "TECH",
+              "embedding_context": "Control the allocation of secret authentication information through a formal management process",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.528897
+                  },
+                  {
+                    "id": "D3-CTS",
+                    "name": "Credential Transmission Scoping",
+                    "similarity_score": 0.523529
+                  },
+                  {
+                    "id": "D3-PWA",
+                    "name": "Password Authentication",
+                    "similarity_score": 0.484291
+                  },
+                  {
+                    "id": "D3-MFA",
+                    "name": "Multi-factor Authentication",
+                    "similarity_score": 0.47251
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.467424
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.464691
+                  },
+                  {
+                    "id": "D3-TBA",
+                    "name": "Token-based Authentication",
+                    "similarity_score": 0.447458
+                  },
+                  {
+                    "id": "D3-SPP",
+                    "name": "Strong Password Policy",
+                    "similarity_score": 0.447135
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.441592
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.441234
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.540208
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.529196
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.522638
+                  },
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.505316
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.494384
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.490353
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.484269
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.478794
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.476018
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.470904
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access Modeling formalizes the management of access permissions, ensuring structured control over secret authentication information allocation."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CTS",
+                  "name": "Credential Transmission Scoping",
+                  "description": "Limiting the transmission of a credential to a scoped set of relying parties.",
+                  "reason": "Credential Transmission Scoping limits credential distribution to scoped relying parties, directly controlling secret authentication information allocation."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0029",
+                  "name": "Downstream Authorization",
+                  "description": "Implement authorization in downstream systems.",
+                  "reason": "Downstream Authorization ensures secret authentication information is managed through formal authorization processes in downstream systems."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "The Principle of Least Privilege enforces minimal access rights, aligning with formal management of secret authentication information allocation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "A.9.2.5",
+          "control_name": "Asset owners shall review users' access rights at regular intervals.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Review users' access rights at regular intervals",
+              "agent": "Asset owners",
+              "class": "TECH",
+              "embedding_context": "Review users' access rights at regular intervals",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.422459
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.390369
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.38209
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.357374
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.357063
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.353503
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.348781
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.327302
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.31284
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.303611
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.415156
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.402704
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.393667
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.391424
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.387641
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.364512
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.356241
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.350644
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.331987
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.331952
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access Modeling captures and records access permissions, enabling systematic review of users' access rights to ensure they remain appropriate and up-to-date."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Access Mediation enforces least privilege and scoped durations, directly supporting periodic reviews to prevent privilege creep and ensure access rights align with current needs."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "A.9.2.6",
+          "control_name": "The access rights of all employees and external party users to information and information processing facilities shall be removed upon termination of their employment, contract or agreement, or adjusted upon change.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Remove the access rights of all employees and external party users to information and information processing facilities upon termination of their employment, contract or agreement",
+              "class": "PHYS",
+              "embedding_context": "Remove the access rights of all employees and external party users to information and information processing facilities upon termination of their employment, contract or agreement",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.485543
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.470501
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.452614
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.44848
+                  },
+                  {
+                    "id": "D3-AL",
+                    "name": "Account Locking",
+                    "similarity_score": 0.398161
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.389888
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.381984
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.358335
+                  },
+                  {
+                    "id": "D3-CR",
+                    "name": "Credential Revocation",
+                    "similarity_score": 0.345107
+                  },
+                  {
+                    "id": "D3-OVAR",
+                    "name": "OT Variable Access Restriction",
+                    "similarity_score": 0.340166
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.44976
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.446793
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.440535
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.398885
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.38594
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.374724
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.368081
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.36131
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.353011
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.340014
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Denial decisions in access mediation can terminate existing access rights for terminated users, ensuring compliance with the goal."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CR",
+                  "name": "Credential Revocation",
+                  "description": "Deleting a set of credentials permanently to prevent them from being used to authenticate.",
+                  "reason": "Credential revocation permanently deletes credentials, preventing unauthorized access post-termination."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AL",
+                  "name": "Account Locking",
+                  "description": "The process of temporarily disabling user accounts on a system or domain.",
+                  "reason": "Account locking disables user accounts, immediately removing access rights for terminated employees or external users."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.6.2",
+              "goal_name": "Adjust the access rights of all employees and external party users to information and information processing facilities upon change",
+              "class": "ORG",
+              "embedding_context": "Adjust the access rights of all employees and external party users to information and information processing facilities upon change",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.456955
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.42935
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.427406
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.408186
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.385911
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.372538
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.330436
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.315884
+                  },
+                  {
+                    "id": "D3-OVAR",
+                    "name": "OT Variable Access Restriction",
+                    "similarity_score": 0.314583
+                  },
+                  {
+                    "id": "D3-LFP",
+                    "name": "Local File Permissions",
+                    "similarity_score": 0.310477
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.423868
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.410869
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.402855
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.401142
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.348787
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.343181
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.339155
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.328369
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.328122
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.316544
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Access Mediation directly supports adjusting access rights by enforcing least privilege and scoped durations, ensuring dynamic adjustments to permissions upon organizational changes."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "The Principle of least privilege mitigation ensures access rights are minimized and regularly updated, aligning with the goal of adjusting permissions upon change to prevent privilege escalation."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "reason": "Permissions Control enforces minimum required access, directly supporting the adjustment of rights to match current organizational needs and reducing unnecessary exposure."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.10",
+  "clause_name": "Supplier requirements",
+  "goal_name": "Ensure supplier requirements",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Requirements for suppliers and external providers shall be defined.",
+      "goal_name": "Define requirements for suppliers and external providers",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.10.2",
+          "control_name": "Requirements for suppliers and external providers shall be defined.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Define requirements for suppliers and external providers",
+              "class": "ORG",
+              "attack": "AML.A0011",
+              "actions": [
+                {
+                  "id": "AML.M0001",
+                  "label": "Limit Release of Public Information",
+                  "phases": [
+                    "AccessManagement"
+                  ],
+                  "definition": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0016",
+                  "label": "Vulnerability Scanning",
+                  "phases": [
+                    "ModelEvaluation",
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "OWASP.M0007",
+                  "label": "Supply Chain Verification",
+                  "phases": [
+                    "Business&DataUnderstanding"
+                  ],
+                  "definition": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.10.3",
+          "control_name": "Requirements from customers and users shall be identified and addressed.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Identify requirements from customers and users",
+              "class": "ORG",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Address requirements from customers and users",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.10.4",
+          "control_name": "Third-party relationships shall be monitored and reviewed.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Monitor Third-party relationships",
+              "class": "TECH",
+              "attack": "AML.A0011",
+              "actions": [
+                {
+                  "id": "AML.M0016",
+                  "label": "Vulnerability Scanning",
+                  "phases": [
+                    "ModelEvaluation",
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Review Third-party relationships",
+              "class": "ORG",
+              "attack": "AML.A0011",
+              "actions": [
+                {
+                  "id": "AML.M0016",
+                  "label": "Vulnerability Scanning",
+                  "phases": [
+                    "ModelEvaluation",
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.10.5",
+          "control_name": "Appropriate contractual controls shall be established.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish appropriate contractual controls",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

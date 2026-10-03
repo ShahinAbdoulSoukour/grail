@@ -1,0 +1,288 @@
+{
+  "goal_id": "G0",
+  "clause_id": "PS",
+  "clause_name": "Manage Personnel Security",
+  "goal_name": "Manage personnel security",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure secure personnel selection and access authorization.",
+      "goal_name": "Ensure secure personnel selection and access authorization",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "PS-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate personnel security controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate personnel security controls",
+              "class": "ORG",
+              "embedding_context": "Develop policy and procedures to facilitate personnel security controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-PAM",
+                "name": "Physical Access Mediation",
+                "similarity_score": 0.502919
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.442285
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "similarity_score": 0.502919
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.50108
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.490431
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate personnel security controls",
+              "class": "PHYS",
+              "embedding_context": "Document policy and procedures to facilitate personnel security controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.492271
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0002",
+                "name": "Human Approval",
+                "similarity_score": 0.43547
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.492271
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "similarity_score": 0.482687
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.475746
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.467095
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate personnel security controls",
+              "class": "ORG",
+              "embedding_context": "Disseminate policy and procedures to facilitate personnel security controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.519544
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0036",
+                "name": "Principle of least privilege",
+                "similarity_score": 0.441635
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.519544
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "similarity_score": 0.487159
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.477371
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "PS-2",
+          "control_name": "Assign a risk designation to organizational positions.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Assign a risk designation to organizational positions",
+              "class": "ORG",
+              "embedding_context": "Assign a risk designation to organizational positions",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.494012
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.283871
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ORA",
+                  "name": "Operational Risk Assessment",
+                  "description": "Operational risk assessment identifies and models the vulnerabilities of, and risks to, an organization's activities individually and as a whole.",
+                  "similarity_score": 0.494012
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "PS-3",
+          "control_name": "Screen individuals prior to authorizing access to the information system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Screen individuals prior to authorizing access to the information system",
+              "class": "PHYS",
+              "embedding_context": "Screen individuals prior to authorizing access to the information system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AMED",
+                "name": "Access Mediation",
+                "similarity_score": 0.523081
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0002",
+                "name": "Human Approval",
+                "similarity_score": 0.569124
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.523081
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "similarity_score": 0.500611
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AZET",
+                  "name": "Authorization Event Thresholding",
+                  "description": "Collecting authorization events, creating a baseline user profile, and determining whether authorization events are consistent with the baseline profile.",
+                  "similarity_score": 0.489662
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.4791
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-BAN",
+                  "name": "Biometric Authentication",
+                  "description": "Using biological measures in order to authenticate a user.",
+                  "similarity_score": 0.464998
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0002",
+                  "name": "Human Approval",
+                  "description": "Require user consent for privileged actions.",
+                  "similarity_score": 0.569124
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0022",
+                  "name": "User Confirmation",
+                  "description": "Require manual authorization for sensitive actions.",
+                  "similarity_score": 0.560308
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "similarity_score": 0.560115
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0003",
+                  "name": "Segregate Content",
+                  "description": "Separate untrusted content from user prompts.",
+                  "similarity_score": 0.504237
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0029",
+                  "name": "Downstream Authorization",
+                  "description": "Implement authorization in downstream systems.",
+                  "similarity_score": 0.473599
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

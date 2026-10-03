@@ -1,0 +1,603 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.3",
+  "clause_name": "Data Protection",
+  "goal_name": "Ensure data protection",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Develop processes and technical controls to identify, classify, securely handle, retain, and dispose of data.",
+      "goal_name": "Develop processes and technical controls to identify, classify, securely handle, retain, and dispose of data",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.3.1",
+          "control_name": "Encrypt Sensitive Data in Transit",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Encrypt Sensitive Data in Transit",
+              "class": "PHYS",
+              "embedding_context": "Encrypt Sensitive Data in Transit",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-MENCR",
+                "name": "Message Encryption",
+                "similarity_score": 0.393672
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0012",
+                "name": "Encrypt Sensitive Information",
+                "similarity_score": 0.425117
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.3.2",
+          "control_name": "Establish and Maintain a Data Inventory",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Data Inventory",
+              "class": "ORG",
+              "embedding_context": "Establish a Data Inventory",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.662804
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.500216
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "similarity_score": 0.662804
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "similarity_score": 0.49015
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NNI",
+                  "name": "Network Node Inventory",
+                  "description": "Network node inventorying identifies and records all the network nodes (hosts, routers, switches, firewalls, etc.) in the organization's architecture.",
+                  "similarity_score": 0.458754
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.500216
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Data Inventory",
+              "class": "TECH",
+              "embedding_context": "Maintain a Data Inventory",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.66891
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.579792
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "similarity_score": 0.66891
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "similarity_score": 0.502393
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-HCI",
+                  "name": "Hardware Component Inventory",
+                  "description": "Hardware component inventorying identifies and records the hardware items in the organization's architecture.",
+                  "similarity_score": 0.450239
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.579792
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.3.3",
+          "control_name": "Configure Data Access Control Lists",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Configure Data Access Control Lists",
+              "class": "TECH",
+              "embedding_context": "Configure Data Access Control Lists",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.520903
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0021",
+                "name": "Data Access Control",
+                "similarity_score": 0.60605
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.520903
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OVAR",
+                  "name": "OT Variable Access Restriction",
+                  "description": "Assign read/write access controls on designated registers or data tags to prevent unauthorized writes.",
+                  "similarity_score": 0.490295
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "similarity_score": 0.60605
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "similarity_score": 0.544188
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "similarity_score": 0.510888
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0004",
+                  "name": "Restrict Number of Queries",
+                  "description": "Limit the total number and rate of queries a user can perform.",
+                  "similarity_score": 0.453257
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.3.4",
+          "control_name": "Enforce Data Retention",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Enforce Data Retention",
+              "class": "TECH",
+              "embedding_context": "Enforce Data Retention",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DKE",
+                "name": "Disk Erasure",
+                "similarity_score": 0.440244
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0021",
+                "name": "Regular backups",
+                "similarity_score": 0.435269
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.3.5",
+          "control_name": "Securely Dispose of Data",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Securely Dispose of Data",
+              "class": "TECH",
+              "embedding_context": "Securely Dispose of Data",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DKE",
+                "name": "Disk Erasure",
+                "similarity_score": 0.529087
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0012",
+                "name": "Encrypt Sensitive Information",
+                "similarity_score": 0.367707
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DKE",
+                  "name": "Disk Erasure",
+                  "description": "Disk Erasure is the process of securely deleting all data on a disk to ensure that it cannot be recovered by any means.",
+                  "similarity_score": 0.529087
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FEV",
+                  "name": "File Eviction",
+                  "description": "File eviction techniques delete files from system storage.",
+                  "similarity_score": 0.518754
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ER",
+                  "name": "Email Removal",
+                  "description": "The email removal technique deletes email files from system storage.",
+                  "similarity_score": 0.461475
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.3.6",
+          "control_name": "Encrypt Data on End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Encrypt Data on End-User Devices",
+              "class": "TECH",
+              "embedding_context": "Encrypt Data on End-User Devices",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DENCR",
+                "name": "Disk Encryption",
+                "similarity_score": 0.406062
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0012",
+                "name": "Encrypt Sensitive Information",
+                "similarity_score": 0.415257
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.3.7",
+          "control_name": "Establish and Maintain a Data Classification Scheme",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Establish a Data Classification Scheme",
+              "class": "TECH",
+              "embedding_context": "Establish a Data Classification Scheme",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.329221
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0010",
+                "name": "Input validation",
+                "similarity_score": 0.331062
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.7.2",
+              "goal_name": "Maintain a Data Classification Scheme",
+              "class": "TECH",
+              "embedding_context": "Maintain a Data Classification Scheme",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.290339
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0021",
+                "name": "Regular backups",
+                "similarity_score": 0.379039
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.3.8",
+          "control_name": "Document Data Flows",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Document Data Flows",
+              "class": "ORG",
+              "embedding_context": "Document Data Flows",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.445199
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0021",
+                "name": "Data Access Control",
+                "similarity_score": 0.27852
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.3.9",
+          "control_name": "Encrypt Data on Removable Media",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Encrypt Data on Removable Media",
+              "class": "TECH",
+              "embedding_context": "Encrypt Data on Removable Media",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DENCR",
+                "name": "Disk Encryption",
+                "similarity_score": 0.495642
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0012",
+                "name": "Encrypt Sensitive Information",
+                "similarity_score": 0.324845
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DENCR",
+                  "name": "Disk Encryption",
+                  "description": "Encrypting a hard disk partition to prevent cleartext access to a file system.",
+                  "similarity_score": 0.495642
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FE",
+                  "name": "File Encryption",
+                  "description": "Encrypting a file using a cryptographic key.",
+                  "similarity_score": 0.477355
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "CIS.3.11",
+          "control_name": "Encrypt Sensitive Data at Rest",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Encrypt Sensitive Data at Rest",
+              "class": "TECH",
+              "embedding_context": "Encrypt Sensitive Data at Rest",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DENCR",
+                "name": "Disk Encryption",
+                "similarity_score": 0.388726
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0012",
+                "name": "Encrypt Sensitive Information",
+                "similarity_score": 0.450499
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0012",
+                  "name": "Encrypt Sensitive Information",
+                  "description": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "similarity_score": 0.450499
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "CIS.3.12",
+          "control_name": "Segment Data Processing and Storage Based on Sensitivity",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Segment Data Processing and Storage Based on Sensitivity",
+              "class": "TECH",
+              "embedding_context": "Segment Data Processing and Storage Based on Sensitivity",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-PSM",
+                "name": "Proximity Sensor Monitoring",
+                "similarity_score": 0.220613
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0009",
+                "name": "Use Multi-Modal Sensors",
+                "similarity_score": 0.258174
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.12",
+          "control_id": "CIS.3.13",
+          "control_name": "Deploy a Data Loss Prevention Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.12.1",
+              "goal_name": "Deploy a Data Loss Prevention Solution",
+              "class": "TECH",
+              "embedding_context": "Deploy a Data Loss Prevention Solution",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DENCR",
+                "name": "Disk Encryption",
+                "similarity_score": 0.49032
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0021",
+                "name": "Regular backups",
+                "similarity_score": 0.497329
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DENCR",
+                  "name": "Disk Encryption",
+                  "description": "Encrypting a hard disk partition to prevent cleartext access to a file system.",
+                  "similarity_score": 0.49032
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DKE",
+                  "name": "Disk Erasure",
+                  "description": "Disk Erasure is the process of securely deleting all data on a disk to ensure that it cannot be recovered by any means.",
+                  "similarity_score": 0.482697
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FE",
+                  "name": "File Encryption",
+                  "description": "Encrypting a file using a cryptographic key.",
+                  "similarity_score": 0.474487
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RS",
+                  "name": "Restore Software",
+                  "description": "Restoring software to a host.",
+                  "similarity_score": 0.462092
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "similarity_score": 0.497329
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.479179
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.13",
+          "control_id": "CIS.3.14",
+          "control_name": "Log Sensitive Data Access",
+          "subgoals": [
+            {
+              "goal_id": "G1.13.1",
+              "goal_name": "Log Sensitive Data Access",
+              "class": "TECH",
+              "embedding_context": "Log Sensitive Data Access",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.418163
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0034",
+                "name": "Monitoring of access logs",
+                "similarity_score": 0.486996
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "similarity_score": 0.486996
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

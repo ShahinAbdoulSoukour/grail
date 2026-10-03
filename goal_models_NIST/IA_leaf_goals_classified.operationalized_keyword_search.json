@@ -1,0 +1,140 @@
+{
+  "goal_id": "G0",
+  "clause_id": "IA",
+  "clause_name": "Identification and Authentication",
+  "goal_name": "Ensure identification and authentication",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure secure identification and authentication of users, processes, and devices.",
+      "goal_name": "Ensure secure identification and authentication of users, processes, and devices",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "IA-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate implementation of identification and authentication controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate implementation of identification and authentication controls",
+              "class": "PHYS",
+              "attack": "AML.A0012",
+              "actions": [
+                {
+                  "id": "AML.M0009",
+                  "label": "Use Multi-Modal Sensors",
+                  "phases": [
+                    "ModelEngineering"
+                  ],
+                  "definition": "Incorporate various biometric sensors to improve authentication accuracy and resilience.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate implementation of identification and authentication controls",
+              "class": "PHYS",
+              "attack": "AML.A0012",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate implementation of identification and authentication controls",
+              "class": "ORG",
+              "attack": "AML.A0012",
+              "actions": [
+                {
+                  "id": "AML.M0009",
+                  "label": "Use Multi-Modal Sensors",
+                  "phases": [
+                    "ModelEngineering"
+                  ],
+                  "definition": "Incorporate various biometric sensors to improve authentication accuracy and resilience.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0019",
+                  "label": "Control Access to ML Models and Data in Production",
+                  "phases": [
+                    "Deployment",
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Require users to verify their identities before accessing a production model. Require authentication for API endpoints and monitor production model queries to ensure compliance with usage policies and to prevent model misuse.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "IA-2",
+          "control_name": "Uniquely identify and authenticate organizational users, processes acting on behalf of users, and devices.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Uniquely identify organizational users, processes acting on behalf of users, and devices",
+              "class": "TECH",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Uniquely authenticate organizational users, processes acting on behalf of users, and devices",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "IA-3",
+          "control_name": "Uniquely identify and authenticate devices before establishing a connection.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Uniquely identify devices before establishing a connection",
+              "class": "TECH",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Uniquely authenticate devices before establishing a connection",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "IA-4",
+          "control_name": "Manage user identifiers by, for example, disabling inactive identifiers and ensuring uniqueness.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Manage user identifiers by, for example, disabling inactive identifiers and ensuring uniqueness",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "IA-5",
+          "control_name": "Manage information system authenticators by defining initial content, changing them periodically, and protecting them.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Manage information system authenticators by defining initial content, changing them periodically, and protecting them",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

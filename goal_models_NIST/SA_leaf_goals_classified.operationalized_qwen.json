@@ -1,0 +1,1165 @@
+{
+  "goal_id": "G0",
+  "clause_id": "SA",
+  "clause_name": "Acquire Secure Systems and Services",
+  "goal_name": "Acquire secure systems and services",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure secure and privacy-aware system and service acquisition.",
+      "goal_name": "Ensure secure and privacy-aware system and service acquisition",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "SA-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate system and services acquisition controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate system and services acquisition controls",
+              "class": "ORG",
+              "embedding_context": "Develop policy and procedures to facilitate system and services acquisition controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.367646
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.338773
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.338523
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.338327
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.336396
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.320431
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.310765
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.297497
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.297084
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.295065
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.331702
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.317542
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.287573
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.286032
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.281254
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.281249
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.276727
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.275741
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.272213
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.271939
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "reason": "Configuration Inventory directly supports maintaining an up-to-date inventory of systems and services, which is foundational for establishing acquisition controls."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Inventory Management provides a structured approach to maintaining asset inventories, aligning with policy development for acquisition controls."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ODM",
+                  "name": "Operational Dependency Mapping",
+                  "description": "Operational dependency mapping identifies and models the dependencies of the organization's activities on each other and on the organization's performers (people, systems, and services.)  This may include modeling the higher- and lower-level activities of an organization forming a hierarchy, or layering, of the dependencies in an organization's activities.",
+                  "reason": "Operational Dependency Mapping helps identify dependencies between systems and services, ensuring acquisition policies account for organizational interdependencies."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Principle of least privilege ensures access controls are implemented during acquisitions, directly supporting security policy development."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSM",
+                  "name": "System Mapping",
+                  "description": "System mapping encompasses the techniques to identify the organization's systems, how they are configured and decomposed into subsystems and components, how they are dependent on one another, and where they are physically located.",
+                  "reason": "System Mapping provides visibility into existing systems and components, enabling structured policies for acquiring and integrating new systems."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate system and services acquisition controls",
+              "class": "ORG",
+              "embedding_context": "Document policy and procedures to facilitate system and services acquisition controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.399475
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.362514
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.356252
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.356165
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.345193
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.344466
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.329116
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.326774
+                  },
+                  {
+                    "id": "D3-SYSDM",
+                    "name": "System Dependency Mapping",
+                    "similarity_score": 0.324236
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.317018
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.340708
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.299244
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.290424
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.279401
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.276406
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.275356
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.273594
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.273431
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.272248
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.269853
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "reason": "Configuration inventory directly supports documenting system configurations as part of acquisition controls by recording hardware/software details."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Inventory management maintains up-to-date records of systems/services, which is essential for documenting acquisition policies and procedures."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate system and services acquisition controls",
+              "class": "ORG",
+              "embedding_context": "Disseminate policy and procedures to facilitate system and services acquisition controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.382588
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.366568
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.352993
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.33051
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.317125
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.314505
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.305385
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.303963
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.300522
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.296173
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.352326
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.314929
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.305139
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.305097
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.303008
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.296875
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.289653
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.288662
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.288504
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.286923
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "reason": "Access Policy Administration directly supports disseminating policies by defining, implementing, and managing access control policies that govern system and services acquisition controls."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "SA-2",
+          "control_name": "Determine, document, and allocate resources required to protect the system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Determine resources required to protect the system",
+              "class": "TECH",
+              "embedding_context": "Determine resources required to protect the system",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.584644
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.496643
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.483618
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.473576
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.462244
+                  },
+                  {
+                    "id": "D3-RAPA",
+                    "name": "Resource Access Pattern Analysis",
+                    "similarity_score": 0.455641
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.455204
+                  },
+                  {
+                    "id": "D3-SFA",
+                    "name": "System File Analysis",
+                    "similarity_score": 0.451408
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.448672
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.441537
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.553749
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.537952
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.5228
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.469272
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.464915
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.456776
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                    "similarity_score": 0.452608
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.444001
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.426413
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.422496
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "Evaluates system vulnerabilities and design risks, directly informing resource requirements for mitigation."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "reason": "Evaluates network vulnerabilities and design risks, directly informing resource requirements for mitigation."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "reason": "Enriches asset inventory with vulnerability data, directly identifying protected resources."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NNI",
+                  "name": "Network Node Inventory",
+                  "description": "Network node inventorying identifies and records all the network nodes (hosts, routers, switches, firewalls, etc.) in the organization's architecture.",
+                  "reason": "Identifies network nodes, providing a foundational resource inventory for protection planning."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0005",
+                  "name": "Resource allocation limits",
+                  "description": "Implement resource allocation limits and quotas to prevent any single process or user from consuming excessive resources.",
+                  "reason": "Implements resource allocation limits to define protected system capacity thresholds."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Document resources required to protect the system",
+              "class": "TECH",
+              "embedding_context": "Document resources required to protect the system",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.471174
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.461683
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.456609
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.451126
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.445697
+                  },
+                  {
+                    "id": "D3-TL",
+                    "name": "Trusted Library",
+                    "similarity_score": 0.439335
+                  },
+                  {
+                    "id": "D3-SFA",
+                    "name": "System File Analysis",
+                    "similarity_score": 0.432262
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.417845
+                  },
+                  {
+                    "id": "D3-LFP",
+                    "name": "Local File Permissions",
+                    "similarity_score": 0.404055
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.401745
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.442801
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.437483
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.432456
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.429592
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.426017
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.419811
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.408056
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.407775
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.405192
+                  },
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.388024
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "reason": "Configuration Inventory directly documents configuration resources required to protect the system by identifying and recording software/hardware configurations."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Inventory Management explicitly maintains an up-to-date inventory of system resources, aligning with the goal of documenting required protection assets."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access Modeling captures and records access permissions for identities, which are critical resources for implementing protection mechanisms."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "reason": "Asset Vulnerability Enumeration enriches inventory items with vulnerability details, contributing to documenting resources needed for risk mitigation."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Allocate resources required to protect the system",
+              "class": "TECH",
+              "embedding_context": "Allocate resources required to protect the system",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.544176
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.484264
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.4491
+                  },
+                  {
+                    "id": "D3-HBPI",
+                    "name": "Hardware-based Process Isolation",
+                    "similarity_score": 0.447727
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.44341
+                  },
+                  {
+                    "id": "D3-PEH",
+                    "name": "Physical Enclosure Hardening",
+                    "similarity_score": 0.440035
+                  },
+                  {
+                    "id": "D3-KBPI",
+                    "name": "Kernel-based Process Isolation",
+                    "similarity_score": 0.439233
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.439112
+                  },
+                  {
+                    "id": "D3-EI",
+                    "name": "Execution Isolation",
+                    "similarity_score": 0.436948
+                  },
+                  {
+                    "id": "D3-CFI",
+                    "name": "Control Flow Integrity",
+                    "similarity_score": 0.434779
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.677966
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.583385
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.581727
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.551915
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.498962
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.49294
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.482459
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.47943
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                    "similarity_score": 0.463003
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.442174
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0005",
+                  "name": "Resource allocation limits",
+                  "description": "Implement resource allocation limits and quotas to prevent any single process or user from consuming excessive resources.",
+                  "reason": "Directly addresses resource allocation limits to prevent excessive resource consumption, aligning with the goal of allocating resources for protection."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0011",
+                  "name": "Resource Caps",
+                  "description": "Limit resource use per request.",
+                  "reason": "Limits resource use per request, ensuring controlled allocation of system resources to protect against abuse."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "reason": "Implements resource isolation techniques like virtualization/containerization, which directly allocate and manage resources for secure execution environments."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "SA-3",
+          "control_name": "Manage the system using a system development life cycle.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Manage the system using a system development life cycle",
+              "class": "ORG",
+              "embedding_context": "Manage the system using a system development life cycle",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.396914
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.379794
+                  },
+                  {
+                    "id": "D3-SYSDM",
+                    "name": "System Dependency Mapping",
+                    "similarity_score": 0.342604
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.323225
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.314636
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.312917
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.307714
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.282289
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.270898
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.265642
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.273584
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.253034
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.244111
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.240059
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.234029
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.214942
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.213555
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.201454
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.198124
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.197168
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSM",
+                  "name": "System Mapping",
+                  "description": "System mapping encompasses the techniques to identify the organization's systems, how they are configured and decomposed into subsystems and components, how they are dependent on one another, and where they are physically located.",
+                  "reason": "System mapping is foundational for understanding the system's structure, which is essential for managing it through its development life cycle."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "System vulnerability assessment directly supports identifying and mitigating risks during the development life cycle, ensuring security at each phase."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSDM",
+                  "name": "System Dependency Mapping",
+                  "description": "System dependency mapping identifies and models the dependencies of system components on each other to carry out their function.",
+                  "reason": "System dependency mapping ensures understanding of interdependencies between components, critical for managing the system across its lifecycle stages."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "reason": "Configuration inventory provides visibility into system configurations, enabling effective management and updates throughout the life cycle."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Inventory management ensures an up-to-date asset inventory, which is a core requirement for managing systems through their development life cycle."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "SA-4",
+          "control_name": "Include security and privacy requirements in acquisition contracts and related documents.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Include security and privacy requirements in acquisition contracts and related documents",
+              "class": "ORG",
+              "embedding_context": "Include security and privacy requirements in acquisition contracts and related documents",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.350521
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.301208
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.299925
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.298185
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.293344
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.287386
+                  },
+                  {
+                    "id": "D3-CTS",
+                    "name": "Credential Transmission Scoping",
+                    "similarity_score": 0.287153
+                  },
+                  {
+                    "id": "D3-MFA",
+                    "name": "Multi-factor Authentication",
+                    "similarity_score": 0.277713
+                  },
+                  {
+                    "id": "D3-OVAR",
+                    "name": "OT Variable Access Restriction",
+                    "similarity_score": 0.263594
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.262154
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.417436
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.410205
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.377813
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.375267
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.374773
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.3745
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.371675
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.367525
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.366268
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.355737
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "reason": "Access Policy Administration directly supports defining and managing access control policies that must be explicitly included in contracts to enforce security and privacy requirements."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Access Mediation ensures least-privilege enforcement and JIT access controls, which are critical security requirements to include in contracts to prevent privilege escalation and unauthorized access."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "reason": "Data Access Control mitigations directly address limiting external data source access, a core privacy requirement that must be explicitly defined in acquisition contracts."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3F-UGPH",
+                  "name": "User Group Permissions",
+                  "description": "Access control where access is determined based on attributes associated with users and the objects being accessed.",
+                  "reason": "User Group Permissions enforce attribute-based access controls, ensuring contractual requirements for role-specific data handling and privacy protections are operationalized."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "reason": "Network Resource Access Mediation controls access to organizational systems over networks, a key security requirement that must be explicitly specified in contracts."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

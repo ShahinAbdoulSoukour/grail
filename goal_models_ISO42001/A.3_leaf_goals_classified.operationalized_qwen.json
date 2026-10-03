@@ -1,0 +1,874 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.3",
+  "clause_name": "Roles and responsibilities for AI",
+  "goal_name": "Ensure roles and responsibilities for AI",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Roles and responsibilities for AI shall be defined and assigned.",
+      "goal_name": "Define roles and responsibilities for AI and Assign roles and responsibilities for AI",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.3.2",
+          "control_name": "Roles and responsibilities for AI shall be defined and assigned.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Define roles and responsibilities for AI",
+              "class": "ORG",
+              "embedding_context": "Define roles and responsibilities for AI",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.335217
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.330669
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.322872
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.317635
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.307188
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.299117
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.286404
+                  },
+                  {
+                    "id": "D3-SEA",
+                    "name": "Script Execution Analysis",
+                    "similarity_score": 0.285483
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.278371
+                  },
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.269374
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.436389
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.434134
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.432561
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.426464
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.412914
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.411115
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.408529
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.396376
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.39637
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.393986
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OM",
+                  "name": "Organization Mapping",
+                  "description": "Organization mapping identifies and models the people, roles, and groups with an organization and the relations between them.",
+                  "reason": "Organization mapping directly models people, roles, and groups within an organization, which is essential for defining roles and responsibilities for AI systems."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ODM",
+                  "name": "Operational Dependency Mapping",
+                  "description": "Operational dependency mapping identifies and models the dependencies of the organization's activities on each other and on the organization's performers (people, systems, and services.)  This may include modeling the higher- and lower-level activities of an organization forming a hierarchy, or layering, of the dependencies in an organization's activities.",
+                  "reason": "Operational dependency mapping clarifies how activities depend on performers (roles), enabling precise definition of responsibilities within AI systems."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Assign roles and responsibilities for AI",
+              "class": "ORG",
+              "embedding_context": "Assign roles and responsibilities for AI",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.32948
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.307261
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.290312
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.284119
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.282553
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.257786
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.25709
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.254382
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.24737
+                  },
+                  {
+                    "id": "D3-SEA",
+                    "name": "Script Execution Analysis",
+                    "similarity_score": 0.235998
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.452204
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.446139
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.43873
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.429451
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.42584
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.402168
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.394685
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.390916
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.390638
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.389925
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OM",
+                  "name": "Organization Mapping",
+                  "description": "Organization mapping identifies and models the people, roles, and groups with an organization and the relations between them.",
+                  "reason": "Organization mapping directly models people, roles, and groups with their relations, which is essential for assigning roles and responsibilities."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "reason": "Privilege control enforces role-based permissions, directly aligning with assigning responsibilities to specific roles."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "The principle of least privilege ensures access controls are tailored to roles, reinforcing responsibility assignments."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.3.3",
+          "control_name": "AI issues shall be reported, escalated, and addressed.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Report AI issues",
+              "class": "ORG",
+              "embedding_context": "Report AI issues",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.302511
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.293967
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.264459
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.259857
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.256892
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.253712
+                  },
+                  {
+                    "id": "D3-IRA",
+                    "name": "Identifier Reputation Analysis",
+                    "similarity_score": 0.246117
+                  },
+                  {
+                    "id": "D3-MBT",
+                    "name": "Memory Boundary Tracking",
+                    "similarity_score": 0.240694
+                  },
+                  {
+                    "id": "D3-IBCA",
+                    "name": "Indirect Branch Call Analysis",
+                    "similarity_score": 0.232203
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.231926
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.465805
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.451608
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.439525
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.43774
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.437665
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.431822
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.431124
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.425911
+                  },
+                  {
+                    "id": "OWASP.M0020",
+                    "name": "Fine-Tuning Caution",
+                    "similarity_score": 0.425548
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.422302
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "reason": "Vulnerability scanning directly identifies exploitable vulnerabilities in AI systems, including machine learning models, which aligns with reporting AI issues."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "reason": "Validating ML models detects backdoor triggers and adversarial bias, addressing core AI-specific issues that need reporting."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0007",
+                  "name": "Sanitize Training Data",
+                  "description": "Detect and remove or remediate poisoned training data. Training data should be sanitized prior to model training and recurrently for an active learning model.\nImplement a filter to limit ingested training data. Establish a content policy that would remove unwanted content such as certain explicit or offensive language from being used.",
+                  "reason": "Sanitizing training data removes poisoned inputs, a critical step in preventing AI model corruption that requires reporting."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0030",
+                  "name": "Verify the authenticity of feedback data",
+                  "description": "Use techniques such as digital signatures and checksums to verify that the feedback data received by the system is genuine, and reject any data that does not match the expected format.",
+                  "reason": "Verifying feedback data authenticity directly addresses the risk of tampered inputs affecting AI systems, requiring issue reporting."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0024",
+                  "name": "Monitoring and auditing",
+                  "description": "Regularly monitoring and auditing the model’s use can help detect and prevent theft by detecting when an attacker is attempting to access or steal the model.",
+                  "reason": "Monitoring and auditing detects model theft attempts, a security issue specific to AI systems that necessitates reporting."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Escalate AI issues",
+              "class": "TECH",
+              "embedding_context": "Escalate AI issues",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.301571
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.290866
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.28539
+                  },
+                  {
+                    "id": "D3-PSA",
+                    "name": "Process Spawn Analysis",
+                    "similarity_score": 0.278451
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.275019
+                  },
+                  {
+                    "id": "D3-SCA",
+                    "name": "System Call Analysis",
+                    "similarity_score": 0.271107
+                  },
+                  {
+                    "id": "D3-ANET",
+                    "name": "Authentication Event Thresholding",
+                    "similarity_score": 0.265207
+                  },
+                  {
+                    "id": "D3-ISVA",
+                    "name": "Inbound Session Volume Analysis",
+                    "similarity_score": 0.257517
+                  },
+                  {
+                    "id": "D3-PS",
+                    "name": "Process Suspension",
+                    "similarity_score": 0.256275
+                  },
+                  {
+                    "id": "D3-ANAA",
+                    "name": "Administrative Network Activity Analysis",
+                    "similarity_score": 0.252931
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0020",
+                    "name": "Fine-Tuning Caution",
+                    "similarity_score": 0.478415
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.465842
+                  },
+                  {
+                    "id": "AML.M0025",
+                    "name": "Model retraining",
+                    "similarity_score": 0.453257
+                  },
+                  {
+                    "id": "OWASP.M0019",
+                    "name": "Input Validation",
+                    "similarity_score": 0.448792
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                    "similarity_score": 0.447541
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.438724
+                  },
+                  {
+                    "id": "OWASP.M0004",
+                    "name": "Trust Boundaries",
+                    "similarity_score": 0.434694
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.428098
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.422997
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.421183
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0019",
+                  "name": "Input Validation",
+                  "description": "Filter malicious inputs to avoid model poisoning.",
+                  "reason": "Input validation directly addresses model poisoning risks, which is a core AI issue that requires escalation to prevent data corruption."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0017",
+                  "name": "Anomaly detection",
+                  "description": "Sign models and code, apply anomaly detection, and monitor.",
+                  "reason": "Anomaly detection mechanisms are critical for identifying deviations in AI system behavior that require escalation to mitigate threats."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SCA",
+                  "name": "System Call Analysis",
+                  "description": "Analyzing system calls to determine whether a process is exhibiting unauthorized behavior.",
+                  "reason": "System call analysis detects unauthorized process behavior in AI systems, directly supporting escalation of security issues."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-UBA",
+                  "name": "User Behavior Analysis",
+                  "description": "User behavior analytics (\"UBA\") as defined by Gartner, is a cybersecurity process about detection of insider threats, targeted attacks, and financial fraud. UBA solutions look at patterns of human behavior, and then apply algorithms and statistical analysis to detect meaningful anomalies from those patterns-anomalies that indicate potential threats.' Instead of tracking devices or security events, UBA tracks a system's users. Big data platforms are increasing UBA functionality by allowing them to analyze petabytes worth of data to detect insider threats and advanced persistent threats.",
+                  "reason": "User behavior analysis identifies insider threats or anomalous interactions with AI systems, enabling targeted escalation of risks."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Address AI issues",
+              "class": "ORG",
+              "embedding_context": "Address AI issues",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.315884
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.300567
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.276473
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.264751
+                  },
+                  {
+                    "id": "D3-BAN",
+                    "name": "Biometric Authentication",
+                    "similarity_score": 0.251828
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.233405
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.231003
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.22992
+                  },
+                  {
+                    "id": "D3-ANET",
+                    "name": "Authentication Event Thresholding",
+                    "similarity_score": 0.220399
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.218987
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.504278
+                  },
+                  {
+                    "id": "AML.M0025",
+                    "name": "Model retraining",
+                    "similarity_score": 0.485713
+                  },
+                  {
+                    "id": "OWASP.M0020",
+                    "name": "Fine-Tuning Caution",
+                    "similarity_score": 0.483807
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.483434
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.483074
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.480135
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.479391
+                  },
+                  {
+                    "id": "OWASP.M0019",
+                    "name": "Input Validation",
+                    "similarity_score": 0.478733
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.47398
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.472207
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "reason": "Deploying advanced verification mechanisms directly addresses AI issues by ensuring content authenticity and preventing spoofed data from influencing AI decisions."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0007",
+                  "name": "Sanitize Training Data",
+                  "description": "Detect and remove or remediate poisoned training data. Training data should be sanitized prior to model training and recurrently for an active learning model.\nImplement a filter to limit ingested training data. Establish a content policy that would remove unwanted content such as certain explicit or offensive language from being used.",
+                  "reason": "Sanitizing training data mitigates AI issues caused by poisoned datasets, ensuring models are trained on clean and reliable data."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0019",
+                  "name": "Input Validation",
+                  "description": "Filter malicious inputs to avoid model poisoning.",
+                  "reason": "Input validation prevents model poisoning attacks, a critical AI issue that compromises model integrity and decision-making."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0025",
+                  "name": "Model retraining",
+                  "description": "Regularly retraining the model can help to prevent the information leaked by model inversion attacks from becoming outdated. This can be done by incorporating new data and correcting any inaccuracies in the model’s predictions.",
+                  "reason": "Regular model retraining addresses AI issues related to outdated knowledge and information leakage from inversion attacks."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.3.4",
+          "control_name": "Responsibilities toward affected interested parties shall be defined.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Define responsibilities toward affected interested parties",
+              "class": "ORG",
+              "embedding_context": "Define responsibilities toward affected interested parties",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.321236
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.310259
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.261865
+                  },
+                  {
+                    "id": "D3-RAM",
+                    "name": "Routing Access Mediation",
+                    "similarity_score": 0.259571
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.259112
+                  },
+                  {
+                    "id": "D3-SRA",
+                    "name": "Sender Reputation Analysis",
+                    "similarity_score": 0.258885
+                  },
+                  {
+                    "id": "D3-PBWSAM",
+                    "name": "Proxy-based Web Server Access Mediation",
+                    "similarity_score": 0.257169
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.253608
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.251241
+                  },
+                  {
+                    "id": "D3-CFI",
+                    "name": "Control Flow Integrity",
+                    "similarity_score": 0.244219
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.293959
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.222798
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.214895
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.204504
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.204232
+                  },
+                  {
+                    "id": "OWASP.M0025",
+                    "name": "Plugin Scope Control",
+                    "similarity_score": 0.20406
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.20268
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.200038
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.197063
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.192171
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OM",
+                  "name": "Organization Mapping",
+                  "description": "Organization mapping identifies and models the people, roles, and groups with an organization and the relations between them.",
+                  "reason": "Organization Mapping directly models roles and groups within an organization, which is essential for defining responsibilities toward interested parties."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access Modeling captures access permissions for identities, enabling explicit assignment of responsibilities based on authorized access levels."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "reason": "Permissions Control enforces minimal required permissions, ensuring responsibilities are clearly bounded and prevent over-privileged actions."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0002",
+                  "name": "Human Approval",
+                  "description": "Require user consent for privileged actions.",
+                  "reason": "Human Approval requires explicit consent for privileged actions, establishing accountability mechanisms for defined responsibilities."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

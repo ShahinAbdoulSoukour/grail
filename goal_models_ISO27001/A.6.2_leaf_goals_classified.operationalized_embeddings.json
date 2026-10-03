@@ -1,0 +1,251 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.6.2",
+  "clause_name": "Mobile devices and teleworking",
+  "goal_name": "Secure mobile devices and teleworking",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure the security of teleworking and use of mobile devices.",
+      "goal_name": "Ensure the security of teleworking and use of mobile devices",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.6.2.1",
+          "control_name": "A policy and supporting security measures shall be adopted to manage the risks introduced by using mobile devices.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Adopt a policy and supporting security measures to manage the risks introduced by using mobile devices",
+              "class": "TECH",
+              "embedding_context": "Adopt a policy and supporting security measures to manage the risks introduced by using mobile devices",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPR",
+                "name": "Operating Mode Restriction",
+                "similarity_score": 0.430597
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0037",
+                "name": "Hardware security modules",
+                "similarity_score": 0.440735
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.6.2.2",
+          "control_name": "A policy and supporting security measures shall be implemented to protect information accessed, processed or stored at teleworking sites.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Implement a policy and supporting security measures to protect information accessed",
+              "class": "TECH",
+              "embedding_context": "Implement a policy and supporting security measures to protect information accessed",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.588968
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0021",
+                "name": "Data Access Control",
+                "similarity_score": 0.600903
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.588968
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.542171
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.531909
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3F-UGPH",
+                  "name": "User Group Permissions",
+                  "description": "Access control where access is determined based on attributes associated with users and the objects being accessed.",
+                  "similarity_score": 0.513604
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.509873
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "similarity_score": 0.600903
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0003",
+                  "name": "Segregate Content",
+                  "description": "Separate untrusted content from user prompts.",
+                  "similarity_score": 0.544492
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "similarity_score": 0.538913
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.538869
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "similarity_score": 0.538121
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Process a policy and supporting security measures",
+              "class": "TECH",
+              "embedding_context": "Process a policy and supporting security measures",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.563816
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0036",
+                "name": "Principle of least privilege",
+                "similarity_score": 0.532322
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.563816
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SPP",
+                  "name": "Strong Password Policy",
+                  "description": "Modifying system configuration to increase password strength.",
+                  "similarity_score": 0.475841
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PA",
+                  "name": "Process Analysis",
+                  "description": "Process Analysis consists of observing a running application process and analyzing it to watch for certain behaviors or conditions which may indicate adversary activity. Analysis can occur inside of the process or through a third-party monitoring application. Examples include monitoring system and privileged calls, monitoring process initiation chains, and memory boundary allocations.",
+                  "similarity_score": 0.474372
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.472376
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NTPM",
+                  "name": "Network Traffic Policy Mapping",
+                  "description": "Network traffic policy mapping identifies and models the allowed pathways of data at the network, transport, and/or application levels.",
+                  "similarity_score": 0.471256
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.532322
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0013",
+                  "name": "Queue Management",
+                  "description": "Control queued and total actions.",
+                  "similarity_score": 0.516648
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0002",
+                  "name": "Human Approval",
+                  "description": "Require user consent for privileged actions.",
+                  "similarity_score": 0.510424
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0031",
+                  "name": "Implement Security Control during hardware manufacturing",
+                  "description": "Implement strict security controls and auditing processes during the manufacturing phase, including secure supply chain practices and hardware verification methods, to prevent unauthorized modifications to hardware components or firmware.",
+                  "similarity_score": 0.507567
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.507118
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Store a policy and supporting security measures at teleworking sites",
+              "class": "PHYS",
+              "embedding_context": "Store a policy and supporting security measures at teleworking sites",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NRAM",
+                "name": "Network Resource Access Mediation",
+                "similarity_score": 0.449313
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0022",
+                "name": "User Confirmation",
+                "similarity_score": 0.416189
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

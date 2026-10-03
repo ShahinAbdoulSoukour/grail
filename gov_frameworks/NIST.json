@@ -1,0 +1,190 @@
+{
+  "AC": {
+    "title": "Access Control to Information Systems",
+    "objective": "To ensure authorized and controlled access to information systems and resources.",
+    "controls": {
+      "AC-1": "Develop, document, and disseminate policy and procedures to facilitate the implementation of access control controls.",
+      "AC-2": "Manage information system accounts, including establishing, activating, modifying, disabling, and removing accounts.",
+      "AC-3": "Enforce approved authorizations for logical access to information and system resources.",
+      "AC-4": "Enforce approved authorizations for controlling information flow within the system and between interconnected systems.",
+      "AC-5": "Separate duties and responsibilities to reduce opportunities for unauthorized activity.",
+      "AC-6": "Employ the principle of least privilege, allowing only authorized accesses needed to accomplish assigned tasks.",
+      "AC-7": "Enforce a limit on consecutive invalid logon attempts by a user during a time period.",
+      "AC-8": "Display an approved system use notification message before granting access.",
+      "AC-11": "Prevent further access to the system by initiating a device lock after defined conditions.",
+      "AC-12": "Terminate a user session after a condition of inactivity or upon user logout."
+    }
+  },
+  "AU": {
+    "title": "Audit and Maintain Accountability",
+    "objective": "To ensure effective auditing and accountability of security-relevant events.",
+    "controls": {
+      "AU-1": "Develop, document, and disseminate policy and procedures to facilitate implementation of audit and accountability controls.",
+      "AU-2": "Determine that the information system can log events relevant to security monitoring, investigations, and incident response.",
+      "AU-3": "Generate audit records containing information sufficient to support monitoring, analysis, investigation, and reporting.",
+      "AU-4": "Allocate audit record storage capacity to store audit records for the defined retention period.",
+      "AU-5": "Respond to audit logging process failures by taking appropriate action."
+    }
+  },
+  "CA": {
+    "title": "Assessment, Authorization, and Monitoring",
+    "objective": "To ensure systems and controls are properly assessed, authorized, and monitored.",
+    "controls": {
+      "CA-1": "Develop, document, and disseminate policy and procedures to facilitate implementation of assessment, authorization, and monitoring controls.",
+      "CA-2": "Assess the controls in the system and environment of operation to determine if they are implemented correctly and operating as intended.",
+      "CA-3": "Authorize connections and information exchange between systems using interconnection agreements.",
+      "CA-5": "Develop and implement a plan of action and milestones for the system."
+    }
+  },
+  "CM": {
+    "title": "Configuration Management",
+    "objective": "To ensure secure and controlled system configurations and changes.",
+    "controls": {
+      "CM-1": "Develop, document, and disseminate policy and procedures to facilitate implementation of configuration management controls.",
+      "CM-2": "Develop, document, and maintain a current baseline configuration of the system.",
+      "CM-3": "Document, approve, and monitor changes to the system.",
+      "CM-4": "Analyze changes to the system to determine potential security impact prior to change implementation."
+    }
+  },
+  "CP": {
+    "title": "Contingency Planning",
+    "objective": "To ensure effective system recovery and continuity during disruptions.",
+    "controls": {
+      "CP-1": "Develop, document, and disseminate policy and procedures to facilitate implementation of contingency planning controls.",
+      "CP-2": "Develop, document, and maintain a contingency plan for the system.",
+      "CP-3": "Provide contingency training to system users and personnel.",
+      "CP-4": "Test contingency plans for the system.",
+      "CP-9": "Conduct backups of user-level and system-level information."
+    }
+  },
+  "IA": {
+    "title": "Identification and Authentication",
+    "objective": "To ensure secure identification and authentication of users, processes, and devices.",
+    "controls": {
+      "IA-1": "Develop, document, and disseminate policy and procedures to facilitate implementation of identification and authentication controls.",
+      "IA-2": "Uniquely identify and authenticate organizational users, processes acting on behalf of users, and devices.",
+      "IA-3": "Uniquely identify and authenticate devices before establishing a connection.",
+      "IA-4": "Manage user identifiers by, for example, disabling inactive identifiers and ensuring uniqueness.",
+      "IA-5": "Manage information system authenticators by defining initial content, changing them periodically, and protecting them."
+    }
+  },
+  "IR": {
+    "title": "Incident Response",
+    "objective": "To ensure effective preparation, handling, and response to security incidents.",
+    "controls": {
+      "IR-1": "Develop, document, and disseminate policy and procedures to facilitate incident response controls.",
+      "IR-2": "Provide incident response training to personnel with incident response roles and responsibilities.",
+      "IR-3": "Test the incident response capability.",
+      "IR-4": "Implement an incident handling capability for security incidents."
+    }
+  },
+  "MA": {
+    "title": "Manage System Maintenance",
+    "objective": "To ensure controlled and secure system maintenance.",
+    "controls": {
+      "MA-1": "Develop, document, and disseminate policy and procedures to facilitate maintenance controls.",
+      "MA-2": "Perform maintenance on system components in a controlled manner.",
+      "MA-3": "Approve, control, and monitor maintenance tools."
+    }
+  },
+  "MP": {
+    "title": "Media Protection",
+    "objective": "To ensure secure access, handling, and protection of information media.",
+    "controls": {
+      "MP-1": "Develop, document, and disseminate policy and procedures to facilitate media protection controls.",
+      "MP-2": "Restrict access to digital and non-digital media containing information.",
+      "MP-4": "Protect information system media until the media are destroyed or sanitized using approved equipment, techniques, and procedures."
+    }
+  },
+  "PE": {
+    "title": "Physical and Environmental Protection",
+    "objective": "To ensure secure physical access to facilities and systems.",
+    "controls": {
+      "PE-1": "Develop, document, and disseminate policy and procedures to facilitate physical and environmental protection controls.",
+      "PE-2": "Develop and maintain physical access authorizations for designated areas.",
+      "PE-3": "Enforce physical access control to the facility and areas within the facility.",
+      "PE-6": "Monitor physical access to the facility and physical areas containing systems."
+    }
+  },
+  "PL": {
+    "title": "Plan System Security and Privacy",
+    "objective": "To ensure effective planning of system security and privacy.",
+    "controls": {
+      "PL-1": "Develop, document, and disseminate policy and procedures to facilitate planning controls.",
+      "PL-2": "Develop system security and privacy plans that describe the system boundary, security requirements, and controls."
+    }
+  },
+  "PM": {
+    "title": "Program Management",
+    "objective": "To ensure effective planning and allocation of security and privacy resources.",
+    "controls": {
+      "PM-1": "Develop, document, and disseminate an organization-wide information security program plan.",
+      "PM-3": "Plan for and allocate security and privacy resources."
+    }
+  },
+  "PS": {
+    "title": "Manage Personnel Security",
+    "objective": "To ensure secure personnel selection and access authorization.",
+    "controls": {
+      "PS-1": "Develop, document, and disseminate policy and procedures to facilitate personnel security controls.",
+      "PS-2": "Assign a risk designation to organizational positions.",
+      "PS-3": "Screen individuals prior to authorizing access to the information system."
+    }
+  },
+  "PT": {
+    "title": "Protect Personal Data and Privacy",
+    "objective": "To ensure lawful and effective protection of personal data.",
+    "controls": {
+      "PT-1": "Develop, document, and disseminate policy and procedures to facilitate privacy controls.",
+      "PT-2": "Determine the legal authority and other requirements to process personally identifiable information."
+    }
+  },
+  "RA": {
+    "title": "Assess Security and Privacy Risks",
+    "objective": "To ensure effective assessment of system and information risks.",
+    "controls": {
+      "RA-1": "Develop, document, and disseminate policy and procedures to facilitate risk assessment controls.",
+      "RA-2": "Categorize the system and information processed, stored, and transmitted by the system.",
+      "RA-3": "Conduct a risk assessment to determine the risk to organizational operations, assets, individuals, other organizations, and the Nation."
+    }
+  },
+  "SA": {
+    "title": "Acquire Secure Systems and Services",
+    "objective": "To ensure secure and privacy-aware system and service acquisition.",
+    "controls": {
+      "SA-1": "Develop, document, and disseminate policy and procedures to facilitate system and services acquisition controls.",
+      "SA-2": "Determine, document, and allocate resources required to protect the system.",
+      "SA-3": "Manage the system using a system development life cycle.",
+      "SA-4": "Include security and privacy requirements in acquisition contracts and related documents."
+    }
+  },
+  "SC": {
+    "title": "Protect Systems and Communications",
+    "objective": "To ensure secure and protected system communications.",
+    "controls": {
+      "SC-1": "Develop, document, and disseminate policy and procedures to facilitate system and communications protection controls.",
+      "SC-7": "Monitor and control communications at external boundaries and key internal boundaries.",
+      "SC-8": "Protect the confidentiality and integrity of transmitted information.",
+      "SC-12": "Establish and manage cryptographic keys for the system."
+    }
+  },
+  "SI": {
+    "title": "Maintain System and Information Integrity",
+    "objective": "To ensure the integrity, security, and timely detection of system threats.",
+    "controls": {
+      "SI-1": "Develop, document, and disseminate policy and procedures to facilitate system and information integrity controls.",
+      "SI-2": "Identify, report, and correct system flaws in a timely manner.",
+      "SI-3": "Implement malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code.",
+      "SI-4": "Monitor the system to detect attacks and indicators of potential attacks."
+    }
+  },
+  "SR": {
+    "title": "Manage Supply Chain Risks",
+    "objective": "To ensure effective management of supply chain risks.",
+    "controls": {
+      "SR-1": "Develop, document, and disseminate policy and procedures to facilitate supply chain risk management controls.",
+      "SR-2": "Develop a supply chain risk management plan for the system, system component, or service.",
+      "SR-3": "Establish, document, and implement controls and processes for managing supply chain risks."
+    }
+  }
+}

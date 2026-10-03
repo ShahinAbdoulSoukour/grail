@@ -1,0 +1,192 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.11.1",
+  "clause_name": "Protect secure areas",
+  "goal_name": "Protect secure areas",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To prevent unauthorized physical access, damage and interference to the organization's information and information processing facilities.",
+      "goal_name": "Prevent unauthorized physical access, damage and interference to the organization's information and information processing facilities",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.11.1.1",
+          "control_name": "Security perimeters shall be defined and used to protect areas that contain either sensitive or critical information and information processing facilities.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Define security perimeters",
+              "class": "PHYS",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Use security perimeters to protect areas that contain either sensitive or critical information and information processing facilities",
+              "class": "PHYS",
+              "actions": [
+                {
+                  "id": "AML.M0012",
+                  "label": "Encrypt Sensitive Information",
+                  "phases": [
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.11.1.2",
+          "control_name": "Secure areas shall be protected by appropriate entry controls to ensure that only authorized personnel are allowed access.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Protect secure areas to ensure that only authorized personnel are allowed access",
+              "agent": "appropriate entry controls",
+              "class": "PHYS",
+              "actions": [
+                {
+                  "id": "AML.M0005",
+                  "label": "Control Access to ML Models and Data at Rest",
+                  "phases": [
+                    "AccessManagement"
+                  ],
+                  "definition": "Establish access controls on internal model registries and limit internal access to production models. Limit access to training data only to approved users.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.11.1.3",
+          "control_name": "Physical security for offices, rooms and facilities shall be designed and applied.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Design physical security for offices, rooms and facilities",
+              "class": "PHYS",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Apply physical security for offices, rooms and facilities",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.11.1.4",
+          "control_name": "Physical protection against natural disasters, malicious attack or accidents shall be designed and applied.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Design physical protection against natural disasters, malicious attack or accidents",
+              "class": "PHYS",
+              "attack": "CAPEC.A0004",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Apply physical protection against natural disasters, malicious attack or accidents",
+              "class": "PHYS",
+              "attack": "CAPEC.A0004",
+              "actions": [
+                {
+                  "id": "AML.M0031",
+                  "label": "Implement Security Control during hardware manufacturing",
+                  "phases": [
+                    "HardwareSecurityEngineering"
+                  ],
+                  "definition": "Implement strict security controls and auditing processes during the manufacturing phase, including secure supply chain practices and hardware verification methods, to prevent unauthorized modifications to hardware components or firmware.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0033",
+                  "label": "Malicious Logic Detection in hardware",
+                  "phases": [
+                    "HardwareSecurityEngineering"
+                  ],
+                  "definition": "Implement comprehensive hardware and firmware security validation processes, including regular integrity checks and the use of cryptographic signing, to detect and prevent the insertion of malicious logic.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "A.11.1.5",
+          "control_name": "Procedures for working in secure areas shall be designed and applied.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Design procedures for working in secure areas",
+              "class": "PHYS",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.5.2",
+              "goal_name": "Apply procedures for working in secure areas",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "A.11.1.6",
+          "control_name": "Access points such as delivery and loading areas and other points where unauthorized persons could enter the premises shall be controlled and, if possible, isolated from information processing facilities to avoid unauthorized access.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Control access points such as delivery and loading areas and other points where unauthorized persons could enter the premises and, if possible",
+              "class": "PHYS",
+              "artifact": "AccessControlConfiguration",
+              "actions": [
+                {
+                  "id": "OWASP.M0021",
+                  "label": "Data Access Control",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Limit external data source access.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.6.2",
+              "goal_name": "Isolate access points such as delivery and loading areas and other points where unauthorized persons could enter the premises from information processing facilities to avoid unauthorized access",
+              "class": "PHYS",
+              "actions": [
+                {
+                  "id": "AML.M0011",
+                  "label": "Restrict Library Loading",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Prevent abuse of library loading mechanisms in the operating system and software to load untrusted code by configuring appropriate library loading mechanisms and investigating potential vulnerable software.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for loading of malicious libraries.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

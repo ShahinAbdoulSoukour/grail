@@ -1,0 +1,98 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.9.2",
+  "clause_name": "User access management",
+  "goal_name": "Ensure user access management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure authorized user access and to prevent unauthorized access to systems and services.",
+      "goal_name": "Ensure authorized user access and prevent unauthorized access to systems and services",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.9.2.1",
+          "control_name": "A formal user registration and de-registration process shall be implemented to enable assignment of access rights.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Implement a formal user registration and de-registration process to enable assignment of access rights",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.9.2.2",
+          "control_name": "A formal user access provisioning process shall be implemented to assign or revoke access rights for all user types to all systems and services.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Implement a formal user access provisioning process to assign or revoke access rights for all user types to all systems and services",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.9.2.3",
+          "control_name": "The allocation and use of privileged access rights shall be restricted and controlled.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Restrict the allocation and use of privileged access rights",
+              "class": "TECH"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Control the allocation and use of privileged access rights",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.9.2.4",
+          "control_name": "The allocation of secret authentication information shall be controlled through a formal management process.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Control the allocation of secret authentication information through a formal management process",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "A.9.2.5",
+          "control_name": "Asset owners shall review users' access rights at regular intervals.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Review users' access rights at regular intervals",
+              "agent": "Asset owners",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "A.9.2.6",
+          "control_name": "The access rights of all employees and external party users to information and information processing facilities shall be removed upon termination of their employment, contract or agreement, or adjusted upon change.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Remove the access rights of all employees and external party users to information and information processing facilities upon termination of their employment, contract or agreement",
+              "class": "PHYS"
+            },
+            {
+              "goal_id": "G1.6.2",
+              "goal_name": "Adjust the access rights of all employees and external party users to information and information processing facilities upon change",
+              "class": "ORG"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

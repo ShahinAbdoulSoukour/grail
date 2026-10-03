@@ -1,0 +1,1292 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.14",
+  "clause_name": "Security Awareness and Skills Training",
+  "goal_name": "Ensure security awareness and skills training",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Establish and maintain a security awareness program to influence behavior among the workforce to be security conscious and properly skilled to reduce cybersecurity risks to the enterprise.",
+      "goal_name": "Establish and maintain a security awareness program to influence behavior among the workforce to be security conscious and properly skilled to reduce cybersecurity risks to the enterprise",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.14.1",
+          "control_name": "Establish and Maintain a Security Awareness Program",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish a Security Awareness Program",
+              "class": "ORG",
+              "embedding_context": "Establish a Security Awareness Program",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-VS",
+                    "name": "Video Surveillance",
+                    "similarity_score": 0.378109
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.350353
+                  },
+                  {
+                    "id": "D3-ELM",
+                    "name": "Electronic Lock Monitoring",
+                    "similarity_score": 0.340713
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.332901
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.326026
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.32444
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.32029
+                  },
+                  {
+                    "id": "D3-MSM",
+                    "name": "Motion Sensor Monitoring",
+                    "similarity_score": 0.319156
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.318288
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.305476
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.420734
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.385001
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.382655
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.376973
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.362876
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.362633
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.359839
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.358078
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.338294
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.334798
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Use-Case Specific Training directly supports establishing a Security Awareness Program by creating targeted training modules for different scenarios, enhancing employee understanding of security risks."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "reason": "Human-in-the-Loop requires human approval for actions, which aligns with training employees to verify requests and recognize potential threats, reinforcing security awareness practices."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain a Security Awareness Program",
+              "class": "ORG",
+              "embedding_context": "Maintain a Security Awareness Program",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.375665
+                  },
+                  {
+                    "id": "D3-VS",
+                    "name": "Video Surveillance",
+                    "similarity_score": 0.368404
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.347555
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.339527
+                  },
+                  {
+                    "id": "D3-ELM",
+                    "name": "Electronic Lock Monitoring",
+                    "similarity_score": 0.338959
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.336408
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.335102
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.333001
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.330254
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.327782
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.46357
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.451056
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.414795
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.407091
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.407032
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.401508
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.397464
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.39548
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.371382
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.369601
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Use-Case Specific Training directly supports maintaining a Security Awareness Program by creating tailored training modules for different scenarios, ensuring relevant and targeted awareness education."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0024",
+                  "name": "Monitoring and auditing",
+                  "description": "Regularly monitoring and auditing the model’s use can help detect and prevent theft by detecting when an attacker is attempting to access or steal the model.",
+                  "reason": "Monitoring and auditing ensures the Security Awareness Program remains effective through regular checks, detecting gaps or non-compliance with security protocols."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.14.2",
+          "control_name": "Train Workforce Members to Recognize Social Engineering Attacks",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Train Workforce Members to Recognize Social Engineering Attacks",
+              "class": "ORG",
+              "embedding_context": "Train Workforce Members to Recognize Social Engineering Attacks",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.45862
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.392924
+                  },
+                  {
+                    "id": "D3-DP",
+                    "name": "Decoy Persona",
+                    "similarity_score": 0.368625
+                  },
+                  {
+                    "id": "D3-IHN",
+                    "name": "Integrated Honeynet",
+                    "similarity_score": 0.355428
+                  },
+                  {
+                    "id": "D3-DO",
+                    "name": "Decoy Object",
+                    "similarity_score": 0.343916
+                  },
+                  {
+                    "id": "D3-SHN",
+                    "name": "Standalone Honeynet",
+                    "similarity_score": 0.340403
+                  },
+                  {
+                    "id": "D3-BAN",
+                    "name": "Biometric Authentication",
+                    "similarity_score": 0.335684
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.332418
+                  },
+                  {
+                    "id": "D3-WSAA",
+                    "name": "Web Session Activity Analysis",
+                    "similarity_score": 0.327633
+                  },
+                  {
+                    "id": "D3-CTS",
+                    "name": "Credential Transmission Scoping",
+                    "similarity_score": 0.326314
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.481072
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.473886
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.427882
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.422976
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.417276
+                  },
+                  {
+                    "id": "AML.M0015",
+                    "name": "Adversarial Input Detection",
+                    "similarity_score": 0.411316
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.400606
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.390678
+                  },
+                  {
+                    "id": "AML.M0025",
+                    "name": "Model retraining",
+                    "similarity_score": 0.390309
+                  },
+                  {
+                    "id": "OWASP.M0019",
+                    "name": "Input Validation",
+                    "similarity_score": 0.390083
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Use-Case Specific Training directly supports workforce training by creating targeted models for different scenarios, which can include social engineering awareness programs tailored to specific organizational contexts."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.14.3",
+          "control_name": "Train Workforce Members on Authentication Best Practices",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Train Workforce Members on Authentication Best Practices",
+              "class": "ORG",
+              "embedding_context": "Train Workforce Members on Authentication Best Practices",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-CTS",
+                    "name": "Credential Transmission Scoping",
+                    "similarity_score": 0.407278
+                  },
+                  {
+                    "id": "D3-SPP",
+                    "name": "Strong Password Policy",
+                    "similarity_score": 0.387473
+                  },
+                  {
+                    "id": "D3-CRO",
+                    "name": "Credential Rotation",
+                    "similarity_score": 0.378544
+                  },
+                  {
+                    "id": "D3-PWA",
+                    "name": "Password Authentication",
+                    "similarity_score": 0.377487
+                  },
+                  {
+                    "id": "D3-PR",
+                    "name": "Password Rotation",
+                    "similarity_score": 0.37108
+                  },
+                  {
+                    "id": "D3-TBA",
+                    "name": "Token-based Authentication",
+                    "similarity_score": 0.366992
+                  },
+                  {
+                    "id": "D3-MFA",
+                    "name": "Multi-factor Authentication",
+                    "similarity_score": 0.363683
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.360011
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.357726
+                  },
+                  {
+                    "id": "D3-ANET",
+                    "name": "Authentication Event Thresholding",
+                    "similarity_score": 0.354803
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.466559
+                  },
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.426229
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.424468
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.420403
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.409745
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.402565
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.39821
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.390144
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.389424
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.361281
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Use-Case Specific Training directly addresses training workforce members on authentication best practices by creating targeted training models for specific scenarios."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.14.4",
+          "control_name": "Train Workforce on Data Handling Best Practices",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Train Workforce on Data Handling Best Practices",
+              "class": "ORG",
+              "embedding_context": "Train Workforce on Data Handling Best Practices",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.329339
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.284029
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.250393
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.227148
+                  },
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.223357
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.221389
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.220997
+                  },
+                  {
+                    "id": "D3-DQSA",
+                    "name": "Database Query String Analysis",
+                    "similarity_score": 0.216954
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.214385
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.205492
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.405739
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.372849
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.319793
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.319107
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.311658
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.282631
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.278546
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.277544
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.276292
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.274532
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.14.5",
+          "control_name": "Train Workforce Members on Causes of Unintentional Data Exposure",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Train Workforce Members on Causes of Unintentional Data Exposure",
+              "class": "ORG",
+              "embedding_context": "Train Workforce Members on Causes of Unintentional Data Exposure",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.394899
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.343752
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.326502
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.320014
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.313242
+                  },
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.310914
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.305978
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.301606
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.30104
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.295515
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.428387
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.419751
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.414978
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.409947
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.386332
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.364466
+                  },
+                  {
+                    "id": "AML.M0025",
+                    "name": "Model retraining",
+                    "similarity_score": 0.340961
+                  },
+                  {
+                    "id": "AML.M0027",
+                    "name": "Model training on randomized or shuffled data",
+                    "similarity_score": 0.340406
+                  },
+                  {
+                    "id": "AML.M0029",
+                    "name": "Reducing the training data",
+                    "similarity_score": 0.337738
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.332083
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.14.6",
+          "control_name": "Train Workforce Members on Recognizing and Reporting Security Incidents",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Train Workforce Members on Recognizing and Reporting Security Incidents",
+              "class": "ORG",
+              "embedding_context": "Train Workforce Members on Recognizing and Reporting Security Incidents",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.397621
+                  },
+                  {
+                    "id": "D3-VS",
+                    "name": "Video Surveillance",
+                    "similarity_score": 0.349071
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.321953
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.312283
+                  },
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.307688
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.304516
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.300974
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.299461
+                  },
+                  {
+                    "id": "D3-MSM",
+                    "name": "Motion Sensor Monitoring",
+                    "similarity_score": 0.29925
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.297098
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.447791
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.414874
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.34963
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.335845
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.324158
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.31864
+                  },
+                  {
+                    "id": "AML.M0025",
+                    "name": "Model retraining",
+                    "similarity_score": 0.316758
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.300792
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.300133
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.2964
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.14.7",
+          "control_name": "Train Workforce on How to Identify and Report if Their Enterprise Assets are Missing Security Updates",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Train Workforce on How to Identify and Report if Their Enterprise Assets are Missing Security Updates",
+              "class": "ORG",
+              "embedding_context": "Train Workforce on How to Identify and Report if Their Enterprise Assets are Missing Security Updates",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.46957
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.378514
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.378035
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.358843
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.357048
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.33329
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.332854
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.33265
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.326481
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.323027
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.481155
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.376779
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.345117
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.344994
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.338473
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.33648
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.327297
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.309293
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.304592
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.301818
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "reason": "Directly provides user training to educate employees on security practices, including identifying missing updates."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Maintaining an up-to-date inventory helps workforce identify which assets require security updates."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.14.8",
+          "control_name": "Train Workforce on the Dangers of Connecting to and Transmitting Enterprise Data Over Insecure Networks",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Train Workforce on the Dangers of Connecting to and Transmitting Enterprise Data Over Insecure Networks",
+              "class": "ORG",
+              "embedding_context": "Train Workforce on the Dangers of Connecting to and Transmitting Enterprise Data Over Insecure Networks",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.427301
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.366322
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.338278
+                  },
+                  {
+                    "id": "D3-SHN",
+                    "name": "Standalone Honeynet",
+                    "similarity_score": 0.326269
+                  },
+                  {
+                    "id": "D3-ET",
+                    "name": "Encrypted Tunnels",
+                    "similarity_score": 0.32452
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.323851
+                  },
+                  {
+                    "id": "D3-NM",
+                    "name": "Network Mapping",
+                    "similarity_score": 0.321674
+                  },
+                  {
+                    "id": "D3-IHN",
+                    "name": "Integrated Honeynet",
+                    "similarity_score": 0.318393
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.315695
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.31376
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.462129
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.434546
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.373946
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.347147
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.345955
+                  },
+                  {
+                    "id": "AML.M0025",
+                    "name": "Model retraining",
+                    "similarity_score": 0.343798
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.342995
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.341608
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.336906
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.334758
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Use-Case Specific Training directly addresses training workforce on specific security scenarios, including dangers of insecure network connections."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.14.9",
+          "control_name": "Conduct Role-Specific Security Awareness and Skills Training",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Conduct Role-Specific Security Awareness and Skills Training",
+              "class": "ORG",
+              "embedding_context": "Conduct Role-Specific Security Awareness and Skills Training",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.393645
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.389753
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.387585
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.387175
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.385155
+                  },
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.38225
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.371187
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.370279
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.366171
+                  },
+                  {
+                    "id": "D3-SPP",
+                    "name": "Strong Password Policy",
+                    "similarity_score": 0.352947
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.537142
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.439072
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.407099
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.377176
+                  },
+                  {
+                    "id": "AML.M0025",
+                    "name": "Model retraining",
+                    "similarity_score": 0.374822
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.368793
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.357346
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.354804
+                  },
+                  {
+                    "id": "AML.M0029",
+                    "name": "Reducing the training data",
+                    "similarity_score": 0.35202
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.351441
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-JFAPA",
+                  "name": "Job Function Access Pattern Analysis",
+                  "description": "Detecting anomalies in user access patterns by comparing user access activity to behavioral profiles that categorize users by role such as job title, function, department.",
+                  "reason": "Job Function Access Pattern Analysis directly supports role-specific training by detecting anomalies in user access patterns categorized by role, enabling tailored security awareness programs."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Use-Case Specific Training explicitly creates models for different use cases, aligning with the requirement for role-specific security awareness and skills training."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

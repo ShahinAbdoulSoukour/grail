@@ -1,0 +1,114 @@
+{
+  "goal_id": "G0",
+  "clause_id": "GOVERN",
+  "clause_name": "Govern AI Risk Management",
+  "goal_name": "Govern AI risk management",
+  "airmf_function": "GOVERN",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To establish and maintain effective AI risk management.",
+      "goal_name": "Establish and maintain effective AI risk management",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "GOVERN 1",
+          "control_name": "Organizational policies, processes, and procedures for mapping, measuring, and managing AI risks are established, implemented, and maintained.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish organizational policies, processes, and procedures for mapping, measuring, and managing AI risks"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Implement organizational policies, processes, and procedures for mapping, measuring, and managing AI risks"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Maintain organizational policies, processes, and procedures for mapping, measuring, and managing AI risks"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "GOVERN 2",
+          "control_name": "Roles and responsibilities for AI risk management are clearly defined, documented, and understood.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Define roles and responsibilities for AI risk management"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Document roles and responsibilities for AI risk management"
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Understand roles and responsibilities for AI risk management"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "GOVERN 3",
+          "control_name": "AI risk management is integrated into organizational culture and decision making.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Integrate AI risk management into organizational culture and decision making"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "GOVERN 4",
+          "control_name": "Processes to monitor compliance with laws, regulations, and ethical norms are established.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish processes to monitor compliance with laws, regulations, and ethical norms"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "GOVERN 5",
+          "control_name": "Resources are allocated for AI risk management activities.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Allocate resources for AI risk management activities"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "GOVERN 6",
+          "control_name": "Processes for internal and external communication about AI risks are defined and implemented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Define processes for internal and external communication about AI risks"
+            },
+            {
+              "goal_id": "G1.6.2",
+              "goal_name": "Implement processes for internal and external communication about AI risks"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "GOVERN 7",
+          "control_name": "The organization establishes mechanisms for accountability and transparency related to AI systems.",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Establish mechanisms for accountability and transparency related to AI systems",
+              "agent": "the organization"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

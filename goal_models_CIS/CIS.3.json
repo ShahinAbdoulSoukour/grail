@@ -1,0 +1,166 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.3",
+  "clause_name": "Data Protection",
+  "goal_name": "Ensure data protection",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Develop processes and technical controls to identify, classify, securely handle, retain, and dispose of data.",
+      "goal_name": "Develop processes and technical controls to identify, classify, securely handle, retain, and dispose of data",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.3.1",
+          "control_name": "Encrypt Sensitive Data in Transit",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Encrypt Sensitive Data in Transit"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.3.2",
+          "control_name": "Establish and Maintain a Data Inventory",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Data Inventory"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Data Inventory"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.3.3",
+          "control_name": "Configure Data Access Control Lists",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Configure Data Access Control Lists"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.3.4",
+          "control_name": "Enforce Data Retention",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Enforce Data Retention"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.3.5",
+          "control_name": "Securely Dispose of Data",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Securely Dispose of Data"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.3.6",
+          "control_name": "Encrypt Data on End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Encrypt Data on End-User Devices"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.3.7",
+          "control_name": "Establish and Maintain a Data Classification Scheme",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Establish a Data Classification Scheme"
+            },
+            {
+              "goal_id": "G1.7.2",
+              "goal_name": "Maintain a Data Classification Scheme"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.3.8",
+          "control_name": "Document Data Flows",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Document Data Flows"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.3.9",
+          "control_name": "Encrypt Data on Removable Media",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Encrypt Data on Removable Media"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "CIS.3.11",
+          "control_name": "Encrypt Sensitive Data at Rest",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Encrypt Sensitive Data at Rest"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "CIS.3.12",
+          "control_name": "Segment Data Processing and Storage Based on Sensitivity",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Segment Data Processing and Storage Based on Sensitivity"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.12",
+          "control_id": "CIS.3.13",
+          "control_name": "Deploy a Data Loss Prevention Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.12.1",
+              "goal_name": "Deploy a Data Loss Prevention Solution"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.13",
+          "control_id": "CIS.3.14",
+          "control_name": "Log Sensitive Data Access",
+          "subgoals": [
+            {
+              "goal_id": "G1.13.1",
+              "goal_name": "Log Sensitive Data Access"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

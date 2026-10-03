@@ -1,0 +1,724 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.4",
+  "clause_name": "Resources",
+  "goal_name": "Ensure resources",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Appropriate resources for AI systems shall be determined and provided.",
+      "goal_name": "Determine appropriate resources for AI systems and Provide appropriate resources for AI systems",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.4.2",
+          "control_name": "Appropriate resources for AI systems shall be determined and provided.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Determine appropriate resources for AI systems",
+              "class": "TECH",
+              "embedding_context": "Determine appropriate resources for AI systems",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.224455
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.20492
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.190067
+                  },
+                  {
+                    "id": "D3-SYSDM",
+                    "name": "System Dependency Mapping",
+                    "similarity_score": 0.187233
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.182998
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.179723
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.17887
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.173711
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.167825
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.167107
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.387675
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.373887
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.362236
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.358772
+                  },
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.356557
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.335402
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.331495
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.32527
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.325149
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.325005
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "System vulnerability assessment helps identify vulnerabilities in AI system components, which informs resource allocation to address risks."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSDM",
+                  "name": "System Dependency Mapping",
+                  "description": "System dependency mapping identifies and models the dependencies of system components on each other to carry out their function.",
+                  "reason": "System dependency mapping identifies interdependencies between AI system components, ensuring resources are allocated to meet functional requirements."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "reason": "Configuration inventory provides baseline data on existing hardware/software configurations, enabling accurate resource planning for AI systems."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "reason": "Resource isolation techniques like containerization directly address resource allocation needs for secure AI system environments."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Provide appropriate resources for AI systems",
+              "class": "TECH",
+              "embedding_context": "Provide appropriate resources for AI systems",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.227732
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.225036
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.215711
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.211106
+                  },
+                  {
+                    "id": "D3-SYSDM",
+                    "name": "System Dependency Mapping",
+                    "similarity_score": 0.192866
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.183994
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.179235
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.178087
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.177416
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.173601
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.434699
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.422801
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.414222
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.385785
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.381179
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.376468
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.375912
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.370264
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.367604
+                  },
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.36738
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "reason": "Implementing resource isolation techniques ensures AI systems have dedicated resources, preventing denial of service and data leakage in shared environments."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "reason": "Regular backups of model code and data ensure recovery of critical resources in case of theft or corruption."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "reason": "Advanced verification mechanisms ensure authenticity of data and identities, preventing AI systems from using spoofed resources."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.4.3",
+          "control_name": "Competence required for AI-related roles shall be established and maintained.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish competence required for AI-related roles",
+              "class": "ORG",
+              "embedding_context": "Establish competence required for AI-related roles",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.287723
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.266964
+                  },
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.258564
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.249775
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.24298
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.235105
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.23135
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.231244
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.226632
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.225325
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.469569
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.462845
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.442003
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.43784
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.430787
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.428153
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.426389
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.414589
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.412588
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.409227
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "reason": "Educates ML model developers on secure coding practices and ML vulnerabilities, directly contributing to establishing competence in AI-related roles."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "reason": "Establishes guidelines to prevent vulnerabilities, which is essential for developing secure AI systems and building technical competence."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "reason": "Validates that machine learning models perform as intended, ensuring competence in model validation and security practices."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0010",
+                  "name": "Input validation",
+                  "description": "Implement input validation and content filtering",
+                  "reason": "Implements input validation and content filtering, a foundational practice for ensuring AI systems process trustworthy data."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Creates use-case specific training models, enhancing competence by tailoring knowledge to practical AI applications."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain competence required for AI-related roles",
+              "class": "ORG",
+              "embedding_context": "Maintain competence required for AI-related roles",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.247
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.185935
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.184097
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.175192
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.170346
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.163471
+                  },
+                  {
+                    "id": "D3-WSAM",
+                    "name": "Web Session Access Mediation",
+                    "similarity_score": 0.163363
+                  },
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.162274
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.160295
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.159006
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.434707
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.410542
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.404171
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.393659
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.382367
+                  },
+                  {
+                    "id": "AML.M0025",
+                    "name": "Model retraining",
+                    "similarity_score": 0.365291
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.363366
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.36249
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.359419
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.354571
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "reason": "Educates ML model developers on secure coding practices and ML vulnerabilities, directly enhancing competence in AI-related roles."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Creates use-case specific models, ensuring AI systems maintain competence by aligning with precise operational requirements."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "reason": "Deploys advanced verification mechanisms to ensure content authenticity, preventing AI systems from making decisions based on compromised data."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0025",
+                  "name": "Model retraining",
+                  "description": "Regularly retraining the model can help to prevent the information leaked by model inversion attacks from becoming outdated. This can be done by incorporating new data and correcting any inaccuracies in the model’s predictions.",
+                  "reason": "Regularly retraining models prevents outdated knowledge from affecting AI competence, ensuring alignment with current data and threats."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "reason": "Requires human approval for actions, maintaining competence by enforcing oversight and reducing errors in AI decision-making."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.4.4",
+          "control_name": "Personnel shall be aware of AI policy, risks, and responsibilities.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Ensure personnel are aware of AI policy, risks, and responsibilities",
+              "class": "ORG",
+              "embedding_context": "Ensure personnel are aware of AI policy, risks, and responsibilities",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.3814
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.357192
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.354066
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.347879
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.341722
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.340149
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.338236
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.333957
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.329917
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.324021
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.568677
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.544177
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.532173
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.530456
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.530443
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.509241
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.508562
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.507874
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.498904
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.492006
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

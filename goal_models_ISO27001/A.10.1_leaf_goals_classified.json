@@ -1,0 +1,49 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.10.1",
+  "clause_name": "Cryptographic controls",
+  "goal_name": "Apply cryptographic controls",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure proper and effective use of cryptography to protect the confidentiality, authenticity and/or integrity of information.",
+      "goal_name": "Ensure proper and effective use of cryptography to protect the confidentiality, authenticity and/or integrity of information",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.10.1.1",
+          "control_name": "A policy on the use of cryptographic controls for protection of information shall be developed and implemented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop a policy on the use of cryptographic controls for protection of information",
+              "class": "TECH"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Implement a policy on the use of cryptographic controls for protection of information",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.10.1.2",
+          "control_name": "A policy on the use, protection and lifetime of cryptographic keys shall be developed and implemented through their whole lifecycle.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Develop a policy on the use, protection and lifetime of cryptographic keys",
+              "class": "TECH"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Implement a policy on the use, protection and lifetime of cryptographic keys through their whole lifecycle",
+              "class": "TECH"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

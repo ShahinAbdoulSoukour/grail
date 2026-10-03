@@ -1,0 +1,213 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.4",
+  "clause_name": "Secure Configuration of Enterprise Assets and Software",
+  "goal_name": "Secure configuration of enterprise assets and software",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Establish and maintain the secure configuration of enterprise assets (end-user devices, including portable and mobile; network devices; non-computing/IoT devices; and servers) and software (operating systems and applications).",
+      "goal_name": "Establish and maintain the secure configuration of enterprise assets and software",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.4.1",
+          "control_name": "Enforce Automatic Device Lockout on Portable End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Enforce Automatic Device Lockout on Portable End-User Devices",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.4.2",
+          "control_name": "Establish and Maintain a Secure Configuration Process for Network Infrastructure",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Secure Configuration Process for Network Infrastructure",
+              "class": "TECH",
+              "artifact": "NetworkTraffic",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Secure Configuration Process for Network Infrastructure",
+              "class": "TECH",
+              "artifact": "NetworkTraffic",
+              "actions": [
+                {
+                  "id": "D3-APCA",
+                  "label": "Application Protocol Command Analysis",
+                  "verb": "monitors",
+                  "definition": "Analyzing application protocol level remote commands to detect unauthorized activity.",
+                  "source": "D3FEND"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.4.3",
+          "control_name": "Configure Automatic Session Locking on Enterprise Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Configure Automatic Session Locking on Enterprise Assets",
+              "class": "PHYS",
+              "artifact": "Session",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.4.4",
+          "control_name": "Implement and Manage a Firewall on Servers",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Implement a Firewall on Servers",
+              "class": "TECH",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Manage a Firewall on Servers",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.4.5",
+          "control_name": "Implement and Manage a Firewall on End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Implement a Firewall on End-User Devices",
+              "class": "TECH",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.5.2",
+              "goal_name": "Manage a Firewall on End-User Devices",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.4.6",
+          "control_name": "Securely Manage Enterprise Assets and Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Securely Manage Enterprise Assets and Software",
+              "class": "TECH",
+              "artifact": "Software",
+              "actions": [
+                {
+                  "id": "D3-SWI",
+                  "label": "Software Inventory",
+                  "verb": "inventories",
+                  "definition": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "source": "D3FEND"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.4.7",
+          "control_name": "Manage Default Accounts on Enterprise Assets and Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Manage Default Accounts on Enterprise Assets and Software",
+              "class": "TECH",
+              "artifact": "UserAccount",
+              "actions": [
+                {
+                  "id": "D3-UAP",
+                  "label": "User Account Permissions",
+                  "verb": "restricts",
+                  "definition": "Restricting a user account's access to resources.",
+                  "source": "D3FEND"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.4.8",
+          "control_name": "Uninstall or Disable Unnecessary Services on Enterprise Assets and Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Uninstall Unnecessary Services on Enterprise Assets and Software",
+              "class": "TECH",
+              "artifact": "Software",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.8.2",
+              "goal_name": "Disable Unnecessary Services on Enterprise Assets and Software",
+              "class": "TECH",
+              "artifact": "Software",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.4.9",
+          "control_name": "Configure Trusted DNS Servers on Enterprise Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Configure Trusted DNS Servers on Enterprise Assets",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "CIS.4.11",
+          "control_name": "Enforce Remote Wipe Capability on Portable End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Enforce Remote Wipe Capability on Portable End-User Devices",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "CIS.4.12",
+          "control_name": "Separate Enterprise Workspaces on Mobile End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Separate Enterprise Workspaces on Mobile End-User Devices",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

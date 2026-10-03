@@ -1,0 +1,4197 @@
+{
+  "goal_id": "G0",
+  "clause_id": "MAP",
+  "clause_name": "Map AI Systems and Risks",
+  "goal_name": "Map AI systems and risks",
+  "airmf_function": "MAP",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To establish a clear understanding of AI systems, their context, impacts, and risks.",
+      "goal_name": "Establish a clear understanding of AI systems, their context, impacts, and risks",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "MAP 1.1",
+          "control_name": "Intended purposes, beneficial uses, context-specific laws, norms, and expectations are understood and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Understand intended purposes, beneficial uses, context-specific laws, norms, and expectations",
+              "class": "ORG",
+              "embedding_context": "Understand intended purposes, beneficial uses, context-specific laws, norms, and expectations",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.364809
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.349987
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.348395
+                  },
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.330956
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.322129
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.311542
+                  },
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.303427
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.29764
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.291728
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.290169
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.340125
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.326123
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.317117
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.290679
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.272592
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.270263
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.26936
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.268636
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.267604
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.262859
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OM",
+                  "name": "Organization Mapping",
+                  "description": "Organization mapping identifies and models the people, roles, and groups with an organization and the relations between them.",
+                  "reason": "Organization mapping helps understand roles, groups, and relations within an organization, aligning with context-specific norms and expectations."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ODM",
+                  "name": "Operational Dependency Mapping",
+                  "description": "Operational dependency mapping identifies and models the dependencies of the organization's activities on each other and on the organization's performers (people, systems, and services.)  This may include modeling the higher- and lower-level activities of an organization forming a hierarchy, or layering, of the dependencies in an organization's activities.",
+                  "reason": "Operational dependency mapping reveals how organizational activities interrelate, supporting understanding of context-specific laws and expectations."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access modeling captures permissions and identity management, directly addressing norms and legal frameworks around data use."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "reason": "Limiting public information release aligns with understanding organizational expectations and legal constraints on disclosure."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Use-case specific training models directly support understanding intended purposes and context-specific norms for system usage."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document intended purposes, beneficial uses, context-specific laws, norms, and expectations",
+              "class": "ORG",
+              "embedding_context": "Document intended purposes, beneficial uses, context-specific laws, norms, and expectations",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.312427
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.298222
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.295458
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.294487
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.286508
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.283278
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.278372
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.269812
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.252744
+                  },
+                  {
+                    "id": "D3-FCR",
+                    "name": "File Content Rules",
+                    "similarity_score": 0.249622
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.280973
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.269291
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.26848
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.263312
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.242141
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.237704
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.231604
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.231338
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.228105
+                  },
+                  {
+                    "id": "OWASP.M0025",
+                    "name": "Plugin Scope Control",
+                    "similarity_score": 0.225358
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "reason": "Data Inventory directly supports documenting intended purposes and beneficial uses by recording data schemas, formats, and locations, which are essential for contextual documentation."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OM",
+                  "name": "Organization Mapping",
+                  "description": "Organization mapping identifies and models the people, roles, and groups with an organization and the relations between them.",
+                  "reason": "Organization Mapping models roles, groups, and relations, aligning with norms, expectations, and context-specific structures required to document organizational context."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ODM",
+                  "name": "Operational Dependency Mapping",
+                  "description": "Operational dependency mapping identifies and models the dependencies of the organization's activities on each other and on the organization's performers (people, systems, and services.)  This may include modeling the higher- and lower-level activities of an organization forming a hierarchy, or layering, of the dependencies in an organization's activities.",
+                  "reason": "Operational Dependency Mapping captures dependencies between activities and performers, enabling documentation of context-specific laws and systemic expectations."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "MAP 1.2",
+          "control_name": "Interdisciplinary AI actors, competencies, and participation reflect diversity and expertise.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Ensure interdisciplinary AI actors, competencies, and participation reflect diversity and expertise",
+              "class": "ORG",
+              "embedding_context": "Ensure interdisciplinary AI actors, competencies, and participation reflect diversity and expertise",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.248688
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.205467
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.201139
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.183464
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.17644
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.174819
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.171568
+                  },
+                  {
+                    "id": "D3-IRA",
+                    "name": "Identifier Reputation Analysis",
+                    "similarity_score": 0.164635
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.15465
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.151465
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.390624
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.384331
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.363909
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.359519
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.326946
+                  },
+                  {
+                    "id": "AML.M0006",
+                    "name": "Use Ensemble Methods",
+                    "similarity_score": 0.32355
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.32342
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.319481
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.319175
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.313558
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "MAP 1.3",
+          "control_name": "The organization mission and relevant goals for AI technology are understood and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Understand the organization mission and relevant goals for AI technology",
+              "class": "ORG",
+              "embedding_context": "Understand the organization mission and relevant goals for AI technology",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.352806
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.324235
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.284395
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.260912
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.249113
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.246126
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.238302
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.226864
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.225534
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.222373
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.504183
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.412558
+                  },
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.41185
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.400844
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.400096
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.387776
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.379582
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.373874
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.369438
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.3685
+                  }
+                ]
+              },
+              "actions": []
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Document the organization mission and relevant goals for AI technology",
+              "class": "ORG",
+              "embedding_context": "Document the organization mission and relevant goals for AI technology",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.341458
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.309908
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.301388
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.258296
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.248522
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.243644
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.240156
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.236565
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.233938
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.232459
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.519419
+                  },
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.436144
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.41768
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.414822
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.404789
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.404049
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.391791
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.389577
+                  },
+                  {
+                    "id": "OWASP.M0030",
+                    "name": "Review Model Output",
+                    "similarity_score": 0.385406
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.382138
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OM",
+                  "name": "Organization Mapping",
+                  "description": "Organization mapping identifies and models the people, roles, and groups with an organization and the relations between them.",
+                  "reason": "Organization Mapping directly models people, roles, and groups, which is essential for documenting the organization's mission and structure related to AI technology."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ODM",
+                  "name": "Operational Dependency Mapping",
+                  "description": "Operational dependency mapping identifies and models the dependencies of the organization's activities on each other and on the organization's performers (people, systems, and services.)  This may include modeling the higher- and lower-level activities of an organization forming a hierarchy, or layering, of the dependencies in an organization's activities.",
+                  "reason": "Operational Dependency Mapping models dependencies between activities and performers, helping to document how AI technology goals are interconnected with organizational operations."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "MAP 1.4",
+          "control_name": "The business value or context of business use has been clearly defined or re-evaluated.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Define the business value or context of business use",
+              "class": "ORG",
+              "embedding_context": "Define the business value or context of business use",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.321194
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.30805
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.303439
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.288009
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.272031
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.271617
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.269369
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.261806
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.254337
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.246183
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.234552
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.192428
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.181628
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.172407
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.170596
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.168367
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.166387
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.16407
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.149602
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.141875
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ODM",
+                  "name": "Operational Dependency Mapping",
+                  "description": "Operational dependency mapping identifies and models the dependencies of the organization's activities on each other and on the organization's performers (people, systems, and services.)  This may include modeling the higher- and lower-level activities of an organization forming a hierarchy, or layering, of the dependencies in an organization's activities.",
+                  "reason": "Operational dependency mapping directly models how organizational activities depend on systems, people, and services, clarifying their business context and value."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DEM",
+                  "name": "Data Exchange Mapping",
+                  "description": "Data exchange mapping identifies and models the organization's intended design for the flows of the data types, formats, and volumes between systems at the application layer.",
+                  "reason": "Data exchange mapping models data flows between systems, which is critical for understanding how data contributes to business processes and value."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OM",
+                  "name": "Organization Mapping",
+                  "description": "Organization mapping identifies and models the people, roles, and groups with an organization and the relations between them.",
+                  "reason": "Organization mapping defines roles, groups, and relationships, establishing the human and structural context of business operations."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Re-evaluate the business value or context of business use",
+              "class": "ORG",
+              "embedding_context": "Re-evaluate the business value or context of business use",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.276029
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.257898
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.247779
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.244906
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.237184
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.233517
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.23037
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.218475
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.21635
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.215996
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.232763
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.178239
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.171881
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.157013
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.145977
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.138677
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.132469
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.121667
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.120439
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.117678
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ORA",
+                  "name": "Operational Risk Assessment",
+                  "description": "Operational risk assessment identifies and models the vulnerabilities of, and risks to, an organization's activities individually and as a whole.",
+                  "reason": "Operational risk assessment directly models vulnerabilities and risks to organizational activities, enabling re-evaluation of business context by identifying systemic risks impacting value."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Inventory management maintains accurate asset records, supporting continuous re-evaluation of business context through up-to-date inventory data."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "MAP 1.5",
+          "control_name": "Organizational risk tolerances are determined and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Determine organizational risk tolerances",
+              "class": "ORG",
+              "embedding_context": "Determine organizational risk tolerances",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.416184
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.326756
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.322825
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.317102
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.303029
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.290684
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.264773
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.26165
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.257468
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.247123
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.234774
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.234448
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.218866
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.217841
+                  },
+                  {
+                    "id": "OWASP.M0020",
+                    "name": "Fine-Tuning Caution",
+                    "similarity_score": 0.216226
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.210735
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.203878
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.202688
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.195745
+                  },
+                  {
+                    "id": "OWASP.M0004",
+                    "name": "Trust Boundaries",
+                    "similarity_score": 0.195003
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ORA",
+                  "name": "Operational Risk Assessment",
+                  "description": "Operational risk assessment identifies and models the vulnerabilities of, and risks to, an organization's activities individually and as a whole.",
+                  "reason": "Operational Risk Assessment directly identifies and models organizational vulnerabilities and risks, which is essential for determining risk tolerances."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ODM",
+                  "name": "Operational Dependency Mapping",
+                  "description": "Operational dependency mapping identifies and models the dependencies of the organization's activities on each other and on the organization's performers (people, systems, and services.)  This may include modeling the higher- and lower-level activities of an organization forming a hierarchy, or layering, of the dependencies in an organization's activities.",
+                  "reason": "Operational Dependency Mapping models dependencies between activities and performers, enabling analysis of how risks propagate through the organization's structure."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.5.2",
+              "goal_name": "Document organizational risk tolerances",
+              "class": "ORG",
+              "embedding_context": "Document organizational risk tolerances",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.348567
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.344769
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.343029
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.330988
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.32056
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.283018
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.282624
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.275068
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.274855
+                  },
+                  {
+                    "id": "D3-SMRA",
+                    "name": "Sender MTA Reputation Analysis",
+                    "similarity_score": 0.270459
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.317587
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.271439
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.266945
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.26194
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.234434
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.231339
+                  },
+                  {
+                    "id": "OWASP.M0004",
+                    "name": "Trust Boundaries",
+                    "similarity_score": 0.22584
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.223522
+                  },
+                  {
+                    "id": "OWASP.M0020",
+                    "name": "Fine-Tuning Caution",
+                    "similarity_score": 0.22305
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.215279
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ORA",
+                  "name": "Operational Risk Assessment",
+                  "description": "Operational risk assessment identifies and models the vulnerabilities of, and risks to, an organization's activities individually and as a whole.",
+                  "reason": "Operational Risk Assessment directly identifies and models vulnerabilities and risks to organizational activities, providing foundational data needed to document risk tolerances."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "MAP 1.6",
+          "control_name": "System requirements are elicited and socio-technical implications are considered.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Elicit system requirements and socio-technical implications are considered",
+              "class": "ORG",
+              "embedding_context": "Elicit system requirements and socio-technical implications are considered",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.284153
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.283223
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.280666
+                  },
+                  {
+                    "id": "D3-IDA",
+                    "name": "Input Device Analysis",
+                    "similarity_score": 0.256411
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.25066
+                  },
+                  {
+                    "id": "D3-SYSDM",
+                    "name": "System Dependency Mapping",
+                    "similarity_score": 0.244239
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.234695
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.233869
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.232833
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.232819
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.361034
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.358832
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.339329
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.324684
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.30276
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.292519
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.290595
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.287705
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.287209
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.279187
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSM",
+                  "name": "System Mapping",
+                  "description": "System mapping encompasses the techniques to identify the organization's systems, how they are configured and decomposed into subsystems and components, how they are dependent on one another, and where they are physically located.",
+                  "reason": "System mapping identifies organizational systems, configurations, and dependencies, directly supporting elicitation of system requirements and understanding interdependencies."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ODM",
+                  "name": "Operational Dependency Mapping",
+                  "description": "Operational dependency mapping identifies and models the dependencies of the organization's activities on each other and on the organization's performers (people, systems, and services.)  This may include modeling the higher- and lower-level activities of an organization forming a hierarchy, or layering, of the dependencies in an organization's activities.",
+                  "reason": "Operational dependency mapping models dependencies on people/systems/services, directly addressing socio-technical implications by capturing human-organizational interactions."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "reason": "Human-in-the-loop requires approval for actions, ensuring socio-technical considerations by incorporating human judgment into system requirements."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0022",
+                  "name": "User Confirmation",
+                  "description": "Require manual authorization for sensitive actions.",
+                  "reason": "User confirmation for sensitive actions ensures socio-technical implications are considered by requiring manual oversight of critical operations."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "MAP 2.1",
+          "control_name": "The specific tasks and methods used to implement the tasks the AI system will support are defined.",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Define the specific tasks and methods used to implement the tasks the AI system will support",
+              "class": "TECH",
+              "embedding_context": "Define the specific tasks and methods used to implement the tasks the AI system will support",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.351768
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.342893
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.338988
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.329836
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.320672
+                  },
+                  {
+                    "id": "D3-SEA",
+                    "name": "Script Execution Analysis",
+                    "similarity_score": 0.316602
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.306453
+                  },
+                  {
+                    "id": "D3-SCA",
+                    "name": "System Call Analysis",
+                    "similarity_score": 0.304471
+                  },
+                  {
+                    "id": "D3-APCA",
+                    "name": "Application Protocol Command Analysis",
+                    "similarity_score": 0.302693
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.301512
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.489685
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.483577
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.472533
+                  },
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.450921
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.450804
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.44864
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.445973
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.443469
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.434827
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.434164
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ODM",
+                  "name": "Operational Dependency Mapping",
+                  "description": "Operational dependency mapping identifies and models the dependencies of the organization's activities on each other and on the organization's performers (people, systems, and services.)  This may include modeling the higher- and lower-level activities of an organization forming a hierarchy, or layering, of the dependencies in an organization's activities.",
+                  "reason": "Operational Dependency Mapping directly supports defining tasks by modeling dependencies between organizational activities and systems, which is essential for structuring the AI system's implementation."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Use-Case Specific Training directly addresses defining tasks by creating separate models for different use cases, aligning with the goal of specifying tasks and methods for the AI system."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OLV",
+                  "name": "Operational Logic Validation",
+                  "description": "Validation of variable state in the context of the control logic of the operational application.",
+                  "reason": "Operational Logic Validation ensures the correctness of control logic in operational applications, directly supporting the implementation of methods required by the AI system."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "MAP 2.2",
+          "control_name": "Information about knowledge limits and human oversight of the AI system is documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Document information about knowledge limits and human oversight of the AI system",
+              "class": "ORG",
+              "embedding_context": "Document information about knowledge limits and human oversight of the AI system",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.295235
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.283109
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.275975
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.271924
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.268657
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.264272
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.256987
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.251775
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.241204
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.239092
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.599372
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.498568
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.48584
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.480782
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.473787
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.462502
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.458422
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.456391
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.452587
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.452488
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "reason": "Requires human approval for actions, directly supporting human oversight documentation in AI systems."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "reason": "Limits public release of technical information, directly addressing knowledge limits documentation for AI systems."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "MAP 2.3",
+          "control_name": "Scientific integrity and TEVV considerations are identified and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Identify scientific integrity and TEVV considerations",
+              "class": "ORG",
+              "embedding_context": "Identify scientific integrity and TEVV considerations",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-FMCV",
+                    "name": "File Metadata Consistency Validation",
+                    "similarity_score": 0.358617
+                  },
+                  {
+                    "id": "D3-DLV",
+                    "name": "Domain Logic Validation",
+                    "similarity_score": 0.327077
+                  },
+                  {
+                    "id": "D3-VTV",
+                    "name": "Variable Type Validation",
+                    "similarity_score": 0.321652
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.312798
+                  },
+                  {
+                    "id": "D3-SFCV",
+                    "name": "Stack Frame Canary Validation",
+                    "similarity_score": 0.311711
+                  },
+                  {
+                    "id": "D3-FMBV",
+                    "name": "File Magic Byte Verification",
+                    "similarity_score": 0.30949
+                  },
+                  {
+                    "id": "D3-FFV",
+                    "name": "File Format Verification",
+                    "similarity_score": 0.294531
+                  },
+                  {
+                    "id": "D3-FMVV",
+                    "name": "File Metadata Value Verification",
+                    "similarity_score": 0.294504
+                  },
+                  {
+                    "id": "D3-FISV",
+                    "name": "File Internal Structure Verification",
+                    "similarity_score": 0.288885
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.285465
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.40001
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.352008
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.327709
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.310828
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.300795
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.29488
+                  },
+                  {
+                    "id": "OWASP.M0031",
+                    "name": "Cross-Check",
+                    "similarity_score": 0.292483
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.286409
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.284864
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.284535
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FMVV",
+                  "name": "File Metadata Value Verification",
+                  "description": "The process of checking specific static values within a file, such as file signatures or magic numbers, to ensure they match the expected values defined by the file format specification.",
+                  "reason": "Verifies file metadata values against expected specifications, directly supporting scientific integrity by ensuring metadata accuracy and consistency with file format standards."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FMCV",
+                  "name": "File Metadata Consistency Validation",
+                  "description": "The process of validating the consistency between a file's metadata and its actual content, ensuring that elements like declared lengths, pointers, and checksums accurately describe the file's content.",
+                  "reason": "Validates consistency between file metadata and content, helping identify discrepancies that could indicate tampering or data integrity issues relevant to TEVV considerations."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0014",
+                  "name": "Verify ML Artifacts",
+                  "description": "Verify the cryptographic checksum of all machine learning artifacts to verify that the file or repositiory was not modified by an attacker.",
+                  "reason": "Checks cryptographic checksums of ML artifacts to detect unauthorized modifications, aligning with TEVV by ensuring artifact integrity and preventing data tampering."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "reason": "Ensures data legitimacy throughout training stages, directly addressing scientific integrity by verifying the authenticity and trustworthiness of input data."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.9.2",
+              "goal_name": "Document scientific integrity and TEVV considerations",
+              "class": "ORG",
+              "embedding_context": "Document scientific integrity and TEVV considerations",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-FMCV",
+                    "name": "File Metadata Consistency Validation",
+                    "similarity_score": 0.373606
+                  },
+                  {
+                    "id": "D3-VTV",
+                    "name": "Variable Type Validation",
+                    "similarity_score": 0.317256
+                  },
+                  {
+                    "id": "D3-FFV",
+                    "name": "File Format Verification",
+                    "similarity_score": 0.312046
+                  },
+                  {
+                    "id": "D3-FMBV",
+                    "name": "File Magic Byte Verification",
+                    "similarity_score": 0.309468
+                  },
+                  {
+                    "id": "D3-DLV",
+                    "name": "Domain Logic Validation",
+                    "similarity_score": 0.303359
+                  },
+                  {
+                    "id": "D3-FMVV",
+                    "name": "File Metadata Value Verification",
+                    "similarity_score": 0.302142
+                  },
+                  {
+                    "id": "D3-FISV",
+                    "name": "File Internal Structure Verification",
+                    "similarity_score": 0.291306
+                  },
+                  {
+                    "id": "D3-SFCV",
+                    "name": "Stack Frame Canary Validation",
+                    "similarity_score": 0.286315
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.279387
+                  },
+                  {
+                    "id": "D3-TL",
+                    "name": "Trusted Library",
+                    "similarity_score": 0.277091
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.387715
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.356699
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.321545
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.311412
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.293139
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.290685
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.289432
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.280699
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.27589
+                  },
+                  {
+                    "id": "OWASP.M0031",
+                    "name": "Cross-Check",
+                    "similarity_score": 0.275814
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FMVV",
+                  "name": "File Metadata Value Verification",
+                  "description": "The process of checking specific static values within a file, such as file signatures or magic numbers, to ensure they match the expected values defined by the file format specification.",
+                  "reason": "Verifies file metadata values against expected specifications, ensuring data authenticity and integrity which directly supports documenting scientific integrity."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FISV",
+                  "name": "File Internal Structure Verification",
+                  "description": "The process of checking specific static values within a file, such as file signatures or magic numbers, to ensure they match the expected values defined by the file format specification.",
+                  "reason": "Validates file internal structure to ensure consistency with expected formats, contributing to scientific data integrity documentation."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FFV",
+                  "name": "File Format Verification",
+                  "description": "Verifying that a file conforms to its expected format specifications",
+                  "reason": "Verifies file format compliance, ensuring data conforms to expected specifications and supports integrity documentation."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0014",
+                  "name": "Verify ML Artifacts",
+                  "description": "Verify the cryptographic checksum of all machine learning artifacts to verify that the file or repositiory was not modified by an attacker.",
+                  "reason": "Checks cryptographic checksums of ML artifacts to verify they were not modified, directly supporting scientific integrity documentation."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0030",
+                  "name": "Verify the authenticity of feedback data",
+                  "description": "Use techniques such as digital signatures and checksums to verify that the feedback data received by the system is genuine, and reject any data that does not match the expected format.",
+                  "reason": "Verifies feedback data authenticity using digital signatures, preventing spoofed inputs and supporting TEVV considerations."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "MAP 3.1",
+          "control_name": "Potential benefits of intended AI system functionality and performance are examined and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Examine potential benefits of intended AI system functionality and performance",
+              "class": "ORG",
+              "embedding_context": "Examine potential benefits of intended AI system functionality and performance",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.306507
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.278447
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.268391
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.264862
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.254356
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.232443
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.232376
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.230575
+                  },
+                  {
+                    "id": "D3-IRA",
+                    "name": "Identifier Reputation Analysis",
+                    "similarity_score": 0.213769
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.210067
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.441845
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.436969
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.412956
+                  },
+                  {
+                    "id": "OWASP.M0030",
+                    "name": "Review Model Output",
+                    "similarity_score": 0.4109
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.405801
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.403406
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.401512
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.400811
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.397677
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.393553
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Creates separate models for different use cases, directly enabling examination of benefits and performance for each intended AI functionality."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "reason": "Validates ML models perform as intended by testing for adversarial bias and concept drift, directly assessing functional performance."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OLV",
+                  "name": "Operational Logic Validation",
+                  "description": "Validation of variable state in the context of the control logic of the operational application.",
+                  "reason": "Validates operational logic of the application, ensuring the AI system's control logic aligns with intended functionality and performance requirements."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.10.2",
+              "goal_name": "Document potential benefits of intended AI system functionality and performance",
+              "class": "ORG",
+              "embedding_context": "Document potential benefits of intended AI system functionality and performance",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.307065
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.274164
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.264473
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.264366
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.257615
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.24772
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.226614
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.223793
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.223745
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.222633
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.516237
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.464776
+                  },
+                  {
+                    "id": "OWASP.M0030",
+                    "name": "Review Model Output",
+                    "similarity_score": 0.436168
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.42679
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.423456
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.419789
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.409434
+                  },
+                  {
+                    "id": "OWASP.M0020",
+                    "name": "Fine-Tuning Caution",
+                    "similarity_score": 0.407124
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.406456
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.404609
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "MAP 3.2",
+          "control_name": "Potential costs from expected or realized AI errors or functionality are examined and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Examine potential costs from expected or realized AI errors or functionality",
+              "class": "ORG",
+              "embedding_context": "Examine potential costs from expected or realized AI errors or functionality",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.289823
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.260667
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.255755
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.245699
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.242641
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.239487
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.236339
+                  },
+                  {
+                    "id": "D3-PA",
+                    "name": "Process Analysis",
+                    "similarity_score": 0.230592
+                  },
+                  {
+                    "id": "D3-IRA",
+                    "name": "Identifier Reputation Analysis",
+                    "similarity_score": 0.229006
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.216553
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.421359
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.415341
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.407449
+                  },
+                  {
+                    "id": "AML.M0025",
+                    "name": "Model retraining",
+                    "similarity_score": 0.367792
+                  },
+                  {
+                    "id": "OWASP.M0030",
+                    "name": "Review Model Output",
+                    "similarity_score": 0.367013
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.366308
+                  },
+                  {
+                    "id": "OWASP.M0004",
+                    "name": "Trust Boundaries",
+                    "similarity_score": 0.356778
+                  },
+                  {
+                    "id": "OWASP.M0019",
+                    "name": "Input Validation",
+                    "similarity_score": 0.352594
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.351928
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.350366
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ORA",
+                  "name": "Operational Risk Assessment",
+                  "description": "Operational risk assessment identifies and models the vulnerabilities of, and risks to, an organization's activities individually and as a whole.",
+                  "reason": "Operational Risk Assessment directly models risks to organizational activities, including costs from AI errors or functionality issues."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AEM",
+                  "name": "Application Exception Monitoring",
+                  "description": "Monitoring the failures of system counters and timers.",
+                  "reason": "Application Exception Monitoring directly tracks failures in AI systems, enabling cost analysis from realized errors."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "reason": "Validating ML models ensures they perform as intended, preventing costs from model errors or biases."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "reason": "Vulnerability scanning identifies exploitable weaknesses in AI systems that could lead to realized costs."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0019",
+                  "name": "Input Validation",
+                  "description": "Filter malicious inputs to avoid model poisoning.",
+                  "reason": "Input validation prevents model poisoning, reducing risks of errors that could incur costs."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.11.2",
+              "goal_name": "Document potential costs from expected or realized AI errors or functionality",
+              "class": "ORG",
+              "embedding_context": "Document potential costs from expected or realized AI errors or functionality",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.282088
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.276625
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.246992
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.243977
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.241373
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.241164
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.238112
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.225595
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.222418
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.219129
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.444708
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.400985
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.379619
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.3796
+                  },
+                  {
+                    "id": "OWASP.M0030",
+                    "name": "Review Model Output",
+                    "similarity_score": 0.377089
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.374767
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.364848
+                  },
+                  {
+                    "id": "OWASP.M0004",
+                    "name": "Trust Boundaries",
+                    "similarity_score": 0.363632
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.361065
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.354072
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AEM",
+                  "name": "Application Exception Monitoring",
+                  "description": "Monitoring the failures of system counters and timers.",
+                  "reason": "Application Exception Monitoring directly tracks failures in systems, which can include AI errors, enabling documentation of costs associated with realized errors."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "System Vulnerability Assessment evaluates risks from design flaws and component interactions, helping quantify potential costs of AI functionality issues."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.12",
+          "control_id": "MAP 3.3",
+          "control_name": "Targeted application scope is specified and documented based on system capability and context.",
+          "subgoals": [
+            {
+              "goal_id": "G1.12.1",
+              "goal_name": "Specify targeted application scope",
+              "class": "TECH",
+              "embedding_context": "Specify targeted application scope",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-ABPI",
+                    "name": "Application-based Process Isolation",
+                    "similarity_score": 0.371041
+                  },
+                  {
+                    "id": "D3-ACH",
+                    "name": "Application Configuration Hardening",
+                    "similarity_score": 0.325545
+                  },
+                  {
+                    "id": "D3-EDL",
+                    "name": "Executable Denylisting",
+                    "similarity_score": 0.319924
+                  },
+                  {
+                    "id": "D3-DRA",
+                    "name": "Disable Remote Access",
+                    "similarity_score": 0.314643
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.313625
+                  },
+                  {
+                    "id": "D3-PSEP",
+                    "name": "Process Segment Execution Prevention",
+                    "similarity_score": 0.301116
+                  },
+                  {
+                    "id": "D3-AH",
+                    "name": "Application Hardening",
+                    "similarity_score": 0.295234
+                  },
+                  {
+                    "id": "D3-EAL",
+                    "name": "Executable Allowlisting",
+                    "similarity_score": 0.273255
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.272557
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.268837
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0025",
+                    "name": "Plugin Scope Control",
+                    "similarity_score": 0.424734
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.352017
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.346301
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.345149
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.341551
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.338956
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.338214
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.325275
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.320493
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.312436
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EDL",
+                  "name": "Executable Denylisting",
+                  "description": "Blocking the execution of files on a host in accordance with defined application policy rules.",
+                  "reason": "Blocking execution of files based on policy rules directly specifies which applications are allowed, aligning with defining targeted application scope."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0024",
+                  "name": "Limit Plugin Functions",
+                  "description": "Allow only essential functions for LLM agents.",
+                  "reason": "Limits plugin functions to only essential operations, directly narrowing the scope of application capabilities."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0025",
+                  "name": "Plugin Scope Control",
+                  "description": "Restrict functions within LLM plugins.",
+                  "reason": "Restricts functions within LLM plugins, ensuring the application scope is confined to defined functionalities."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0026",
+                  "name": "Granular Functionality",
+                  "description": "Avoid open-ended functions; use specific plugins.",
+                  "reason": "Avoids open-ended functions by using specific plugins, directly specifying the application's operational boundaries."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.12.2",
+              "goal_name": "Document targeted application scope based on system capability and context",
+              "class": "ORG",
+              "embedding_context": "Document targeted application scope based on system capability and context",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.308044
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.280054
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.267881
+                  },
+                  {
+                    "id": "D3-SYSDM",
+                    "name": "System Dependency Mapping",
+                    "similarity_score": 0.255618
+                  },
+                  {
+                    "id": "D3-APM",
+                    "name": "Application Performance Monitoring",
+                    "similarity_score": 0.254252
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.250808
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.249174
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.244537
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.242863
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.241252
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.344902
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.318546
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.292435
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.286791
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.271937
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.269907
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.266314
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.249106
+                  },
+                  {
+                    "id": "OWASP.M0025",
+                    "name": "Plugin Scope Control",
+                    "similarity_score": 0.243783
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.240829
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSDM",
+                  "name": "System Dependency Mapping",
+                  "description": "System dependency mapping identifies and models the dependencies of system components on each other to carry out their function.",
+                  "reason": "System Dependency Mapping directly models dependencies between system components, which is essential for documenting application scope based on system capabilities."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ODM",
+                  "name": "Operational Dependency Mapping",
+                  "description": "Operational dependency mapping identifies and models the dependencies of the organization's activities on each other and on the organization's performers (people, systems, and services.)  This may include modeling the higher- and lower-level activities of an organization forming a hierarchy, or layering, of the dependencies in an organization's activities.",
+                  "reason": "Operational Dependency Mapping captures dependencies between organizational activities, supporting documentation of application scope based on contextual operational requirements."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.13",
+          "control_id": "MAP 3.4",
+          "control_name": "Processes for operator and practitioner proficiency are defined, assessed, and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.13.1",
+              "goal_name": "Define processes for operator and practitioner proficiency",
+              "class": "ORG",
+              "embedding_context": "Define processes for operator and practitioner proficiency",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.30073
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.297482
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.295821
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.29425
+                  },
+                  {
+                    "id": "D3-PA",
+                    "name": "Process Analysis",
+                    "similarity_score": 0.284042
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.275488
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.273405
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.259321
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.240102
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.236452
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.25713
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.228017
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.210936
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.199168
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.191456
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.179247
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.174646
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.173838
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.165932
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.159995
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "reason": "Operational Process Monitoring directly supports defining proficiency processes by monitoring operator actions and physical parameters, ensuring adherence to defined operational procedures."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Use-Case Specific Training directly contributes to defining proficiency processes by creating tailored training models that establish clear expectations and capabilities for operators and practitioners."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.13.2",
+              "goal_name": "Assess processes for operator and practitioner proficiency",
+              "class": "ORG",
+              "embedding_context": "Assess processes for operator and practitioner proficiency",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.264423
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.255208
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.249891
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.233397
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.231363
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.221427
+                  },
+                  {
+                    "id": "D3-PA",
+                    "name": "Process Analysis",
+                    "similarity_score": 0.216196
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.210763
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.206872
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.204898
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.21678
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.201513
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.1915
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.166964
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.164956
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.159045
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.152762
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.147402
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.146095
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.144791
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "reason": "Operational Process Monitoring directly observes operator actions and physical parameters, enabling assessment of proficiency through real-time behavioral analysis and historical data review."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.13.3",
+              "goal_name": "Document processes for operator and practitioner proficiency",
+              "class": "ORG",
+              "embedding_context": "Document processes for operator and practitioner proficiency",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.284251
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.276176
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.263079
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.250714
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.248878
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.235652
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.219521
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.207287
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.205973
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.203777
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.220504
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.180104
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.171986
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.168176
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.167821
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.16117
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.148719
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.144525
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.139553
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.131464
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OAM",
+                  "name": "Operational Activity Mapping",
+                  "description": "Operational activity mapping identifies activities of the organization and the organization's suborganizations, groups, roles, and individuals that carry out the activities and then establishes the dependencies of the activities on the systems and people that perform those activities.",
+                  "reason": "Operational Activity Mapping directly documents organizational activities and their dependencies on systems/people, which aligns with documenting processes for operator/practitioner proficiency."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OM",
+                  "name": "Organization Mapping",
+                  "description": "Organization mapping identifies and models the people, roles, and groups with an organization and the relations between them.",
+                  "reason": "Organization Mapping models roles/groups and their relations, which is essential for documenting process ownership and responsibilities in proficiency documentation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.14",
+          "control_id": "MAP 3.5",
+          "control_name": "Processes for human oversight are defined, assessed, and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.14.1",
+              "goal_name": "Define processes for human oversight",
+              "class": "ORG",
+              "embedding_context": "Define processes for human oversight",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.476392
+                  },
+                  {
+                    "id": "D3-PA",
+                    "name": "Process Analysis",
+                    "similarity_score": 0.403415
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.400098
+                  },
+                  {
+                    "id": "D3-PSA",
+                    "name": "Process Spawn Analysis",
+                    "similarity_score": 0.39836
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.374097
+                  },
+                  {
+                    "id": "D3-PLA",
+                    "name": "Process Lineage Analysis",
+                    "similarity_score": 0.373772
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.370886
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.364822
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.364541
+                  },
+                  {
+                    "id": "D3-SCA",
+                    "name": "System Call Analysis",
+                    "similarity_score": 0.359979
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.443114
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.413906
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.35091
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.32568
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.321281
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.321208
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.301137
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.300063
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.286389
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.285266
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "reason": "Requires human approval for actions, directly supporting the definition of human oversight processes."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0002",
+                  "name": "Human Approval",
+                  "description": "Require user consent for privileged actions.",
+                  "reason": "Enforces user consent for privileged actions, establishing structured human oversight mechanisms."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0022",
+                  "name": "User Confirmation",
+                  "description": "Require manual authorization for sensitive actions.",
+                  "reason": "Mandates manual authorization for sensitive actions, ensuring human involvement in critical processes."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.14.2",
+              "goal_name": "Assess processes for human oversight",
+              "class": "ORG",
+              "embedding_context": "Assess processes for human oversight",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.431835
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.368593
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.353277
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.34363
+                  },
+                  {
+                    "id": "D3-PSA",
+                    "name": "Process Spawn Analysis",
+                    "similarity_score": 0.335428
+                  },
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.33428
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.333189
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.328123
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.327737
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.323622
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.381807
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.347313
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.305379
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.303003
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.288442
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.274513
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.266591
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.265458
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.261857
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.260885
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "reason": "Operational Process Monitoring directly assesses human oversight by monitoring operator actions and physical parameters, aligning with the goal of evaluating process involvement of humans."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.14.3",
+              "goal_name": "Document processes for human oversight",
+              "class": "ORG",
+              "embedding_context": "Document processes for human oversight",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.359265
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.359156
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.343385
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.330878
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.328985
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.320064
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.3155
+                  },
+                  {
+                    "id": "D3-SRA",
+                    "name": "Sender Reputation Analysis",
+                    "similarity_score": 0.29577
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.290393
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.28975
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.385468
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.381525
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.32409
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.322783
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.303207
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.286554
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.280665
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.277062
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.273176
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.261313
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0002",
+                  "name": "Human Approval",
+                  "description": "Require user consent for privileged actions.",
+                  "reason": "Requires user consent for privileged actions, directly supporting documented human oversight processes by mandating explicit approval steps."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "reason": "Requires human approval for actions, ensuring documented processes include mandatory human intervention as specified in the goal."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0022",
+                  "name": "User Confirmation",
+                  "description": "Require manual authorization for sensitive actions.",
+                  "reason": "Requires manual authorization for sensitive actions, aligning with the need to document human oversight in critical operational steps."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.15",
+          "control_id": "MAP 4.1",
+          "control_name": "Approaches for mapping AI technology and legal risks of components, including third-party data or software, are documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.15.1",
+              "goal_name": "Document approaches for mapping AI technology and legal risks of components, including third-party data or software,",
+              "class": "ORG",
+              "embedding_context": "Document approaches for mapping AI technology and legal risks of components, including third-party data or software,",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.405955
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.393819
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.386075
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.38426
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.381543
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.380197
+                  },
+                  {
+                    "id": "D3-CIA",
+                    "name": "Container Image Analysis",
+                    "similarity_score": 0.361877
+                  },
+                  {
+                    "id": "D3-SYSDM",
+                    "name": "System Dependency Mapping",
+                    "similarity_score": 0.349529
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.341399
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.337374
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.641494
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.53771
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.529261
+                  },
+                  {
+                    "id": "AML.M0017",
+                    "name": "Model Distribution Methods",
+                    "similarity_score": 0.515688
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.512745
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.507218
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.499238
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.496987
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.4949
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.493783
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "Evaluates vulnerabilities in system components and their configurations, directly addressing legal risks from third-party dependencies."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "reason": "Enriches software inventory with vulnerability data, helping identify risks in third-party components."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "reason": "Inventories software components, enabling documentation of third-party data/software usage for risk mapping."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "reason": "Scans for vulnerabilities in ML models and artifacts, supporting risk assessment of AI technology components."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.16",
+          "control_id": "MAP 4.2",
+          "control_name": "Internal risk controls for components of the AI system, including third-party AI technologies, are identified and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.16.1",
+              "goal_name": "Identify internal risk controls for components of the AI system, including third-party AI technologies,",
+              "class": "ORG",
+              "embedding_context": "Identify internal risk controls for components of the AI system, including third-party AI technologies,",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.482848
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.416958
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.398696
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.396471
+                  },
+                  {
+                    "id": "D3-IBCA",
+                    "name": "Indirect Branch Call Analysis",
+                    "similarity_score": 0.388005
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.385664
+                  },
+                  {
+                    "id": "D3-IDA",
+                    "name": "Input Device Analysis",
+                    "similarity_score": 0.381209
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.380567
+                  },
+                  {
+                    "id": "D3-DLV",
+                    "name": "Domain Logic Validation",
+                    "similarity_score": 0.378414
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.370772
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.590448
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.583092
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.575705
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.567093
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.556697
+                  },
+                  {
+                    "id": "OWASP.M0019",
+                    "name": "Input Validation",
+                    "similarity_score": 0.541041
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.539337
+                  },
+                  {
+                    "id": "OWASP.M0030",
+                    "name": "Review Model Output",
+                    "similarity_score": 0.536878
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.536664
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.532936
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "System Vulnerability Assessment directly evaluates vulnerabilities in components and their dependencies, aligning with identifying internal risk controls for AI system components, including third-party technologies."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "reason": "Vulnerability Scanning explicitly targets scanning model artifacts and downstream products for known vulnerabilities, which is critical for identifying risks in third-party AI technologies within the AI system."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.16.2",
+              "goal_name": "Document internal risk controls for components of the AI system, including third-party AI technologies,",
+              "class": "ORG",
+              "embedding_context": "Document internal risk controls for components of the AI system, including third-party AI technologies,",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.44574
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.414465
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.390697
+                  },
+                  {
+                    "id": "D3-DLV",
+                    "name": "Domain Logic Validation",
+                    "similarity_score": 0.374386
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.37292
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.370944
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.365996
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.358104
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.350751
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.349381
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.625352
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.608114
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.576475
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.571858
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.557553
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.556392
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.546921
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.542265
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.539868
+                  },
+                  {
+                    "id": "OWASP.M0030",
+                    "name": "Review Model Output",
+                    "similarity_score": 0.537257
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "System Vulnerability Assessment directly evaluates vulnerabilities and risks across the AI system's components, including third-party technologies, which aligns with documenting internal risk controls."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "reason": "Asset Vulnerability Enumeration enriches inventory items with vulnerability details, enabling structured documentation of risk controls for AI components and third-party technologies."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.17",
+          "control_id": "MAP 5.1",
+          "control_name": "Likelihood and magnitude of each identified impact are documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.17.1",
+              "goal_name": "Document likelihood and magnitude of each identified impact",
+              "class": "ORG",
+              "embedding_context": "Document likelihood and magnitude of each identified impact",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-FHRA",
+                    "name": "File Hash Reputation Analysis",
+                    "similarity_score": 0.360809
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.314828
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.308875
+                  },
+                  {
+                    "id": "D3-SMRA",
+                    "name": "Sender MTA Reputation Analysis",
+                    "similarity_score": 0.30765
+                  },
+                  {
+                    "id": "D3-SRA",
+                    "name": "Sender Reputation Analysis",
+                    "similarity_score": 0.304827
+                  },
+                  {
+                    "id": "D3-NTCD",
+                    "name": "Network Traffic Community Deviation",
+                    "similarity_score": 0.302763
+                  },
+                  {
+                    "id": "D3-IRA",
+                    "name": "Identifier Reputation Analysis",
+                    "similarity_score": 0.299629
+                  },
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.299402
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.297309
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.295653
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.238144
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.232268
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.229272
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.211964
+                  },
+                  {
+                    "id": "OWASP.M0030",
+                    "name": "Review Model Output",
+                    "similarity_score": 0.210328
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.205937
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.19746
+                  },
+                  {
+                    "id": "AML.M0029",
+                    "name": "Reducing the training data",
+                    "similarity_score": 0.182715
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.182479
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.175563
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.18",
+          "control_id": "MAP 5.2",
+          "control_name": "Practices and personnel for supporting regular engagement with relevant AI actors and feedback are in place.",
+          "subgoals": [
+            {
+              "goal_id": "G1.18.1",
+              "goal_name": "Ensure practices and personnel for supporting regular engagement with relevant AI actors and feedback are in place",
+              "class": "ORG",
+              "embedding_context": "Ensure practices and personnel for supporting regular engagement with relevant AI actors and feedback are in place",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.312578
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.287395
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.279406
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.261839
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.25781
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.243536
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.243398
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.241983
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.238595
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.235259
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.426505
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.401651
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.389014
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.384347
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.380167
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.37267
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.370662
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.366338
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.363882
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.363809
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0030",
+                  "name": "Verify the authenticity of feedback data",
+                  "description": "Use techniques such as digital signatures and checksums to verify that the feedback data received by the system is genuine, and reject any data that does not match the expected format.",
+                  "reason": "Verifies authenticity of feedback data, directly supporting the goal's requirement for validated feedback mechanisms."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "reason": "Requires human approval for actions, establishing personnel practices for engagement with AI actors."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "reason": "Deploys advanced verification mechanisms to ensure legitimacy of AI actors, aligning with the goal's need for trusted engagement."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

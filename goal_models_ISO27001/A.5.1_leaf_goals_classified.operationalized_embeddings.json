@@ -1,0 +1,286 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.5.1",
+  "clause_name": "Management direction for information security",
+  "goal_name": "Provide management direction for information security",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To provide management direction and support for information security in accordance with business requirements and relevant laws and regulations.",
+      "goal_name": "Provide management direction and support for information security in accordance with business requirements and relevant laws and regulations",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.5.1.1",
+          "control_name": "A set of policies for information security shall be defined, approved by management, published and communicated to employees and relevant external parties.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Define a set of policies for information security",
+              "class": "ORG",
+              "embedding_context": "Define a set of policies for information security",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.559896
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0036",
+                "name": "Principle of least privilege",
+                "similarity_score": 0.528321
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.559896
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NTPM",
+                  "name": "Network Traffic Policy Mapping",
+                  "description": "Network traffic policy mapping identifies and models the allowed pathways of data at the network, transport, and/or application levels.",
+                  "similarity_score": 0.509331
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.491399
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.528321
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.509166
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.482931
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0031",
+                  "name": "Implement Security Control during hardware manufacturing",
+                  "description": "Implement strict security controls and auditing processes during the manufacturing phase, including secure supply chain practices and hardware verification methods, to prevent unauthorized modifications to hardware components or firmware.",
+                  "similarity_score": 0.472179
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0010",
+                  "name": "Input validation",
+                  "description": "Implement input validation and content filtering",
+                  "similarity_score": 0.465074
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Approve a set of policies for information security",
+              "agent": "management",
+              "class": "ORG",
+              "embedding_context": "Approve a set of policies for information security",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.490223
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0002",
+                "name": "Human Approval",
+                "similarity_score": 0.526106
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.490223
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0002",
+                  "name": "Human Approval",
+                  "description": "Require user consent for privileged actions.",
+                  "similarity_score": 0.526106
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "similarity_score": 0.504128
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0022",
+                  "name": "User Confirmation",
+                  "description": "Require manual authorization for sensitive actions.",
+                  "similarity_score": 0.466153
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.464768
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0003",
+                  "name": "Segregate Content",
+                  "description": "Separate untrusted content from user prompts.",
+                  "similarity_score": 0.458907
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Publish a set of policies for information security",
+              "class": "ORG",
+              "embedding_context": "Publish a set of policies for information security",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.483679
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0036",
+                "name": "Principle of least privilege",
+                "similarity_score": 0.477495
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.483679
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.477495
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.471815
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.461781
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.458104
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.1.4",
+              "goal_name": "Communicate a set of policies for information security to employees and relevant external parties",
+              "class": "ORG",
+              "embedding_context": "Communicate a set of policies for information security to employees and relevant external parties",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.426487
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0003",
+                "name": "Segregate Content",
+                "similarity_score": 0.408327
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.5.1.2",
+          "control_name": "The policies for information security shall be reviewed at planned intervals or if significant changes occur to ensure their continuing suitability, adequacy and effectiveness.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Review the policies for information security at planned intervals to ensure their continuing suitability, adequacy and effectiveness",
+              "class": "ORG",
+              "embedding_context": "Review the policies for information security at planned intervals to ensure their continuing suitability, adequacy and effectiveness",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.423993
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.442839
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Review the policies for information security if significant changes occur to ensure their continuing suitability, adequacy and effectiveness",
+              "class": "ORG",
+              "embedding_context": "Review the policies for information security if significant changes occur to ensure their continuing suitability, adequacy and effectiveness",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.393828
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0030",
+                "name": "Review Model Output",
+                "similarity_score": 0.401119
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

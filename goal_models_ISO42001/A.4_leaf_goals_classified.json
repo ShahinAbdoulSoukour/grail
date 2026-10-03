@@ -1,0 +1,61 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.4",
+  "clause_name": "Resources",
+  "goal_name": "Ensure resources",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Appropriate resources for AI systems shall be determined and provided.",
+      "goal_name": "Determine appropriate resources for AI systems and Provide appropriate resources for AI systems",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.4.2",
+          "control_name": "Appropriate resources for AI systems shall be determined and provided.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Determine appropriate resources for AI systems",
+              "class": "TECH"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Provide appropriate resources for AI systems",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.4.3",
+          "control_name": "Competence required for AI-related roles shall be established and maintained.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish competence required for AI-related roles",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain competence required for AI-related roles",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.4.4",
+          "control_name": "Personnel shall be aware of AI policy, risks, and responsibilities.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Ensure personnel are aware of AI policy, risks, and responsibilities",
+              "class": "ORG"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

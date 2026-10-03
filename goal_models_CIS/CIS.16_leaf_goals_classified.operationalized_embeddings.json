@@ -1,0 +1,853 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.16",
+  "clause_name": "Application Software Security",
+  "goal_name": "Ensure application software security",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Manage the security life cycle of in-house developed, hosted, or acquired software to prevent, detect, and remediate security weaknesses before they can impact the enterprise.",
+      "goal_name": "Manage the security life cycle of in-house developed, hosted, or acquired software to prevent, detect, and remediate security weaknesses before they can impact the enterprise",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.16.1",
+          "control_name": "Apply Secure Design Principles in Application Architectures",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Apply Secure Design Principles in Application Architectures",
+              "class": "TECH",
+              "embedding_context": "Apply Secure Design Principles in Application Architectures",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CFI",
+                "name": "Control Flow Integrity",
+                "similarity_score": 0.491066
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0032",
+                "name": "Secure Coding",
+                "similarity_score": 0.609186
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CFI",
+                  "name": "Control Flow Integrity",
+                  "description": "Enforcing legal control flow transfers during application process execution.",
+                  "similarity_score": 0.491066
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-WSAM",
+                  "name": "Web Session Access Mediation",
+                  "description": "Web session access mediation secures user sessions in web applications by employing robust authentication and integrity validation, along with adaptive threat mitigation techniques, to ensure that access to web resources is authorized and protected from session-related attacks.",
+                  "similarity_score": 0.480128
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.460655
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ACH",
+                  "name": "Application Configuration Hardening",
+                  "description": "Modifying an application's configuration to reduce its attack surface.",
+                  "similarity_score": 0.451798
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.609186
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.570399
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0029",
+                  "name": "Downstream Authorization",
+                  "description": "Implement authorization in downstream systems.",
+                  "similarity_score": 0.569459
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0035",
+                  "name": "Secure Deployment of Models",
+                  "description": "Secure deployment with approval workflows.",
+                  "similarity_score": 0.532197
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.527428
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.16.2",
+          "control_name": "Establish and Maintain a Process to Accept and Address Software Vulnerabilities",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Process to Accept and Address Software Vulnerabilities",
+              "class": "ORG",
+              "embedding_context": "Establish a Process to Accept and Address Software Vulnerabilities",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AVE",
+                "name": "Asset Vulnerability Enumeration",
+                "similarity_score": 0.516253
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0016",
+                "name": "Vulnerability Scanning",
+                "similarity_score": 0.482253
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.516253
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.506191
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "similarity_score": 0.482253
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.479174
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Process to Accept and Address Software Vulnerabilities",
+              "class": "TECH",
+              "embedding_context": "Maintain a Process to Accept and Address Software Vulnerabilities",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AVE",
+                "name": "Asset Vulnerability Enumeration",
+                "similarity_score": 0.490965
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0016",
+                "name": "Vulnerability Scanning",
+                "similarity_score": 0.474787
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.490965
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.484777
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "similarity_score": 0.474787
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.16.3",
+          "control_name": "Perform Root Cause Analysis on Security Vulnerabilities",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Perform Root Cause Analysis on Security Vulnerabilities",
+              "class": "ORG",
+              "embedding_context": "Perform Root Cause Analysis on Security Vulnerabilities",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.450366
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0016",
+                "name": "Vulnerability Scanning",
+                "similarity_score": 0.468287
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.450366
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "similarity_score": 0.468287
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.16.4",
+          "control_name": "Establish and Manage an Inventory of Third-Party Software Components",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish an Inventory of Third-Party Software Components",
+              "class": "TECH",
+              "embedding_context": "Establish an Inventory of Third-Party Software Components",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SWI",
+                "name": "Software Inventory",
+                "similarity_score": 0.529702
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.397331
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "similarity_score": 0.529702
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-HCI",
+                  "name": "Hardware Component Inventory",
+                  "description": "Hardware component inventorying identifies and records the hardware items in the organization's architecture.",
+                  "similarity_score": 0.469883
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Manage an Inventory of Third-Party Software Components",
+              "class": "TECH",
+              "embedding_context": "Manage an Inventory of Third-Party Software Components",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SWI",
+                "name": "Software Inventory",
+                "similarity_score": 0.561195
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.470308
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "similarity_score": 0.561195
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-HCI",
+                  "name": "Hardware Component Inventory",
+                  "description": "Hardware component inventorying identifies and records the hardware items in the organization's architecture.",
+                  "similarity_score": 0.500159
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "similarity_score": 0.472524
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.470308
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.16.5",
+          "control_name": "Use Up-to-Date and Trusted Third-Party Software Components",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Use Up-to-Date and Trusted Third-Party Software Components",
+              "class": "TECH",
+              "embedding_context": "Use Up-to-Date and Trusted Third-Party Software Components",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-TL",
+                "name": "Trusted Library",
+                "similarity_score": 0.503165
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0032",
+                "name": "Utilize integrity controls in hardware",
+                "similarity_score": 0.381852
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-TL",
+                  "name": "Trusted Library",
+                  "description": "A trusted library is a collection of pre-verified and secure code modules or components that are used within software applications to perform specific functions. These libraries are considered reliable and have been vetted for security vulnerabilities, ensuring they do not introduce risks into the application.",
+                  "similarity_score": 0.503165
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.16.6",
+          "control_name": "Establish and Maintain a Severity Rating System and Process for Application Vulnerabilities",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Establish a Severity Rating System and Process for Application Vulnerabilities",
+              "class": "TECH",
+              "embedding_context": "Establish a Severity Rating System and Process for Application Vulnerabilities",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.540717
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0032",
+                "name": "Secure Coding",
+                "similarity_score": 0.480359
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.540717
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.521438
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.480359
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.6.2",
+              "goal_name": "Maintain a Severity Rating System and Process for Application Vulnerabilities",
+              "class": "TECH",
+              "embedding_context": "Maintain a Severity Rating System and Process for Application Vulnerabilities",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.516759
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0032",
+                "name": "Secure Coding",
+                "similarity_score": 0.447516
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.516759
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.497188
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.16.7",
+          "control_name": "Use Standard Hardening Configuration Templates for Application Infrastructure",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Use Standard Hardening Configuration Templates for Application Infrastructure",
+              "class": "TECH",
+              "embedding_context": "Use Standard Hardening Configuration Templates for Application Infrastructure",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ACH",
+                "name": "Application Configuration Hardening",
+                "similarity_score": 0.556802
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0035",
+                "name": "Secure Deployment of Models",
+                "similarity_score": 0.438849
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ACH",
+                  "name": "Application Configuration Hardening",
+                  "description": "Modifying an application's configuration to reduce its attack surface.",
+                  "similarity_score": 0.556802
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "similarity_score": 0.468253
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AH",
+                  "name": "Application Hardening",
+                  "description": "Application Hardening makes an executable application more resilient to a class of exploits which either introduce new code or execute unwanted existing code. These techniques may be applied at compile-time or on an application binary.",
+                  "similarity_score": 0.453237
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.16.8",
+          "control_name": "Separate Production and Non-Production Systems",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Separate Production and Non-Production Systems",
+              "class": "TECH",
+              "embedding_context": "Separate Production and Non-Production Systems",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ABPI",
+                "name": "Application-based Process Isolation",
+                "similarity_score": 0.303901
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.286182
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.16.9",
+          "control_name": "Train Developers in Application Security Concepts and Secure Coding",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Train Developers in Application Security Concepts and Secure Coding",
+              "class": "TECH",
+              "embedding_context": "Train Developers in Application Security Concepts and Secure Coding",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CS",
+                "name": "Credential Scrubbing",
+                "similarity_score": 0.403867
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0018",
+                "name": "User Training",
+                "similarity_score": 0.63411
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "similarity_score": 0.63411
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.566086
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.532437
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "CIS.16.11",
+          "control_name": "Leverage Vetted Modules or Services for Application Security Components",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Ensure leverage Vetted Modules or Services for Application Security Components",
+              "class": "TECH",
+              "embedding_context": "Ensure leverage Vetted Modules or Services for Application Security Components",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-TL",
+                "name": "Trusted Library",
+                "similarity_score": 0.551518
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0026",
+                "name": "Granular Functionality",
+                "similarity_score": 0.544392
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-TL",
+                  "name": "Trusted Library",
+                  "description": "A trusted library is a collection of pre-verified and secure code modules or components that are used within software applications to perform specific functions. These libraries are considered reliable and have been vetted for security vulnerabilities, ensuring they do not introduce risks into the application.",
+                  "similarity_score": 0.551518
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0026",
+                  "name": "Granular Functionality",
+                  "description": "Avoid open-ended functions; use specific plugins.",
+                  "similarity_score": 0.544392
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0035",
+                  "name": "Secure Deployment of Models",
+                  "description": "Secure deployment with approval workflows.",
+                  "similarity_score": 0.523206
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0037",
+                  "name": "Hardware security modules",
+                  "description": "Conduct thorough risk assessments and enforce usage policies to limit the misuse of hardware functionalities, alongside implementing hardware security modules (HSMs) to ensure only intended uses of hardware features.",
+                  "similarity_score": 0.511852
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0024",
+                  "name": "Limit Plugin Functions",
+                  "description": "Allow only essential functions for LLM agents.",
+                  "similarity_score": 0.505023
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.480689
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "CIS.16.12",
+          "control_name": "Implement Code-Level Security Checks",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Implement Code-Level Security Checks",
+              "class": "TECH",
+              "embedding_context": "Implement Code-Level Security Checks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-TL",
+                "name": "Trusted Library",
+                "similarity_score": 0.646287
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0032",
+                "name": "Secure Coding",
+                "similarity_score": 0.614184
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-TL",
+                  "name": "Trusted Library",
+                  "description": "A trusted library is a collection of pre-verified and secure code modules or components that are used within software applications to perform specific functions. These libraries are considered reliable and have been vetted for security vulnerabilities, ensuring they do not introduce risks into the application.",
+                  "similarity_score": 0.646287
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DLV",
+                  "name": "Domain Logic Validation",
+                  "description": "Validation of variable state in the context of the domain application.",
+                  "similarity_score": 0.582171
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-VTV",
+                  "name": "Variable Type Validation",
+                  "description": "Ensuring that a variable has the correct type.",
+                  "similarity_score": 0.530351
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PV",
+                  "name": "Pointer Validation",
+                  "description": "Ensuring that a pointer variable has the required properties for use.",
+                  "similarity_score": 0.523987
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CS",
+                  "name": "Credential Scrubbing",
+                  "description": "The systematic removal of hard-coded credentials from source code to prevent accidental exposure and unauthorized access.",
+                  "similarity_score": 0.511861
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.614184
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0026",
+                  "name": "Granular Functionality",
+                  "description": "Avoid open-ended functions; use specific plugins.",
+                  "similarity_score": 0.544947
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0013",
+                  "name": "Code Signing",
+                  "description": "Enforce binary and application integrity with digital signature verification to prevent untrusted code from executing. Adversaries can embed malicious code in ML software, models and Library. Enforcement of code signing can prevent the compromise of the machine learning supply chain and prevent execution of malicious code.",
+                  "similarity_score": 0.529407
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0014",
+                  "name": "Verify ML Artifacts",
+                  "description": "Verify the cryptographic checksum of all machine learning artifacts to verify that the file or repositiory was not modified by an attacker.",
+                  "similarity_score": 0.523623
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0033",
+                  "name": "Malicious Logic Detection in hardware",
+                  "description": "Implement comprehensive hardware and firmware security validation processes, including regular integrity checks and the use of cryptographic signing, to detect and prevent the insertion of malicious logic.",
+                  "similarity_score": 0.515697
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.12",
+          "control_id": "CIS.16.13",
+          "control_name": "Conduct Application Penetration Testing",
+          "subgoals": [
+            {
+              "goal_id": "G1.12.1",
+              "goal_name": "Conduct Application Penetration Testing",
+              "class": "TECH",
+              "embedding_context": "Conduct Application Penetration Testing",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AH",
+                "name": "Application Hardening",
+                "similarity_score": 0.39838
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0015",
+                "name": "Plugin Testing",
+                "similarity_score": 0.41478
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.13",
+          "control_id": "CIS.16.14",
+          "control_name": "Conduct Threat Modeling",
+          "subgoals": [
+            {
+              "goal_id": "G1.13.1",
+              "goal_name": "Conduct Threat Modeling",
+              "class": "PHYS",
+              "embedding_context": "Conduct Threat Modeling",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.505875
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.499131
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ORA",
+                  "name": "Operational Risk Assessment",
+                  "description": "Operational risk assessment identifies and models the vulnerabilities of, and risks to, an organization's activities individually and as a whole.",
+                  "similarity_score": 0.505875
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PA",
+                  "name": "Process Analysis",
+                  "description": "Process Analysis consists of observing a running application process and analyzing it to watch for certain behaviors or conditions which may indicate adversary activity. Analysis can occur inside of the process or through a third-party monitoring application. Examples include monitoring system and privileged calls, monitoring process initiation chains, and memory boundary allocations.",
+                  "similarity_score": 0.48245
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "similarity_score": 0.477007
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-UBA",
+                  "name": "User Behavior Analysis",
+                  "description": "User behavior analytics (\"UBA\") as defined by Gartner, is a cybersecurity process about detection of insider threats, targeted attacks, and financial fraud. UBA solutions look at patterns of human behavior, and then apply algorithms and statistical analysis to detect meaningful anomalies from those patterns-anomalies that indicate potential threats.' Instead of tracking devices or security events, UBA tracks a system's users. Big data platforms are increasing UBA functionality by allowing them to analyze petabytes worth of data to detect insider threats and advanced persistent threats.",
+                  "similarity_score": 0.46829
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.466882
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.499131
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0030",
+                  "name": "Review Model Output",
+                  "description": "Regularly review LLM outputs with consistency\nchecks",
+                  "similarity_score": 0.47667
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

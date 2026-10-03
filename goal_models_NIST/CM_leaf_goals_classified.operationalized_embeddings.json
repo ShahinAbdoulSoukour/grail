@@ -1,0 +1,346 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CM",
+  "clause_name": "Configuration Management",
+  "goal_name": "Ensure configuration management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure secure and controlled system configurations and changes.",
+      "goal_name": "Ensure secure and controlled system configurations and changes",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CM-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate implementation of configuration management controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate implementation of configuration management controls",
+              "class": "ORG",
+              "embedding_context": "Develop policy and procedures to facilitate implementation of configuration management controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CI",
+                "name": "Configuration Inventory",
+                "similarity_score": 0.501764
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.358684
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "similarity_score": 0.501764
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate implementation of configuration management controls",
+              "class": "ORG",
+              "embedding_context": "Document policy and procedures to facilitate implementation of configuration management controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CI",
+                "name": "Configuration Inventory",
+                "similarity_score": 0.531219
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.344357
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "similarity_score": 0.531219
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate implementation of configuration management controls",
+              "class": "ORG",
+              "embedding_context": "Disseminate policy and procedures to facilitate implementation of configuration management controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CI",
+                "name": "Configuration Inventory",
+                "similarity_score": 0.485921
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.330578
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "similarity_score": 0.485921
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CM-2",
+          "control_name": "Develop, document, and maintain a current baseline configuration of the system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Develop a current baseline configuration of the system",
+              "class": "TECH",
+              "embedding_context": "Develop a current baseline configuration of the system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.360333
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.22421
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Document a current baseline configuration of the system",
+              "class": "TECH",
+              "embedding_context": "Document a current baseline configuration of the system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CI",
+                "name": "Configuration Inventory",
+                "similarity_score": 0.421974
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.25144
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Maintain a current baseline configuration of the system",
+              "class": "TECH",
+              "embedding_context": "Maintain a current baseline configuration of the system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RC",
+                "name": "Restore Configuration",
+                "similarity_score": 0.35447
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0021",
+                "name": "Regular backups",
+                "similarity_score": 0.286075
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CM-3",
+          "control_name": "Document, approve, and monitor changes to the system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Document changes to the system",
+              "class": "TECH",
+              "embedding_context": "Document changes to the system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FIM",
+                "name": "File Integrity Monitoring",
+                "similarity_score": 0.387035
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.253556
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Approve changes to the system",
+              "class": "ORG",
+              "embedding_context": "Approve changes to the system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SCP",
+                "name": "System Configuration Permissions",
+                "similarity_score": 0.231346
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0002",
+                "name": "Human Approval",
+                "similarity_score": 0.344305
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.3.3",
+              "goal_name": "Monitor changes to the system",
+              "class": "TECH",
+              "embedding_context": "Monitor changes to the system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SDM",
+                "name": "System Daemon Monitoring",
+                "similarity_score": 0.563514
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0014",
+                "name": "Resource Monitoring",
+                "similarity_score": 0.407651
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SDM",
+                  "name": "System Daemon Monitoring",
+                  "description": "Tracking changes to the state or configuration of critical system level processes.",
+                  "similarity_score": 0.563514
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "similarity_score": 0.536224
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OSM",
+                  "name": "Operating System Monitoring",
+                  "description": "The operating system software, for D3FEND's purposes, includes the kernel and its process management functions, hardware drivers, initialization or boot logic. It also includes and other key system daemons and their configuration. The monitoring or analysis of these components for unauthorized activity constitute **Operating System Monitoring**.",
+                  "similarity_score": 0.482562
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PUM",
+                  "name": "Platform Uptime Monitoring",
+                  "description": "Monitor the amount of time since the last power cycle or restart.",
+                  "similarity_score": 0.45951
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APM",
+                  "name": "Application Performance Monitoring",
+                  "description": "Monitoring the count and duration of the application or program cycle.",
+                  "similarity_score": 0.452925
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CM-4",
+          "control_name": "Analyze changes to the system to determine potential security impact prior to change implementation.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Analyze changes to the system to determine potential security impact prior to change implementation",
+              "class": "TECH",
+              "embedding_context": "Analyze changes to the system to determine potential security impact prior to change implementation",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.55363
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.477914
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.55363
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SU",
+                  "name": "Software Update",
+                  "description": "Replacing old software on a computer system component.",
+                  "similarity_score": 0.477337
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PSMD",
+                  "name": "Process Self-Modification Detection",
+                  "description": "Detects processes that modify, change, or replace their own code at runtime.",
+                  "similarity_score": 0.466235
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CCSA",
+                  "name": "Credential Compromise Scope Analysis",
+                  "description": "Determining which credentials may have been compromised by analyzing the user logon history of a particular system.",
+                  "similarity_score": 0.458099
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.457613
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.477914
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

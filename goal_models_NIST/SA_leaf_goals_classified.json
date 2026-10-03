@@ -1,0 +1,83 @@
+{
+  "goal_id": "G0",
+  "clause_id": "SA",
+  "clause_name": "Acquire Secure Systems and Services",
+  "goal_name": "Acquire secure systems and services",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure secure and privacy-aware system and service acquisition.",
+      "goal_name": "Ensure secure and privacy-aware system and service acquisition",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "SA-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate system and services acquisition controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate system and services acquisition controls",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate system and services acquisition controls",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate system and services acquisition controls",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "SA-2",
+          "control_name": "Determine, document, and allocate resources required to protect the system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Determine resources required to protect the system",
+              "class": "TECH"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Document resources required to protect the system",
+              "class": "TECH"
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Allocate resources required to protect the system",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "SA-3",
+          "control_name": "Manage the system using a system development life cycle.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Manage the system using a system development life cycle",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "SA-4",
+          "control_name": "Include security and privacy requirements in acquisition contracts and related documents.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Include security and privacy requirements in acquisition contracts and related documents",
+              "class": "ORG"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

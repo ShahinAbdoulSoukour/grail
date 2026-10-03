@@ -1,0 +1,1578 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.11.1",
+  "clause_name": "Protect secure areas",
+  "goal_name": "Protect secure areas",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To prevent unauthorized physical access, damage and interference to the organization's information and information processing facilities.",
+      "goal_name": "Prevent unauthorized physical access, damage and interference to the organization's information and information processing facilities",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.11.1.1",
+          "control_name": "Security perimeters shall be defined and used to protect areas that contain either sensitive or critical information and information processing facilities.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Define security perimeters",
+              "class": "PHYS",
+              "embedding_context": "Define security perimeters",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.519202
+                  },
+                  {
+                    "id": "D3-EPL",
+                    "name": "Physical Locking",
+                    "similarity_score": 0.472099
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.464062
+                  },
+                  {
+                    "id": "D3-ELM",
+                    "name": "Electronic Lock Monitoring",
+                    "similarity_score": 0.451538
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.437933
+                  },
+                  {
+                    "id": "D3-PHAM",
+                    "name": "Physical Access Monitoring",
+                    "similarity_score": 0.426931
+                  },
+                  {
+                    "id": "D3-VS",
+                    "name": "Video Surveillance",
+                    "similarity_score": 0.392564
+                  },
+                  {
+                    "id": "D3-MSM",
+                    "name": "Motion Sensor Monitoring",
+                    "similarity_score": 0.392262
+                  },
+                  {
+                    "id": "D3-PEH",
+                    "name": "Physical Enclosure Hardening",
+                    "similarity_score": 0.39124
+                  },
+                  {
+                    "id": "D3-CTS",
+                    "name": "Credential Transmission Scoping",
+                    "similarity_score": 0.383831
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.369315
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.364316
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.34136
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.325626
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.324298
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.321389
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.319331
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.309769
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.302921
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.302222
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Access Mediation directly defines security perimeters by granting or denying access to physical facilities and enforcing least privilege for scoped durations."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PHAM",
+                  "name": "Physical Access Monitoring",
+                  "description": "Monitoring the physical access of a specified environment through detection, recording, reviewing, and logging of who/what enters and exists areas.",
+                  "reason": "Physical Access Monitoring enables defining security perimeters by detecting and logging who/what enters/exits protected areas, ensuring perimeter enforcement."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0004",
+                  "name": "Network segmentation",
+                  "description": "",
+                  "reason": "Network segmentation defines digital security perimeters by isolating critical systems and limiting lateral movement within networks."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Use security perimeters to protect areas that contain either sensitive or critical information and information processing facilities",
+              "class": "PHYS",
+              "embedding_context": "Use security perimeters to protect areas that contain either sensitive or critical information and information processing facilities",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.552477
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.544738
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.505715
+                  },
+                  {
+                    "id": "D3-EPL",
+                    "name": "Physical Locking",
+                    "similarity_score": 0.494849
+                  },
+                  {
+                    "id": "D3-PEH",
+                    "name": "Physical Enclosure Hardening",
+                    "similarity_score": 0.477383
+                  },
+                  {
+                    "id": "D3-PHAM",
+                    "name": "Physical Access Monitoring",
+                    "similarity_score": 0.459596
+                  },
+                  {
+                    "id": "D3-ELM",
+                    "name": "Electronic Lock Monitoring",
+                    "similarity_score": 0.456789
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.456336
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.448313
+                  },
+                  {
+                    "id": "D3-VS",
+                    "name": "Video Surveillance",
+                    "similarity_score": 0.437419
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.470677
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.45181
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.450862
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.449957
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.436284
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.423618
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.423516
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.417281
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.415061
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.412831
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Access Mediation enforces least privilege and JIT access, directly controlling entry to sensitive areas and preventing unauthorized use of information processing facilities."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PHAM",
+                  "name": "Physical Access Monitoring",
+                  "description": "Monitoring the physical access of a specified environment through detection, recording, reviewing, and logging of who/what enters and exists areas.",
+                  "reason": "Physical Access Monitoring detects and logs unauthorized physical access attempts, maintaining perimeter security for critical infrastructure."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-VS",
+                  "name": "Video Surveillance",
+                  "description": "Monitoring of physical areas via camera video feeds to deter, detect, and investigate unauthorized access and related security events.",
+                  "reason": "Video Surveillance provides real-time monitoring of physical perimeters, deterring and detecting unauthorized access to protected areas."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Principle of least privilege ensures minimal access rights, directly aligning with perimeter security to protect sensitive information and processing facilities."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "reason": "Network Resource Access Mediation controls access to organizational systems over networks, securing digital perimeters for critical information processing."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.11.1.2",
+          "control_name": "Secure areas shall be protected by appropriate entry controls to ensure that only authorized personnel are allowed access.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Protect secure areas to ensure that only authorized personnel are allowed access",
+              "agent": "appropriate entry controls",
+              "class": "PHYS",
+              "embedding_context": "Protect secure areas to ensure that only authorized personnel are allowed access",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.635668
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.561852
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.466996
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.465036
+                  },
+                  {
+                    "id": "D3-CTS",
+                    "name": "Credential Transmission Scoping",
+                    "similarity_score": 0.459315
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.443732
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.438215
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.416987
+                  },
+                  {
+                    "id": "D3-EPL",
+                    "name": "Physical Locking",
+                    "similarity_score": 0.416027
+                  },
+                  {
+                    "id": "D3-ELM",
+                    "name": "Electronic Lock Monitoring",
+                    "similarity_score": 0.402532
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.500293
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.47997
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.455052
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.452331
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.450979
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.44808
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.446323
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.442411
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.438969
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.43142
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Access Mediation enforces least privilege and JIT access, directly ensuring only authorized personnel gain access to secure areas."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "reason": "Physical Access Mediation directly grants/denies entry to physical facilities, aligning with protecting secure areas."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EPL",
+                  "name": "Physical Locking",
+                  "description": "Employ a mechanical locking device for securing moveable portions of physical barriers (e.g., doors, gates, drawers) in a secured position.",
+                  "reason": "Physical Locking secures moveable barriers, preventing unauthorized access to secure areas."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ELM",
+                  "name": "Electronic Lock Monitoring",
+                  "description": "Monitoring electronic lock and door hardware states and access events (e.g., locked/unlocked, access granted/denied, door forced/held, tamper) to detect and respond to unauthorized entry.",
+                  "reason": "Electronic Lock Monitoring detects unauthorized entry attempts, ensuring continuous enforcement of access policies."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "reason": "Permissions Control limits access to minimum required, directly supporting the principle of least privilege for secure areas."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.11.1.3",
+          "control_name": "Physical security for offices, rooms and facilities shall be designed and applied.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Design physical security for offices, rooms and facilities",
+              "class": "PHYS",
+              "embedding_context": "Design physical security for offices, rooms and facilities",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.502812
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.498959
+                  },
+                  {
+                    "id": "D3-ELM",
+                    "name": "Electronic Lock Monitoring",
+                    "similarity_score": 0.488566
+                  },
+                  {
+                    "id": "D3-EPL",
+                    "name": "Physical Locking",
+                    "similarity_score": 0.477734
+                  },
+                  {
+                    "id": "D3-PHAM",
+                    "name": "Physical Access Monitoring",
+                    "similarity_score": 0.441876
+                  },
+                  {
+                    "id": "D3-MSM",
+                    "name": "Motion Sensor Monitoring",
+                    "similarity_score": 0.413005
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.412703
+                  },
+                  {
+                    "id": "D3-PEH",
+                    "name": "Physical Enclosure Hardening",
+                    "similarity_score": 0.406881
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.401319
+                  },
+                  {
+                    "id": "D3-VS",
+                    "name": "Video Surveillance",
+                    "similarity_score": 0.39459
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.432316
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.410791
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.398266
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.39038
+                  },
+                  {
+                    "id": "AML.M0009",
+                    "name": "Use Multi-Modal Sensors",
+                    "similarity_score": 0.389592
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.38359
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.380219
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.380188
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.376652
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Hardware fault-tolerant architectures",
+                    "similarity_score": 0.376519
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "reason": "Physical Access Mediation directly supports designing physical security by controlling who can enter specific facilities."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PHAM",
+                  "name": "Physical Access Monitoring",
+                  "description": "Monitoring the physical access of a specified environment through detection, recording, reviewing, and logging of who/what enters and exists areas.",
+                  "reason": "Physical Access Monitoring enables logging and tracking of entry/exit events, which is critical for securing facilities."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PSM",
+                  "name": "Proximity Sensor Monitoring",
+                  "description": "Monitoring events from proximity sensors that indicate a credential or tagged asset is within the sensor’s read range or a defined zone. Common enabling technologies include RFID, Bluetooth Low Energy (BLE), and Ultra-Wideband (UWB).",
+                  "reason": "Proximity Sensor Monitoring detects credential proximity to access points, enhancing real-time security control."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ELM",
+                  "name": "Electronic Lock Monitoring",
+                  "description": "Monitoring electronic lock and door hardware states and access events (e.g., locked/unlocked, access granted/denied, door forced/held, tamper) to detect and respond to unauthorized entry.",
+                  "reason": "Electronic Lock Monitoring detects tampering or forced entry, providing immediate alerts for unauthorized access."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-VS",
+                  "name": "Video Surveillance",
+                  "description": "Monitoring of physical areas via camera video feeds to deter, detect, and investigate unauthorized access and related security events.",
+                  "reason": "Video Surveillance deters and detects unauthorized access through continuous visual monitoring of physical areas."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Apply physical security for offices, rooms and facilities",
+              "class": "PHYS",
+              "embedding_context": "Apply physical security for offices, rooms and facilities",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.555004
+                  },
+                  {
+                    "id": "D3-EPL",
+                    "name": "Physical Locking",
+                    "similarity_score": 0.492481
+                  },
+                  {
+                    "id": "D3-ELM",
+                    "name": "Electronic Lock Monitoring",
+                    "similarity_score": 0.48658
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.477497
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.474537
+                  },
+                  {
+                    "id": "D3-VS",
+                    "name": "Video Surveillance",
+                    "similarity_score": 0.461327
+                  },
+                  {
+                    "id": "D3-MSM",
+                    "name": "Motion Sensor Monitoring",
+                    "similarity_score": 0.444902
+                  },
+                  {
+                    "id": "D3-PHAM",
+                    "name": "Physical Access Monitoring",
+                    "similarity_score": 0.439275
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.426265
+                  },
+                  {
+                    "id": "D3-PEH",
+                    "name": "Physical Enclosure Hardening",
+                    "similarity_score": 0.416249
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.431884
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.406568
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.396723
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.392912
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.39268
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.390709
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.384096
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.383831
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.383616
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.377302
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EPL",
+                  "name": "Physical Locking",
+                  "description": "Employ a mechanical locking device for securing moveable portions of physical barriers (e.g., doors, gates, drawers) in a secured position.",
+                  "reason": "Physical Locking secures moveable physical barriers like doors and drawers, directly supporting physical security for facilities."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "reason": "Physical Access Mediation grants/denies access to physical facilities, aligning with the goal of applying physical security controls."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ELM",
+                  "name": "Electronic Lock Monitoring",
+                  "description": "Monitoring electronic lock and door hardware states and access events (e.g., locked/unlocked, access granted/denied, door forced/held, tamper) to detect and respond to unauthorized entry.",
+                  "reason": "Electronic Lock Monitoring detects unauthorized entry attempts, enhancing physical security through real-time alerts."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-VS",
+                  "name": "Video Surveillance",
+                  "description": "Monitoring of physical areas via camera video feeds to deter, detect, and investigate unauthorized access and related security events.",
+                  "reason": "Video Surveillance deters and detects unauthorized access to physical spaces, directly supporting facility security."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PSM",
+                  "name": "Proximity Sensor Monitoring",
+                  "description": "Monitoring events from proximity sensors that indicate a credential or tagged asset is within the sensor’s read range or a defined zone. Common enabling technologies include RFID, Bluetooth Low Energy (BLE), and Ultra-Wideband (UWB).",
+                  "reason": "Proximity Sensor Monitoring tracks credentials near secured zones, enabling controlled access to facilities."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.11.1.4",
+          "control_name": "Physical protection against natural disasters, malicious attack or accidents shall be designed and applied.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Design physical protection against natural disasters, malicious attack or accidents",
+              "class": "PHYS",
+              "embedding_context": "Design physical protection against natural disasters, malicious attack or accidents",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-MSM",
+                    "name": "Motion Sensor Monitoring",
+                    "similarity_score": 0.418021
+                  },
+                  {
+                    "id": "D3-RFS",
+                    "name": "RF Shielding",
+                    "similarity_score": 0.416593
+                  },
+                  {
+                    "id": "D3-PHAM",
+                    "name": "Physical Access Monitoring",
+                    "similarity_score": 0.406154
+                  },
+                  {
+                    "id": "D3-ELM",
+                    "name": "Electronic Lock Monitoring",
+                    "similarity_score": 0.405008
+                  },
+                  {
+                    "id": "D3-PEH",
+                    "name": "Physical Enclosure Hardening",
+                    "similarity_score": 0.403582
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.402923
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.400307
+                  },
+                  {
+                    "id": "D3-EMH",
+                    "name": "Electromagnetic Radiation Hardening",
+                    "similarity_score": 0.392285
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.39103
+                  },
+                  {
+                    "id": "D3-EPL",
+                    "name": "Physical Locking",
+                    "similarity_score": 0.384062
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.469907
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.440338
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Hardware fault-tolerant architectures",
+                    "similarity_score": 0.424212
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.397919
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.394306
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.384357
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.379744
+                  },
+                  {
+                    "id": "AML.M0009",
+                    "name": "Use Multi-Modal Sensors",
+                    "similarity_score": 0.376031
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.370643
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.358669
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PEH",
+                  "name": "Physical Enclosure Hardening",
+                  "description": "Physical changes to a computer enclosure which reduce the ability for agents or the environment to affect the contained computer system.",
+                  "reason": "Physical Enclosure Hardening directly addresses reducing physical damage from environmental factors (natural disasters) and unauthorized access (malicious attacks), aligning with the goal's requirement for physical protection."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Apply physical protection against natural disasters, malicious attack or accidents",
+              "class": "PHYS",
+              "embedding_context": "Apply physical protection against natural disasters, malicious attack or accidents",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-MSM",
+                    "name": "Motion Sensor Monitoring",
+                    "similarity_score": 0.463167
+                  },
+                  {
+                    "id": "D3-PEH",
+                    "name": "Physical Enclosure Hardening",
+                    "similarity_score": 0.459278
+                  },
+                  {
+                    "id": "D3-RFS",
+                    "name": "RF Shielding",
+                    "similarity_score": 0.440795
+                  },
+                  {
+                    "id": "D3-EPL",
+                    "name": "Physical Locking",
+                    "similarity_score": 0.439112
+                  },
+                  {
+                    "id": "D3-PHAM",
+                    "name": "Physical Access Monitoring",
+                    "similarity_score": 0.428385
+                  },
+                  {
+                    "id": "D3-ELM",
+                    "name": "Electronic Lock Monitoring",
+                    "similarity_score": 0.426227
+                  },
+                  {
+                    "id": "D3-EMH",
+                    "name": "Electromagnetic Radiation Hardening",
+                    "similarity_score": 0.425699
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.415159
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.410287
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.408971
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.415077
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.406959
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.381298
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.377107
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.368639
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.366764
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.365368
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.359803
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Hardware fault-tolerant architectures",
+                    "similarity_score": 0.342527
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.340653
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PEH",
+                  "name": "Physical Enclosure Hardening",
+                  "description": "Physical changes to a computer enclosure which reduce the ability for agents or the environment to affect the contained computer system.",
+                  "reason": "Physical Enclosure Hardening directly addresses protecting systems from environmental damage (natural disasters/accidents) and tampering (malicious attacks) by making physical enclosures more resistant to external impacts."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "A.11.1.5",
+          "control_name": "Procedures for working in secure areas shall be designed and applied.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Design procedures for working in secure areas",
+              "class": "PHYS",
+              "embedding_context": "Design procedures for working in secure areas",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.473035
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.445376
+                  },
+                  {
+                    "id": "D3-EPL",
+                    "name": "Physical Locking",
+                    "similarity_score": 0.433888
+                  },
+                  {
+                    "id": "D3-PEH",
+                    "name": "Physical Enclosure Hardening",
+                    "similarity_score": 0.414664
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.404988
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.395792
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.39179
+                  },
+                  {
+                    "id": "D3-ELM",
+                    "name": "Electronic Lock Monitoring",
+                    "similarity_score": 0.391049
+                  },
+                  {
+                    "id": "D3-RFS",
+                    "name": "RF Shielding",
+                    "similarity_score": 0.388146
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.371451
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.483619
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.459998
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.44874
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.434992
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.415614
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.413812
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.409867
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.403628
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.401768
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.395223
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Access mediation enforces least privilege and just-in-time access, directly supporting secure procedures for entering physical facilities."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "reason": "Physical access mediation directly addresses granting/denying entry to secure areas, aligning with the goal of designing access procedures."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PSM",
+                  "name": "Proximity Sensor Monitoring",
+                  "description": "Monitoring events from proximity sensors that indicate a credential or tagged asset is within the sensor’s read range or a defined zone. Common enabling technologies include RFID, Bluetooth Low Energy (BLE), and Ultra-Wideband (UWB).",
+                  "reason": "Proximity sensor monitoring tracks authorized credentials in secure zones, ensuring procedural compliance for physical access."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ELM",
+                  "name": "Electronic Lock Monitoring",
+                  "description": "Monitoring electronic lock and door hardware states and access events (e.g., locked/unlocked, access granted/denied, door forced/held, tamper) to detect and respond to unauthorized entry.",
+                  "reason": "Electronic lock monitoring detects unauthorized entry attempts, reinforcing secure area procedures through real-time enforcement."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.5.2",
+              "goal_name": "Apply procedures for working in secure areas",
+              "class": "PHYS",
+              "embedding_context": "Apply procedures for working in secure areas",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.477482
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.470856
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.4371
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.410927
+                  },
+                  {
+                    "id": "D3-EPL",
+                    "name": "Physical Locking",
+                    "similarity_score": 0.398958
+                  },
+                  {
+                    "id": "D3-PEH",
+                    "name": "Physical Enclosure Hardening",
+                    "similarity_score": 0.386507
+                  },
+                  {
+                    "id": "D3-SPP",
+                    "name": "Strong Password Policy",
+                    "similarity_score": 0.380184
+                  },
+                  {
+                    "id": "D3-VS",
+                    "name": "Video Surveillance",
+                    "similarity_score": 0.369881
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.366547
+                  },
+                  {
+                    "id": "D3-AH",
+                    "name": "Application Hardening",
+                    "similarity_score": 0.365664
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.448926
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.447826
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.409002
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.408944
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.408366
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.394274
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.389797
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.389441
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.385918
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.38338
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Access mediation with least privilege directly supports secure area procedures by enforcing scoped access durations and preventing privilege creep."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "reason": "Physical access mediation directly addresses the goal by granting/denying entry to secure physical facilities as part of procedures."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EPL",
+                  "name": "Physical Locking",
+                  "description": "Employ a mechanical locking device for securing moveable portions of physical barriers (e.g., doors, gates, drawers) in a secured position.",
+                  "reason": "Physical locking secures moveable barriers, ensuring physical security measures are applied to protected areas."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-VS",
+                  "name": "Video Surveillance",
+                  "description": "Monitoring of physical areas via camera video feeds to deter, detect, and investigate unauthorized access and related security events.",
+                  "reason": "Video surveillance monitors secure areas to detect and deter unauthorized access, supporting procedural compliance."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Principle of least privilege ensures access control policies align with secure area procedures by restricting permissions to necessary levels."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "A.11.1.6",
+          "control_name": "Access points such as delivery and loading areas and other points where unauthorized persons could enter the premises shall be controlled and, if possible, isolated from information processing facilities to avoid unauthorized access.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Control access points such as delivery and loading areas and other points where unauthorized persons could enter the premises and, if possible",
+              "class": "PHYS",
+              "embedding_context": "Control access points such as delivery and loading areas and other points where unauthorized persons could enter the premises and, if possible",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.629548
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.594523
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.522887
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.512362
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.482733
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.465684
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.456882
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.453457
+                  },
+                  {
+                    "id": "D3-PHAM",
+                    "name": "Physical Access Monitoring",
+                    "similarity_score": 0.444935
+                  },
+                  {
+                    "id": "D3-DRA",
+                    "name": "Disable Remote Access",
+                    "similarity_score": 0.436879
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.490414
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.487861
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.478786
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.477759
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.471526
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.464027
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.461677
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.446059
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.439814
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.437895
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Access Mediation directly controls access to physical facilities by enforcing least privilege and JIT access, aligning with the goal of managing entry points like delivery areas."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "reason": "Physical Access Mediation explicitly grants/denies entry to physical facilities, directly addressing the goal of controlling access points such as loading areas."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.6.2",
+              "goal_name": "Isolate access points such as delivery and loading areas and other points where unauthorized persons could enter the premises from information processing facilities to avoid unauthorized access",
+              "class": "PHYS",
+              "embedding_context": "Isolate access points such as delivery and loading areas and other points where unauthorized persons could enter the premises from information processing facilities to avoid unauthorized access",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.597473
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.561494
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.525678
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.513474
+                  },
+                  {
+                    "id": "D3-DRA",
+                    "name": "Disable Remote Access",
+                    "similarity_score": 0.468657
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.456205
+                  },
+                  {
+                    "id": "D3-EPL",
+                    "name": "Physical Locking",
+                    "similarity_score": 0.455881
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.455153
+                  },
+                  {
+                    "id": "D3-BDI",
+                    "name": "Broadcast Domain Isolation",
+                    "similarity_score": 0.45421
+                  },
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.450896
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.537301
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.475428
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.46744
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.462478
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.459545
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.455803
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.441427
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.439655
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.439207
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.432977
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Access Mediation directly supports isolating physical facilities by enforcing least privilege and scoped access, preventing unauthorized entry to areas like delivery/loading zones."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NAM",
+                  "name": "Network Access Mediation",
+                  "description": "Network access mediation is the control method for authorizing access to a system by a user (or a process acting on behalf of a user) communicating through a network, including a local area network, a wide area network, and the Internet.",
+                  "reason": "Network Access Mediation isolates network access to information processing facilities, ensuring only authorized connections exist between sensitive systems and external access points."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

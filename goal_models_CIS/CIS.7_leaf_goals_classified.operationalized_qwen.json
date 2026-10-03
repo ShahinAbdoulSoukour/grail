@@ -1,0 +1,1328 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.7",
+  "clause_name": "Continuous Vulnerability Management",
+  "goal_name": "Ensure continuous vulnerability management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Develop a plan to continuously assess and track vulnerabilities on all enterprise assets within the enterprise’s infrastructure, in order to remediate, and minimize, the window of opportunity for attackers. Monitor public and private industry sources for new threat and vulnerability information.",
+      "goal_name": "Develop a plan to continuously assess and track vulnerabilities on all enterprise assets within the enterprise’s infrastructure, in order to remediate, and minimize, the window of opportunity for attackers",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.7.1",
+          "control_name": "Establish and Maintain a Vulnerability Management Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish a Vulnerability Management Process",
+              "class": "ORG",
+              "embedding_context": "Establish a Vulnerability Management Process",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.547909
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.542259
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.496844
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.470115
+                  },
+                  {
+                    "id": "D3-PA",
+                    "name": "Process Analysis",
+                    "similarity_score": 0.437699
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.426059
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.41906
+                  },
+                  {
+                    "id": "D3-AH",
+                    "name": "Application Hardening",
+                    "similarity_score": 0.414369
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.414238
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.407173
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.45855
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.426281
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.423913
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.413455
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.392817
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.383823
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.367613
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.355952
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.33528
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.3339
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "reason": "Asset Vulnerability Enumeration directly supports identifying vulnerabilities in assets, a foundational step in establishing a vulnerability management process."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "reason": "Software Inventory provides accurate software inventory data, enabling systematic vulnerability identification and tracking."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "System Vulnerability Assessment evaluates vulnerabilities in system components and configurations, aligning with vulnerability analysis in the process."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "reason": "Network Vulnerability Assessment identifies network-level vulnerabilities and risks, critical for comprehensive vulnerability management."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "reason": "Vulnerability Scanning directly addresses the need to find and remediate exploitable vulnerabilities, a core component of the management process."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain a Vulnerability Management Process",
+              "class": "TECH",
+              "embedding_context": "Maintain a Vulnerability Management Process",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.494097
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.48788
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.433969
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.430407
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.410403
+                  },
+                  {
+                    "id": "D3-PA",
+                    "name": "Process Analysis",
+                    "similarity_score": 0.406896
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.39439
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.389503
+                  },
+                  {
+                    "id": "D3-AH",
+                    "name": "Application Hardening",
+                    "similarity_score": 0.383416
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.37744
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.453234
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.400169
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.369403
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.367289
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.365236
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.341016
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.329538
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.327409
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.307261
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.296117
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "reason": "Asset Vulnerability Enumeration directly supports identifying vulnerabilities in assets, a core component of maintaining a vulnerability management process."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "System Vulnerability Assessment evaluates system-specific vulnerabilities and risks, essential for comprehensive vulnerability management."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "reason": "Vulnerability Scanning directly identifies exploitable vulnerabilities, a key action in maintaining the process."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Inventory Management ensures up-to-date asset records, foundational for effective vulnerability tracking and remediation."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "reason": "Operational Process Monitoring tracks ongoing process effectiveness, ensuring continuous compliance with vulnerability management practices."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.7.2",
+          "control_name": "Establish and Maintain a Remediation Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Remediation Process",
+              "class": "ORG",
+              "embedding_context": "Establish a Remediation Process",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-RNA",
+                    "name": "Restore Network Access",
+                    "similarity_score": 0.380487
+                  },
+                  {
+                    "id": "D3-RO",
+                    "name": "Restore Object",
+                    "similarity_score": 0.361447
+                  },
+                  {
+                    "id": "D3-PT",
+                    "name": "Process Termination",
+                    "similarity_score": 0.348145
+                  },
+                  {
+                    "id": "D3-RA",
+                    "name": "Restore Access",
+                    "similarity_score": 0.347743
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.347145
+                  },
+                  {
+                    "id": "D3-PA",
+                    "name": "Process Analysis",
+                    "similarity_score": 0.330579
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.324787
+                  },
+                  {
+                    "id": "D3-PE",
+                    "name": "Process Eviction",
+                    "similarity_score": 0.32435
+                  },
+                  {
+                    "id": "D3-HR",
+                    "name": "Host Reboot",
+                    "similarity_score": 0.317769
+                  },
+                  {
+                    "id": "D3-PSA",
+                    "name": "Process Spawn Analysis",
+                    "similarity_score": 0.314246
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.217077
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.200343
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.199368
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.182939
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.178296
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.178117
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.178026
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.175103
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.172662
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.170886
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RNA",
+                  "name": "Restore Network Access",
+                  "description": "Restoring a entity's access to a computer network.",
+                  "reason": "Restoring network access directly supports remediation by re-establishing connectivity after an incident."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RS",
+                  "name": "Restore Software",
+                  "description": "Restoring software to a host.",
+                  "reason": "Restoring software to a host is a concrete remediation action to recover compromised systems."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PT",
+                  "name": "Process Termination",
+                  "description": "Terminating a running application process on a computer system.",
+                  "reason": "Terminating malicious processes directly addresses active threats during remediation."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-HR",
+                  "name": "Host Reboot",
+                  "description": "Initiating a host's reboot sequence to terminate all running processes.",
+                  "reason": "Host reboot terminates all processes, ensuring a clean state for remediation."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0005",
+                  "name": "Resource allocation limits",
+                  "description": "Implement resource allocation limits and quotas to prevent any single process or user from consuming excessive resources.",
+                  "reason": "Resource allocation limits prevent resource exhaustion during remediation processes."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Remediation Process",
+              "class": "ORG",
+              "embedding_context": "Maintain a Remediation Process",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-PT",
+                    "name": "Process Termination",
+                    "similarity_score": 0.382379
+                  },
+                  {
+                    "id": "D3-PS",
+                    "name": "Process Suspension",
+                    "similarity_score": 0.372877
+                  },
+                  {
+                    "id": "D3-RO",
+                    "name": "Restore Object",
+                    "similarity_score": 0.37041
+                  },
+                  {
+                    "id": "D3-PA",
+                    "name": "Process Analysis",
+                    "similarity_score": 0.365599
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.356673
+                  },
+                  {
+                    "id": "D3-PE",
+                    "name": "Process Eviction",
+                    "similarity_score": 0.353743
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.351865
+                  },
+                  {
+                    "id": "D3-RNA",
+                    "name": "Restore Network Access",
+                    "similarity_score": 0.33766
+                  },
+                  {
+                    "id": "D3-HR",
+                    "name": "Host Reboot",
+                    "similarity_score": 0.335461
+                  },
+                  {
+                    "id": "D3-AH",
+                    "name": "Application Hardening",
+                    "similarity_score": 0.330209
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.22979
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.227552
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.205196
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.196625
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.195248
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.190679
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.189851
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.186343
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.177541
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.169336
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RS",
+                  "name": "Restore Software",
+                  "description": "Restoring software to a host.",
+                  "reason": "Restoring software directly addresses remediation by recovering compromised or faulty software components."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "reason": "Vulnerability scanning identifies exploitable weaknesses, enabling targeted remediation actions."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PA",
+                  "name": "Process Analysis",
+                  "description": "Process Analysis consists of observing a running application process and analyzing it to watch for certain behaviors or conditions which may indicate adversary activity. Analysis can occur inside of the process or through a third-party monitoring application. Examples include monitoring system and privileged calls, monitoring process initiation chains, and memory boundary allocations.",
+                  "reason": "Process analysis detects anomalous behavior, which is critical for initiating remediation steps."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "reason": "Operational process monitoring ensures continuous oversight of systems, supporting proactive remediation."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0014",
+                  "name": "Resource Monitoring",
+                  "description": "Continuously monitor resource usage.",
+                  "reason": "Resource monitoring identifies usage anomalies that require remediation to prevent system instability."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.7.3",
+          "control_name": "Perform Automated Operating System Patch Management",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Perform Automated Operating System Patch Management",
+              "class": "TECH",
+              "embedding_context": "Perform Automated Operating System Patch Management",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.449859
+                  },
+                  {
+                    "id": "D3-RFUM",
+                    "name": "Remote Firmware Update Monitoring",
+                    "similarity_score": 0.379209
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.373214
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.370554
+                  },
+                  {
+                    "id": "D3-SFA",
+                    "name": "System File Analysis",
+                    "similarity_score": 0.369986
+                  },
+                  {
+                    "id": "D3-PSMD",
+                    "name": "Process Self-Modification Detection",
+                    "similarity_score": 0.359401
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.352919
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.33385
+                  },
+                  {
+                    "id": "D3-SICA",
+                    "name": "System Init Config Analysis",
+                    "similarity_score": 0.332904
+                  },
+                  {
+                    "id": "D3-SBV",
+                    "name": "Service Binary Verification",
+                    "similarity_score": 0.33082
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.370385
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.319973
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.313459
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.294818
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.289562
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.284071
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.266342
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.265295
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.265291
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.261869
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SU",
+                  "name": "Software Update",
+                  "description": "Replacing old software on a computer system component.",
+                  "reason": "The 'Software Update' technique directly enables applying updates to operating system components, which is core to automated patch management."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.7.4",
+          "control_name": "Perform Automated Application Patch Management",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Perform Automated Application Patch Management",
+              "class": "TECH",
+              "embedding_context": "Perform Automated Application Patch Management",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.446773
+                  },
+                  {
+                    "id": "D3-AH",
+                    "name": "Application Hardening",
+                    "similarity_score": 0.40527
+                  },
+                  {
+                    "id": "D3-APM",
+                    "name": "Application Performance Monitoring",
+                    "similarity_score": 0.398403
+                  },
+                  {
+                    "id": "D3-PSMD",
+                    "name": "Process Self-Modification Detection",
+                    "similarity_score": 0.39368
+                  },
+                  {
+                    "id": "D3-ACH",
+                    "name": "Application Configuration Hardening",
+                    "similarity_score": 0.392244
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.384512
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.374761
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.363927
+                  },
+                  {
+                    "id": "D3-DCE",
+                    "name": "Dead Code Elimination",
+                    "similarity_score": 0.34594
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.345796
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.401848
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.349611
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.336999
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.320855
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.311916
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.307882
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.306072
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.29686
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.287501
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.261668
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SU",
+                  "name": "Software Update",
+                  "description": "Replacing old software on a computer system component.",
+                  "reason": "The 'Software Update' technique directly enables automated patching by replacing outdated software, aligning with the goal of applying updates to applications."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.7.5",
+          "control_name": "Perform Automated Vulnerability Scans of Internal Enterprise Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Perform Automated Vulnerability Scans of Internal Enterprise Assets",
+              "class": "TECH",
+              "embedding_context": "Perform Automated Vulnerability Scans of Internal Enterprise Assets",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.591961
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.50632
+                  },
+                  {
+                    "id": "D3-CIA",
+                    "name": "Container Image Analysis",
+                    "similarity_score": 0.454912
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.450031
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.443592
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.428586
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.420291
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.416925
+                  },
+                  {
+                    "id": "D3-FIM",
+                    "name": "File Integrity Monitoring",
+                    "similarity_score": 0.404623
+                  },
+                  {
+                    "id": "D3-FCA",
+                    "name": "File Creation Analysis",
+                    "similarity_score": 0.401888
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.515919
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.475453
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.428847
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.399519
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.390512
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.390308
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.387103
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.386967
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.386252
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.381766
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "reason": "Asset Vulnerability Enumeration directly evaluates vulnerabilities in internal assets, aligning with automated scanning requirements."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "System Vulnerability Assessment evaluates vulnerabilities in systems' configurations and dependencies, supporting comprehensive internal asset scanning."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "reason": "Network Vulnerability Assessment evaluates network components and design risks, addressing networked assets in internal environments."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "reason": "Vulnerability Scanning explicitly targets automated detection of exploitable vulnerabilities across internal enterprise assets."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.7.6",
+          "control_name": "Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets",
+              "class": "TECH",
+              "embedding_context": "Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.596636
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.497245
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.466938
+                  },
+                  {
+                    "id": "D3-CIA",
+                    "name": "Container Image Analysis",
+                    "similarity_score": 0.460869
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.427911
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.420379
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.413748
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.398797
+                  },
+                  {
+                    "id": "D3-FCA",
+                    "name": "File Creation Analysis",
+                    "similarity_score": 0.377447
+                  },
+                  {
+                    "id": "D3-FA",
+                    "name": "File Analysis",
+                    "similarity_score": 0.37705
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.506393
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.464241
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.433073
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.411122
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.405904
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.400874
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.393497
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.385707
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.384288
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.376773
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "reason": "Asset Vulnerability Enumeration directly identifies vulnerabilities in externally-exposed assets by enriching inventory items with vulnerability data."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "reason": "Vulnerability Scanning explicitly targets externally-exposed assets to detect exploitable software vulnerabilities."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "reason": "Network Vulnerability Assessment evaluates vulnerabilities in network components, which are critical for externally-exposed enterprise assets."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "reason": "System Vulnerability Assessment analyzes vulnerabilities in system components, aligning with the goal of scanning exposed enterprise assets."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.7.7",
+          "control_name": "Remediate Detected Vulnerabilities",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Remediate Detected Vulnerabilities",
+              "class": "TECH",
+              "embedding_context": "Remediate Detected Vulnerabilities",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DCE",
+                    "name": "Dead Code Elimination",
+                    "similarity_score": 0.444724
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.44384
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.431729
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.424908
+                  },
+                  {
+                    "id": "D3-TL",
+                    "name": "Trusted Library",
+                    "similarity_score": 0.408883
+                  },
+                  {
+                    "id": "D3-RC",
+                    "name": "Restore Configuration",
+                    "similarity_score": 0.406817
+                  },
+                  {
+                    "id": "D3-PSMD",
+                    "name": "Process Self-Modification Detection",
+                    "similarity_score": 0.391073
+                  },
+                  {
+                    "id": "D3-AH",
+                    "name": "Application Hardening",
+                    "similarity_score": 0.38816
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.385786
+                  },
+                  {
+                    "id": "D3-DLV",
+                    "name": "Domain Logic Validation",
+                    "similarity_score": 0.383726
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.505241
+                  },
+                  {
+                    "id": "AML.M0010",
+                    "name": "Input Data Restoration",
+                    "similarity_score": 0.377272
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.368077
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.364627
+                  },
+                  {
+                    "id": "AML.M0025",
+                    "name": "Model retraining",
+                    "similarity_score": 0.356751
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.344658
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.335825
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.325519
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.32337
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.309176
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SU",
+                  "name": "Software Update",
+                  "description": "Replacing old software on a computer system component.",
+                  "reason": "Software Update directly replaces old software to fix vulnerabilities, aligning with remediation of detected issues."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RC",
+                  "name": "Restore Configuration",
+                  "description": "Restoring an software configuration.",
+                  "reason": "Restoring configuration ensures systems revert to secure settings, addressing misconfigurations that may contribute to vulnerabilities."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0014",
+                  "name": "Verify ML Artifacts",
+                  "description": "Verify the cryptographic checksum of all machine learning artifacts to verify that the file or repositiory was not modified by an attacker.",
+                  "reason": "Verifying ML artifacts' cryptographic checksums ensures no tampering, directly supporting remediation of compromised components."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0015",
+                  "name": "Plugin Testing",
+                  "description": "Use tested, trusted plugins.",
+                  "reason": "Using trusted plugins mitigates risks from vulnerable third-party components, directly addressing remediation of exploited plugins."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

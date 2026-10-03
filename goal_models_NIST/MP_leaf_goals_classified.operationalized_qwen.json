@@ -1,0 +1,696 @@
+{
+  "goal_id": "G0",
+  "clause_id": "MP",
+  "clause_name": "Media Protection",
+  "goal_name": "Ensure media protection",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure secure access, handling, and protection of information media.",
+      "goal_name": "Ensure secure access, handling, and protection of information media",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "MP-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate media protection controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate media protection controls",
+              "class": "PHYS",
+              "embedding_context": "Develop policy and procedures to facilitate media protection controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.513079
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.494146
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.477741
+                  },
+                  {
+                    "id": "D3-CM",
+                    "name": "Content Modification",
+                    "similarity_score": 0.46469
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.458673
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.435442
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.434711
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.432938
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.425587
+                  },
+                  {
+                    "id": "D3-CQ",
+                    "name": "Content Quarantine",
+                    "similarity_score": 0.420493
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.37407
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.373014
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.369982
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.369146
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.354005
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.347269
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.343332
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.342496
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.335917
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.329832
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "reason": "Access Policy Administration directly supports developing policies to manage user permissions for media protection."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "reason": "Data Access Control limits external data source access, aligning with media protection procedures."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Principle of least privilege enforces minimal access rights, enhancing media protection policies."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3F-UGPH",
+                  "name": "User Group Permissions",
+                  "description": "Access control where access is determined based on attributes associated with users and the objects being accessed.",
+                  "reason": "User Group Permissions defines access based on attributes, contributing to media protection policies."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate media protection controls",
+              "class": "PHYS",
+              "embedding_context": "Document policy and procedures to facilitate media protection controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-CM",
+                    "name": "Content Modification",
+                    "similarity_score": 0.518009
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.50263
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.497222
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.478333
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.475075
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.474316
+                  },
+                  {
+                    "id": "D3-CQ",
+                    "name": "Content Quarantine",
+                    "similarity_score": 0.473948
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.473215
+                  },
+                  {
+                    "id": "D3-UAP",
+                    "name": "User Account Permissions",
+                    "similarity_score": 0.469307
+                  },
+                  {
+                    "id": "D3-CF",
+                    "name": "Content Filtering",
+                    "similarity_score": 0.455341
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.443282
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.418414
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.387931
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.386616
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.385941
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.382791
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.381745
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.377217
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.374461
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.360286
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "reason": "Access Policy Administration directly supports documenting access control policies, which are critical for media protection controls."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "The Principle of least privilege mitigation aligns with creating procedures to restrict access, a core component of media protection controls."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate media protection controls",
+              "class": "PHYS",
+              "embedding_context": "Disseminate policy and procedures to facilitate media protection controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.490123
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.476206
+                  },
+                  {
+                    "id": "D3-CM",
+                    "name": "Content Modification",
+                    "similarity_score": 0.471661
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.466777
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.466489
+                  },
+                  {
+                    "id": "D3-CQ",
+                    "name": "Content Quarantine",
+                    "similarity_score": 0.430858
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.423867
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.414734
+                  },
+                  {
+                    "id": "D3-CF",
+                    "name": "Content Filtering",
+                    "similarity_score": 0.413904
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.413106
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.406296
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.391562
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.386177
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.372217
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.367758
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.361167
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.356987
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.350781
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.34549
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.343692
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "MP-2",
+          "control_name": "Restrict access to digital and non-digital media containing information.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Restrict access to digital and non-digital media containing information",
+              "class": "PHYS",
+              "embedding_context": "Restrict access to digital and non-digital media containing information",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.552276
+                  },
+                  {
+                    "id": "D3-UAP",
+                    "name": "User Account Permissions",
+                    "similarity_score": 0.543385
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.514047
+                  },
+                  {
+                    "id": "D3-LFP",
+                    "name": "Local File Permissions",
+                    "similarity_score": 0.509294
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.504812
+                  },
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.492278
+                  },
+                  {
+                    "id": "D3-CQ",
+                    "name": "Content Quarantine",
+                    "similarity_score": 0.481407
+                  },
+                  {
+                    "id": "D3-CM",
+                    "name": "Content Modification",
+                    "similarity_score": 0.481151
+                  },
+                  {
+                    "id": "D3-LFAM",
+                    "name": "Local File Access Mediation",
+                    "similarity_score": 0.451645
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.450324
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.440494
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.421434
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.368377
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.365323
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.343991
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.326036
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.321402
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.31461
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.301054
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.297877
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3F-UGPH",
+                  "name": "User Group Permissions",
+                  "description": "Access control where access is determined based on attributes associated with users and the objects being accessed.",
+                  "reason": "Restricts access to digital media by controlling permissions based on user attributes, directly aligning with the goal of limiting access."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-LFP",
+                  "name": "Local File Permissions",
+                  "description": "Local file permissions is the systematic process of defining, implementing, and managing access control policies that dictate user permissions for accessing files on a local system through the configuration of operating system functionality.",
+                  "reason": "Restricts access to local files (digital media) through operating system-level permissions, ensuring only authorized users can access them."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-IOPR",
+                  "name": "IO Port Restriction",
+                  "description": "Limiting access to computer input/output (IO) ports to restrict unauthorized devices.",
+                  "reason": "Isolates access to I/O ports, restricting physical access to non-digital media like removable devices."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "reason": "Limits external data source access, directly restricting access to digital media containing information."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "reason": "Applies role-based permissions to restrict access to resources, ensuring only authorized entities can interact with sensitive media."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "MP-4",
+          "control_name": "Protect information system media until the media are destroyed or sanitized using approved equipment, techniques, and procedures.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Protect information system media until the media are destroyed or sanitized using approved equipment, techniques, and procedures",
+              "class": "TECH",
+              "embedding_context": "Protect information system media until the media are destroyed or sanitized using approved equipment, techniques, and procedures",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.522115
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.515163
+                  },
+                  {
+                    "id": "D3-CQ",
+                    "name": "Content Quarantine",
+                    "similarity_score": 0.50536
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.496754
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.496226
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.494188
+                  },
+                  {
+                    "id": "D3-FFV",
+                    "name": "File Format Verification",
+                    "similarity_score": 0.484904
+                  },
+                  {
+                    "id": "D3-CM",
+                    "name": "Content Modification",
+                    "similarity_score": 0.484401
+                  },
+                  {
+                    "id": "D3-CF",
+                    "name": "Content Filtering",
+                    "similarity_score": 0.483396
+                  },
+                  {
+                    "id": "D3-CIA",
+                    "name": "Container Image Analysis",
+                    "similarity_score": 0.476156
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.521115
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.493044
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.478616
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.455831
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.455776
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.431843
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.424877
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.42142
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.419923
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.417367
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DKE",
+                  "name": "Disk Erasure",
+                  "description": "Disk Erasure is the process of securely deleting all data on a disk to ensure that it cannot be recovered by any means.",
+                  "reason": "Disk Erasure directly enables secure destruction of data on secondary storage media, aligning with the goal of destroying media using approved procedures."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0038",
+                  "name": "Prevent Manipulation",
+                  "description": "Secure hardware interfaces by using strong authentication methods, encryption, and interface-specific security protocols to prevent unauthorized manipulation and ensure control over AI hardware systems.",
+                  "reason": "Resource isolation techniques prevent unauthorized manipulation of hardware interfaces, ensuring media remains protected until destruction/sanitization occurs."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

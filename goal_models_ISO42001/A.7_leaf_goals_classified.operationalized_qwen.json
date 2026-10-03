@@ -1,0 +1,1307 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.7",
+  "clause_name": "Data acquisition",
+  "goal_name": "Ensure data acquisition",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Data used for AI systems shall be acquired appropriately.",
+      "goal_name": "Acquire data used for AI systems appropriately",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.7.2",
+          "control_name": "Data used for AI systems shall be acquired appropriately.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Acquire data used for AI systems appropriately",
+              "class": "TECH",
+              "embedding_context": "Acquire data used for AI systems appropriately",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.303943
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.257889
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.257222
+                  },
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.255914
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.253866
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.239686
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.228436
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.225061
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.222877
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.219624
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.55801
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.556667
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.509047
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.506826
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.50321
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.501176
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.495103
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.480061
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.478924
+                  },
+                  {
+                    "id": "AML.M0017",
+                    "name": "Model Distribution Methods",
+                    "similarity_score": 0.461625
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "reason": "Data inventorying ensures data sources and locations are documented, which is foundational for acquiring data appropriately."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access modeling establishes permissions for data usage, ensuring only authorized entities can acquire data."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0005",
+                  "name": "Control Access to ML Models and Data at Rest",
+                  "description": "Establish access controls on internal model registries and limit internal access to production models. Limit access to training data only to approved users.",
+                  "reason": "Controls access to training data, directly aligning with appropriate data acquisition by restricting unauthorized access."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0012",
+                  "name": "Encrypt Sensitive Information",
+                  "description": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "reason": "Encrypts sensitive data during acquisition, ensuring confidentiality and integrity of data used for AI systems."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0024",
+                  "name": "Monitoring and auditing",
+                  "description": "Regularly monitoring and auditing the model’s use can help detect and prevent theft by detecting when an attacker is attempting to access or steal the model.",
+                  "reason": "Monitors data access patterns to detect and prevent unauthorized or inappropriate data acquisition activities."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.7.3",
+          "control_name": "Data quality requirements shall be defined and checked.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Define data quality requirements",
+              "class": "ORG",
+              "embedding_context": "Define data quality requirements",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.332844
+                  },
+                  {
+                    "id": "D3-FMCV",
+                    "name": "File Metadata Consistency Validation",
+                    "similarity_score": 0.318727
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.305532
+                  },
+                  {
+                    "id": "D3-IRV",
+                    "name": "Integer Range Validation",
+                    "similarity_score": 0.288371
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.286551
+                  },
+                  {
+                    "id": "D3-FFV",
+                    "name": "File Format Verification",
+                    "similarity_score": 0.285481
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.283297
+                  },
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.280948
+                  },
+                  {
+                    "id": "D3-FCDC",
+                    "name": "File Content Decompression Checking",
+                    "similarity_score": 0.280864
+                  },
+                  {
+                    "id": "D3-FMBV",
+                    "name": "File Magic Byte Verification",
+                    "similarity_score": 0.273253
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.386034
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.368875
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.338384
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.336064
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.33465
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.326694
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.294467
+                  },
+                  {
+                    "id": "OWASP.M0019",
+                    "name": "Input Validation",
+                    "similarity_score": 0.291674
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.273636
+                  },
+                  {
+                    "id": "OWASP.M0020",
+                    "name": "Fine-Tuning Caution",
+                    "similarity_score": 0.272726
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "reason": "Data inventorying provides foundational information about data schemas, formats, and locations, which is essential for defining data quality requirements."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FMCV",
+                  "name": "File Metadata Consistency Validation",
+                  "description": "The process of validating the consistency between a file's metadata and its actual content, ensuring that elements like declared lengths, pointers, and checksums accurately describe the file's content.",
+                  "reason": "Validating metadata consistency ensures that data meets structural and format requirements, directly supporting data quality definitions."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CV",
+                  "name": "Content Validation",
+                  "description": "Verify and validate contents complies with policy",
+                  "reason": "Content validation confirms compliance with policy-based quality standards, aligning with the goal of defining data quality requirements."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0010",
+                  "name": "Input validation",
+                  "description": "Implement input validation and content filtering",
+                  "reason": "Input validation ensures data meets predefined criteria, directly contributing to establishing and enforcing data quality requirements."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0007",
+                  "name": "Sanitize Training Data",
+                  "description": "Detect and remove or remediate poisoned training data. Training data should be sanitized prior to model training and recurrently for an active learning model.\nImplement a filter to limit ingested training data. Establish a content policy that would remove unwanted content such as certain explicit or offensive language from being used.",
+                  "reason": "Sanitizing training data removes poisoned or low-quality data, ensuring the dataset meets quality standards required for defined requirements."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Check data quality requirements",
+              "class": "ORG",
+              "embedding_context": "Check data quality requirements",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-FCDC",
+                    "name": "File Content Decompression Checking",
+                    "similarity_score": 0.342414
+                  },
+                  {
+                    "id": "D3-FMCV",
+                    "name": "File Metadata Consistency Validation",
+                    "similarity_score": 0.338237
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.317711
+                  },
+                  {
+                    "id": "D3-FMBV",
+                    "name": "File Magic Byte Verification",
+                    "similarity_score": 0.311271
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.304052
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.303726
+                  },
+                  {
+                    "id": "D3-FFV",
+                    "name": "File Format Verification",
+                    "similarity_score": 0.299556
+                  },
+                  {
+                    "id": "D3-DLV",
+                    "name": "Domain Logic Validation",
+                    "similarity_score": 0.289064
+                  },
+                  {
+                    "id": "D3-DQSA",
+                    "name": "Database Query String Analysis",
+                    "similarity_score": 0.283912
+                  },
+                  {
+                    "id": "D3-IRV",
+                    "name": "Integer Range Validation",
+                    "similarity_score": 0.283777
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.440035
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.419153
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.417777
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.38066
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.35728
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.356155
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.350428
+                  },
+                  {
+                    "id": "OWASP.M0019",
+                    "name": "Input Validation",
+                    "similarity_score": 0.335802
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.321843
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.319317
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FMCV",
+                  "name": "File Metadata Consistency Validation",
+                  "description": "The process of validating the consistency between a file's metadata and its actual content, ensuring that elements like declared lengths, pointers, and checksums accurately describe the file's content.",
+                  "reason": "Validates consistency between file metadata and content, ensuring data integrity and accuracy which directly supports data quality requirements."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0010",
+                  "name": "Input validation",
+                  "description": "Implement input validation and content filtering",
+                  "reason": "Input validation ensures data meets defined criteria, directly supporting data quality by filtering invalid or malformed inputs."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0030",
+                  "name": "Verify the authenticity of feedback data",
+                  "description": "Use techniques such as digital signatures and checksums to verify that the feedback data received by the system is genuine, and reject any data that does not match the expected format.",
+                  "reason": "Verifies authenticity of feedback data using checksums and digital signatures, ensuring data integrity and reliability."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0007",
+                  "name": "Sanitize Training Data",
+                  "description": "Detect and remove or remediate poisoned training data. Training data should be sanitized prior to model training and recurrently for an active learning model.\nImplement a filter to limit ingested training data. Establish a content policy that would remove unwanted content such as certain explicit or offensive language from being used.",
+                  "reason": "Sanitizes training data to remove poisoned content, directly improving data quality by eliminating malicious or invalid data."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.7.4",
+          "control_name": "Data preparation activities shall be controlled.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Control data preparation activities",
+              "class": "TECH",
+              "embedding_context": "Control data preparation activities",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.423998
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.421389
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.402146
+                  },
+                  {
+                    "id": "D3-CFI",
+                    "name": "Control Flow Integrity",
+                    "similarity_score": 0.370719
+                  },
+                  {
+                    "id": "D3-PCSV",
+                    "name": "Process Code Segment Verification",
+                    "similarity_score": 0.368902
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.367815
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.365838
+                  },
+                  {
+                    "id": "D3-DLV",
+                    "name": "Domain Logic Validation",
+                    "similarity_score": 0.357965
+                  },
+                  {
+                    "id": "D3-MBT",
+                    "name": "Memory Boundary Tracking",
+                    "similarity_score": 0.347759
+                  },
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.344907
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.387792
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.356067
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.346118
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.335479
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.332624
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.332411
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.325475
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.324932
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.316024
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.316019
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "reason": "Data inventorying identifies data locations and formats, enabling control over data preparation by ensuring visibility into data sources and usage."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "reason": "Limits external data source access, directly restricting unauthorized modifications during data preparation activities."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0030",
+                  "name": "Verify the authenticity of feedback data",
+                  "description": "Use techniques such as digital signatures and checksums to verify that the feedback data received by the system is genuine, and reject any data that does not match the expected format.",
+                  "reason": "Verifies feedback data authenticity, ensuring data used in preparation is genuine and prevents tampering."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OLV",
+                  "name": "Operational Logic Validation",
+                  "description": "Validation of variable state in the context of the control logic of the operational application.",
+                  "reason": "Validates variable states in control logic, ensuring data adheres to expected operational rules during preparation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.7.5",
+          "control_name": "Data provenance shall be tracked and maintained.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Track data provenance",
+              "class": "TECH",
+              "embedding_context": "Track data provenance",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.485218
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.360256
+                  },
+                  {
+                    "id": "D3-FIM",
+                    "name": "File Integrity Monitoring",
+                    "similarity_score": 0.359465
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.355641
+                  },
+                  {
+                    "id": "D3-FHRA",
+                    "name": "File Hash Reputation Analysis",
+                    "similarity_score": 0.354326
+                  },
+                  {
+                    "id": "D3-FMBV",
+                    "name": "File Magic Byte Verification",
+                    "similarity_score": 0.35408
+                  },
+                  {
+                    "id": "D3-PLA",
+                    "name": "Process Lineage Analysis",
+                    "similarity_score": 0.348251
+                  },
+                  {
+                    "id": "D3-FMCV",
+                    "name": "File Metadata Consistency Validation",
+                    "similarity_score": 0.337856
+                  },
+                  {
+                    "id": "D3-SVCDM",
+                    "name": "Service Dependency Mapping",
+                    "similarity_score": 0.335005
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.33068
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.418105
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.37164
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.326076
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.309996
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.305087
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.277924
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.268161
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.258022
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.252869
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.246163
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "reason": "Data Inventory directly supports tracking data provenance by recording data locations and schemas, which is essential for documenting data origins."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0007",
+                  "name": "Supply Chain Verification",
+                  "description": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "reason": "Supply Chain Verification maintains ML-BOM records, which directly aids in tracking data provenance by verifying external data sources."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Maintain data provenance",
+              "class": "TECH",
+              "embedding_context": "Maintain data provenance",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.465037
+                  },
+                  {
+                    "id": "D3-RD",
+                    "name": "Restore Database",
+                    "similarity_score": 0.406334
+                  },
+                  {
+                    "id": "D3-RF",
+                    "name": "Restore File",
+                    "similarity_score": 0.343969
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.337303
+                  },
+                  {
+                    "id": "D3-RE",
+                    "name": "Restore Email",
+                    "similarity_score": 0.335947
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.32663
+                  },
+                  {
+                    "id": "D3-FMCV",
+                    "name": "File Metadata Consistency Validation",
+                    "similarity_score": 0.318152
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.315608
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.309548
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.306574
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.413723
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.372528
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.368189
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.343379
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.303723
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.273291
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.264611
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.263428
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.245199
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.243518
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "reason": "Data inventorying records data locations and schemas, directly supporting tracking data origins and storage details required for provenance."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DEM",
+                  "name": "Data Exchange Mapping",
+                  "description": "Data exchange mapping identifies and models the organization's intended design for the flows of the data types, formats, and volumes between systems at the application layer.",
+                  "reason": "Data exchange mapping models data flows between systems, which is critical for documenting how data moves through the organization."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FMCV",
+                  "name": "File Metadata Consistency Validation",
+                  "description": "The process of validating the consistency between a file's metadata and its actual content, ensuring that elements like declared lengths, pointers, and checksums accurately describe the file's content.",
+                  "reason": "File metadata consistency validation ensures data integrity by verifying metadata matches content, preserving trust in data provenance."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "A.7.6",
+          "control_name": "Data selection criteria shall be defined and applied.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Define data selection criteria",
+              "class": "ORG",
+              "embedding_context": "Define data selection criteria",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.314183
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.290988
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.279496
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.277454
+                  },
+                  {
+                    "id": "D3-PHDURA",
+                    "name": "Per Host Download-Upload Ratio Analysis",
+                    "similarity_score": 0.266472
+                  },
+                  {
+                    "id": "D3-FFV",
+                    "name": "File Format Verification",
+                    "similarity_score": 0.25321
+                  },
+                  {
+                    "id": "D3-ANET",
+                    "name": "Authentication Event Thresholding",
+                    "similarity_score": 0.249468
+                  },
+                  {
+                    "id": "D3-FA",
+                    "name": "File Analysis",
+                    "similarity_score": 0.246202
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.241187
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.240003
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.262178
+                  },
+                  {
+                    "id": "AML.M0029",
+                    "name": "Reducing the training data",
+                    "similarity_score": 0.253658
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.222472
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.215236
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.21377
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.213676
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.210453
+                  },
+                  {
+                    "id": "OWASP.M0020",
+                    "name": "Fine-Tuning Caution",
+                    "similarity_score": 0.208511
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.208244
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.197769
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "reason": "Data Inventory directly supports defining data selection criteria by identifying and recording data schemas, formats, volumes, and locations, which are essential attributes for establishing selection rules."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.5.2",
+              "goal_name": "Apply data selection criteria",
+              "class": "ORG",
+              "embedding_context": "Apply data selection criteria",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.246168
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.235786
+                  },
+                  {
+                    "id": "D3-PHDURA",
+                    "name": "Per Host Download-Upload Ratio Analysis",
+                    "similarity_score": 0.221902
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.214651
+                  },
+                  {
+                    "id": "D3-SMRA",
+                    "name": "Sender MTA Reputation Analysis",
+                    "similarity_score": 0.212995
+                  },
+                  {
+                    "id": "D3-FA",
+                    "name": "File Analysis",
+                    "similarity_score": 0.206899
+                  },
+                  {
+                    "id": "D3-ANET",
+                    "name": "Authentication Event Thresholding",
+                    "similarity_score": 0.203845
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.202415
+                  },
+                  {
+                    "id": "D3-SDA",
+                    "name": "Session Duration Analysis",
+                    "similarity_score": 0.201158
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.200542
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0029",
+                    "name": "Reducing the training data",
+                    "similarity_score": 0.254073
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.229999
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.216874
+                  },
+                  {
+                    "id": "AML.M0028",
+                    "name": "Regularization",
+                    "similarity_score": 0.197006
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.186583
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.180624
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.174697
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.173342
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.171619
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.169769
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "reason": "Limits external data source access, directly enforcing data selection criteria by restricting which data can be accessed."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0010",
+                  "name": "Input validation",
+                  "description": "Implement input validation and content filtering",
+                  "reason": "Input validation ensures only data meeting predefined criteria is processed, aligning with the goal of applying data selection."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0018",
+                  "name": "Data Sanitization",
+                  "description": "Use scrubbing to prevent user data in training.",
+                  "reason": "Data sanitization removes or neutralizes unwanted data elements, supporting the application of selection criteria to ensure data legitimacy."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "A.7.7",
+          "control_name": "Data shall be handled securely and appropriately.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Handle data securely and appropriately",
+              "class": "TECH",
+              "embedding_context": "Handle data securely and appropriately",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-TL",
+                    "name": "Trusted Library",
+                    "similarity_score": 0.42653
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.425386
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.424224
+                  },
+                  {
+                    "id": "D3-OVAR",
+                    "name": "OT Variable Access Restriction",
+                    "similarity_score": 0.421123
+                  },
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.418113
+                  },
+                  {
+                    "id": "D3-MENCR",
+                    "name": "Message Encryption",
+                    "similarity_score": 0.407645
+                  },
+                  {
+                    "id": "D3-PAN",
+                    "name": "Pointer Authentication",
+                    "similarity_score": 0.406477
+                  },
+                  {
+                    "id": "D3-MAN",
+                    "name": "Message Authentication",
+                    "similarity_score": 0.402284
+                  },
+                  {
+                    "id": "D3-CQ",
+                    "name": "Content Quarantine",
+                    "similarity_score": 0.389667
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.382275
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.514648
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.508262
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.480509
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.480297
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.447649
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.446647
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.442954
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.438273
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.43727
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.430144
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FE",
+                  "name": "File Encryption",
+                  "description": "Encrypting a file using a cryptographic key.",
+                  "reason": "Encrypts files to secure data at rest, directly addressing secure data handling."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DENCR",
+                  "name": "Disk Encryption",
+                  "description": "Encrypting a hard disk partition to prevent cleartext access to a file system.",
+                  "reason": "Encrypts storage partitions to protect data from unauthorized access."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0012",
+                  "name": "Encrypt Sensitive Information",
+                  "description": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "reason": "Encrypts sensitive data to prevent unauthorized access during processing."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "reason": "Limits external data source access to control data exposure."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0005",
+                  "name": "Control Access to ML Models and Data at Rest",
+                  "description": "Establish access controls on internal model registries and limit internal access to production models. Limit access to training data only to approved users.",
+                  "reason": "Restricts access to training data and models, ensuring only authorized users handle sensitive data."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

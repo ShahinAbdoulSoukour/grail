@@ -1,0 +1,157 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.9.3",
+  "clause_name": "User responsibilities",
+  "goal_name": "Define user responsibilities",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To make users accountable for safeguarding their authentication information.",
+      "goal_name": "Make users accountable for safeguarding their authentication information",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.9.3.1",
+          "control_name": "Users shall be required to follow the organization's practices in the use of secret authentication information.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Require users to follow the organization's practices in the use of secret authentication information",
+              "class": "ORG",
+              "embedding_context": "Require users to follow the organization's practices in the use of secret authentication information",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-CTS",
+                    "name": "Credential Transmission Scoping",
+                    "similarity_score": 0.406359
+                  },
+                  {
+                    "id": "D3-MFA",
+                    "name": "Multi-factor Authentication",
+                    "similarity_score": 0.375589
+                  },
+                  {
+                    "id": "D3-OTP",
+                    "name": "One-time Password",
+                    "similarity_score": 0.372565
+                  },
+                  {
+                    "id": "D3-PWA",
+                    "name": "Password Authentication",
+                    "similarity_score": 0.36652
+                  },
+                  {
+                    "id": "D3-DTP",
+                    "name": "Domain Trust Policy",
+                    "similarity_score": 0.352223
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.341872
+                  },
+                  {
+                    "id": "D3-TBA",
+                    "name": "Token-based Authentication",
+                    "similarity_score": 0.33613
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.332707
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.332129
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.318013
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.49198
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.449501
+                  },
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.435204
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.402583
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.38485
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.371886
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.370587
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.353002
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.348251
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.340102
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0022",
+                  "name": "User Confirmation",
+                  "description": "Require manual authorization for sensitive actions.",
+                  "reason": "Requires manual authorization for sensitive actions, directly enforcing user adherence to organizational practices when handling secret authentication information."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0002",
+                  "name": "Human Approval",
+                  "description": "Require user consent for privileged actions.",
+                  "reason": "Mandates user consent for privileged actions, ensuring users follow organizational practices when accessing or using secret authentication information."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Enforces least privilege through access mediation, aligning with organizational practices by restricting secret authentication usage to scoped durations and preventing privilege escalation."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

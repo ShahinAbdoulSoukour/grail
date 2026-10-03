@@ -1,0 +1,421 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.7.2",
+  "clause_name": "Manage information security responsibilities",
+  "goal_name": "Manage information security responsibilities",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure that employees and contractors are aware of and fulfil their information security responsibilities.",
+      "goal_name": "Ensure that employees and contractors are aware of and fulfil their information security responsibilities",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.7.2.1",
+          "control_name": "Management shall require all employees and contractors to apply information security in accordance with the established policies and procedures of the organization.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Require all employees and contractors to apply information security in accordance with the established policies and procedures of the organization",
+              "agent": "Management",
+              "class": "ORG",
+              "embedding_context": "Require all employees and contractors to apply information security in accordance with the established policies and procedures of the organization",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.420925
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.41107
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.377747
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.37165
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.367469
+                  },
+                  {
+                    "id": "D3-SPP",
+                    "name": "Strong Password Policy",
+                    "similarity_score": 0.345699
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.339179
+                  },
+                  {
+                    "id": "D3-EPL",
+                    "name": "Physical Locking",
+                    "similarity_score": 0.330941
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.329111
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.327462
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.405571
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.387044
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.384012
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.383082
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.379117
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.375803
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.360349
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.35707
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.350998
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.339551
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Enforces the principle of least privilege, ensuring users have only necessary permissions, directly aligning with policy compliance."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "reason": "Limits permissions to minimum required, ensuring adherence to established security policies."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "reason": "Enforces least privilege and JIT access, preventing privilege creep and ensuring scoped access per policies."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SPP",
+                  "name": "Strong Password Policy",
+                  "description": "Modifying system configuration to increase password strength.",
+                  "reason": "Strengthens password policies, a core component of information security procedures required by the goal."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "reason": "Controls network resource access, ensuring network-based policy enforcement for authorized users."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.7.2.2",
+          "control_name": "All employees of the organization and, where relevant, contractors shall receive appropriate awareness education and training and regular updates in organizational policies and procedures, as relevant for their job function.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Receive appropriate awareness education and training and regular updates in organizational policies and procedures, as relevant for their job function",
+              "agent": "All employees of the organization and, where relevant, contractors",
+              "class": "ORG",
+              "embedding_context": "Receive appropriate awareness education and training and regular updates in organizational policies and procedures, as relevant for their job function",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.300999
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.298041
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.288063
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.281199
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.276443
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.272093
+                  },
+                  {
+                    "id": "D3-ORA",
+                    "name": "Operational Risk Assessment",
+                    "similarity_score": 0.267155
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.261559
+                  },
+                  {
+                    "id": "D3-SPP",
+                    "name": "Strong Password Policy",
+                    "similarity_score": 0.259366
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.257294
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.254124
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.242854
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.237349
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.232704
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.220658
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.21073
+                  },
+                  {
+                    "id": "AML.M0018",
+                    "name": "User Training",
+                    "similarity_score": 0.206
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.203567
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.202609
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.202574
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "reason": "Use-Case Specific Training directly addresses providing targeted education and training aligned with job functions, ensuring awareness and policy updates are tailored to organizational roles."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.7.2.3",
+          "control_name": "There shall be a formal and communicated disciplinary process in place to take action against employees who have committed an information security breach.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Establish a formal and communicated disciplinary process in place to take action against employees who have committed an information security breach",
+              "class": "ORG",
+              "embedding_context": "Establish a formal and communicated disciplinary process in place to take action against employees who have committed an information security breach",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.404225
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.378505
+                  },
+                  {
+                    "id": "D3-SPP",
+                    "name": "Strong Password Policy",
+                    "similarity_score": 0.357839
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.350827
+                  },
+                  {
+                    "id": "D3-PR",
+                    "name": "Password Rotation",
+                    "similarity_score": 0.349148
+                  },
+                  {
+                    "id": "D3-ANAA",
+                    "name": "Administrative Network Activity Analysis",
+                    "similarity_score": 0.347224
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.343077
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.338946
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.336316
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.336195
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.338178
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.332563
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.328565
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.325053
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.318706
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.315747
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.314536
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.314078
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.313352
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.309608
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

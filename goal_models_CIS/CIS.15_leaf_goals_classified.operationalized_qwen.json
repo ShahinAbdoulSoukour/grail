@@ -1,0 +1,1242 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.15",
+  "clause_name": "Service Provider Management",
+  "goal_name": "Ensure service provider management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Develop a process to evaluate service providers who hold sensitive data, or are responsible for an enterprise’s critical IT platforms or processes, to ensure these providers are protecting those platforms and data appropriately.",
+      "goal_name": "Develop a process to evaluate service providers who hold sensitive data, or are responsible for an enterprise’s critical IT platforms or processes, to ensure these providers are protecting those platforms and data appropriately",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.15.1",
+          "control_name": "Establish and Maintain an Inventory of Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish an Inventory of Service Providers",
+              "class": "ORG",
+              "embedding_context": "Establish an Inventory of Service Providers",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.374375
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.3174
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.30867
+                  },
+                  {
+                    "id": "D3-SVCDM",
+                    "name": "Service Dependency Mapping",
+                    "similarity_score": 0.296649
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.293759
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.279413
+                  },
+                  {
+                    "id": "D3-EHB",
+                    "name": "Endpoint Health Beacon",
+                    "similarity_score": 0.279345
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.275831
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.26726
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.264986
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.34001
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.324899
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.223218
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.179492
+                  },
+                  {
+                    "id": "OWASP.M0012",
+                    "name": "API Rate Limits",
+                    "similarity_score": 0.170781
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.169003
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.163432
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.16304
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.152481
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.149091
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Maintains an up-to-date inventory directly aligning with the goal of establishing a service provider inventory."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ODM",
+                  "name": "Operational Dependency Mapping",
+                  "description": "Operational dependency mapping identifies and models the dependencies of the organization's activities on each other and on the organization's performers (people, systems, and services.)  This may include modeling the higher- and lower-level activities of an organization forming a hierarchy, or layering, of the dependencies in an organization's activities.",
+                  "reason": "Operational dependency mapping identifies dependencies on services, which may include service providers, thereby contributing to their inventory."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain an Inventory of Service Providers",
+              "class": "ORG",
+              "embedding_context": "Maintain an Inventory of Service Providers",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.399836
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.330852
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.323572
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.312724
+                  },
+                  {
+                    "id": "D3-SVCDM",
+                    "name": "Service Dependency Mapping",
+                    "similarity_score": 0.312705
+                  },
+                  {
+                    "id": "D3-EHB",
+                    "name": "Endpoint Health Beacon",
+                    "similarity_score": 0.307437
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.278133
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.261799
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.260786
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.235404
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.401248
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.350246
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.262636
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.208548
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.183397
+                  },
+                  {
+                    "id": "OWASP.M0012",
+                    "name": "API Rate Limits",
+                    "similarity_score": 0.175228
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.170511
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.167686
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.152276
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.15056
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Directly aligns with maintaining an up-to-date inventory, which is the core requirement of the goal."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.15.2",
+          "control_name": "Establish and Maintain a Service Provider Management Policy",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Service Provider Management Policy",
+              "class": "ORG",
+              "embedding_context": "Establish a Service Provider Management Policy",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.365598
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.348926
+                  },
+                  {
+                    "id": "D3-SVCDM",
+                    "name": "Service Dependency Mapping",
+                    "similarity_score": 0.322965
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.317946
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.294974
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.294064
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.282187
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.2778
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.276093
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.27298
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.357938
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.334115
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.333652
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.331136
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.329763
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.30684
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.303217
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.302187
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.296897
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.296896
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "reason": "Access Policy Administration directly supports establishing policies for managing service providers by defining and implementing access control policies."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access Modeling helps document and structure access permissions for service providers, which is essential for policy creation and enforcement."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "reason": "Privilege Control directly enforces role-based access restrictions, a core component of managing service provider access and permissions."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Service Provider Management Policy",
+              "class": "ORG",
+              "embedding_context": "Maintain a Service Provider Management Policy",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.354668
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.344971
+                  },
+                  {
+                    "id": "D3-SVCDM",
+                    "name": "Service Dependency Mapping",
+                    "similarity_score": 0.337592
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.306434
+                  },
+                  {
+                    "id": "D3-SYSM",
+                    "name": "System Mapping",
+                    "similarity_score": 0.301246
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.291787
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.291756
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.28438
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.270584
+                  },
+                  {
+                    "id": "D3-OAM",
+                    "name": "Operational Activity Mapping",
+                    "similarity_score": 0.269859
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.391449
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.358249
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.350466
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.346072
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.343089
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.337304
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.330038
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.318641
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.317
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.304581
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "reason": "Access Policy Administration directly supports defining and managing access control policies required for service provider management."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "reason": "Privilege Control enforces role-based permissions for service providers, aligning with policy maintenance requirements."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Principle of least privilege ensures service providers have minimal necessary access, directly supporting policy enforcement."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "reason": "Configuration Inventory maintains up-to-date records of service provider configurations, essential for policy compliance."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0014",
+                  "name": "Resource Monitoring",
+                  "description": "Continuously monitor resource usage.",
+                  "reason": "Resource Monitoring ensures ongoing compliance with service provider resource usage policies."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.15.3",
+          "control_name": "Classify Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Classify Service Providers",
+              "class": "TECH",
+              "embedding_context": "Classify Service Providers",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SVCDM",
+                    "name": "Service Dependency Mapping",
+                    "similarity_score": 0.370083
+                  },
+                  {
+                    "id": "D3-NTCD",
+                    "name": "Network Traffic Community Deviation",
+                    "similarity_score": 0.337006
+                  },
+                  {
+                    "id": "D3-ODM",
+                    "name": "Operational Dependency Mapping",
+                    "similarity_score": 0.322967
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.308454
+                  },
+                  {
+                    "id": "D3-IPRA",
+                    "name": "IP Reputation Analysis",
+                    "similarity_score": 0.303593
+                  },
+                  {
+                    "id": "D3-RPA",
+                    "name": "Relay Pattern Analysis",
+                    "similarity_score": 0.291891
+                  },
+                  {
+                    "id": "D3-DNRA",
+                    "name": "Domain Name Reputation Analysis",
+                    "similarity_score": 0.2885
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.287527
+                  },
+                  {
+                    "id": "D3-IRA",
+                    "name": "Identifier Reputation Analysis",
+                    "similarity_score": 0.286925
+                  },
+                  {
+                    "id": "D3-EHB",
+                    "name": "Endpoint Health Beacon",
+                    "similarity_score": 0.285987
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0012",
+                    "name": "API Rate Limits",
+                    "similarity_score": 0.287429
+                  },
+                  {
+                    "id": "AML.M0001",
+                    "name": "Limit Release of Public Information",
+                    "similarity_score": 0.281783
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.277819
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.277504
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.264454
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.259585
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.259414
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.257573
+                  },
+                  {
+                    "id": "AML.M0017",
+                    "name": "Model Distribution Methods",
+                    "similarity_score": 0.255121
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.242834
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SVCDM",
+                  "name": "Service Dependency Mapping",
+                  "description": "Service dependency mapping determines the services on which each given service relies.",
+                  "reason": "Service Dependency Mapping directly identifies dependencies between services, enabling classification of providers based on their functional roles."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ODM",
+                  "name": "Operational Dependency Mapping",
+                  "description": "Operational dependency mapping identifies and models the dependencies of the organization's activities on each other and on the organization's performers (people, systems, and services.)  This may include modeling the higher- and lower-level activities of an organization forming a hierarchy, or layering, of the dependencies in an organization's activities.",
+                  "reason": "Operational Dependency Mapping models dependencies between organizational activities and performers, including service providers, facilitating classification by operational context."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-IPRA",
+                  "name": "IP Reputation Analysis",
+                  "description": "Analyzing the reputation of an IP address.",
+                  "reason": "IP Reputation Analysis classifies service providers by assessing the trustworthiness of their network presence through IP address reputation."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DNRA",
+                  "name": "Domain Name Reputation Analysis",
+                  "description": "Analyzing the reputation of a domain name.",
+                  "reason": "Domain Name Reputation Analysis helps classify service providers by evaluating the reputation of domains associated with their services."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NNI",
+                  "name": "Network Node Inventory",
+                  "description": "Network node inventorying identifies and records all the network nodes (hosts, routers, switches, firewalls, etc.) in the organization's architecture.",
+                  "reason": "Network Node Inventory identifies all network nodes, including service providers, enabling classification based on their physical/network location."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.15.4",
+          "control_name": "Ensure Service Provider Contracts Include Security Requirements",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Ensure Service Provider Contracts Include Security Requirements",
+              "class": "ORG",
+              "embedding_context": "Ensure Service Provider Contracts Include Security Requirements",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-TL",
+                    "name": "Trusted Library",
+                    "similarity_score": 0.348208
+                  },
+                  {
+                    "id": "D3-TAAN",
+                    "name": "Transfer Agent Authentication",
+                    "similarity_score": 0.337607
+                  },
+                  {
+                    "id": "D3-DLV",
+                    "name": "Domain Logic Validation",
+                    "similarity_score": 0.329953
+                  },
+                  {
+                    "id": "D3-SBV",
+                    "name": "Service Binary Verification",
+                    "similarity_score": 0.309263
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.306484
+                  },
+                  {
+                    "id": "D3-SCP",
+                    "name": "System Configuration Permissions",
+                    "similarity_score": 0.300432
+                  },
+                  {
+                    "id": "D3-EBWSAM",
+                    "name": "Endpoint-based Web Server Access Mediation",
+                    "similarity_score": 0.295354
+                  },
+                  {
+                    "id": "D3-SFV",
+                    "name": "System Firmware Verification",
+                    "similarity_score": 0.284959
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.28012
+                  },
+                  {
+                    "id": "D3-FV",
+                    "name": "Firmware Verification",
+                    "similarity_score": 0.279763
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.4846
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.380902
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.380123
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.372817
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.371437
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.369562
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.364068
+                  },
+                  {
+                    "id": "OWASP.M0031",
+                    "name": "Cross-Check",
+                    "similarity_score": 0.36328
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.359477
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.348772
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.15.5",
+          "control_name": "Assess Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Assess Service Providers",
+              "class": "ORG",
+              "embedding_context": "Assess Service Providers",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-EHB",
+                    "name": "Endpoint Health Beacon",
+                    "similarity_score": 0.273091
+                  },
+                  {
+                    "id": "D3-SVCDM",
+                    "name": "Service Dependency Mapping",
+                    "similarity_score": 0.246313
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.216714
+                  },
+                  {
+                    "id": "D3-IPRA",
+                    "name": "IP Reputation Analysis",
+                    "similarity_score": 0.214669
+                  },
+                  {
+                    "id": "D3-NTCD",
+                    "name": "Network Traffic Community Deviation",
+                    "similarity_score": 0.199356
+                  },
+                  {
+                    "id": "D3-IRA",
+                    "name": "Identifier Reputation Analysis",
+                    "similarity_score": 0.197567
+                  },
+                  {
+                    "id": "D3-SMRA",
+                    "name": "Sender MTA Reputation Analysis",
+                    "similarity_score": 0.196269
+                  },
+                  {
+                    "id": "D3-CSPP",
+                    "name": "Client-server Payload Profiling",
+                    "similarity_score": 0.188848
+                  },
+                  {
+                    "id": "D3-DNRA",
+                    "name": "Domain Name Reputation Analysis",
+                    "similarity_score": 0.187606
+                  },
+                  {
+                    "id": "D3-SBV",
+                    "name": "Service Binary Verification",
+                    "similarity_score": 0.187001
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.243126
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.198768
+                  },
+                  {
+                    "id": "OWASP.M0031",
+                    "name": "Cross-Check",
+                    "similarity_score": 0.184146
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.183357
+                  },
+                  {
+                    "id": "OWASP.M0012",
+                    "name": "API Rate Limits",
+                    "similarity_score": 0.183232
+                  },
+                  {
+                    "id": "OWASP.M0004",
+                    "name": "Trust Boundaries",
+                    "similarity_score": 0.170218
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.169145
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.150456
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.147306
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.146738
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-IPRA",
+                  "name": "IP Reputation Analysis",
+                  "description": "Analyzing the reputation of an IP address.",
+                  "reason": "Analyzing IP reputation helps assess the trustworthiness of service providers by evaluating their historical behavior and security status."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DNRA",
+                  "name": "Domain Name Reputation Analysis",
+                  "description": "Analyzing the reputation of a domain name.",
+                  "reason": "Domain name reputation analysis directly evaluates the security risk associated with service provider domains, supporting the assessment goal."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0007",
+                  "name": "Supply Chain Verification",
+                  "description": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "reason": "Supply chain verification ensures service providers are legitimate and secure, aligning with assessing their reliability and security posture."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.15.6",
+          "control_name": "Monitor Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Monitor Service Providers",
+              "class": "TECH",
+              "embedding_context": "Monitor Service Providers",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-EHB",
+                    "name": "Endpoint Health Beacon",
+                    "similarity_score": 0.478924
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.36654
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.357285
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.343277
+                  },
+                  {
+                    "id": "D3-SVCDM",
+                    "name": "Service Dependency Mapping",
+                    "similarity_score": 0.333192
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.324407
+                  },
+                  {
+                    "id": "D3-PUM",
+                    "name": "Platform Uptime Monitoring",
+                    "similarity_score": 0.307771
+                  },
+                  {
+                    "id": "D3-RFUM",
+                    "name": "Remote Firmware Update Monitoring",
+                    "similarity_score": 0.30491
+                  },
+                  {
+                    "id": "D3-APM",
+                    "name": "Application Performance Monitoring",
+                    "similarity_score": 0.303503
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.30162
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.405438
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.345967
+                  },
+                  {
+                    "id": "OWASP.M0012",
+                    "name": "API Rate Limits",
+                    "similarity_score": 0.277713
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.257617
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.256267
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.23243
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.231617
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.230791
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.23035
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.225246
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.15.7",
+          "control_name": "Securely Decommission Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Securely Decommission Service Providers",
+              "class": "TECH",
+              "embedding_context": "Securely Decommission Service Providers",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-ST",
+                    "name": "Session Termination",
+                    "similarity_score": 0.438895
+                  },
+                  {
+                    "id": "D3-HS",
+                    "name": "Host Shutdown",
+                    "similarity_score": 0.41831
+                  },
+                  {
+                    "id": "D3-CR",
+                    "name": "Credential Revocation",
+                    "similarity_score": 0.393821
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.381362
+                  },
+                  {
+                    "id": "D3-DRT",
+                    "name": "Domain Registration Takedown",
+                    "similarity_score": 0.377131
+                  },
+                  {
+                    "id": "D3-HR",
+                    "name": "Host Reboot",
+                    "similarity_score": 0.372746
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.368376
+                  },
+                  {
+                    "id": "D3-SVCDM",
+                    "name": "Service Dependency Mapping",
+                    "similarity_score": 0.360804
+                  },
+                  {
+                    "id": "D3-DNSCE",
+                    "name": "DNS Cache Eviction",
+                    "similarity_score": 0.360214
+                  },
+                  {
+                    "id": "D3-AL",
+                    "name": "Account Locking",
+                    "similarity_score": 0.352112
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.341015
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.324712
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.322985
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.320248
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.319978
+                  },
+                  {
+                    "id": "OWASP.M0012",
+                    "name": "API Rate Limits",
+                    "similarity_score": 0.317023
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.306613
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.302917
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.286101
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.280533
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-HS",
+                  "name": "Host Shutdown",
+                  "description": "Initiating a host's shutdown sequence to terminate all running processes.",
+                  "reason": "Host Shutdown terminates all running processes associated with the service provider, ensuring active operations are halted during decommissioning."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CR",
+                  "name": "Credential Revocation",
+                  "description": "Deleting a set of credentials permanently to prevent them from being used to authenticate.",
+                  "reason": "Credential Revocation permanently deletes credentials used by the service provider, preventing unauthorized re-access after decommissioning."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "reason": "Network Resource Access Mediation isolates the service provider's network access, ensuring no residual connectivity remains post-decommissioning."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

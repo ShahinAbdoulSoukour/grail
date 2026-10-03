@@ -1,0 +1,145 @@
+{
+  "goal_id": "G0",
+  "clause_id": "AC",
+  "clause_name": "Access Control to Information Systems",
+  "goal_name": "Ensure access control to information systems",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure authorized and controlled access to information systems and resources.",
+      "goal_name": "Ensure authorized and controlled access to information systems and resources",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "AC-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate the implementation of access control controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate the implementation of access control controls",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate the implementation of access control controls",
+              "class": "PHYS"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate the implementation of access control controls",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "AC-2",
+          "control_name": "Manage information system accounts, including establishing, activating, modifying, disabling, and removing accounts.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Manage information system accounts, including establishing, activating, modifying, disabling, and removing accounts",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "AC-3",
+          "control_name": "Enforce approved authorizations for logical access to information and system resources.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Enforce approved authorizations for logical access to information and system resources",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "AC-4",
+          "control_name": "Enforce approved authorizations for controlling information flow within the system and between interconnected systems.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Enforce approved authorizations for controlling information flow within the system and between interconnected systems",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "AC-5",
+          "control_name": "Separate duties and responsibilities to reduce opportunities for unauthorized activity.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Separate duties and responsibilities to reduce opportunities for unauthorized activity",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "AC-6",
+          "control_name": "Employ the principle of least privilege, allowing only authorized accesses needed to accomplish assigned tasks.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Employ the principle of least privilege, allowing only authorized accesses needed to accomplish assigned tasks",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "AC-7",
+          "control_name": "Enforce a limit on consecutive invalid logon attempts by a user during a time period.",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Enforce a limit on consecutive invalid logon attempts by a user during a time period",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "AC-8",
+          "control_name": "Display an approved system use notification message before granting access.",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Display an approved system use notification message before granting access",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "AC-11",
+          "control_name": "Prevent further access to the system by initiating a device lock after defined conditions.",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Prevent further access to the system by initiating a device lock after defined conditions",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "AC-12",
+          "control_name": "Terminate a user session after a condition of inactivity or upon user logout.",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Terminate a user session after a condition of inactivity or upon user logout",
+              "class": "TECH"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

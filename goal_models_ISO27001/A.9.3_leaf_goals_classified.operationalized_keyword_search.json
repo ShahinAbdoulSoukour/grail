@@ -1,0 +1,52 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.9.3",
+  "clause_name": "User responsibilities",
+  "goal_name": "Define user responsibilities",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To make users accountable for safeguarding their authentication information.",
+      "goal_name": "Make users accountable for safeguarding their authentication information",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.9.3.1",
+          "control_name": "Users shall be required to follow the organization's practices in the use of secret authentication information.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Require users to follow the organization's practices in the use of secret authentication information",
+              "class": "ORG",
+              "artifact": "Credential",
+              "attack": "AML.A0012",
+              "actions": [
+                {
+                  "id": "AML.M0009",
+                  "label": "Use Multi-Modal Sensors",
+                  "phases": [
+                    "ModelEngineering"
+                  ],
+                  "definition": "Incorporate various biometric sensors to improve authentication accuracy and resilience.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0019",
+                  "label": "Control Access to ML Models and Data in Production",
+                  "phases": [
+                    "Deployment",
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Require users to verify their identities before accessing a production model. Require authentication for API endpoints and monitor production model queries to ensure compliance with usage policies and to prevent model misuse.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1002 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.11",
+  "clause_name": "Data Recovery",
+  "goal_name": "Ensure data recovery",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Establish and maintain data recovery practices sufficient to restore in-scope enterprise assets to a pre-incident and trusted state.",
+      "goal_name": "Establish and maintain data recovery practices sufficient to restore in-scope enterprise assets to a pre-incident and trusted state",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.11.1",
+          "control_name": "Establish and Maintain a Data Recovery Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish a Data Recovery Process",
+              "class": "ORG",
+              "embedding_context": "Establish a Data Recovery Process",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-RDI",
+                    "name": "Restore Disk Image",
+                    "similarity_score": 0.492645
+                  },
+                  {
+                    "id": "D3-RD",
+                    "name": "Restore Database",
+                    "similarity_score": 0.476928
+                  },
+                  {
+                    "id": "D3-RF",
+                    "name": "Restore File",
+                    "similarity_score": 0.446763
+                  },
+                  {
+                    "id": "D3-RE",
+                    "name": "Restore Email",
+                    "similarity_score": 0.407843
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.40334
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.398902
+                  },
+                  {
+                    "id": "D3-RO",
+                    "name": "Restore Object",
+                    "similarity_score": 0.374402
+                  },
+                  {
+                    "id": "D3-DKF",
+                    "name": "Disk Formatting",
+                    "similarity_score": 0.370155
+                  },
+                  {
+                    "id": "D3-RNA",
+                    "name": "Restore Network Access",
+                    "similarity_score": 0.365769
+                  },
+                  {
+                    "id": "D3-ULA",
+                    "name": "Unlock Account",
+                    "similarity_score": 0.363028
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.328538
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.281669
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.278573
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.277763
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.2483
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.243966
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.241731
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Hardware fault-tolerant architectures",
+                    "similarity_score": 0.229488
+                  },
+                  {
+                    "id": "AML.M0010",
+                    "name": "Input Data Restoration",
+                    "similarity_score": 0.225164
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.224379
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "reason": "Regular backups are essential for establishing a data recovery process by ensuring data can be restored from reliable copies."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RD",
+                  "name": "Restore Database",
+                  "description": "Restoring the data in a database.",
+                  "reason": "Restoring databases directly supports data recovery by retrieving structured data from backups."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RF",
+                  "name": "Restore File",
+                  "description": "Restoring a file for an entity to access.",
+                  "reason": "Restoring files is a core component of data recovery processes to retrieve individual data elements."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RE",
+                  "name": "Restore Email",
+                  "description": "Restoring an email for an entity to access.",
+                  "reason": "Restoring emails ensures communication data can be recovered as part of the broader data recovery process."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RS",
+                  "name": "Restore Software",
+                  "description": "Restoring software to a host.",
+                  "reason": "Restoring software ensures system functionality is restored, which is critical for data recovery operations."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain a Data Recovery Process",
+              "class": "TECH",
+              "embedding_context": "Maintain a Data Recovery Process",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-RDI",
+                    "name": "Restore Disk Image",
+                    "similarity_score": 0.474797
+                  },
+                  {
+                    "id": "D3-RD",
+                    "name": "Restore Database",
+                    "similarity_score": 0.447921
+                  },
+                  {
+                    "id": "D3-RF",
+                    "name": "Restore File",
+                    "similarity_score": 0.434167
+                  },
+                  {
+                    "id": "D3-RE",
+                    "name": "Restore Email",
+                    "similarity_score": 0.387314
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.37995
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.375421
+                  },
+                  {
+                    "id": "D3-RO",
+                    "name": "Restore Object",
+                    "similarity_score": 0.36537
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.349719
+                  },
+                  {
+                    "id": "D3-DKF",
+                    "name": "Disk Formatting",
+                    "similarity_score": 0.344747
+                  },
+                  {
+                    "id": "D3-ULA",
+                    "name": "Unlock Account",
+                    "similarity_score": 0.326936
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.371032
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.29499
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.255651
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.238152
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.216615
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.213829
+                  },
+                  {
+                    "id": "AML.M0010",
+                    "name": "Input Data Restoration",
+                    "similarity_score": 0.212772
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.21149
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Hardware fault-tolerant architectures",
+                    "similarity_score": 0.210965
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.199167
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "reason": "Regular backups ensure data can be recovered in case of loss or corruption, directly supporting the data recovery process."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "reason": "Data Inventory identifies data locations and schemas, enabling targeted recovery operations by ensuring awareness of available data assets."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RD",
+                  "name": "Restore Database",
+                  "description": "Restoring the data in a database.",
+                  "reason": "Restoring databases directly supports data recovery by retrieving structured data from backups."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RF",
+                  "name": "Restore File",
+                  "description": "Restoring a file for an entity to access.",
+                  "reason": "Restoring files enables recovery of individual data entities, a core component of data recovery processes."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RE",
+                  "name": "Restore Email",
+                  "description": "Restoring an email for an entity to access.",
+                  "reason": "Restoring emails recovers specific communication data, which is critical for maintaining data availability."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.11.2",
+          "control_name": "Perform Automated Backups",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Perform Automated Backups",
+              "class": "TECH",
+              "embedding_context": "Perform Automated Backups",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.336716
+                  },
+                  {
+                    "id": "D3-RDI",
+                    "name": "Restore Disk Image",
+                    "similarity_score": 0.23953
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.238025
+                  },
+                  {
+                    "id": "D3-FIM",
+                    "name": "File Integrity Monitoring",
+                    "similarity_score": 0.236469
+                  },
+                  {
+                    "id": "D3-RD",
+                    "name": "Restore Database",
+                    "similarity_score": 0.235345
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.231824
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.226711
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.22544
+                  },
+                  {
+                    "id": "D3-SICA",
+                    "name": "System Init Config Analysis",
+                    "similarity_score": 0.221526
+                  },
+                  {
+                    "id": "D3-PUM",
+                    "name": "Platform Uptime Monitoring",
+                    "similarity_score": 0.219439
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.492942
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.309129
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.227004
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.210153
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.208089
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.205513
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.20153
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.200646
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.198778
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.198143
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "reason": "Regular backups directly align with the goal of performing automated backups by ensuring model code, training data, and sensitive information are periodically saved for recovery."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.11.3",
+          "control_name": "Protect Recovery Data",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Protect Recovery Data",
+              "class": "TECH",
+              "embedding_context": "Protect Recovery Data",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.489645
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.466426
+                  },
+                  {
+                    "id": "D3-RDI",
+                    "name": "Restore Disk Image",
+                    "similarity_score": 0.458118
+                  },
+                  {
+                    "id": "D3-RF",
+                    "name": "Restore File",
+                    "similarity_score": 0.427931
+                  },
+                  {
+                    "id": "D3-RO",
+                    "name": "Restore Object",
+                    "similarity_score": 0.427053
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.417364
+                  },
+                  {
+                    "id": "D3-ULA",
+                    "name": "Unlock Account",
+                    "similarity_score": 0.411821
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.406916
+                  },
+                  {
+                    "id": "D3-RD",
+                    "name": "Restore Database",
+                    "similarity_score": 0.392636
+                  },
+                  {
+                    "id": "D3-RA",
+                    "name": "Restore Access",
+                    "similarity_score": 0.390754
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.485861
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.45421
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.42405
+                  },
+                  {
+                    "id": "AML.M0020",
+                    "name": "Encryption",
+                    "similarity_score": 0.406328
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.379316
+                  },
+                  {
+                    "id": "AML.M0022",
+                    "name": "Model Obfuscation",
+                    "similarity_score": 0.361682
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.353492
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.352588
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.335959
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.335744
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DENCR",
+                  "name": "Disk Encryption",
+                  "description": "Encrypting a hard disk partition to prevent cleartext access to a file system.",
+                  "reason": "Disk Encryption directly protects recovery data by encrypting storage, preventing unauthorized access to sensitive information."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0012",
+                  "name": "Encrypt Sensitive Information",
+                  "description": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "reason": "Encrypting sensitive information ensures recovery data is protected from unauthorized access or theft."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0005",
+                  "name": "Control Access to ML Models and Data at Rest",
+                  "description": "Establish access controls on internal model registries and limit internal access to production models. Limit access to training data only to approved users.",
+                  "reason": "Controlling access to data at rest limits unauthorized access to recovery data, ensuring only authorized entities can access it."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.11.4",
+          "control_name": "Establish and Maintain an Isolated Instance of Recovery Data",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish an Isolated Instance of Recovery Data",
+              "class": "TECH",
+              "embedding_context": "Establish an Isolated Instance of Recovery Data",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-RDI",
+                    "name": "Restore Disk Image",
+                    "similarity_score": 0.418114
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.389096
+                  },
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.342336
+                  },
+                  {
+                    "id": "D3-RF",
+                    "name": "Restore File",
+                    "similarity_score": 0.338374
+                  },
+                  {
+                    "id": "D3-RD",
+                    "name": "Restore Database",
+                    "similarity_score": 0.335338
+                  },
+                  {
+                    "id": "D3-RO",
+                    "name": "Restore Object",
+                    "similarity_score": 0.332676
+                  },
+                  {
+                    "id": "D3-KBPI",
+                    "name": "Kernel-based Process Isolation",
+                    "similarity_score": 0.331389
+                  },
+                  {
+                    "id": "D3-DKP",
+                    "name": "Disk Partitioning",
+                    "similarity_score": 0.328512
+                  },
+                  {
+                    "id": "D3-HBPI",
+                    "name": "Hardware-based Process Isolation",
+                    "similarity_score": 0.328154
+                  },
+                  {
+                    "id": "D3-RNA",
+                    "name": "Restore Network Access",
+                    "similarity_score": 0.322205
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.376342
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.32018
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.316896
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.311623
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.311076
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.308983
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.30175
+                  },
+                  {
+                    "id": "AML.M0010",
+                    "name": "Input Data Restoration",
+                    "similarity_score": 0.2944
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.292468
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.283705
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "reason": "Implementing resource isolation techniques like virtualization/containerization directly creates an isolated environment for recovery data, fulfilling the goal of establishing an isolated instance."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Maintain an Isolated Instance of Recovery Data",
+              "class": "TECH",
+              "embedding_context": "Maintain an Isolated Instance of Recovery Data",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-RDI",
+                    "name": "Restore Disk Image",
+                    "similarity_score": 0.392804
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.376065
+                  },
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.356259
+                  },
+                  {
+                    "id": "D3-RF",
+                    "name": "Restore File",
+                    "similarity_score": 0.34574
+                  },
+                  {
+                    "id": "D3-RD",
+                    "name": "Restore Database",
+                    "similarity_score": 0.341814
+                  },
+                  {
+                    "id": "D3-RO",
+                    "name": "Restore Object",
+                    "similarity_score": 0.340846
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.32886
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.323049
+                  },
+                  {
+                    "id": "D3-HBPI",
+                    "name": "Hardware-based Process Isolation",
+                    "similarity_score": 0.316148
+                  },
+                  {
+                    "id": "D3-DKP",
+                    "name": "Disk Partitioning",
+                    "similarity_score": 0.311688
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.436094
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.310529
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.305599
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.303272
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.291447
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.291083
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.274897
+                  },
+                  {
+                    "id": "AML.M0020",
+                    "name": "Encryption",
+                    "similarity_score": 0.267815
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.262726
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.261758
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RFAM",
+                  "name": "Remote File Access Mediation",
+                  "description": "Remote file access mediation is the process of managing and securing access to file systems over a network to ensure that only authorized users or processes can interact with remote files.",
+                  "reason": "Remote File Access Mediation directly isolates access to files, ensuring recovery data is only accessible through controlled mechanisms."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "reason": "Resource isolation techniques like virtualization/containerization create a physically and logically isolated environment for recovery data storage."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.11.5",
+          "control_name": "Test Data Recovery",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Test Data Recovery",
+              "class": "TECH",
+              "embedding_context": "Test Data Recovery",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-RDI",
+                    "name": "Restore Disk Image",
+                    "similarity_score": 0.450904
+                  },
+                  {
+                    "id": "D3-RD",
+                    "name": "Restore Database",
+                    "similarity_score": 0.418795
+                  },
+                  {
+                    "id": "D3-RF",
+                    "name": "Restore File",
+                    "similarity_score": 0.400414
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.365887
+                  },
+                  {
+                    "id": "D3-RE",
+                    "name": "Restore Email",
+                    "similarity_score": 0.346386
+                  },
+                  {
+                    "id": "D3-RC",
+                    "name": "Restore Configuration",
+                    "similarity_score": 0.318843
+                  },
+                  {
+                    "id": "D3-RO",
+                    "name": "Restore Object",
+                    "similarity_score": 0.292456
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.287206
+                  },
+                  {
+                    "id": "D3-FC",
+                    "name": "File Carving",
+                    "similarity_score": 0.279006
+                  },
+                  {
+                    "id": "D3-DKF",
+                    "name": "Disk Formatting",
+                    "similarity_score": 0.275299
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0010",
+                    "name": "Input Data Restoration",
+                    "similarity_score": 0.257484
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.250042
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.248434
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.245478
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.238743
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.234831
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.216828
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.201994
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.191101
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.178374
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RD",
+                  "name": "Restore Database",
+                  "description": "Restoring the data in a database.",
+                  "reason": "Restoring database data directly supports test data recovery by recreating lost or corrupted database contents."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RF",
+                  "name": "Restore File",
+                  "description": "Restoring a file for an entity to access.",
+                  "reason": "Restoring files directly addresses test data recovery by recovering individual file objects that may have been deleted or damaged."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RE",
+                  "name": "Restore Email",
+                  "description": "Restoring an email for an entity to access.",
+                  "reason": "Restoring emails specifically supports test data recovery for email-related data that may need to be recovered during testing."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RS",
+                  "name": "Restore Software",
+                  "description": "Restoring software to a host.",
+                  "reason": "Restoring software ensures test data recovery for application-specific data stored within software environments."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "reason": "Regular backups directly enable test data recovery by providing verified restore points for testing scenarios."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

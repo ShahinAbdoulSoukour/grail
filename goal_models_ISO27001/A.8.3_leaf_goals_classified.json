@@ -1,0 +1,51 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.8.3",
+  "clause_name": "Media handling",
+  "goal_name": "Control media handling",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To prevent unauthorized disclosure, modification, removal or destruction of information stored on media.",
+      "goal_name": "Prevent unauthorized disclosure, modification, removal or destruction of information stored on media",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.8.3.1",
+          "control_name": "Procedures shall be implemented for the management of removable media in accordance with the classification scheme adopted by the organization.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Implement procedures for the management of removable media in accordance with the classification scheme adopted by the organization",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.8.3.2",
+          "control_name": "Media shall be disposed of securely when no longer required, using formal procedures.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Dispose of media securely when no longer required, using formal procedures",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.8.3.3",
+          "control_name": "Media containing information shall be protected against unauthorized access, misuse or corruption during transportation.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Protect media containing information against unauthorized access, misuse or corruption during transportation",
+              "class": "PHYS"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

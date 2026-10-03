@@ -1,0 +1,420 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.8.3",
+  "clause_name": "Media handling",
+  "goal_name": "Control media handling",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To prevent unauthorized disclosure, modification, removal or destruction of information stored on media.",
+      "goal_name": "Prevent unauthorized disclosure, modification, removal or destruction of information stored on media",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.8.3.1",
+          "control_name": "Procedures shall be implemented for the management of removable media in accordance with the classification scheme adopted by the organization.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Implement procedures for the management of removable media in accordance with the classification scheme adopted by the organization",
+              "class": "ORG",
+              "embedding_context": "Implement procedures for the management of removable media in accordance with the classification scheme adopted by the organization",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DKF",
+                    "name": "Disk Formatting",
+                    "similarity_score": 0.466676
+                  },
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.458887
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.438899
+                  },
+                  {
+                    "id": "D3-FFV",
+                    "name": "File Format Verification",
+                    "similarity_score": 0.431444
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.427078
+                  },
+                  {
+                    "id": "D3-FA",
+                    "name": "File Analysis",
+                    "similarity_score": 0.425355
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.422162
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.418456
+                  },
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.417288
+                  },
+                  {
+                    "id": "D3-CIA",
+                    "name": "Container Image Analysis",
+                    "similarity_score": 0.414354
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.324813
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.310796
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.252226
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.246501
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.240856
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.234058
+                  },
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.227199
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.225866
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.221996
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.213557
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-IOPR",
+                  "name": "IO Port Restriction",
+                  "description": "Limiting access to computer input/output (IO) ports to restrict unauthorized devices.",
+                  "reason": "IO Port Restriction directly limits access to removable media devices, ensuring they comply with organizational classification schemes by restricting unauthorized devices."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Inventory Management supports tracking and managing removable media according to classification by maintaining an up-to-date inventory of physical and logical assets."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.8.3.2",
+          "control_name": "Media shall be disposed of securely when no longer required, using formal procedures.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Dispose of media securely when no longer required, using formal procedures",
+              "class": "TECH",
+              "embedding_context": "Dispose of media securely when no longer required, using formal procedures",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-FEV",
+                    "name": "File Eviction",
+                    "similarity_score": 0.49925
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.460716
+                  },
+                  {
+                    "id": "D3-ER",
+                    "name": "Email Removal",
+                    "similarity_score": 0.435867
+                  },
+                  {
+                    "id": "D3-DKF",
+                    "name": "Disk Formatting",
+                    "similarity_score": 0.393586
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.364022
+                  },
+                  {
+                    "id": "D3-CQ",
+                    "name": "Content Quarantine",
+                    "similarity_score": 0.356712
+                  },
+                  {
+                    "id": "D3-RF",
+                    "name": "Restore File",
+                    "similarity_score": 0.349111
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.328825
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.325318
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.322229
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.289029
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.253291
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.232043
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.208121
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.200728
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.196363
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.19337
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.192289
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.190147
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.189026
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DKE",
+                  "name": "Disk Erasure",
+                  "description": "Disk Erasure is the process of securely deleting all data on a disk to ensure that it cannot be recovered by any means.",
+                  "reason": "Disk Erasure directly addresses securely deleting data from secondary storage, ensuring media is disposed of in a manner preventing recovery."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.8.3.3",
+          "control_name": "Media containing information shall be protected against unauthorized access, misuse or corruption during transportation.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Protect media containing information against unauthorized access, misuse or corruption during transportation",
+              "class": "PHYS",
+              "embedding_context": "Protect media containing information against unauthorized access, misuse or corruption during transportation",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.570775
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.549568
+                  },
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.51952
+                  },
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.516623
+                  },
+                  {
+                    "id": "D3-CQ",
+                    "name": "Content Quarantine",
+                    "similarity_score": 0.509044
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.492778
+                  },
+                  {
+                    "id": "D3-FCDC",
+                    "name": "File Content Decompression Checking",
+                    "similarity_score": 0.492775
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.484896
+                  },
+                  {
+                    "id": "D3-LFP",
+                    "name": "Local File Permissions",
+                    "similarity_score": 0.476181
+                  },
+                  {
+                    "id": "D3-UAP",
+                    "name": "User Account Permissions",
+                    "similarity_score": 0.475114
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.523006
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.430174
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.421112
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.416562
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.416386
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.414081
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.393176
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.390285
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.38911
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.387537
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FE",
+                  "name": "File Encryption",
+                  "description": "Encrypting a file using a cryptographic key.",
+                  "reason": "Encrypts files to prevent unauthorized access or misuse during transportation."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0032",
+                  "name": "Utilize integrity controls in hardware",
+                  "description": "Utilize tamper-evident packaging, secure shipping protocols, and block chain-based tracking systems to ensure the integrity of hardware and software during distribution, preventing unauthorized access or modifications.",
+                  "reason": "Ensures integrity of hardware and software during distribution, preventing corruption during transportation."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-IOPR",
+                  "name": "IO Port Restriction",
+                  "description": "Limiting access to computer input/output (IO) ports to restrict unauthorized devices.",
+                  "reason": "Restricts access to I/O ports to prevent unauthorized physical devices from interfacing with transported media."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

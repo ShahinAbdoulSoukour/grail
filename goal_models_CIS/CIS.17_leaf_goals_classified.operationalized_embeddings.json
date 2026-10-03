@@ -1,0 +1,452 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.17",
+  "clause_name": "Incident Response Management",
+  "goal_name": "Ensure incident response management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Establish a program to develop and maintain an incident response capability (e.g., policies, plans, procedures, defined roles, training, and communications) to prepare, detect, and quickly respond to an attack.",
+      "goal_name": "Establish a program to develop and maintain an incident response capability to prepare, detect, and quickly respond to an attack",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.17.1",
+          "control_name": "Designate Personnel to Manage Incident Handling",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Designate Personnel to Manage Incident Handling",
+              "class": "ORG",
+              "embedding_context": "Designate Personnel to Manage Incident Handling",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.397794
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0013",
+                "name": "Queue Management",
+                "similarity_score": 0.330087
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.17.2",
+          "control_name": "Establish and Maintain Contact Information for Reporting Security Incidents",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish Contact Information for Reporting Security Incidents",
+              "class": "ORG",
+              "embedding_context": "Establish Contact Information for Reporting Security Incidents",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.350627
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0034",
+                "name": "Monitoring of access logs",
+                "similarity_score": 0.403787
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain Contact Information for Reporting Security Incidents",
+              "class": "ORG",
+              "embedding_context": "Maintain Contact Information for Reporting Security Incidents",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.322221
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0034",
+                "name": "Monitoring of access logs",
+                "similarity_score": 0.398572
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.17.3",
+          "control_name": "Establish and Maintain an Enterprise Process for Reporting Incidents",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Establish an Enterprise Process for Reporting Incidents",
+              "class": "ORG",
+              "embedding_context": "Establish an Enterprise Process for Reporting Incidents",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.374488
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.30685
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Maintain an Enterprise Process for Reporting Incidents",
+              "class": "ORG",
+              "embedding_context": "Maintain an Enterprise Process for Reporting Incidents",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.404255
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.333928
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.17.4",
+          "control_name": "Establish and Maintain an Incident Response Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish an Incident Response Process",
+              "class": "ORG",
+              "embedding_context": "Establish an Incident Response Process",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.399666
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0013",
+                "name": "Queue Management",
+                "similarity_score": 0.393923
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Maintain an Incident Response Process",
+              "class": "ORG",
+              "embedding_context": "Maintain an Incident Response Process",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.417337
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0013",
+                "name": "Queue Management",
+                "similarity_score": 0.41395
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.17.5",
+          "control_name": "Assign Key Roles and Responsibilities",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Assign Key Roles and Responsibilities",
+              "class": "ORG",
+              "embedding_context": "Assign Key Roles and Responsibilities",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OM",
+                "name": "Organization Mapping",
+                "similarity_score": 0.387125
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0036",
+                "name": "Principle of least privilege",
+                "similarity_score": 0.366714
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.17.6",
+          "control_name": "Define Mechanisms for Communicating During Incident Response",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Define Mechanisms for Communicating During Incident Response",
+              "class": "ORG",
+              "embedding_context": "Define Mechanisms for Communicating During Incident Response",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-MH",
+                "name": "Message Hardening",
+                "similarity_score": 0.423573
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0013",
+                "name": "Queue Management",
+                "similarity_score": 0.345332
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.17.7",
+          "control_name": "Conduct Routine Incident Response Exercises",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Conduct Routine Incident Response Exercises",
+              "class": "ORG",
+              "embedding_context": "Conduct Routine Incident Response Exercises",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.322062
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.26662
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.17.8",
+          "control_name": "Conduct Post-Incident Reviews",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Conduct Post-Incident Reviews",
+              "class": "ORG",
+              "embedding_context": "Conduct Post-Incident Reviews",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.33309
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0034",
+                "name": "Monitoring of access logs",
+                "similarity_score": 0.212548
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.17.9",
+          "control_name": "Establish and Maintain Security Incident Thresholds",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Establish Security Incident Thresholds",
+              "class": "PHYS",
+              "embedding_context": "Establish Security Incident Thresholds",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AZET",
+                "name": "Authorization Event Thresholding",
+                "similarity_score": 0.555573
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0036",
+                "name": "Principle of least privilege",
+                "similarity_score": 0.516953
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AZET",
+                  "name": "Authorization Event Thresholding",
+                  "description": "Collecting authorization events, creating a baseline user profile, and determining whether authorization events are consistent with the baseline profile.",
+                  "similarity_score": 0.555573
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ANET",
+                  "name": "Authentication Event Thresholding",
+                  "description": "Collecting authentication events, creating a baseline user profile, and determining whether authentication events are consistent with the baseline profile.",
+                  "similarity_score": 0.5292
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-UBA",
+                  "name": "User Behavior Analysis",
+                  "description": "User behavior analytics (\"UBA\") as defined by Gartner, is a cybersecurity process about detection of insider threats, targeted attacks, and financial fraud. UBA solutions look at patterns of human behavior, and then apply algorithms and statistical analysis to detect meaningful anomalies from those patterns-anomalies that indicate potential threats.' Instead of tracking devices or security events, UBA tracks a system's users. Big data platforms are increasing UBA functionality by allowing them to analyze petabytes worth of data to detect insider threats and advanced persistent threats.",
+                  "similarity_score": 0.465668
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.462222
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.516953
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.496426
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0005",
+                  "name": "Resource allocation limits",
+                  "description": "Implement resource allocation limits and quotas to prevent any single process or user from consuming excessive resources.",
+                  "similarity_score": 0.485804
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0013",
+                  "name": "Queue Management",
+                  "description": "Control queued and total actions.",
+                  "similarity_score": 0.483526
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.479785
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.9.2",
+              "goal_name": "Maintain Security Incident Thresholds",
+              "class": "TECH",
+              "embedding_context": "Maintain Security Incident Thresholds",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AZET",
+                "name": "Authorization Event Thresholding",
+                "similarity_score": 0.521672
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0036",
+                "name": "Principle of least privilege",
+                "similarity_score": 0.512925
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AZET",
+                  "name": "Authorization Event Thresholding",
+                  "description": "Collecting authorization events, creating a baseline user profile, and determining whether authorization events are consistent with the baseline profile.",
+                  "similarity_score": 0.521672
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ANET",
+                  "name": "Authentication Event Thresholding",
+                  "description": "Collecting authentication events, creating a baseline user profile, and determining whether authentication events are consistent with the baseline profile.",
+                  "similarity_score": 0.488503
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.512925
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0013",
+                  "name": "Queue Management",
+                  "description": "Control queued and total actions.",
+                  "similarity_score": 0.489511
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0005",
+                  "name": "Resource allocation limits",
+                  "description": "Implement resource allocation limits and quotas to prevent any single process or user from consuming excessive resources.",
+                  "similarity_score": 0.486601
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.464454
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.460936
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.15",
+  "clause_name": "Service Provider Management",
+  "goal_name": "Ensure service provider management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Develop a process to evaluate service providers who hold sensitive data, or are responsible for an enterprise’s critical IT platforms or processes, to ensure these providers are protecting those platforms and data appropriately.",
+      "goal_name": "Develop a process to evaluate service providers who hold sensitive data, or are responsible for an enterprise’s critical IT platforms or processes, to ensure these providers are protecting those platforms and data appropriately",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.15.1",
+          "control_name": "Establish and Maintain an Inventory of Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish an Inventory of Service Providers",
+              "class": "ORG",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain an Inventory of Service Providers",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.15.2",
+          "control_name": "Establish and Maintain a Service Provider Management Policy",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Service Provider Management Policy",
+              "class": "ORG",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Service Provider Management Policy",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.15.3",
+          "control_name": "Classify Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Classify Service Providers",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.15.4",
+          "control_name": "Ensure Service Provider Contracts Include Security Requirements",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Ensure Service Provider Contracts Include Security Requirements",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.15.5",
+          "control_name": "Assess Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Assess Service Providers",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.15.6",
+          "control_name": "Monitor Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Monitor Service Providers",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.15.7",
+          "control_name": "Securely Decommission Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Securely Decommission Service Providers",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

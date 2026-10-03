@@ -1,0 +1,318 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.7",
+  "clause_name": "Data acquisition",
+  "goal_name": "Ensure data acquisition",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Data used for AI systems shall be acquired appropriately.",
+      "goal_name": "Acquire data used for AI systems appropriately",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.7.2",
+          "control_name": "Data used for AI systems shall be acquired appropriately.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Acquire data used for AI systems appropriately",
+              "class": "TECH",
+              "embedding_context": "Acquire data used for AI systems appropriately",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.303943
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.55801
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.55801
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0005",
+                  "name": "Control Access to ML Models and Data at Rest",
+                  "description": "Establish access controls on internal model registries and limit internal access to production models. Limit access to training data only to approved users.",
+                  "similarity_score": 0.556667
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0019",
+                  "name": "Control Access to ML Models and Data in Production",
+                  "description": "Require users to verify their identities before accessing a production model. Require authentication for API endpoints and monitor production model queries to ensure compliance with usage policies and to prevent model misuse.",
+                  "similarity_score": 0.509047
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0018",
+                  "name": "Data Sanitization",
+                  "description": "Use scrubbing to prevent user data in training.",
+                  "similarity_score": 0.506826
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0012",
+                  "name": "Encrypt Sensitive Information",
+                  "description": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "similarity_score": 0.50321
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.7.3",
+          "control_name": "Data quality requirements shall be defined and checked.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Define data quality requirements",
+              "class": "ORG",
+              "embedding_context": "Define data quality requirements",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.332844
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0008",
+                "name": "Legitimacy Verification",
+                "similarity_score": 0.386034
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Check data quality requirements",
+              "class": "ORG",
+              "embedding_context": "Check data quality requirements",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FCDC",
+                "name": "File Content Decompression Checking",
+                "similarity_score": 0.342414
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0007",
+                "name": "Supply Chain Verification",
+                "similarity_score": 0.440034
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.7.4",
+          "control_name": "Data preparation activities shall be controlled.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Control data preparation activities",
+              "class": "TECH",
+              "embedding_context": "Control data preparation activities",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.423998
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.387792
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.7.5",
+          "control_name": "Data provenance shall be tracked and maintained.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Track data provenance",
+              "class": "TECH",
+              "embedding_context": "Track data provenance",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.485218
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0007",
+                "name": "Supply Chain Verification",
+                "similarity_score": 0.418104
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "similarity_score": 0.485218
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Maintain data provenance",
+              "class": "TECH",
+              "embedding_context": "Maintain data provenance",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.465037
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0007",
+                "name": "Supply Chain Verification",
+                "similarity_score": 0.413723
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "similarity_score": 0.465037
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "A.7.6",
+          "control_name": "Data selection criteria shall be defined and applied.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Define data selection criteria",
+              "class": "ORG",
+              "embedding_context": "Define data selection criteria",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UDTA",
+                "name": "User Data Transfer Analysis",
+                "similarity_score": 0.314183
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0021",
+                "name": "Data Access Control",
+                "similarity_score": 0.262178
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.5.2",
+              "goal_name": "Apply data selection criteria",
+              "class": "ORG",
+              "embedding_context": "Apply data selection criteria",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UDTA",
+                "name": "User Data Transfer Analysis",
+                "similarity_score": 0.246168
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0029",
+                "name": "Reducing the training data",
+                "similarity_score": 0.254073
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "A.7.7",
+          "control_name": "Data shall be handled securely and appropriately.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Handle data securely and appropriately",
+              "class": "TECH",
+              "embedding_context": "Handle data securely and appropriately",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-TL",
+                "name": "Trusted Library",
+                "similarity_score": 0.42653
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0021",
+                "name": "Data Access Control",
+                "similarity_score": 0.514648
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "similarity_score": 0.514648
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0012",
+                  "name": "Encrypt Sensitive Information",
+                  "description": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "similarity_score": 0.508262
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0018",
+                  "name": "Data Sanitization",
+                  "description": "Use scrubbing to prevent user data in training.",
+                  "similarity_score": 0.480509
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.480297
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

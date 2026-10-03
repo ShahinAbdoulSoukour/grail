@@ -1,0 +1,40 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.7.1",
+  "clause_name": "Ensure personnel security before employment",
+  "goal_name": "Ensure personnel security before employment",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure that employees and contractors understand their responsibilities and are suitable for the roles for which they are considered.",
+      "goal_name": "Ensure that employees and contractors understand their responsibilities and are suitable for the roles for which they are considered",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.7.1.1",
+          "control_name": "Background verification checks on all candidates for employment shall be carried out in accordance with relevant laws, regulations and ethics.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Carry out background verification checks on all candidates for employment in accordance with relevant laws, regulations and ethics",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.7.1.2",
+          "control_name": "The contractual agreements with employees and contractors shall state their and the organization's responsibilities for information security.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "State their and the organization's responsibilities for information security",
+              "agent": "The contractual agreements with employees and contractors",
+              "class": "ORG"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

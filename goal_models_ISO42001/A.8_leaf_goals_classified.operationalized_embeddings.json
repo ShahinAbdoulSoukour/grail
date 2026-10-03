@@ -1,0 +1,198 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.8",
+  "clause_name": "Information to interested parties",
+  "goal_name": "Ensure information to interested parties",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Relevant information about AI systems shall be provided to interested parties.",
+      "goal_name": "Provide relevant information about AI systems to interested parties",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.8.2",
+          "control_name": "Relevant information about AI systems shall be provided to interested parties.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Provide relevant information about AI systems to interested parties",
+              "class": "ORG",
+              "embedding_context": "Provide relevant information about AI systems to interested parties",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AA",
+                "name": "Agent Authentication",
+                "similarity_score": 0.235721
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.596262
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.596262
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.477112
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "similarity_score": 0.471544
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0026",
+                  "name": "Secure communication channels",
+                  "description": "Communication channels between the model and the interface responsible for displaying the results should be secured using secure protocols such as SSL/TLS.",
+                  "similarity_score": 0.455314
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.8.3",
+          "control_name": "Information provided shall support transparency of AI system behavior.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Support transparency of AI system behavior",
+              "agent": "Information provided",
+              "class": "TECH",
+              "embedding_context": "Support transparency of AI system behavior",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.344638
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.520644
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.520644
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0002",
+                  "name": "Passive ML Output Obfuscation",
+                  "description": "Decreasing the fidelity of model outputs provided to the end user can reduce an adversaries ability to extract information about the model and optimize attacks for the model.",
+                  "similarity_score": 0.519127
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0004",
+                  "name": "Trust Boundaries",
+                  "description": "Treat LLM as untrusted and visually highlight unreliable responses.",
+                  "similarity_score": 0.498016
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.481073
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "similarity_score": 0.474779
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.8.4",
+          "control_name": "Appropriate explainability information shall be made available.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Make appropriate explainability information available",
+              "class": "ORG",
+              "embedding_context": "Make appropriate explainability information available",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CI",
+                "name": "Configuration Inventory",
+                "similarity_score": 0.216281
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.386718
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.8.5",
+          "control_name": "Users shall receive guidance for the intended use of AI systems.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Receive guidance for the intended use of AI systems",
+              "agent": "Users",
+              "class": "ORG",
+              "embedding_context": "Receive guidance for the intended use of AI systems",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.293013
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0028",
+                "name": "human-in-the-Loop",
+                "similarity_score": 0.461489
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "similarity_score": 0.461489
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

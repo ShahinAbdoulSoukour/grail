@@ -1,0 +1,2115 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.4",
+  "clause_name": "Secure Configuration of Enterprise Assets and Software",
+  "goal_name": "Secure configuration of enterprise assets and software",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Establish and maintain the secure configuration of enterprise assets (end-user devices, including portable and mobile; network devices; non-computing/IoT devices; and servers) and software (operating systems and applications).",
+      "goal_name": "Establish and maintain the secure configuration of enterprise assets and software",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.4.1",
+          "control_name": "Enforce Automatic Device Lockout on Portable End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Enforce Automatic Device Lockout on Portable End-User Devices",
+              "class": "PHYS",
+              "embedding_context": "Enforce Automatic Device Lockout on Portable End-User Devices",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPR",
+                    "name": "Operating Mode Restriction",
+                    "similarity_score": 0.572141
+                  },
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.526863
+                  },
+                  {
+                    "id": "D3-CDP",
+                    "name": "Change Default Password",
+                    "similarity_score": 0.444946
+                  },
+                  {
+                    "id": "D3-AL",
+                    "name": "Account Locking",
+                    "similarity_score": 0.438222
+                  },
+                  {
+                    "id": "D3-EPL",
+                    "name": "Physical Locking",
+                    "similarity_score": 0.42035
+                  },
+                  {
+                    "id": "D3-IDA",
+                    "name": "Input Device Analysis",
+                    "similarity_score": 0.415068
+                  },
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.407463
+                  },
+                  {
+                    "id": "D3-ELM",
+                    "name": "Electronic Lock Monitoring",
+                    "similarity_score": 0.405842
+                  },
+                  {
+                    "id": "D3-DRA",
+                    "name": "Disable Remote Access",
+                    "similarity_score": 0.4025
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.401171
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.415836
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.404695
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.381104
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.375581
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.374777
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.374087
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.371822
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.365406
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.355981
+                  },
+                  {
+                    "id": "AML.M0033",
+                    "name": "Malicious Logic Detection in hardware",
+                    "similarity_score": 0.349261
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.4.2",
+          "control_name": "Establish and Maintain a Secure Configuration Process for Network Infrastructure",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Secure Configuration Process for Network Infrastructure",
+              "class": "TECH",
+              "embedding_context": "Establish a Secure Configuration Process for Network Infrastructure",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.52572
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.480432
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.476227
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.466003
+                  },
+                  {
+                    "id": "D3-ET",
+                    "name": "Encrypted Tunnels",
+                    "similarity_score": 0.437144
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.432795
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.430325
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.429957
+                  },
+                  {
+                    "id": "D3-RAM",
+                    "name": "Routing Access Mediation",
+                    "similarity_score": 0.425505
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.414734
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.489309
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.450415
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.435469
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.43236
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.429646
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.421662
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.41674
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.416521
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.408242
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.405204
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "reason": "Configuration inventory directly supports establishing a secure configuration process by systematically recording and managing hardware/software configurations."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NNI",
+                  "name": "Network Node Inventory",
+                  "description": "Network node inventorying identifies and records all the network nodes (hosts, routers, switches, firewalls, etc.) in the organization's architecture.",
+                  "reason": "Network node inventory ensures all physical/digital network components are identified, which is foundational for secure configuration management."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "reason": "Network vulnerability assessment identifies configuration-related vulnerabilities and risks, directly supporting secure configuration establishment."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NTPM",
+                  "name": "Network Traffic Policy Mapping",
+                  "description": "Network traffic policy mapping identifies and models the allowed pathways of data at the network, transport, and/or application levels.",
+                  "reason": "Network traffic policy mapping ensures allowed data pathways align with security policies, enforcing secure configuration boundaries."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Principle of least privilege mitigations enforce minimal access rights, directly enhancing secure configuration controls."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Secure Configuration Process for Network Infrastructure",
+              "class": "TECH",
+              "embedding_context": "Maintain a Secure Configuration Process for Network Infrastructure",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.488199
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.479313
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.460688
+                  },
+                  {
+                    "id": "D3-SCP",
+                    "name": "System Configuration Permissions",
+                    "similarity_score": 0.427977
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.41841
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.406211
+                  },
+                  {
+                    "id": "D3-ET",
+                    "name": "Encrypted Tunnels",
+                    "similarity_score": 0.391208
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.391137
+                  },
+                  {
+                    "id": "D3-SYSVA",
+                    "name": "System Vulnerability Assessment",
+                    "similarity_score": 0.39031
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.385379
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.473501
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.422347
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.418885
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.406071
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.394084
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.390644
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.384226
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.381468
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.380653
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                    "similarity_score": 0.379388
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "reason": "Configuration inventory directly supports maintaining secure configurations by recording and tracking hardware/software configurations across the network infrastructure."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SCP",
+                  "name": "System Configuration Permissions",
+                  "description": "Restricting system configuration modifications to a specific user or group of users.",
+                  "reason": "Restricting system configuration modifications to authorized users ensures only trusted entities can alter network infrastructure settings, preventing unauthorized changes."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Maintaining an up-to-date inventory of network components directly enables continuous monitoring and validation of secure configurations."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Enforcing the principle of least privilege limits configuration access to only necessary users, reducing attack surfaces in network infrastructure."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "reason": "Network vulnerability assessment identifies misconfigurations and risks in network components, enabling proactive secure configuration adjustments."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.4.3",
+          "control_name": "Configure Automatic Session Locking on Enterprise Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Configure Automatic Session Locking on Enterprise Assets",
+              "class": "PHYS",
+              "embedding_context": "Configure Automatic Session Locking on Enterprise Assets",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AL",
+                    "name": "Account Locking",
+                    "similarity_score": 0.4346
+                  },
+                  {
+                    "id": "D3-WSAM",
+                    "name": "Web Session Access Mediation",
+                    "similarity_score": 0.428389
+                  },
+                  {
+                    "id": "D3-DRA",
+                    "name": "Disable Remote Access",
+                    "similarity_score": 0.390578
+                  },
+                  {
+                    "id": "D3-UAP",
+                    "name": "User Account Permissions",
+                    "similarity_score": 0.386293
+                  },
+                  {
+                    "id": "D3-DTP",
+                    "name": "Domain Trust Policy",
+                    "similarity_score": 0.375284
+                  },
+                  {
+                    "id": "D3-CRO",
+                    "name": "Credential Rotation",
+                    "similarity_score": 0.36434
+                  },
+                  {
+                    "id": "D3-TB",
+                    "name": "Token Binding",
+                    "similarity_score": 0.3582
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.356296
+                  },
+                  {
+                    "id": "D3-OTP",
+                    "name": "One-time Password",
+                    "similarity_score": 0.348558
+                  },
+                  {
+                    "id": "D3-TBA",
+                    "name": "Token-based Authentication",
+                    "similarity_score": 0.345268
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.431271
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.418421
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.407549
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.396409
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.396326
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.387813
+                  },
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.371717
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.371103
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.370743
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.366597
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.4.4",
+          "control_name": "Implement and Manage a Firewall on Servers",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Implement a Firewall on Servers",
+              "class": "TECH",
+              "embedding_context": "Implement a Firewall on Servers",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-BDI",
+                    "name": "Broadcast Domain Isolation",
+                    "similarity_score": 0.514342
+                  },
+                  {
+                    "id": "D3-NTF",
+                    "name": "Network Traffic Filtering",
+                    "similarity_score": 0.461293
+                  },
+                  {
+                    "id": "D3-ITF",
+                    "name": "Inbound Traffic Filtering",
+                    "similarity_score": 0.44822
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.440028
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.429175
+                  },
+                  {
+                    "id": "D3-ET",
+                    "name": "Encrypted Tunnels",
+                    "similarity_score": 0.413212
+                  },
+                  {
+                    "id": "D3-NI",
+                    "name": "Network Isolation",
+                    "similarity_score": 0.410163
+                  },
+                  {
+                    "id": "D3-OTF",
+                    "name": "Outbound Traffic Filtering",
+                    "similarity_score": 0.409648
+                  },
+                  {
+                    "id": "D3-DNSAL",
+                    "name": "DNS Allowlisting",
+                    "similarity_score": 0.402369
+                  },
+                  {
+                    "id": "D3-DNL",
+                    "name": "Directional Network Link",
+                    "similarity_score": 0.402159
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.437062
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.401141
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.385355
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                    "similarity_score": 0.36042
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.358289
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.349268
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.342713
+                  },
+                  {
+                    "id": "CAPEC.M0002",
+                    "name": "Implement deep packet inspection (DPI)",
+                    "similarity_score": 0.339342
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.336029
+                  },
+                  {
+                    "id": "OWASP.M0012",
+                    "name": "API Rate Limits",
+                    "similarity_score": 0.334586
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ITF",
+                  "name": "Inbound Traffic Filtering",
+                  "description": "Restricting network traffic originating from untrusted networks destined towards a private host or enclave.",
+                  "reason": "Inbound Traffic Filtering directly restricts traffic from untrusted networks to private hosts, aligning with firewall rules for inbound traffic control."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OTF",
+                  "name": "Outbound Traffic Filtering",
+                  "description": "Restricting network traffic originating from a private host or enclave destined towards untrusted networks.",
+                  "reason": "Outbound Traffic Filtering controls traffic leaving the network, which is a core function of a firewall for outbound traffic management."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Manage a Firewall on Servers",
+              "class": "TECH",
+              "embedding_context": "Manage a Firewall on Servers",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-BDI",
+                    "name": "Broadcast Domain Isolation",
+                    "similarity_score": 0.409062
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.397622
+                  },
+                  {
+                    "id": "D3-ITF",
+                    "name": "Inbound Traffic Filtering",
+                    "similarity_score": 0.363927
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.361029
+                  },
+                  {
+                    "id": "D3-NTF",
+                    "name": "Network Traffic Filtering",
+                    "similarity_score": 0.349143
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.346984
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.346486
+                  },
+                  {
+                    "id": "D3-NVA",
+                    "name": "Network Vulnerability Assessment",
+                    "similarity_score": 0.335463
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.334921
+                  },
+                  {
+                    "id": "D3-RAM",
+                    "name": "Routing Access Mediation",
+                    "similarity_score": 0.334002
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.340204
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.33557
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.33055
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.307907
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.306774
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.287874
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                    "similarity_score": 0.282338
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.280691
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.268221
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.268201
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ITF",
+                  "name": "Inbound Traffic Filtering",
+                  "description": "Restricting network traffic originating from untrusted networks destined towards a private host or enclave.",
+                  "reason": "Inbound Traffic Filtering directly restricts unauthorized traffic to servers, a core function of firewall management."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "reason": "Network Resource Access Mediation controls access to server resources over networks, aligning with firewall access policies."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NTPM",
+                  "name": "Network Traffic Policy Mapping",
+                  "description": "Network traffic policy mapping identifies and models the allowed pathways of data at the network, transport, and/or application levels.",
+                  "reason": "Network Traffic Policy Mapping defines allowed traffic pathways, enabling structured firewall rule configuration."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0001",
+                  "name": "Employ network segmentation",
+                  "description": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                  "reason": "Network segmentation limits lateral movement and isolates server networks, enforced via firewall rules."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RAM",
+                  "name": "Routing Access Mediation",
+                  "description": "Routing access mediation is a network security approach that manages and controls access at the network layer using VPNs, tunneling protocols, firewall rules, and traffic inspection to ensure secure and efficient data routing.",
+                  "reason": "Routing Access Mediation controls network-layer access using firewalls, essential for managing secure routing paths."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.4.5",
+          "control_name": "Implement and Manage a Firewall on End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Implement a Firewall on End-User Devices",
+              "class": "TECH",
+              "embedding_context": "Implement a Firewall on End-User Devices",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.469887
+                  },
+                  {
+                    "id": "D3-BDI",
+                    "name": "Broadcast Domain Isolation",
+                    "similarity_score": 0.468682
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.46665
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.457838
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.431679
+                  },
+                  {
+                    "id": "D3-RFUM",
+                    "name": "Remote Firmware Update Monitoring",
+                    "similarity_score": 0.427088
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.414985
+                  },
+                  {
+                    "id": "D3-DRA",
+                    "name": "Disable Remote Access",
+                    "similarity_score": 0.406318
+                  },
+                  {
+                    "id": "D3-OPR",
+                    "name": "Operating Mode Restriction",
+                    "similarity_score": 0.404301
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.394233
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.444128
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.413711
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.408015
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.403131
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.401633
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.395138
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.394305
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.389707
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.380285
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.37639
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NAM",
+                  "name": "Network Access Mediation",
+                  "description": "Network access mediation is the control method for authorizing access to a system by a user (or a process acting on behalf of a user) communicating through a network, including a local area network, a wide area network, and the Internet.",
+                  "reason": "Network Access Mediation directly controls authorization of network access to systems, aligning with firewall's role in restricting unauthorized connections."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-LAMED",
+                  "name": "LAN Access Mediation",
+                  "description": "LAN access mediation encompasses the application of strict access control policies, systematic verification of devices, and authentication mechanisms to govern connectivity to a Local Area Network.",
+                  "reason": "LAN Access Mediation enforces strict access control policies and authentication mechanisms, which are core firewall functions for governing device connectivity."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-BDI",
+                  "name": "Broadcast Domain Isolation",
+                  "description": "Broadcast isolation restricts the number of computers a host can contact on their LAN.",
+                  "reason": "Broadcast Domain Isolation restricts LAN traffic scope, contributing to network segmentation that enhances firewall-like isolation of end-user devices."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0001",
+                  "name": "Employ network segmentation",
+                  "description": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                  "reason": "Network segmentation explicitly limits impact of malicious traffic, directly supporting firewall implementation by isolating end-user device networks."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.5.2",
+              "goal_name": "Manage a Firewall on End-User Devices",
+              "class": "TECH",
+              "embedding_context": "Manage a Firewall on End-User Devices",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.440453
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.39059
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.390062
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.388786
+                  },
+                  {
+                    "id": "D3-BDI",
+                    "name": "Broadcast Domain Isolation",
+                    "similarity_score": 0.382095
+                  },
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.374604
+                  },
+                  {
+                    "id": "D3-RFUM",
+                    "name": "Remote Firmware Update Monitoring",
+                    "similarity_score": 0.366524
+                  },
+                  {
+                    "id": "D3-DRA",
+                    "name": "Disable Remote Access",
+                    "similarity_score": 0.349633
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.333626
+                  },
+                  {
+                    "id": "D3-OPR",
+                    "name": "Operating Mode Restriction",
+                    "similarity_score": 0.327373
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.399148
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.346964
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.344991
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.335075
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.333289
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.330994
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.328377
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.324496
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.317849
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.315378
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DRA",
+                  "name": "Disable Remote Access",
+                  "description": "Limiting access to a computing device which is not required through or from a non-organization-controlled network.",
+                  "reason": "Configuring to disable remote access directly aligns with managing firewall settings on end-user devices to restrict unauthorized connections."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NTPM",
+                  "name": "Network Traffic Policy Mapping",
+                  "description": "Network traffic policy mapping identifies and models the allowed pathways of data at the network, transport, and/or application levels.",
+                  "reason": "Mapping network traffic policies enables precise control over allowed traffic patterns, a core aspect of firewall management."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0033",
+                  "name": "Network Restrictions",
+                  "description": "Limit LLM access to resources and APIs.",
+                  "reason": "Network Restrictions directly limit access to resources, supporting firewall management by controlling traffic flow."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.4.6",
+          "control_name": "Securely Manage Enterprise Assets and Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Securely Manage Enterprise Assets and Software",
+              "class": "TECH",
+              "embedding_context": "Securely Manage Enterprise Assets and Software",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.444758
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.436811
+                  },
+                  {
+                    "id": "D3-SCP",
+                    "name": "System Configuration Permissions",
+                    "similarity_score": 0.431973
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.431588
+                  },
+                  {
+                    "id": "D3-FE",
+                    "name": "File Encryption",
+                    "similarity_score": 0.420131
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.41314
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.410773
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.399687
+                  },
+                  {
+                    "id": "D3-DENCR",
+                    "name": "Disk Encryption",
+                    "similarity_score": 0.386885
+                  },
+                  {
+                    "id": "D3-UAP",
+                    "name": "User Account Permissions",
+                    "similarity_score": 0.377144
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.46464
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.457142
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.392867
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.391683
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.3723
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.372025
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.370227
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.36919
+                  },
+                  {
+                    "id": "AML.M0012",
+                    "name": "Encrypt Sensitive Information",
+                    "similarity_score": 0.348688
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.343886
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "reason": "Software inventorying directly supports managing enterprise software assets by identifying and recording all software items in the organization's architecture."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access modeling captures and records access permissions for identities, ensuring controlled and auditable access to enterprise assets."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SCP",
+                  "name": "System Configuration Permissions",
+                  "description": "Restricting system configuration modifications to a specific user or group of users.",
+                  "reason": "Restricting system configuration modifications prevents unauthorized changes to critical infrastructure components."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Maintaining an up-to-date inventory aligns with securely managing enterprise assets by ensuring visibility of all software and hardware."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0012",
+                  "name": "Encrypt Sensitive Information",
+                  "description": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "reason": "Encrypting sensitive information protects stored data and software assets from unauthorized access or disclosure."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.4.7",
+          "control_name": "Manage Default Accounts on Enterprise Assets and Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Manage Default Accounts on Enterprise Assets and Software",
+              "class": "TECH",
+              "embedding_context": "Manage Default Accounts on Enterprise Assets and Software",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.354745
+                  },
+                  {
+                    "id": "D3-AL",
+                    "name": "Account Locking",
+                    "similarity_score": 0.323344
+                  },
+                  {
+                    "id": "D3-ULA",
+                    "name": "Unlock Account",
+                    "similarity_score": 0.322695
+                  },
+                  {
+                    "id": "D3-RUAA",
+                    "name": "Restore User Account Access",
+                    "similarity_score": 0.307273
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.30183
+                  },
+                  {
+                    "id": "D3-CR",
+                    "name": "Credential Revocation",
+                    "similarity_score": 0.296325
+                  },
+                  {
+                    "id": "D3-DTP",
+                    "name": "Domain Trust Policy",
+                    "similarity_score": 0.295381
+                  },
+                  {
+                    "id": "D3-RIC",
+                    "name": "Reissue Credential",
+                    "similarity_score": 0.290976
+                  },
+                  {
+                    "id": "D3-UAP",
+                    "name": "User Account Permissions",
+                    "similarity_score": 0.283539
+                  },
+                  {
+                    "id": "D3-ANCI",
+                    "name": "Authentication Cache Invalidation",
+                    "similarity_score": 0.276807
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.31235
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.284263
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.271113
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.260221
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.251046
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.250169
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.249672
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.243934
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.240775
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.23038
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DAM",
+                  "name": "Domain Account Monitoring",
+                  "description": "Monitoring the existence of or changes to Domain User Accounts.",
+                  "reason": "Domain Account Monitoring directly supports tracking changes to default accounts, ensuring unauthorized modifications are detected."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-UAP",
+                  "name": "User Account Permissions",
+                  "description": "Restricting a user account's access to resources.",
+                  "reason": "User Account Permissions restricts default accounts' access to resources, aligning with managing their privileges."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CR",
+                  "name": "Credential Revocation",
+                  "description": "Deleting a set of credentials permanently to prevent them from being used to authenticate.",
+                  "reason": "Credential Revocation deletes credentials associated with default accounts, preventing unauthorized access."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AL",
+                  "name": "Account Locking",
+                  "description": "The process of temporarily disabling user accounts on a system or domain.",
+                  "reason": "Account Locking disables unused default accounts, reducing attack surfaces from dormant accounts."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.4.8",
+          "control_name": "Uninstall or Disable Unnecessary Services on Enterprise Assets and Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Uninstall Unnecessary Services on Enterprise Assets and Software",
+              "class": "TECH",
+              "embedding_context": "Uninstall Unnecessary Services on Enterprise Assets and Software",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-RKD",
+                    "name": "Registry Key Deletion",
+                    "similarity_score": 0.318878
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.308471
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.301894
+                  },
+                  {
+                    "id": "D3-SBV",
+                    "name": "Service Binary Verification",
+                    "similarity_score": 0.300987
+                  },
+                  {
+                    "id": "D3-SYSDM",
+                    "name": "System Dependency Mapping",
+                    "similarity_score": 0.283177
+                  },
+                  {
+                    "id": "D3-SVCDM",
+                    "name": "Service Dependency Mapping",
+                    "similarity_score": 0.279137
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.271254
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.266312
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.266287
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.23976
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.250698
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.238747
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.23483
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.216918
+                  },
+                  {
+                    "id": "AML.M0029",
+                    "name": "Reducing the training data",
+                    "similarity_score": 0.206733
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.202564
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.199568
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.197533
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.189477
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.187999
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "reason": "Software Inventory identifies installed software, enabling identification of unnecessary services."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SVCDM",
+                  "name": "Service Dependency Mapping",
+                  "description": "Service dependency mapping determines the services on which each given service relies.",
+                  "reason": "Service Dependency Mapping reveals interdependencies, helping identify services with no critical dependencies."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Inventory Management maintains an up-to-date inventory to track and remove unused services."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.8.2",
+              "goal_name": "Disable Unnecessary Services on Enterprise Assets and Software",
+              "class": "TECH",
+              "embedding_context": "Disable Unnecessary Services on Enterprise Assets and Software",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.35621
+                  },
+                  {
+                    "id": "D3-DRA",
+                    "name": "Disable Remote Access",
+                    "similarity_score": 0.346487
+                  },
+                  {
+                    "id": "D3-SVCDM",
+                    "name": "Service Dependency Mapping",
+                    "similarity_score": 0.337123
+                  },
+                  {
+                    "id": "D3-SBV",
+                    "name": "Service Binary Verification",
+                    "similarity_score": 0.331147
+                  },
+                  {
+                    "id": "D3-SCP",
+                    "name": "System Configuration Permissions",
+                    "similarity_score": 0.32662
+                  },
+                  {
+                    "id": "D3-EDL",
+                    "name": "Executable Denylisting",
+                    "similarity_score": 0.322538
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.31626
+                  },
+                  {
+                    "id": "D3-RKD",
+                    "name": "Registry Key Deletion",
+                    "similarity_score": 0.313997
+                  },
+                  {
+                    "id": "D3-SYSDM",
+                    "name": "System Dependency Mapping",
+                    "similarity_score": 0.309793
+                  },
+                  {
+                    "id": "D3-AL",
+                    "name": "Account Locking",
+                    "similarity_score": 0.307925
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.361588
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.347692
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.331742
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.32613
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.324401
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.319485
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.305948
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.305239
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.284591
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.281403
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SVCDM",
+                  "name": "Service Dependency Mapping",
+                  "description": "Service dependency mapping determines the services on which each given service relies.",
+                  "reason": "Service Dependency Mapping identifies non-essential services by analyzing dependencies, enabling their targeted disablement."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EDL",
+                  "name": "Executable Denylisting",
+                  "description": "Blocking the execution of files on a host in accordance with defined application policy rules.",
+                  "reason": "Executable Denylisting blocks known unnecessary executables from running, directly disabling associated services."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SCP",
+                  "name": "System Configuration Permissions",
+                  "description": "Restricting system configuration modifications to a specific user or group of users.",
+                  "reason": "System Configuration Permissions restricts modifications to configuration databases, preventing reactivation of disabled services."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.4.9",
+          "control_name": "Configure Trusted DNS Servers on Enterprise Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Configure Trusted DNS Servers on Enterprise Assets",
+              "class": "ORG",
+              "embedding_context": "Configure Trusted DNS Servers on Enterprise Assets",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DNSAL",
+                    "name": "DNS Allowlisting",
+                    "similarity_score": 0.390096
+                  },
+                  {
+                    "id": "D3-DTP",
+                    "name": "Domain Trust Policy",
+                    "similarity_score": 0.384146
+                  },
+                  {
+                    "id": "D3-DNSDL",
+                    "name": "DNS Denylisting",
+                    "similarity_score": 0.351143
+                  },
+                  {
+                    "id": "D3-FRDDL",
+                    "name": "Forward Resolution Domain Denylisting",
+                    "similarity_score": 0.333697
+                  },
+                  {
+                    "id": "D3-HDL",
+                    "name": "Homoglyph Denylisting",
+                    "similarity_score": 0.322336
+                  },
+                  {
+                    "id": "D3-FRIDL",
+                    "name": "Forward Resolution IP Denylisting",
+                    "similarity_score": 0.295766
+                  },
+                  {
+                    "id": "D3-DNSCE",
+                    "name": "DNS Cache Eviction",
+                    "similarity_score": 0.294586
+                  },
+                  {
+                    "id": "D3-HDDL",
+                    "name": "Hierarchical Domain Denylisting",
+                    "similarity_score": 0.287002
+                  },
+                  {
+                    "id": "D3-RRID",
+                    "name": "Reverse Resolution IP Denylisting",
+                    "similarity_score": 0.274008
+                  },
+                  {
+                    "id": "D3-CP",
+                    "name": "Certificate Pinning",
+                    "similarity_score": 0.270027
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.277821
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.265877
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.256619
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.251019
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.249599
+                  },
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.248154
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.240152
+                  },
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.232904
+                  },
+                  {
+                    "id": "AML.M0026",
+                    "name": "Secure communication channels",
+                    "similarity_score": 0.23216
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.232121
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DNSAL",
+                  "name": "DNS Allowlisting",
+                  "description": "Permitting only approved domains and their subdomains to be resolved.",
+                  "reason": "Allows only approved domains to be resolved, ensuring enterprise assets use trusted DNS servers."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DNSDL",
+                  "name": "DNS Denylisting",
+                  "description": "Blocking DNS Network Traffic based on criteria such as IP address, domain name, or DNS query type.",
+                  "reason": "Blocks DNS traffic based on IP/domain criteria, preventing resolution through untrusted DNS servers."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FRIDL",
+                  "name": "Forward Resolution IP Denylisting",
+                  "description": "Blocking a DNS lookup's answer's IP address value.",
+                  "reason": "Blocks DNS responses based on IP address values, ensuring only trusted IPs (DNS servers) are used."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "CIS.4.11",
+          "control_name": "Enforce Remote Wipe Capability on Portable End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Enforce Remote Wipe Capability on Portable End-User Devices",
+              "class": "TECH",
+              "embedding_context": "Enforce Remote Wipe Capability on Portable End-User Devices",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.44529
+                  },
+                  {
+                    "id": "D3-DKE",
+                    "name": "Disk Erasure",
+                    "similarity_score": 0.425014
+                  },
+                  {
+                    "id": "D3-OPR",
+                    "name": "Operating Mode Restriction",
+                    "similarity_score": 0.41764
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.38322
+                  },
+                  {
+                    "id": "D3-CDP",
+                    "name": "Change Default Password",
+                    "similarity_score": 0.363096
+                  },
+                  {
+                    "id": "D3-DKF",
+                    "name": "Disk Formatting",
+                    "similarity_score": 0.358782
+                  },
+                  {
+                    "id": "D3-HBWP",
+                    "name": "Hardware-based Write Protection",
+                    "similarity_score": 0.356627
+                  },
+                  {
+                    "id": "D3-DRA",
+                    "name": "Disable Remote Access",
+                    "similarity_score": 0.353124
+                  },
+                  {
+                    "id": "D3-RFUM",
+                    "name": "Remote Firmware Update Monitoring",
+                    "similarity_score": 0.338173
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.336353
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.346563
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.341892
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.337883
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.326307
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.318084
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.309077
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.307131
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.306004
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.284358
+                  },
+                  {
+                    "id": "AML.M0033",
+                    "name": "Malicious Logic Detection in hardware",
+                    "similarity_score": 0.282826
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DKE",
+                  "name": "Disk Erasure",
+                  "description": "Disk Erasure is the process of securely deleting all data on a disk to ensure that it cannot be recovered by any means.",
+                  "reason": "Disk Erasure directly enables the secure deletion of data on a device, which is a core component of remote wipe capability. This operation ensures data can be erased remotely to enforce the goal."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "CIS.4.12",
+          "control_name": "Separate Enterprise Workspaces on Mobile End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Separate Enterprise Workspaces on Mobile End-User Devices",
+              "class": "PHYS",
+              "embedding_context": "Separate Enterprise Workspaces on Mobile End-User Devices",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.231196
+                  },
+                  {
+                    "id": "D3-DRA",
+                    "name": "Disable Remote Access",
+                    "similarity_score": 0.221753
+                  },
+                  {
+                    "id": "D3-EBWSAM",
+                    "name": "Endpoint-based Web Server Access Mediation",
+                    "similarity_score": 0.197317
+                  },
+                  {
+                    "id": "D3-OPR",
+                    "name": "Operating Mode Restriction",
+                    "similarity_score": 0.195486
+                  },
+                  {
+                    "id": "D3-UAP",
+                    "name": "User Account Permissions",
+                    "similarity_score": 0.186259
+                  },
+                  {
+                    "id": "D3-ABPI",
+                    "name": "Application-based Process Isolation",
+                    "similarity_score": 0.178308
+                  },
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.171008
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.165838
+                  },
+                  {
+                    "id": "D3-BDI",
+                    "name": "Broadcast Domain Isolation",
+                    "similarity_score": 0.162085
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.1598
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.245614
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.237427
+                  },
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.228615
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.200365
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.197798
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.194458
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.187547
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.180293
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.174198
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.171673
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ABPI",
+                  "name": "Application-based Process Isolation",
+                  "description": "Application code which prevents its own subroutines from accessing intra-process / internal memory space.",
+                  "reason": "Application-based Process Isolation directly isolates processes and subroutines, which is essential for separating enterprise workspaces from personal data on mobile devices."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "reason": "Resource isolation techniques like virtualization and containerization explicitly prevent shared environment manipulation, aligning with the need to separate enterprise workspaces on mobile end-user devices."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

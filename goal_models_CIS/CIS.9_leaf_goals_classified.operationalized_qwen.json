@@ -1,0 +1,1265 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.9",
+  "clause_name": "Email and Web Browser Protections",
+  "goal_name": "Ensure email and web browser protections",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Improve protections and detections of threats from email and web vectors, as these are opportunities for attackers to manipulate human behavior through direct engagement.",
+      "goal_name": "Improve protections and detections of threats from email and web vectors, as these are opportunities for attackers to manipulate human behavior through direct engagement",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.9.1",
+          "control_name": "Ensure Use of Only Fully Supported Browsers and Email Clients",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Ensure Use of Only Fully Supported Browsers and Email Clients",
+              "class": "TECH",
+              "embedding_context": "Ensure Use of Only Fully Supported Browsers and Email Clients",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-EBWSAM",
+                    "name": "Endpoint-based Web Server Access Mediation",
+                    "similarity_score": 0.326661
+                  },
+                  {
+                    "id": "D3-DTP",
+                    "name": "Domain Trust Policy",
+                    "similarity_score": 0.314951
+                  },
+                  {
+                    "id": "D3-ABPI",
+                    "name": "Application-based Process Isolation",
+                    "similarity_score": 0.299361
+                  },
+                  {
+                    "id": "D3-DNSAL",
+                    "name": "DNS Allowlisting",
+                    "similarity_score": 0.292663
+                  },
+                  {
+                    "id": "D3-DRA",
+                    "name": "Disable Remote Access",
+                    "similarity_score": 0.287554
+                  },
+                  {
+                    "id": "D3-WSAM",
+                    "name": "Web Session Access Mediation",
+                    "similarity_score": 0.279808
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.276605
+                  },
+                  {
+                    "id": "D3-EF",
+                    "name": "Email Filtering",
+                    "similarity_score": 0.272539
+                  },
+                  {
+                    "id": "D3-EDL",
+                    "name": "Executable Denylisting",
+                    "similarity_score": 0.270151
+                  },
+                  {
+                    "id": "D3-TL",
+                    "name": "Trusted Library",
+                    "similarity_score": 0.257556
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.375008
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.370126
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.351001
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.327731
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.310787
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.308771
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.304127
+                  },
+                  {
+                    "id": "OWASP.M0025",
+                    "name": "Plugin Scope Control",
+                    "similarity_score": 0.299958
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.290193
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.281157
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EDL",
+                  "name": "Executable Denylisting",
+                  "description": "Blocking the execution of files on a host in accordance with defined application policy rules.",
+                  "reason": "Executable Denylisting can block execution of unsupported browsers/email clients by enforcing application policy rules, directly ensuring only fully supported software is used."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.9.2",
+          "control_name": "Use DNS Filtering Services",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Use DNS Filtering Services",
+              "class": "TECH",
+              "embedding_context": "Use DNS Filtering Services",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DNSDL",
+                    "name": "DNS Denylisting",
+                    "similarity_score": 0.71902
+                  },
+                  {
+                    "id": "D3-DNSAL",
+                    "name": "DNS Allowlisting",
+                    "similarity_score": 0.694667
+                  },
+                  {
+                    "id": "D3-FRDDL",
+                    "name": "Forward Resolution Domain Denylisting",
+                    "similarity_score": 0.674105
+                  },
+                  {
+                    "id": "D3-FRIDL",
+                    "name": "Forward Resolution IP Denylisting",
+                    "similarity_score": 0.65431
+                  },
+                  {
+                    "id": "D3-RRID",
+                    "name": "Reverse Resolution IP Denylisting",
+                    "similarity_score": 0.632745
+                  },
+                  {
+                    "id": "D3-HDL",
+                    "name": "Homoglyph Denylisting",
+                    "similarity_score": 0.611932
+                  },
+                  {
+                    "id": "D3-HDDL",
+                    "name": "Hierarchical Domain Denylisting",
+                    "similarity_score": 0.577698
+                  },
+                  {
+                    "id": "D3-DNSTA",
+                    "name": "DNS Traffic Analysis",
+                    "similarity_score": 0.503445
+                  },
+                  {
+                    "id": "D3-DNSCE",
+                    "name": "DNS Cache Eviction",
+                    "similarity_score": 0.49084
+                  },
+                  {
+                    "id": "D3-NTF",
+                    "name": "Network Traffic Filtering",
+                    "similarity_score": 0.434717
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0015",
+                    "name": "Adversarial Input Detection",
+                    "similarity_score": 0.328748
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.310259
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.309705
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.295288
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.287359
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.283516
+                  },
+                  {
+                    "id": "OWASP.M0012",
+                    "name": "API Rate Limits",
+                    "similarity_score": 0.279903
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.278705
+                  },
+                  {
+                    "id": "CAPEC.M0002",
+                    "name": "Implement deep packet inspection (DPI)",
+                    "similarity_score": 0.277217
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                    "similarity_score": 0.268468
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DNSDL",
+                  "name": "DNS Denylisting",
+                  "description": "Blocking DNS Network Traffic based on criteria such as IP address, domain name, or DNS query type.",
+                  "reason": "DNS Denylisting directly blocks DNS traffic based on domain/IP criteria, aligning with the goal of using DNS filtering services."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DNSAL",
+                  "name": "DNS Allowlisting",
+                  "description": "Permitting only approved domains and their subdomains to be resolved.",
+                  "reason": "DNS Allowlisting permits approved domains, a core component of DNS filtering services."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FRDDL",
+                  "name": "Forward Resolution Domain Denylisting",
+                  "description": "Blocking a lookup based on the query's domain name value.",
+                  "reason": "Blocks lookups based on domain names, supporting domain-level filtering."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FRIDL",
+                  "name": "Forward Resolution IP Denylisting",
+                  "description": "Blocking a DNS lookup's answer's IP address value.",
+                  "reason": "Blocks DNS responses based on IP addresses, enforcing IP-based filtering."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RRID",
+                  "name": "Reverse Resolution IP Denylisting",
+                  "description": "Blocking a reverse lookup based on the query's IP address value.",
+                  "reason": "Blocks reverse lookups by IP address, enhancing filtering against malicious subdomains."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.9.3",
+          "control_name": "Maintain and Enforce Network-Based URL Filters",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Maintain Network-Based URL Filters",
+              "class": "TECH",
+              "embedding_context": "Maintain Network-Based URL Filters",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.393627
+                  },
+                  {
+                    "id": "D3-RAM",
+                    "name": "Routing Access Mediation",
+                    "similarity_score": 0.375674
+                  },
+                  {
+                    "id": "D3-UA",
+                    "name": "URL Analysis",
+                    "similarity_score": 0.373787
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.370778
+                  },
+                  {
+                    "id": "D3-PBWSAM",
+                    "name": "Proxy-based Web Server Access Mediation",
+                    "similarity_score": 0.360073
+                  },
+                  {
+                    "id": "D3-URA",
+                    "name": "URL Reputation Analysis",
+                    "similarity_score": 0.359039
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.356715
+                  },
+                  {
+                    "id": "D3-BDI",
+                    "name": "Broadcast Domain Isolation",
+                    "similarity_score": 0.329824
+                  },
+                  {
+                    "id": "D3-DNSAL",
+                    "name": "DNS Allowlisting",
+                    "similarity_score": 0.327602
+                  },
+                  {
+                    "id": "D3-ET",
+                    "name": "Encrypted Tunnels",
+                    "similarity_score": 0.319474
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.334272
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.306224
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.306161
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.298689
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.289961
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                    "similarity_score": 0.289367
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.285204
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.278656
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.275798
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.2669
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-URA",
+                  "name": "URL Reputation Analysis",
+                  "description": "Analyzing the reputation of a URL.",
+                  "reason": "URL Reputation Analysis directly supports maintaining network-based URL filters by analyzing URLs to determine their reputation, enabling dynamic filtering decisions."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DNSAL",
+                  "name": "DNS Allowlisting",
+                  "description": "Permitting only approved domains and their subdomains to be resolved.",
+                  "reason": "DNS Allowlisting blocks unauthorized domains and subdomains, directly enforcing network-based URL filtering policies by restricting outbound DNS resolution."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Enforce Network-Based URL Filters",
+              "class": "TECH",
+              "embedding_context": "Enforce Network-Based URL Filters",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DNSAL",
+                    "name": "DNS Allowlisting",
+                    "similarity_score": 0.526269
+                  },
+                  {
+                    "id": "D3-FRDDL",
+                    "name": "Forward Resolution Domain Denylisting",
+                    "similarity_score": 0.48331
+                  },
+                  {
+                    "id": "D3-NTPM",
+                    "name": "Network Traffic Policy Mapping",
+                    "similarity_score": 0.476736
+                  },
+                  {
+                    "id": "D3-HDDL",
+                    "name": "Hierarchical Domain Denylisting",
+                    "similarity_score": 0.471177
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.46915
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.465289
+                  },
+                  {
+                    "id": "D3-HDL",
+                    "name": "Homoglyph Denylisting",
+                    "similarity_score": 0.462797
+                  },
+                  {
+                    "id": "D3-UA",
+                    "name": "URL Analysis",
+                    "similarity_score": 0.457258
+                  },
+                  {
+                    "id": "D3-PBWSAM",
+                    "name": "Proxy-based Web Server Access Mediation",
+                    "similarity_score": 0.455876
+                  },
+                  {
+                    "id": "D3-DNSDL",
+                    "name": "DNS Denylisting",
+                    "similarity_score": 0.45249
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.434875
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.422881
+                  },
+                  {
+                    "id": "OWASP.M0012",
+                    "name": "API Rate Limits",
+                    "similarity_score": 0.421905
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.406432
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.406158
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.402409
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.402211
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.394559
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.390365
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.388098
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FRDDL",
+                  "name": "Forward Resolution Domain Denylisting",
+                  "description": "Blocking a lookup based on the query's domain name value.",
+                  "reason": "Blocks DNS queries for specified domains, directly enforcing URL filtering by denying access to malicious or unauthorized domains."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DNSDL",
+                  "name": "DNS Denylisting",
+                  "description": "Blocking DNS Network Traffic based on criteria such as IP address, domain name, or DNS query type.",
+                  "reason": "Blocks DNS network traffic based on domain names, preventing resolution of URLs that violate network-based URL filter policies."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.9.4",
+          "control_name": "Restrict Unnecessary or Unauthorized Browser and Email Client Extensions",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Restrict Unnecessary or Unauthorized Browser and Email Client Extensions",
+              "class": "TECH",
+              "embedding_context": "Restrict Unnecessary or Unauthorized Browser and Email Client Extensions",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DTP",
+                    "name": "Domain Trust Policy",
+                    "similarity_score": 0.370351
+                  },
+                  {
+                    "id": "D3-EBWSAM",
+                    "name": "Endpoint-based Web Server Access Mediation",
+                    "similarity_score": 0.359152
+                  },
+                  {
+                    "id": "D3-DNSAL",
+                    "name": "DNS Allowlisting",
+                    "similarity_score": 0.35185
+                  },
+                  {
+                    "id": "D3-EF",
+                    "name": "Email Filtering",
+                    "similarity_score": 0.340233
+                  },
+                  {
+                    "id": "D3-EDL",
+                    "name": "Executable Denylisting",
+                    "similarity_score": 0.331352
+                  },
+                  {
+                    "id": "D3-DNSDL",
+                    "name": "DNS Denylisting",
+                    "similarity_score": 0.328741
+                  },
+                  {
+                    "id": "D3-FRDDL",
+                    "name": "Forward Resolution Domain Denylisting",
+                    "similarity_score": 0.317791
+                  },
+                  {
+                    "id": "D3-WSAM",
+                    "name": "Web Session Access Mediation",
+                    "similarity_score": 0.313493
+                  },
+                  {
+                    "id": "D3-DRA",
+                    "name": "Disable Remote Access",
+                    "similarity_score": 0.306179
+                  },
+                  {
+                    "id": "D3-CV",
+                    "name": "Content Validation",
+                    "similarity_score": 0.290431
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.418381
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.412579
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.377919
+                  },
+                  {
+                    "id": "OWASP.M0025",
+                    "name": "Plugin Scope Control",
+                    "similarity_score": 0.377697
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.367784
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.357033
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.352251
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.344769
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.32829
+                  },
+                  {
+                    "id": "OWASP.M0012",
+                    "name": "API Rate Limits",
+                    "similarity_score": 0.325109
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EDL",
+                  "name": "Executable Denylisting",
+                  "description": "Blocking the execution of files on a host in accordance with defined application policy rules.",
+                  "reason": "Blocks execution of unauthorized executable files, directly restricting browser/email client extensions that violate policy."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0015",
+                  "name": "Plugin Testing",
+                  "description": "Use tested, trusted plugins.",
+                  "reason": "Ensures only tested/trusted plugins are used, preventing unauthorized extensions from being loaded."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "reason": "Limits permissions to minimum required, restricting capabilities of authorized extensions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.9.5",
+          "control_name": "Implement DMARC",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Implement DMARC",
+              "class": "TECH",
+              "embedding_context": "Implement DMARC",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-MBSV",
+                    "name": "Memory Block Start Validation",
+                    "similarity_score": 0.390966
+                  },
+                  {
+                    "id": "D3-BMA",
+                    "name": "Bus Message Authentication",
+                    "similarity_score": 0.379081
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.358005
+                  },
+                  {
+                    "id": "D3-MH",
+                    "name": "Message Hardening",
+                    "similarity_score": 0.35189
+                  },
+                  {
+                    "id": "D3-APCA",
+                    "name": "Application Protocol Command Analysis",
+                    "similarity_score": 0.349541
+                  },
+                  {
+                    "id": "D3-DLV",
+                    "name": "Domain Logic Validation",
+                    "similarity_score": 0.349094
+                  },
+                  {
+                    "id": "D3-MAN",
+                    "name": "Message Authentication",
+                    "similarity_score": 0.348551
+                  },
+                  {
+                    "id": "D3-SFCV",
+                    "name": "Stack Frame Canary Validation",
+                    "similarity_score": 0.342547
+                  },
+                  {
+                    "id": "D3-MENCR",
+                    "name": "Message Encryption",
+                    "similarity_score": 0.341997
+                  },
+                  {
+                    "id": "D3-PM",
+                    "name": "Platform Monitoring",
+                    "similarity_score": 0.341515
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.296054
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.295745
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.293864
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.285166
+                  },
+                  {
+                    "id": "AML.M0033",
+                    "name": "Malicious Logic Detection in hardware",
+                    "similarity_score": 0.284611
+                  },
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.28041
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.278616
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.271816
+                  },
+                  {
+                    "id": "CAPEC.M0002",
+                    "name": "Implement deep packet inspection (DPI)",
+                    "similarity_score": 0.271515
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.268991
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MAN",
+                  "name": "Message Authentication",
+                  "description": "Authenticating the sender of a message and ensuring message integrity.",
+                  "reason": "Message Authentication directly supports DMARC by ensuring sender authenticity and message integrity, which are core to DMARC's purpose of preventing email spoofing."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.9.6",
+          "control_name": "Block Unnecessary File Types",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Block Unnecessary File Types",
+              "class": "TECH",
+              "embedding_context": "Block Unnecessary File Types",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-EDL",
+                    "name": "Executable Denylisting",
+                    "similarity_score": 0.459714
+                  },
+                  {
+                    "id": "D3-FFV",
+                    "name": "File Format Verification",
+                    "similarity_score": 0.440291
+                  },
+                  {
+                    "id": "D3-FCDC",
+                    "name": "File Content Decompression Checking",
+                    "similarity_score": 0.435078
+                  },
+                  {
+                    "id": "D3-EAL",
+                    "name": "Executable Allowlisting",
+                    "similarity_score": 0.43136
+                  },
+                  {
+                    "id": "D3-FCR",
+                    "name": "File Content Rules",
+                    "similarity_score": 0.42414
+                  },
+                  {
+                    "id": "D3-FISV",
+                    "name": "File Internal Structure Verification",
+                    "similarity_score": 0.415413
+                  },
+                  {
+                    "id": "D3-FMVV",
+                    "name": "File Metadata Value Verification",
+                    "similarity_score": 0.40744
+                  },
+                  {
+                    "id": "D3-LFAM",
+                    "name": "Local File Access Mediation",
+                    "similarity_score": 0.406575
+                  },
+                  {
+                    "id": "D3-FCOA",
+                    "name": "File Content Analysis",
+                    "similarity_score": 0.405413
+                  },
+                  {
+                    "id": "D3-CM",
+                    "name": "Content Modification",
+                    "similarity_score": 0.398755
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.369763
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.240181
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.233712
+                  },
+                  {
+                    "id": "OWASP.M0006",
+                    "name": "Output Encoding",
+                    "similarity_score": 0.222454
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.208946
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.202274
+                  },
+                  {
+                    "id": "AML.M0002",
+                    "name": "Passive ML Output Obfuscation",
+                    "similarity_score": 0.196228
+                  },
+                  {
+                    "id": "OWASP.M0025",
+                    "name": "Plugin Scope Control",
+                    "similarity_score": 0.193259
+                  },
+                  {
+                    "id": "AML.M0013",
+                    "name": "Code Signing",
+                    "similarity_score": 0.19146
+                  },
+                  {
+                    "id": "AML.M0022",
+                    "name": "Model Obfuscation",
+                    "similarity_score": 0.19124
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EDL",
+                  "name": "Executable Denylisting",
+                  "description": "Blocking the execution of files on a host in accordance with defined application policy rules.",
+                  "reason": "Executable Denylisting directly blocks execution of defined file types via policy rules, aligning with the goal of blocking unnecessary files."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-LFAM",
+                  "name": "Local File Access Mediation",
+                  "description": "Local file access mediation is the process of an operating system granting or denying a specific access request to a local file.",
+                  "reason": "Local File Access Mediation filters access to specific files, enabling blocking of unnecessary file types through access control."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.9.7",
+          "control_name": "Deploy and Maintain Email Server Anti-Malware Protections",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Deploy Email Server Anti-Malware Protections",
+              "class": "TECH",
+              "embedding_context": "Deploy Email Server Anti-Malware Protections",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SMRA",
+                    "name": "Sender MTA Reputation Analysis",
+                    "similarity_score": 0.415905
+                  },
+                  {
+                    "id": "D3-EF",
+                    "name": "Email Filtering",
+                    "similarity_score": 0.412488
+                  },
+                  {
+                    "id": "D3-FH",
+                    "name": "File Hashing",
+                    "similarity_score": 0.401466
+                  },
+                  {
+                    "id": "D3-ER",
+                    "name": "Email Removal",
+                    "similarity_score": 0.390859
+                  },
+                  {
+                    "id": "D3-DA",
+                    "name": "Dynamic Analysis",
+                    "similarity_score": 0.354672
+                  },
+                  {
+                    "id": "D3-HD",
+                    "name": "Homoglyph Detection",
+                    "similarity_score": 0.344624
+                  },
+                  {
+                    "id": "D3-MA",
+                    "name": "Message Analysis",
+                    "similarity_score": 0.340298
+                  },
+                  {
+                    "id": "D3-BSE",
+                    "name": "Byte Sequence Emulation",
+                    "similarity_score": 0.335559
+                  },
+                  {
+                    "id": "D3-TAAN",
+                    "name": "Transfer Agent Authentication",
+                    "similarity_score": 0.334826
+                  },
+                  {
+                    "id": "D3-AH",
+                    "name": "Application Hardening",
+                    "similarity_score": 0.33158
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.370355
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.349213
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.345038
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.341365
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.338415
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.331203
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.326701
+                  },
+                  {
+                    "id": "AML.M0013",
+                    "name": "Code Signing",
+                    "similarity_score": 0.323179
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.321361
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.317769
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EF",
+                  "name": "Email Filtering",
+                  "description": "Filtering incoming email traffic based on specific criteria.",
+                  "reason": "Email Filtering directly blocks malicious emails by applying criteria to incoming traffic, which is essential for anti-malware protections."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SMRA",
+                  "name": "Sender MTA Reputation Analysis",
+                  "description": "Characterizing the reputation of mail transfer agents (MTA) to determine the security risk in emails.",
+                  "reason": "Sender MTA Reputation Analysis identifies untrusted mail sources, reducing the risk of malware from compromised or malicious senders."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-HD",
+                  "name": "Homoglyph Detection",
+                  "description": "Comparing strings using a variety of techniques to determine if a deceptive or malicious string is being presented to a user.",
+                  "reason": "Homoglyph Detection identifies deceptive URLs or email addresses in messages, mitigating phishing and malware distribution via spoofed content."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DA",
+                  "name": "Dynamic Analysis",
+                  "description": "Executing or opening a file in a synthetic \"sandbox\" environment to determine if the file is a malicious program or if the file exploits another program such as a document reader.",
+                  "reason": "Dynamic Analysis of executable files in emails detects malicious behavior in attachments, preventing malware execution on the server."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.7.2",
+              "goal_name": "Maintain Email Server Anti-Malware Protections",
+              "class": "TECH",
+              "embedding_context": "Maintain Email Server Anti-Malware Protections",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-EF",
+                    "name": "Email Filtering",
+                    "similarity_score": 0.391539
+                  },
+                  {
+                    "id": "D3-FH",
+                    "name": "File Hashing",
+                    "similarity_score": 0.391269
+                  },
+                  {
+                    "id": "D3-ER",
+                    "name": "Email Removal",
+                    "similarity_score": 0.380437
+                  },
+                  {
+                    "id": "D3-SMRA",
+                    "name": "Sender MTA Reputation Analysis",
+                    "similarity_score": 0.37378
+                  },
+                  {
+                    "id": "D3-TAAN",
+                    "name": "Transfer Agent Authentication",
+                    "similarity_score": 0.325101
+                  },
+                  {
+                    "id": "D3-HD",
+                    "name": "Homoglyph Detection",
+                    "similarity_score": 0.314227
+                  },
+                  {
+                    "id": "D3-TL",
+                    "name": "Trusted Library",
+                    "similarity_score": 0.311737
+                  },
+                  {
+                    "id": "D3-SRA",
+                    "name": "Sender Reputation Analysis",
+                    "similarity_score": 0.303962
+                  },
+                  {
+                    "id": "D3-DA",
+                    "name": "Dynamic Analysis",
+                    "similarity_score": 0.30373
+                  },
+                  {
+                    "id": "D3-MA",
+                    "name": "Message Analysis",
+                    "similarity_score": 0.303434
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.333201
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.332269
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.32338
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.317056
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.308102
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.30594
+                  },
+                  {
+                    "id": "AML.M0013",
+                    "name": "Code Signing",
+                    "similarity_score": 0.303126
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.302485
+                  },
+                  {
+                    "id": "AML.M0008",
+                    "name": "Validate ML Model",
+                    "similarity_score": 0.296988
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.296851
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EF",
+                  "name": "Email Filtering",
+                  "description": "Filtering incoming email traffic based on specific criteria.",
+                  "reason": "Email Filtering directly prevents malware by blocking malicious emails based on predefined criteria."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DA",
+                  "name": "Dynamic Analysis",
+                  "description": "Executing or opening a file in a synthetic \"sandbox\" environment to determine if the file is a malicious program or if the file exploits another program such as a document reader.",
+                  "reason": "Dynamic Analysis detects malicious files in email attachments by executing them in a sandboxed environment."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SRA",
+                  "name": "Sender Reputation Analysis",
+                  "description": "Ascertaining sender reputation based on information associated with a message (e.g. email/instant messaging).",
+                  "reason": "Sender Reputation Analysis identifies compromised or malicious senders to block malware origins."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SMRA",
+                  "name": "Sender MTA Reputation Analysis",
+                  "description": "Characterizing the reputation of mail transfer agents (MTA) to determine the security risk in emails.",
+                  "reason": "Sender MTA Reputation Analysis mitigates risks from untrusted email sources by evaluating sender credibility."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-HD",
+                  "name": "Homoglyph Detection",
+                  "description": "Comparing strings using a variety of techniques to determine if a deceptive or malicious string is being presented to a user.",
+                  "reason": "Homoglyph Detection prevents phishing attempts by identifying deceptive strings in email content."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

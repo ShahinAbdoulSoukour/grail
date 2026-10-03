@@ -1,0 +1,1115 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.10",
+  "clause_name": "Malware Defenses",
+  "goal_name": "Ensure malware defenses",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Prevent or control the installation, spread, and execution of malicious applications, code, or scripts on enterprise assets.",
+      "goal_name": "Prevent or control the installation, spread, and execution of malicious applications, code, or scripts on enterprise assets",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.10.1",
+          "control_name": "Deploy and Maintain Anti-Malware Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Deploy Anti-Malware Software",
+              "class": "TECH",
+              "embedding_context": "Deploy Anti-Malware Software",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-FH",
+                    "name": "File Hashing",
+                    "similarity_score": 0.489998
+                  },
+                  {
+                    "id": "D3-DA",
+                    "name": "Dynamic Analysis",
+                    "similarity_score": 0.458529
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.404269
+                  },
+                  {
+                    "id": "D3-SFA",
+                    "name": "System File Analysis",
+                    "similarity_score": 0.400832
+                  },
+                  {
+                    "id": "D3-BSE",
+                    "name": "Byte Sequence Emulation",
+                    "similarity_score": 0.394571
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.389825
+                  },
+                  {
+                    "id": "D3-AH",
+                    "name": "Application Hardening",
+                    "similarity_score": 0.389635
+                  },
+                  {
+                    "id": "D3-RFUM",
+                    "name": "Remote Firmware Update Monitoring",
+                    "similarity_score": 0.388277
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.378201
+                  },
+                  {
+                    "id": "D3-EDL",
+                    "name": "Executable Denylisting",
+                    "similarity_score": 0.371838
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0013",
+                    "name": "Code Signing",
+                    "similarity_score": 0.386482
+                  },
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.381499
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.372685
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.369657
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.363587
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.344534
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.344344
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.343626
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.337535
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.336128
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SU",
+                  "name": "Software Update",
+                  "description": "Replacing old software on a computer system component.",
+                  "reason": "Software Update directly contributes to deploying anti-malware software by replacing outdated software with updated versions that include malware protection."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0013",
+                  "name": "Code Signing",
+                  "description": "Enforce binary and application integrity with digital signature verification to prevent untrusted code from executing. Adversaries can embed malicious code in ML software, models and Library. Enforcement of code signing can prevent the compromise of the machine learning supply chain and prevent execution of malicious code.",
+                  "reason": "Code Signing ensures the deployed anti-malware software is verified and trusted, preventing unauthorized modifications or execution of malicious code."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain Anti-Malware Software",
+              "class": "TECH",
+              "embedding_context": "Maintain Anti-Malware Software",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-FH",
+                    "name": "File Hashing",
+                    "similarity_score": 0.448766
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.378627
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.377764
+                  },
+                  {
+                    "id": "D3-DA",
+                    "name": "Dynamic Analysis",
+                    "similarity_score": 0.375327
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.374465
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.364825
+                  },
+                  {
+                    "id": "D3-SFA",
+                    "name": "System File Analysis",
+                    "similarity_score": 0.349964
+                  },
+                  {
+                    "id": "D3-FIM",
+                    "name": "File Integrity Monitoring",
+                    "similarity_score": 0.347805
+                  },
+                  {
+                    "id": "D3-APM",
+                    "name": "Application Performance Monitoring",
+                    "similarity_score": 0.344231
+                  },
+                  {
+                    "id": "D3-TL",
+                    "name": "Trusted Library",
+                    "similarity_score": 0.34135
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.365559
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.35672
+                  },
+                  {
+                    "id": "AML.M0013",
+                    "name": "Code Signing",
+                    "similarity_score": 0.336176
+                  },
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.334458
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.329526
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.324769
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.306724
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.293731
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                    "similarity_score": 0.288926
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.283594
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SU",
+                  "name": "Software Update",
+                  "description": "Replacing old software on a computer system component.",
+                  "reason": "Software Update directly replaces old anti-malware software with updated versions to maintain functionality against new threats."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0013",
+                  "name": "Code Signing",
+                  "description": "Enforce binary and application integrity with digital signature verification to prevent untrusted code from executing. Adversaries can embed malicious code in ML software, models and Library. Enforcement of code signing can prevent the compromise of the machine learning supply chain and prevent execution of malicious code.",
+                  "reason": "Code Signing ensures anti-malware software integrity by preventing unauthorized modifications or tampering."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FIM",
+                  "name": "File Integrity Monitoring",
+                  "description": "Detecting any suspicious changes to files in a computer system.",
+                  "reason": "File Integrity Monitoring detects unauthorized changes to anti-malware software files, ensuring their integrity."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SDM",
+                  "name": "System Daemon Monitoring",
+                  "description": "Tracking changes to the state or configuration of critical system level processes.",
+                  "reason": "System Daemon Monitoring tracks changes to anti-malware processes, ensuring they operate as intended without compromise."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0011",
+                  "name": "Restrict Library Loading",
+                  "description": "Prevent abuse of library loading mechanisms in the operating system and software to load untrusted code by configuring appropriate library loading mechanisms and investigating potential vulnerable software.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for loading of malicious libraries.",
+                  "reason": "Restricting library loading prevents malicious code injection into anti-malware software components."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.10.2",
+          "control_name": "Configure Automatic Anti-Malware Signature Updates",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Configure Automatic Anti-Malware Signature Updates",
+              "class": "TECH",
+              "embedding_context": "Configure Automatic Anti-Malware Signature Updates",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-FH",
+                    "name": "File Hashing",
+                    "similarity_score": 0.42523
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.362032
+                  },
+                  {
+                    "id": "D3-NTSA",
+                    "name": "Network Traffic Signature Analysis",
+                    "similarity_score": 0.354933
+                  },
+                  {
+                    "id": "D3-SBV",
+                    "name": "Service Binary Verification",
+                    "similarity_score": 0.350119
+                  },
+                  {
+                    "id": "D3-RFUM",
+                    "name": "Remote Firmware Update Monitoring",
+                    "similarity_score": 0.348442
+                  },
+                  {
+                    "id": "D3-PSMD",
+                    "name": "Process Self-Modification Detection",
+                    "similarity_score": 0.342593
+                  },
+                  {
+                    "id": "D3-EAL",
+                    "name": "Executable Allowlisting",
+                    "similarity_score": 0.338182
+                  },
+                  {
+                    "id": "D3-TL",
+                    "name": "Trusted Library",
+                    "similarity_score": 0.334657
+                  },
+                  {
+                    "id": "D3-SFV",
+                    "name": "System Firmware Verification",
+                    "similarity_score": 0.327111
+                  },
+                  {
+                    "id": "D3-DA",
+                    "name": "Dynamic Analysis",
+                    "similarity_score": 0.326108
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0013",
+                    "name": "Code Signing",
+                    "similarity_score": 0.482456
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.414033
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.376282
+                  },
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.367448
+                  },
+                  {
+                    "id": "AML.M0033",
+                    "name": "Malicious Logic Detection in hardware",
+                    "similarity_score": 0.359238
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.333505
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.331474
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.328435
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.327141
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.32557
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SU",
+                  "name": "Software Update",
+                  "description": "Replacing old software on a computer system component.",
+                  "reason": "The 'Software Update' technique directly enables automatic updates of anti-malware software components, including signature databases, which aligns with the goal of configuring automatic anti-malware signature updates."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.10.3",
+          "control_name": "Disable Autorun and Autoplay for Removable Media",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Disable Autorun and Autoplay for Removable Media",
+              "class": "TECH",
+              "embedding_context": "Disable Autorun and Autoplay for Removable Media",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.42256
+                  },
+                  {
+                    "id": "D3-OPR",
+                    "name": "Operating Mode Restriction",
+                    "similarity_score": 0.354711
+                  },
+                  {
+                    "id": "D3-LFP",
+                    "name": "Local File Permissions",
+                    "similarity_score": 0.343625
+                  },
+                  {
+                    "id": "D3-CM",
+                    "name": "Content Modification",
+                    "similarity_score": 0.340658
+                  },
+                  {
+                    "id": "D3-UAP",
+                    "name": "User Account Permissions",
+                    "similarity_score": 0.336375
+                  },
+                  {
+                    "id": "D3-DKF",
+                    "name": "Disk Formatting",
+                    "similarity_score": 0.314119
+                  },
+                  {
+                    "id": "D3-LFAM",
+                    "name": "Local File Access Mediation",
+                    "similarity_score": 0.313597
+                  },
+                  {
+                    "id": "D3-RKD",
+                    "name": "Registry Key Deletion",
+                    "similarity_score": 0.305669
+                  },
+                  {
+                    "id": "D3-EAL",
+                    "name": "Executable Allowlisting",
+                    "similarity_score": 0.298825
+                  },
+                  {
+                    "id": "D3-EDL",
+                    "name": "Executable Denylisting",
+                    "similarity_score": 0.298085
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.230311
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.222795
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.209189
+                  },
+                  {
+                    "id": "OWASP.M0025",
+                    "name": "Plugin Scope Control",
+                    "similarity_score": 0.19577
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.192975
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.184616
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.183378
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.168556
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.167533
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.160581
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RKD",
+                  "name": "Registry Key Deletion",
+                  "description": "Delete a registry key.",
+                  "reason": "Registry Key Deletion can directly disable autorun/autoplay by removing or modifying registry keys that enable these features, such as HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\AutoplayActions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.10.4",
+          "control_name": "Configure Automatic Anti-Malware Scanning of Removable Media",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Configure Automatic Anti-Malware Scanning of Removable Media",
+              "class": "TECH",
+              "embedding_context": "Configure Automatic Anti-Malware Scanning of Removable Media",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-FH",
+                    "name": "File Hashing",
+                    "similarity_score": 0.437334
+                  },
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.427493
+                  },
+                  {
+                    "id": "D3-FIM",
+                    "name": "File Integrity Monitoring",
+                    "similarity_score": 0.425521
+                  },
+                  {
+                    "id": "D3-FA",
+                    "name": "File Analysis",
+                    "similarity_score": 0.409476
+                  },
+                  {
+                    "id": "D3-DA",
+                    "name": "Dynamic Analysis",
+                    "similarity_score": 0.401736
+                  },
+                  {
+                    "id": "D3-FCDC",
+                    "name": "File Content Decompression Checking",
+                    "similarity_score": 0.376274
+                  },
+                  {
+                    "id": "D3-FMBV",
+                    "name": "File Magic Byte Verification",
+                    "similarity_score": 0.37573
+                  },
+                  {
+                    "id": "D3-RFUM",
+                    "name": "Remote Firmware Update Monitoring",
+                    "similarity_score": 0.374805
+                  },
+                  {
+                    "id": "D3-RFAM",
+                    "name": "Remote File Access Mediation",
+                    "similarity_score": 0.368098
+                  },
+                  {
+                    "id": "D3-FCA",
+                    "name": "File Creation Analysis",
+                    "similarity_score": 0.360972
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.322034
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.28185
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.280881
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.277085
+                  },
+                  {
+                    "id": "AML.M0033",
+                    "name": "Malicious Logic Detection in hardware",
+                    "similarity_score": 0.273719
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.263562
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.25836
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.253445
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.251087
+                  },
+                  {
+                    "id": "AML.M0037",
+                    "name": "Hardware security modules",
+                    "similarity_score": 0.250756
+                  }
+                ]
+              },
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.10.5",
+          "control_name": "Enable Anti-Exploitation Features",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Enable Anti-Exploitation Features",
+              "class": "TECH",
+              "embedding_context": "Enable Anti-Exploitation Features",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-PSEP",
+                    "name": "Process Segment Execution Prevention",
+                    "similarity_score": 0.575489
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.557105
+                  },
+                  {
+                    "id": "D3-AH",
+                    "name": "Application Hardening",
+                    "similarity_score": 0.548164
+                  },
+                  {
+                    "id": "D3-EDL",
+                    "name": "Executable Denylisting",
+                    "similarity_score": 0.541185
+                  },
+                  {
+                    "id": "D3-EI",
+                    "name": "Execution Isolation",
+                    "similarity_score": 0.52747
+                  },
+                  {
+                    "id": "D3-HBPI",
+                    "name": "Hardware-based Process Isolation",
+                    "similarity_score": 0.508309
+                  },
+                  {
+                    "id": "D3-CFI",
+                    "name": "Control Flow Integrity",
+                    "similarity_score": 0.50512
+                  },
+                  {
+                    "id": "D3-KBPI",
+                    "name": "Kernel-based Process Isolation",
+                    "similarity_score": 0.501036
+                  },
+                  {
+                    "id": "D3-OPR",
+                    "name": "Operating Mode Restriction",
+                    "similarity_score": 0.49791
+                  },
+                  {
+                    "id": "D3-EAL",
+                    "name": "Executable Allowlisting",
+                    "similarity_score": 0.495959
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.575865
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.537743
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.524222
+                  },
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.510981
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.510153
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.504096
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.502526
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.502139
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.501022
+                  },
+                  {
+                    "id": "AML.M0015",
+                    "name": "Adversarial Input Detection",
+                    "similarity_score": 0.497984
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PSEP",
+                  "name": "Process Segment Execution Prevention",
+                  "description": "Preventing execution of any address in a memory region other than the code segment.",
+                  "reason": "Prevents execution of non-code segments, mitigating exploits that rely on arbitrary code execution in memory."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CFI",
+                  "name": "Control Flow Integrity",
+                  "description": "Enforcing legal control flow transfers during application process execution.",
+                  "reason": "Enforces control flow integrity to prevent exploitation of code injection vulnerabilities."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-HBPI",
+                  "name": "Hardware-based Process Isolation",
+                  "description": "Preventing one process from writing to the memory space of another process through hardware based address manager implementations.",
+                  "reason": "Hardware-based isolation prevents process memory corruption attacks by restricting cross-process memory access."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0011",
+                  "name": "Restrict Library Loading",
+                  "description": "Prevent abuse of library loading mechanisms in the operating system and software to load untrusted code by configuring appropriate library loading mechanisms and investigating potential vulnerable software.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for loading of malicious libraries.",
+                  "reason": "Restricts library loading to prevent untrusted code execution via dynamic linking mechanisms."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "reason": "Resource isolation techniques like containerization prevent resource manipulation in shared environments."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.10.6",
+          "control_name": "Centrally Manage Anti-Malware Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Centrally Manage Anti-Malware Software",
+              "class": "TECH",
+              "embedding_context": "Centrally Manage Anti-Malware Software",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-FH",
+                    "name": "File Hashing",
+                    "similarity_score": 0.42185
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.395446
+                  },
+                  {
+                    "id": "D3-DA",
+                    "name": "Dynamic Analysis",
+                    "similarity_score": 0.388293
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.38056
+                  },
+                  {
+                    "id": "D3-SFA",
+                    "name": "System File Analysis",
+                    "similarity_score": 0.356666
+                  },
+                  {
+                    "id": "D3-RFUM",
+                    "name": "Remote Firmware Update Monitoring",
+                    "similarity_score": 0.355855
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.354703
+                  },
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.353294
+                  },
+                  {
+                    "id": "D3-APM",
+                    "name": "Application Performance Monitoring",
+                    "similarity_score": 0.342232
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.340033
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.38898
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.34098
+                  },
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.337458
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.330648
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.328116
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.326958
+                  },
+                  {
+                    "id": "CAPEC.M0001",
+                    "name": "Employ network segmentation",
+                    "similarity_score": 0.326764
+                  },
+                  {
+                    "id": "AML.M0013",
+                    "name": "Code Signing",
+                    "similarity_score": 0.325199
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.320779
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.301748
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "reason": "Software Inventory directly supports centrally managing anti-malware by identifying and recording installed software across the organization."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Inventory Management maintains an up-to-date inventory of software, enabling centralized tracking and management of anti-malware tools."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SU",
+                  "name": "Software Update",
+                  "description": "Replacing old software on a computer system component.",
+                  "reason": "Software Update ensures anti-malware software is regularly updated, aligning with centralized management requirements for patching and version control."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0013",
+                  "name": "Code Signing",
+                  "description": "Enforce binary and application integrity with digital signature verification to prevent untrusted code from executing. Adversaries can embed malicious code in ML software, models and Library. Enforcement of code signing can prevent the compromise of the machine learning supply chain and prevent execution of malicious code.",
+                  "reason": "Code Signing enforces integrity of anti-malware binaries, preventing unauthorized modifications that could compromise centralized management controls."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.10.7",
+          "control_name": "Use Behavior-Based Anti-Malware Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Use Behavior-Based Anti-Malware Software",
+              "class": "TECH",
+              "embedding_context": "Use Behavior-Based Anti-Malware Software",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-FH",
+                    "name": "File Hashing",
+                    "similarity_score": 0.504273
+                  },
+                  {
+                    "id": "D3-DA",
+                    "name": "Dynamic Analysis",
+                    "similarity_score": 0.467844
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.434881
+                  },
+                  {
+                    "id": "D3-FIM",
+                    "name": "File Integrity Monitoring",
+                    "similarity_score": 0.430982
+                  },
+                  {
+                    "id": "D3-EFA",
+                    "name": "Emulated File Analysis",
+                    "similarity_score": 0.411134
+                  },
+                  {
+                    "id": "D3-EDL",
+                    "name": "Executable Denylisting",
+                    "similarity_score": 0.405163
+                  },
+                  {
+                    "id": "D3-IAA",
+                    "name": "Identifier Activity Analysis",
+                    "similarity_score": 0.404951
+                  },
+                  {
+                    "id": "D3-FA",
+                    "name": "File Analysis",
+                    "similarity_score": 0.403301
+                  },
+                  {
+                    "id": "D3-BSE",
+                    "name": "Byte Sequence Emulation",
+                    "similarity_score": 0.399599
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.399033
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.426752
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.414723
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.401532
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.391591
+                  },
+                  {
+                    "id": "AML.M0039",
+                    "name": "Implement resource isolation techniques",
+                    "similarity_score": 0.38649
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.381723
+                  },
+                  {
+                    "id": "AML.M0013",
+                    "name": "Code Signing",
+                    "similarity_score": 0.369175
+                  },
+                  {
+                    "id": "AML.M0007",
+                    "name": "Sanitize Training Data",
+                    "similarity_score": 0.369131
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.368484
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.364277
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DA",
+                  "name": "Dynamic Analysis",
+                  "description": "Executing or opening a file in a synthetic \"sandbox\" environment to determine if the file is a malicious program or if the file exploits another program such as a document reader.",
+                  "reason": "Dynamic Analysis directly observes file behavior in a sandboxed environment, aligning with behavior-based malware detection by analyzing execution patterns."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0017",
+                  "name": "Anomaly detection",
+                  "description": "Sign models and code, apply anomaly detection, and monitor.",
+                  "reason": "Anomaly detection identifies deviations from baseline behavior, a core component of behavior-based anti-malware strategies to flag suspicious activity."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

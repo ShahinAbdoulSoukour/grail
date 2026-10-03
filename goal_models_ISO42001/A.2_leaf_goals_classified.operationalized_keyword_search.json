@@ -1,0 +1,55 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.2",
+  "clause_name": "AI policy",
+  "goal_name": "Ensure AI policy",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "The organization shall establish an AI policy.",
+      "goal_name": "Establish an AI policy",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.2.2",
+          "control_name": "The organization shall establish an AI policy.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish an AI policy",
+              "agent": "The organization",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.2.3",
+          "control_name": "The AI policy shall be aligned with other relevant organizational policies.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Align the AI policy with other relevant organizational policies",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.2.4",
+          "control_name": "The AI policy shall be reviewed at planned intervals and when significant changes occur.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Review the AI policy at planned intervals and when significant changes occur",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

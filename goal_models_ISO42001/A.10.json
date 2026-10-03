@@ -1,0 +1,67 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.10",
+  "clause_name": "Supplier requirements",
+  "goal_name": "Ensure supplier requirements",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Requirements for suppliers and external providers shall be defined.",
+      "goal_name": "Define requirements for suppliers and external providers",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.10.2",
+          "control_name": "Requirements for suppliers and external providers shall be defined.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Define requirements for suppliers and external providers"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.10.3",
+          "control_name": "Requirements from customers and users shall be identified and addressed.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Identify requirements from customers and users"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Address requirements from customers and users"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.10.4",
+          "control_name": "Third-party relationships shall be monitored and reviewed.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Monitor Third-party relationships"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Review Third-party relationships"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.10.5",
+          "control_name": "Appropriate contractual controls shall be established.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish appropriate contractual controls"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

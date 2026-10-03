@@ -1,0 +1,439 @@
+{
+  "goal_id": "G0",
+  "clause_id": "SC",
+  "clause_name": "Protect Systems and Communications",
+  "goal_name": "Protect systems and communications",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure secure and protected system communications.",
+      "goal_name": "Ensure secure and protected system communications",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "SC-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate system and communications protection controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate system and communications protection controls",
+              "class": "TECH",
+              "embedding_context": "Develop policy and procedures to facilitate system and communications protection controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NRAM",
+                "name": "Network Resource Access Mediation",
+                "similarity_score": 0.504218
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.519015
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.504218
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.486047
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SCF",
+                  "name": "System Call Filtering",
+                  "description": "Controlling access to local computer system resources with kernel-level capabilities.",
+                  "similarity_score": 0.480323
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ANAA",
+                  "name": "Administrative Network Activity Analysis",
+                  "description": "Detection of unauthorized use of administrative network protocols by analyzing network activity against a baseline.",
+                  "similarity_score": 0.478861
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-LAMED",
+                  "name": "LAN Access Mediation",
+                  "description": "LAN access mediation encompasses the application of strict access control policies, systematic verification of devices, and authentication mechanisms to govern connectivity to a Local Area Network.",
+                  "similarity_score": 0.473134
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0031",
+                  "name": "Implement Security Control during hardware manufacturing",
+                  "description": "Implement strict security controls and auditing processes during the manufacturing phase, including secure supply chain practices and hardware verification methods, to prevent unauthorized modifications to hardware components or firmware.",
+                  "similarity_score": 0.519015
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0037",
+                  "name": "Hardware security modules",
+                  "description": "Conduct thorough risk assessments and enforce usage policies to limit the misuse of hardware functionalities, alongside implementing hardware security modules (HSMs) to ensure only intended uses of hardware features.",
+                  "similarity_score": 0.474913
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.461049
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0032",
+                  "name": "Utilize integrity controls in hardware",
+                  "description": "Utilize tamper-evident packaging, secure shipping protocols, and block chain-based tracking systems to ensure the integrity of hardware and software during distribution, preventing unauthorized access or modifications.",
+                  "similarity_score": 0.458591
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate system and communications protection controls",
+              "class": "PHYS",
+              "embedding_context": "Document policy and procedures to facilitate system and communications protection controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.5128
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.482887
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.5128
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.498982
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.489129
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MH",
+                  "name": "Message Hardening",
+                  "description": "The application of security controls to user-to-user and system-to-system communications so messages remain confidential, unaltered, and verifiable while resisting injection, replay, and tampering.",
+                  "similarity_score": 0.488272
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NAM",
+                  "name": "Network Access Mediation",
+                  "description": "Network access mediation is the control method for authorizing access to a system by a user (or a process acting on behalf of a user) communicating through a network, including a local area network, a wide area network, and the Internet.",
+                  "similarity_score": 0.473283
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0031",
+                  "name": "Implement Security Control during hardware manufacturing",
+                  "description": "Implement strict security controls and auditing processes during the manufacturing phase, including secure supply chain practices and hardware verification methods, to prevent unauthorized modifications to hardware components or firmware.",
+                  "similarity_score": 0.482887
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.475356
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0032",
+                  "name": "Utilize integrity controls in hardware",
+                  "description": "Utilize tamper-evident packaging, secure shipping protocols, and block chain-based tracking systems to ensure the integrity of hardware and software during distribution, preventing unauthorized access or modifications.",
+                  "similarity_score": 0.451469
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate system and communications protection controls",
+              "class": "PHYS",
+              "embedding_context": "Disseminate policy and procedures to facilitate system and communications protection controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.495401
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.481132
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.495401
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MH",
+                  "name": "Message Hardening",
+                  "description": "The application of security controls to user-to-user and system-to-system communications so messages remain confidential, unaltered, and verifiable while resisting injection, replay, and tampering.",
+                  "similarity_score": 0.460376
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0031",
+                  "name": "Implement Security Control during hardware manufacturing",
+                  "description": "Implement strict security controls and auditing processes during the manufacturing phase, including secure supply chain practices and hardware verification methods, to prevent unauthorized modifications to hardware components or firmware.",
+                  "similarity_score": 0.481132
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.459513
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0037",
+                  "name": "Hardware security modules",
+                  "description": "Conduct thorough risk assessments and enforce usage policies to limit the misuse of hardware functionalities, alongside implementing hardware security modules (HSMs) to ensure only intended uses of hardware features.",
+                  "similarity_score": 0.453957
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "SC-7",
+          "control_name": "Monitor and control communications at external boundaries and key internal boundaries.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Monitor communications at external boundaries and key internal boundaries",
+              "class": "TECH",
+              "embedding_context": "Monitor communications at external boundaries and key internal boundaries",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-EHB",
+                "name": "Endpoint Health Beacon",
+                "similarity_score": 0.495397
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "CAPEC.M0001",
+                "name": "Employ network segmentation",
+                "similarity_score": 0.414039
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EHB",
+                  "name": "Endpoint Health Beacon",
+                  "description": "Monitoring the security status of an endpoint by sending periodic messages with health status, where absence of a response may indicate that the endpoint has been compromised.",
+                  "similarity_score": 0.495397
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Control communications at external boundaries and key internal boundaries",
+              "class": "PHYS",
+              "embedding_context": "Control communications at external boundaries and key internal boundaries",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RAM",
+                "name": "Routing Access Mediation",
+                "similarity_score": 0.367677
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "CAPEC.M0001",
+                "name": "Employ network segmentation",
+                "similarity_score": 0.358737
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "SC-8",
+          "control_name": "Protect the confidentiality and integrity of transmitted information.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Protect the confidentiality and integrity of transmitted information",
+              "class": "TECH",
+              "embedding_context": "Protect the confidentiality and integrity of transmitted information",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-MAN",
+                "name": "Message Authentication",
+                "similarity_score": 0.511125
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0032",
+                "name": "Utilize integrity controls in hardware",
+                "similarity_score": 0.560233
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MAN",
+                  "name": "Message Authentication",
+                  "description": "Authenticating the sender of a message and ensuring message integrity.",
+                  "similarity_score": 0.511125
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-TAAN",
+                  "name": "Transfer Agent Authentication",
+                  "description": "Validating that server components of a messaging infrastructure are authorized to send a particular message.",
+                  "similarity_score": 0.495764
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MH",
+                  "name": "Message Hardening",
+                  "description": "The application of security controls to user-to-user and system-to-system communications so messages remain confidential, unaltered, and verifiable while resisting injection, replay, and tampering.",
+                  "similarity_score": 0.49564
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MENCR",
+                  "name": "Message Encryption",
+                  "description": "Encrypting a message body using a cryptographic key.",
+                  "similarity_score": 0.492622
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ET",
+                  "name": "Encrypted Tunnels",
+                  "description": "Encrypted encapsulation of routable network traffic.",
+                  "similarity_score": 0.489764
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0032",
+                  "name": "Utilize integrity controls in hardware",
+                  "description": "Utilize tamper-evident packaging, secure shipping protocols, and block chain-based tracking systems to ensure the integrity of hardware and software during distribution, preventing unauthorized access or modifications.",
+                  "similarity_score": 0.560233
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0026",
+                  "name": "Secure communication channels",
+                  "description": "Communication channels between the model and the interface responsible for displaying the results should be secured using secure protocols such as SSL/TLS.",
+                  "similarity_score": 0.556092
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0003",
+                  "name": "End-to-end encryption",
+                  "description": "Implement end-to-end encryption (e.g., TLS, HTTPS) to protect the integrity and confidentiality of communications between AI systems.",
+                  "similarity_score": 0.546995
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0030",
+                  "name": "Verify the authenticity of feedback data",
+                  "description": "Use techniques such as digital signatures and checksums to verify that the feedback data received by the system is genuine, and reject any data that does not match the expected format.",
+                  "similarity_score": 0.545367
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0012",
+                  "name": "Encrypt Sensitive Information",
+                  "description": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "similarity_score": 0.526246
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "SC-12",
+          "control_name": "Establish and manage cryptographic keys for the system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish cryptographic keys for the system",
+              "class": "TECH",
+              "embedding_context": "Establish cryptographic keys for the system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-MENCR",
+                "name": "Message Encryption",
+                "similarity_score": 0.334909
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "CAPEC.M0003",
+                "name": "End-to-end encryption",
+                "similarity_score": 0.421384
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Manage cryptographic keys for the system",
+              "class": "TECH",
+              "embedding_context": "Manage cryptographic keys for the system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CI",
+                "name": "Configuration Inventory",
+                "similarity_score": 0.328009
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.368149
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

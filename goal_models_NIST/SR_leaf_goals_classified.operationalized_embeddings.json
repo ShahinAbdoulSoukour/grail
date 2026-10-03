@@ -1,0 +1,199 @@
+{
+  "goal_id": "G0",
+  "clause_id": "SR",
+  "clause_name": "Manage Supply Chain Risks",
+  "goal_name": "Manage supply chain risks",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure effective management of supply chain risks.",
+      "goal_name": "Ensure effective management of supply chain risks",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "SR-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate supply chain risk management controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate supply chain risk management controls",
+              "class": "ORG",
+              "embedding_context": "Develop policy and procedures to facilitate supply chain risk management controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.35548
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0007",
+                "name": "Supply Chain Verification",
+                "similarity_score": 0.435258
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate supply chain risk management controls",
+              "class": "ORG",
+              "embedding_context": "Document policy and procedures to facilitate supply chain risk management controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CI",
+                "name": "Configuration Inventory",
+                "similarity_score": 0.377178
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.440449
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate supply chain risk management controls",
+              "class": "ORG",
+              "embedding_context": "Disseminate policy and procedures to facilitate supply chain risk management controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.340551
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.43534
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "SR-2",
+          "control_name": "Develop a supply chain risk management plan for the system, system component, or service.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Develop a supply chain risk management plan for the system, system component, or service",
+              "class": "ORG",
+              "embedding_context": "Develop a supply chain risk management plan for the system, system component, or service",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.44773
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.446841
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "SR-3",
+          "control_name": "Establish, document, and implement controls and processes for managing supply chain risks.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Establish controls and processes for managing supply chain risks",
+              "class": "ORG",
+              "embedding_context": "Establish controls and processes for managing supply chain risks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.37376
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0007",
+                "name": "Supply Chain Verification",
+                "similarity_score": 0.454385
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0007",
+                  "name": "Supply Chain Verification",
+                  "description": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "similarity_score": 0.454385
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Document controls and processes for managing supply chain risks",
+              "class": "ORG",
+              "embedding_context": "Document controls and processes for managing supply chain risks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CI",
+                "name": "Configuration Inventory",
+                "similarity_score": 0.404211
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0007",
+                "name": "Supply Chain Verification",
+                "similarity_score": 0.493949
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0007",
+                  "name": "Supply Chain Verification",
+                  "description": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "similarity_score": 0.493949
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.473658
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            },
+            {
+              "goal_id": "G1.3.3",
+              "goal_name": "Implement controls and processes for managing supply chain risks",
+              "class": "ORG",
+              "embedding_context": "Implement controls and processes for managing supply chain risks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.380678
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0007",
+                "name": "Supply Chain Verification",
+                "similarity_score": 0.448087
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

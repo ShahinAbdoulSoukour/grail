@@ -1,0 +1,69 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.8",
+  "clause_name": "Information to interested parties",
+  "goal_name": "Ensure information to interested parties",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Relevant information about AI systems shall be provided to interested parties.",
+      "goal_name": "Provide relevant information about AI systems to interested parties",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.8.2",
+          "control_name": "Relevant information about AI systems shall be provided to interested parties.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Provide relevant information about AI systems to interested parties",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.8.3",
+          "control_name": "Information provided shall support transparency of AI system behavior.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Support transparency of AI system behavior",
+              "agent": "Information provided",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.8.4",
+          "control_name": "Appropriate explainability information shall be made available.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Make appropriate explainability information available",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.8.5",
+          "control_name": "Users shall receive guidance for the intended use of AI systems.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Receive guidance for the intended use of AI systems",
+              "agent": "Users",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

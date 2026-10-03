@@ -1,0 +1,1067 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.2",
+  "clause_name": "Inventory and Control of Software Assets",
+  "goal_name": "Ensure inventory and control of software assets",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Actively manage (inventory, track, and correct) all software (operating systems and applications) on the network so that only authorized software is installed and can execute, and that unauthorized and unmanaged software is found and prevented from installation or execution.",
+      "goal_name": "Actively manage all software on the network so that only authorized software is installed and can execute, and that unauthorized and unmanaged software is found and prevented from installation or execution",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.2.1",
+          "control_name": "Establish and Maintain a Software Inventory",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish a Software Inventory",
+              "class": "TECH",
+              "embedding_context": "Establish a Software Inventory",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.642291
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.452518
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.452114
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.444041
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.419818
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.390842
+                  },
+                  {
+                    "id": "D3-APM",
+                    "name": "Application Performance Monitoring",
+                    "similarity_score": 0.311144
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.300179
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.289073
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.287741
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.493778
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.281802
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.246143
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.236208
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.214924
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.212105
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.203615
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.2031
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.202456
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.189442
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "reason": "Directly identifies and records software items in the organization's architecture, fulfilling the goal of establishing a software inventory."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain a Software Inventory",
+              "class": "TECH",
+              "embedding_context": "Maintain a Software Inventory",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.641831
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.465006
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.444738
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.421632
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.413815
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.374579
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.322851
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.289234
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.2549
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.254148
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.545057
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.255386
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.202992
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.196716
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.187825
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.17898
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.160039
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.159497
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.154724
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.15229
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "reason": "Directly identifies and records software items in the organization's architecture, which is the core action required to maintain a software inventory."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "reason": "Explicitly focuses on maintaining an up-to-date inventory, aligning directly with the goal of 'Maintain a Software Inventory'."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.2.2",
+          "control_name": "Ensure Authorized Software is Currently Supported",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Ensure Authorized Software is Currently Supported",
+              "class": "TECH",
+              "embedding_context": "Ensure Authorized Software is Currently Supported",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-RFUM",
+                    "name": "Remote Firmware Update Monitoring",
+                    "similarity_score": 0.368985
+                  },
+                  {
+                    "id": "D3-FV",
+                    "name": "Firmware Verification",
+                    "similarity_score": 0.351857
+                  },
+                  {
+                    "id": "D3-EAL",
+                    "name": "Executable Allowlisting",
+                    "similarity_score": 0.347061
+                  },
+                  {
+                    "id": "D3-SFV",
+                    "name": "System Firmware Verification",
+                    "similarity_score": 0.34279
+                  },
+                  {
+                    "id": "D3-DLIC",
+                    "name": "Driver Load Integrity Checking",
+                    "similarity_score": 0.339844
+                  },
+                  {
+                    "id": "D3-TL",
+                    "name": "Trusted Library",
+                    "similarity_score": 0.33681
+                  },
+                  {
+                    "id": "D3-PFV",
+                    "name": "Peripheral Firmware Verification",
+                    "similarity_score": 0.315658
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.305625
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.299194
+                  },
+                  {
+                    "id": "D3-OMM",
+                    "name": "Operating Mode Monitoring",
+                    "similarity_score": 0.297285
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.372566
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.346673
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.340046
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.339526
+                  },
+                  {
+                    "id": "OWASP.M0031",
+                    "name": "Cross-Check",
+                    "similarity_score": 0.3215
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.321448
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.31892
+                  },
+                  {
+                    "id": "AML.M0013",
+                    "name": "Code Signing",
+                    "similarity_score": 0.310189
+                  },
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.309949
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.306179
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SU",
+                  "name": "Software Update",
+                  "description": "Replacing old software on a computer system component.",
+                  "reason": "Software Update directly replaces old software with current versions, ensuring authorized software remains supported."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EAL",
+                  "name": "Executable Allowlisting",
+                  "description": "Using a digital signature to authenticate a file before opening.",
+                  "reason": "Executable Allowlisting blocks unauthorized executables, ensuring only authorized software is executed, which supports maintaining supported software."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.2.3",
+          "control_name": "Address Unauthorized Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Address Unauthorized Software",
+              "class": "TECH",
+              "embedding_context": "Address Unauthorized Software",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-EAL",
+                    "name": "Executable Allowlisting",
+                    "similarity_score": 0.413549
+                  },
+                  {
+                    "id": "D3-EDL",
+                    "name": "Executable Denylisting",
+                    "similarity_score": 0.403027
+                  },
+                  {
+                    "id": "D3-DA",
+                    "name": "Dynamic Analysis",
+                    "similarity_score": 0.382585
+                  },
+                  {
+                    "id": "D3-RFUM",
+                    "name": "Remote Firmware Update Monitoring",
+                    "similarity_score": 0.37926
+                  },
+                  {
+                    "id": "D3-LFAM",
+                    "name": "Local File Access Mediation",
+                    "similarity_score": 0.370257
+                  },
+                  {
+                    "id": "D3-RKD",
+                    "name": "Registry Key Deletion",
+                    "similarity_score": 0.361087
+                  },
+                  {
+                    "id": "D3-FH",
+                    "name": "File Hashing",
+                    "similarity_score": 0.360817
+                  },
+                  {
+                    "id": "D3-LFP",
+                    "name": "Local File Permissions",
+                    "similarity_score": 0.354614
+                  },
+                  {
+                    "id": "D3-SU",
+                    "name": "Software Update",
+                    "similarity_score": 0.345571
+                  },
+                  {
+                    "id": "D3-RS",
+                    "name": "Restore Software",
+                    "similarity_score": 0.343627
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.341378
+                  },
+                  {
+                    "id": "AML.M0013",
+                    "name": "Code Signing",
+                    "similarity_score": 0.34058
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.311579
+                  },
+                  {
+                    "id": "AML.M0035",
+                    "name": "Protection from Reverse Engineering",
+                    "similarity_score": 0.31144
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.296455
+                  },
+                  {
+                    "id": "AML.M0033",
+                    "name": "Malicious Logic Detection in hardware",
+                    "similarity_score": 0.281027
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.270589
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.27018
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.268478
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.261671
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EAL",
+                  "name": "Executable Allowlisting",
+                  "description": "Using a digital signature to authenticate a file before opening.",
+                  "reason": "Executable Allowlisting directly prevents unauthorized software by only allowing signed executables to run."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EDL",
+                  "name": "Executable Denylisting",
+                  "description": "Blocking the execution of files on a host in accordance with defined application policy rules.",
+                  "reason": "Executable Denylisting blocks specific unauthorized executables based on policy rules, directly addressing the goal."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0013",
+                  "name": "Code Signing",
+                  "description": "Enforce binary and application integrity with digital signature verification to prevent untrusted code from executing. Adversaries can embed malicious code in ML software, models and Library. Enforcement of code signing can prevent the compromise of the machine learning supply chain and prevent execution of malicious code.",
+                  "reason": "Code Signing enforces digital signatures to prevent untrusted code execution, aligning with allowlisting principles."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.2.4",
+          "control_name": "Utilize Automated Software Inventory Tools",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Utilize Automated Software Inventory Tools",
+              "class": "TECH",
+              "embedding_context": "Utilize Automated Software Inventory Tools",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SWI",
+                    "name": "Software Inventory",
+                    "similarity_score": 0.620973
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.463936
+                  },
+                  {
+                    "id": "D3-AVE",
+                    "name": "Asset Vulnerability Enumeration",
+                    "similarity_score": 0.448558
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.440497
+                  },
+                  {
+                    "id": "D3-HCI",
+                    "name": "Hardware Component Inventory",
+                    "similarity_score": 0.418634
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.407782
+                  },
+                  {
+                    "id": "D3-APM",
+                    "name": "Application Performance Monitoring",
+                    "similarity_score": 0.344019
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.336458
+                  },
+                  {
+                    "id": "D3-AI",
+                    "name": "Asset Inventory",
+                    "similarity_score": 0.328867
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.322896
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.530466
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.313176
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.308886
+                  },
+                  {
+                    "id": "AML.M0016",
+                    "name": "Vulnerability Scanning",
+                    "similarity_score": 0.280642
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.247254
+                  },
+                  {
+                    "id": "OWASP.M0035",
+                    "name": "Secure Deployment of Models",
+                    "similarity_score": 0.244473
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.241771
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.240936
+                  },
+                  {
+                    "id": "AML.M0014",
+                    "name": "Verify ML Artifacts",
+                    "similarity_score": 0.231933
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.228755
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "reason": "The 'Software Inventory' technique directly aligns with the goal of utilizing automated software inventory tools by identifying and recording software items in the organization's architecture."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.2.5",
+          "control_name": "Allowlist Authorized Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Allowlist Authorized Software",
+              "class": "TECH",
+              "embedding_context": "Allowlist Authorized Software",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-EAL",
+                    "name": "Executable Allowlisting",
+                    "similarity_score": 0.440097
+                  },
+                  {
+                    "id": "D3-EDL",
+                    "name": "Executable Denylisting",
+                    "similarity_score": 0.390697
+                  },
+                  {
+                    "id": "D3-LFAM",
+                    "name": "Local File Access Mediation",
+                    "similarity_score": 0.322023
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.316713
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.311953
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.309268
+                  },
+                  {
+                    "id": "D3-SCF",
+                    "name": "System Call Filtering",
+                    "similarity_score": 0.309009
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.303652
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.302227
+                  },
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.296525
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.452476
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.44622
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.438887
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.434851
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.431142
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.405959
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.394379
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.393423
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.383994
+                  },
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.38029
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EAL",
+                  "name": "Executable Allowlisting",
+                  "description": "Using a digital signature to authenticate a file before opening.",
+                  "reason": "Executable Allowlisting (D3-EAL) directly enables allowing only authorized software by authenticating files via digital signatures before execution, aligning with the goal's requirement to permit known-good software."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.2.6",
+          "control_name": "Allowlist Authorized Libraries",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Allowlist Authorized Libraries",
+              "class": "PHYS",
+              "embedding_context": "Allowlist Authorized Libraries",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-EAL",
+                    "name": "Executable Allowlisting",
+                    "similarity_score": 0.35771
+                  },
+                  {
+                    "id": "D3-TL",
+                    "name": "Trusted Library",
+                    "similarity_score": 0.322235
+                  },
+                  {
+                    "id": "D3-EDL",
+                    "name": "Executable Denylisting",
+                    "similarity_score": 0.318175
+                  },
+                  {
+                    "id": "D3-LFAM",
+                    "name": "Local File Access Mediation",
+                    "similarity_score": 0.315702
+                  },
+                  {
+                    "id": "D3-LFP",
+                    "name": "Local File Permissions",
+                    "similarity_score": 0.31414
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.279936
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.276106
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.267821
+                  },
+                  {
+                    "id": "D3-UAP",
+                    "name": "User Account Permissions",
+                    "similarity_score": 0.260228
+                  },
+                  {
+                    "id": "D3-OVAR",
+                    "name": "OT Variable Access Restriction",
+                    "similarity_score": 0.246557
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0011",
+                    "name": "Restrict Library Loading",
+                    "similarity_score": 0.401303
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.397647
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.371651
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.347676
+                  },
+                  {
+                    "id": "OWASP.M0025",
+                    "name": "Plugin Scope Control",
+                    "similarity_score": 0.346396
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.332133
+                  },
+                  {
+                    "id": "AML.M0005",
+                    "name": "Control Access to ML Models and Data at Rest",
+                    "similarity_score": 0.316858
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.294914
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.29342
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.275101
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EAL",
+                  "name": "Executable Allowlisting",
+                  "description": "Using a digital signature to authenticate a file before opening.",
+                  "reason": "Executable Allowlisting directly enables allowing only signed, authenticated libraries by filtering untrusted executables, aligning with the goal of restricting library execution to authorized ones."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0011",
+                  "name": "Restrict Library Loading",
+                  "description": "Prevent abuse of library loading mechanisms in the operating system and software to load untrusted code by configuring appropriate library loading mechanisms and investigating potential vulnerable software.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for loading of malicious libraries.",
+                  "reason": "Restrict Library Loading explicitly prevents unauthorized libraries from being loaded by configuring mechanisms, directly supporting the allowlisting of authorized libraries."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.2.7",
+          "control_name": "Allowlist Authorized Scripts",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Allowlist Authorized Scripts",
+              "class": "PHYS",
+              "embedding_context": "Allowlist Authorized Scripts",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-EDL",
+                    "name": "Executable Denylisting",
+                    "similarity_score": 0.371867
+                  },
+                  {
+                    "id": "D3-EAL",
+                    "name": "Executable Allowlisting",
+                    "similarity_score": 0.364277
+                  },
+                  {
+                    "id": "D3-SEA",
+                    "name": "Script Execution Analysis",
+                    "similarity_score": 0.293547
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.288755
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.280345
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.274339
+                  },
+                  {
+                    "id": "D3-LFP",
+                    "name": "Local File Permissions",
+                    "similarity_score": 0.268075
+                  },
+                  {
+                    "id": "D3F-UGPH",
+                    "name": "User Group Permissions",
+                    "similarity_score": 0.25435
+                  },
+                  {
+                    "id": "D3-TL",
+                    "name": "Trusted Library",
+                    "similarity_score": 0.253771
+                  },
+                  {
+                    "id": "D3-OVAR",
+                    "name": "OT Variable Access Restriction",
+                    "similarity_score": 0.253088
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.404945
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.369335
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.367876
+                  },
+                  {
+                    "id": "OWASP.M0024",
+                    "name": "Limit Plugin Functions",
+                    "similarity_score": 0.366889
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.358111
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.354791
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.35096
+                  },
+                  {
+                    "id": "OWASP.M0025",
+                    "name": "Plugin Scope Control",
+                    "similarity_score": 0.33605
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.330253
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.316869
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EAL",
+                  "name": "Executable Allowlisting",
+                  "description": "Using a digital signature to authenticate a file before opening.",
+                  "reason": "Executable Allowlisting directly enables allowing only authorized scripts by authenticating files through digital signatures, aligning with the goal of restricting execution to verified scripts."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

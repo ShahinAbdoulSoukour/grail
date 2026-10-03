@@ -1,0 +1,263 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.5",
+  "clause_name": "Account Management",
+  "goal_name": "Ensure account management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Use processes and tools to assign and manage authorization to credentials for user accounts, including administrator accounts, as well as service accounts, to enterprise assets and software.",
+      "goal_name": "Use processes and tools to assign and manage authorization to credentials for user accounts, including administrator accounts, as well as service accounts, to enterprise assets and software",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.5.1",
+          "control_name": "Establish and Maintain an Inventory of Accounts",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish an Inventory of Accounts",
+              "class": "ORG",
+              "embedding_context": "Establish an Inventory of Accounts",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.434279
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.447867
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain an Inventory of Accounts",
+              "class": "ORG",
+              "embedding_context": "Maintain an Inventory of Accounts",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.427903
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.475925
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.475925
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.5.2",
+          "control_name": "Use Unique Passwords",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Use Unique Passwords",
+              "class": "PHYS",
+              "embedding_context": "Use Unique Passwords",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OTP",
+                "name": "One-time Password",
+                "similarity_score": 0.539884
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0023",
+                "name": "Authentication Identities",
+                "similarity_score": 0.361187
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OTP",
+                  "name": "One-time Password",
+                  "description": "A one-time password is valid for only one user authentication.",
+                  "similarity_score": 0.539884
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PWA",
+                  "name": "Password Authentication",
+                  "description": "Password authentication is a security mechanism used to verify the identity of a user or entity attempting to access a system or resource by requiring the input of a secret string of characters, known as a password, that is associated with the user or entity.",
+                  "similarity_score": 0.494722
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MFA",
+                  "name": "Multi-factor Authentication",
+                  "description": "Requiring proof of two or more pieces of evidence in order to authenticate a user.",
+                  "similarity_score": 0.45223
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.5.3",
+          "control_name": "Disable Dormant Accounts",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Disable Dormant Accounts",
+              "class": "TECH",
+              "embedding_context": "Disable Dormant Accounts",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AL",
+                "name": "Account Locking",
+                "similarity_score": 0.547949
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0004",
+                "name": "Restrict Number of Queries",
+                "similarity_score": 0.241863
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AL",
+                  "name": "Account Locking",
+                  "description": "The process of temporarily disabling user accounts on a system or domain.",
+                  "similarity_score": 0.547949
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.5.4",
+          "control_name": "Restrict Administrator Privileges to Dedicated Administrator Accounts",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Restrict Administrator Privileges to Dedicated Administrator Accounts",
+              "class": "TECH",
+              "embedding_context": "Restrict Administrator Privileges to Dedicated Administrator Accounts",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AL",
+                "name": "Account Locking",
+                "similarity_score": 0.419797
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0001",
+                "name": "Privilege Control",
+                "similarity_score": 0.389588
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.5.5",
+          "control_name": "Establish and Maintain an Inventory of Service Accounts",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Establish an Inventory of Service Accounts",
+              "class": "ORG",
+              "embedding_context": "Establish an Inventory of Service Accounts",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NNI",
+                "name": "Network Node Inventory",
+                "similarity_score": 0.376713
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.43921
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.5.2",
+              "goal_name": "Maintain an Inventory of Service Accounts",
+              "class": "TECH",
+              "embedding_context": "Maintain an Inventory of Service Accounts",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NNI",
+                "name": "Network Node Inventory",
+                "similarity_score": 0.35083
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.453501
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.453501
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.5.6",
+          "control_name": "Centralize Account Management",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Centralize Account Management",
+              "class": "TECH",
+              "embedding_context": "Centralize Account Management",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.37384
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.290321
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.14",
+  "clause_name": "Security Awareness and Skills Training",
+  "goal_name": "Ensure security awareness and skills training",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Establish and maintain a security awareness program to influence behavior among the workforce to be security conscious and properly skilled to reduce cybersecurity risks to the enterprise.",
+      "goal_name": "Establish and maintain a security awareness program to influence behavior among the workforce to be security conscious and properly skilled to reduce cybersecurity risks to the enterprise",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.14.1",
+          "control_name": "Establish and Maintain a Security Awareness Program",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish a Security Awareness Program"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain a Security Awareness Program"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.14.2",
+          "control_name": "Train Workforce Members to Recognize Social Engineering Attacks",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Train Workforce Members to Recognize Social Engineering Attacks"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.14.3",
+          "control_name": "Train Workforce Members on Authentication Best Practices",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Train Workforce Members on Authentication Best Practices"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.14.4",
+          "control_name": "Train Workforce on Data Handling Best Practices",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Train Workforce on Data Handling Best Practices"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.14.5",
+          "control_name": "Train Workforce Members on Causes of Unintentional Data Exposure",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Train Workforce Members on Causes of Unintentional Data Exposure"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.14.6",
+          "control_name": "Train Workforce Members on Recognizing and Reporting Security Incidents",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Train Workforce Members on Recognizing and Reporting Security Incidents"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.14.7",
+          "control_name": "Train Workforce on How to Identify and Report if Their Enterprise Assets are Missing Security Updates",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Train Workforce on How to Identify and Report if Their Enterprise Assets are Missing Security Updates"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.14.8",
+          "control_name": "Train Workforce on the Dangers of Connecting to and Transmitting Enterprise Data Over Insecure Networks",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Train Workforce on the Dangers of Connecting to and Transmitting Enterprise Data Over Insecure Networks"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.14.9",
+          "control_name": "Conduct Role-Specific Security Awareness and Skills Training",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Conduct Role-Specific Security Awareness and Skills Training"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

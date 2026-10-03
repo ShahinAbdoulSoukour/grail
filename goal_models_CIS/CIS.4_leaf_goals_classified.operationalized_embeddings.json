@@ -1,0 +1,538 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.4",
+  "clause_name": "Secure Configuration of Enterprise Assets and Software",
+  "goal_name": "Secure configuration of enterprise assets and software",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Establish and maintain the secure configuration of enterprise assets (end-user devices, including portable and mobile; network devices; non-computing/IoT devices; and servers) and software (operating systems and applications).",
+      "goal_name": "Establish and maintain the secure configuration of enterprise assets and software",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.4.1",
+          "control_name": "Enforce Automatic Device Lockout on Portable End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Enforce Automatic Device Lockout on Portable End-User Devices",
+              "class": "PHYS",
+              "embedding_context": "Enforce Automatic Device Lockout on Portable End-User Devices",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPR",
+                "name": "Operating Mode Restriction",
+                "similarity_score": 0.572141
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0038",
+                "name": "Prevent Manipulation",
+                "similarity_score": 0.415836
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPR",
+                  "name": "Operating Mode Restriction",
+                  "description": "Restricting unauthorized changes to the operating mode prevents devices from switching into inappropriate or vulnerable states during normal use.",
+                  "similarity_score": 0.572141
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-IOPR",
+                  "name": "IO Port Restriction",
+                  "description": "Limiting access to computer input/output (IO) ports to restrict unauthorized devices.",
+                  "similarity_score": 0.526863
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.4.2",
+          "control_name": "Establish and Maintain a Secure Configuration Process for Network Infrastructure",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Secure Configuration Process for Network Infrastructure",
+              "class": "TECH",
+              "embedding_context": "Establish a Secure Configuration Process for Network Infrastructure",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NVA",
+                "name": "Network Vulnerability Assessment",
+                "similarity_score": 0.52572
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0035",
+                "name": "Secure Deployment of Models",
+                "similarity_score": 0.489309
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "similarity_score": 0.52572
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "similarity_score": 0.480432
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NNI",
+                  "name": "Network Node Inventory",
+                  "description": "Network node inventorying identifies and records all the network nodes (hosts, routers, switches, firewalls, etc.) in the organization's architecture.",
+                  "similarity_score": 0.476227
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NTPM",
+                  "name": "Network Traffic Policy Mapping",
+                  "description": "Network traffic policy mapping identifies and models the allowed pathways of data at the network, transport, and/or application levels.",
+                  "similarity_score": 0.466003
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0035",
+                  "name": "Secure Deployment of Models",
+                  "description": "Secure deployment with approval workflows.",
+                  "similarity_score": 0.489309
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0001",
+                  "name": "Employ network segmentation",
+                  "description": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                  "similarity_score": 0.450415
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Secure Configuration Process for Network Infrastructure",
+              "class": "TECH",
+              "embedding_context": "Maintain a Secure Configuration Process for Network Infrastructure",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NVA",
+                "name": "Network Vulnerability Assessment",
+                "similarity_score": 0.488199
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0035",
+                "name": "Secure Deployment of Models",
+                "similarity_score": 0.473501
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "similarity_score": 0.488199
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "similarity_score": 0.479313
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NNI",
+                  "name": "Network Node Inventory",
+                  "description": "Network node inventorying identifies and records all the network nodes (hosts, routers, switches, firewalls, etc.) in the organization's architecture.",
+                  "similarity_score": 0.460688
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0035",
+                  "name": "Secure Deployment of Models",
+                  "description": "Secure deployment with approval workflows.",
+                  "similarity_score": 0.473501
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.4.3",
+          "control_name": "Configure Automatic Session Locking on Enterprise Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Configure Automatic Session Locking on Enterprise Assets",
+              "class": "PHYS",
+              "embedding_context": "Configure Automatic Session Locking on Enterprise Assets",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AL",
+                "name": "Account Locking",
+                "similarity_score": 0.4346
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0011",
+                "name": "Resource Caps",
+                "similarity_score": 0.431271
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.4.4",
+          "control_name": "Implement and Manage a Firewall on Servers",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Implement a Firewall on Servers",
+              "class": "TECH",
+              "embedding_context": "Implement a Firewall on Servers",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-BDI",
+                "name": "Broadcast Domain Isolation",
+                "similarity_score": 0.514342
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0039",
+                "name": "Implement resource isolation techniques",
+                "similarity_score": 0.437063
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-BDI",
+                  "name": "Broadcast Domain Isolation",
+                  "description": "Broadcast isolation restricts the number of computers a host can contact on their LAN.",
+                  "similarity_score": 0.514342
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NTF",
+                  "name": "Network Traffic Filtering",
+                  "description": "Restricting network traffic originating from any location.",
+                  "similarity_score": 0.461293
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Manage a Firewall on Servers",
+              "class": "TECH",
+              "embedding_context": "Manage a Firewall on Servers",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-BDI",
+                "name": "Broadcast Domain Isolation",
+                "similarity_score": 0.409062
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0039",
+                "name": "Implement resource isolation techniques",
+                "similarity_score": 0.340204
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.4.5",
+          "control_name": "Implement and Manage a Firewall on End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Implement a Firewall on End-User Devices",
+              "class": "TECH",
+              "embedding_context": "Implement a Firewall on End-User Devices",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-IOPR",
+                "name": "IO Port Restriction",
+                "similarity_score": 0.469887
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0033",
+                "name": "Network Restrictions",
+                "similarity_score": 0.444128
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-IOPR",
+                  "name": "IO Port Restriction",
+                  "description": "Limiting access to computer input/output (IO) ports to restrict unauthorized devices.",
+                  "similarity_score": 0.469887
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-BDI",
+                  "name": "Broadcast Domain Isolation",
+                  "description": "Broadcast isolation restricts the number of computers a host can contact on their LAN.",
+                  "similarity_score": 0.468682
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.46665
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SCF",
+                  "name": "System Call Filtering",
+                  "description": "Controlling access to local computer system resources with kernel-level capabilities.",
+                  "similarity_score": 0.457838
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.5.2",
+              "goal_name": "Manage a Firewall on End-User Devices",
+              "class": "TECH",
+              "embedding_context": "Manage a Firewall on End-User Devices",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NRAM",
+                "name": "Network Resource Access Mediation",
+                "similarity_score": 0.440453
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0033",
+                "name": "Network Restrictions",
+                "similarity_score": 0.399148
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.4.6",
+          "control_name": "Securely Manage Enterprise Assets and Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Securely Manage Enterprise Assets and Software",
+              "class": "TECH",
+              "embedding_context": "Securely Manage Enterprise Assets and Software",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RFAM",
+                "name": "Remote File Access Mediation",
+                "similarity_score": 0.444758
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0035",
+                "name": "Secure Deployment of Models",
+                "similarity_score": 0.46464
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0035",
+                  "name": "Secure Deployment of Models",
+                  "description": "Secure deployment with approval workflows.",
+                  "similarity_score": 0.46464
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.457142
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.4.7",
+          "control_name": "Manage Default Accounts on Enterprise Assets and Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Manage Default Accounts on Enterprise Assets and Software",
+              "class": "TECH",
+              "embedding_context": "Manage Default Accounts on Enterprise Assets and Software",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.354745
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0023",
+                "name": "Authentication Identities",
+                "similarity_score": 0.31235
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.4.8",
+          "control_name": "Uninstall or Disable Unnecessary Services on Enterprise Assets and Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Uninstall Unnecessary Services on Enterprise Assets and Software",
+              "class": "TECH",
+              "embedding_context": "Uninstall Unnecessary Services on Enterprise Assets and Software",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RKD",
+                "name": "Registry Key Deletion",
+                "similarity_score": 0.318878
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0024",
+                "name": "Limit Plugin Functions",
+                "similarity_score": 0.250698
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.8.2",
+              "goal_name": "Disable Unnecessary Services on Enterprise Assets and Software",
+              "class": "TECH",
+              "embedding_context": "Disable Unnecessary Services on Enterprise Assets and Software",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SCF",
+                "name": "System Call Filtering",
+                "similarity_score": 0.35621
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0024",
+                "name": "Limit Plugin Functions",
+                "similarity_score": 0.361588
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.4.9",
+          "control_name": "Configure Trusted DNS Servers on Enterprise Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Configure Trusted DNS Servers on Enterprise Assets",
+              "class": "ORG",
+              "embedding_context": "Configure Trusted DNS Servers on Enterprise Assets",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DNSAL",
+                "name": "DNS Allowlisting",
+                "similarity_score": 0.390096
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0007",
+                "name": "Supply Chain Verification",
+                "similarity_score": 0.277821
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "CIS.4.11",
+          "control_name": "Enforce Remote Wipe Capability on Portable End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Enforce Remote Wipe Capability on Portable End-User Devices",
+              "class": "TECH",
+              "embedding_context": "Enforce Remote Wipe Capability on Portable End-User Devices",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-IOPR",
+                "name": "IO Port Restriction",
+                "similarity_score": 0.44529
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0032",
+                "name": "Utilize integrity controls in hardware",
+                "similarity_score": 0.346563
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "CIS.4.12",
+          "control_name": "Separate Enterprise Workspaces on Mobile End-User Devices",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Separate Enterprise Workspaces on Mobile End-User Devices",
+              "class": "PHYS",
+              "embedding_context": "Separate Enterprise Workspaces on Mobile End-User Devices",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NRAM",
+                "name": "Network Resource Access Mediation",
+                "similarity_score": 0.231196
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0033",
+                "name": "Network Restrictions",
+                "similarity_score": 0.245614
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

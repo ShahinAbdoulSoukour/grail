@@ -1,0 +1,237 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.3",
+  "clause_name": "Roles and responsibilities for AI",
+  "goal_name": "Ensure roles and responsibilities for AI",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Roles and responsibilities for AI shall be defined and assigned.",
+      "goal_name": "Define roles and responsibilities for AI and Assign roles and responsibilities for AI",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.3.2",
+          "control_name": "Roles and responsibilities for AI shall be defined and assigned.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Define roles and responsibilities for AI",
+              "class": "ORG",
+              "embedding_context": "Define roles and responsibilities for AI",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.335217
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0040",
+                "name": "Deploy advanced verification mechanisms",
+                "similarity_score": 0.436389
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Assign roles and responsibilities for AI",
+              "class": "ORG",
+              "embedding_context": "Assign roles and responsibilities for AI",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.32948
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0028",
+                "name": "human-in-the-Loop",
+                "similarity_score": 0.452204
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "similarity_score": 0.452204
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.3.3",
+          "control_name": "AI issues shall be reported, escalated, and addressed.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Report AI issues",
+              "class": "ORG",
+              "embedding_context": "Report AI issues",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.302511
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0016",
+                "name": "Vulnerability Scanning",
+                "similarity_score": 0.465805
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "similarity_score": 0.465805
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.451608
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Escalate AI issues",
+              "class": "TECH",
+              "embedding_context": "Escalate AI issues",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AA",
+                "name": "Agent Authentication",
+                "similarity_score": 0.30157
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0020",
+                "name": "Fine-Tuning Caution",
+                "similarity_score": 0.478415
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.478415
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "similarity_score": 0.465841
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0025",
+                  "name": "Model retraining",
+                  "description": "Regularly retraining the model can help to prevent the information leaked by model inversion attacks from becoming outdated. This can be done by incorporating new data and correcting any inaccuracies in the model’s predictions.",
+                  "similarity_score": 0.453257
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Address AI issues",
+              "class": "ORG",
+              "embedding_context": "Address AI issues",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AA",
+                "name": "Agent Authentication",
+                "similarity_score": 0.315884
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0040",
+                "name": "Deploy advanced verification mechanisms",
+                "similarity_score": 0.504279
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "similarity_score": 0.504279
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0025",
+                  "name": "Model retraining",
+                  "description": "Regularly retraining the model can help to prevent the information leaked by model inversion attacks from becoming outdated. This can be done by incorporating new data and correcting any inaccuracies in the model’s predictions.",
+                  "similarity_score": 0.485713
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.483807
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0034",
+                  "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                  "description": "",
+                  "similarity_score": 0.483434
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0007",
+                  "name": "Sanitize Training Data",
+                  "description": "Detect and remove or remediate poisoned training data. Training data should be sanitized prior to model training and recurrently for an active learning model.\nImplement a filter to limit ingested training data. Establish a content policy that would remove unwanted content such as certain explicit or offensive language from being used.",
+                  "similarity_score": 0.483074
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.3.4",
+          "control_name": "Responsibilities toward affected interested parties shall be defined.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Define responsibilities toward affected interested parties",
+              "class": "ORG",
+              "embedding_context": "Define responsibilities toward affected interested parties",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ODM",
+                "name": "Operational Dependency Mapping",
+                "similarity_score": 0.321236
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0036",
+                "name": "Principle of least privilege",
+                "similarity_score": 0.293959
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

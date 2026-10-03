@@ -1,0 +1,265 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.11",
+  "clause_name": "Data Recovery",
+  "goal_name": "Ensure data recovery",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Establish and maintain data recovery practices sufficient to restore in-scope enterprise assets to a pre-incident and trusted state.",
+      "goal_name": "Establish and maintain data recovery practices sufficient to restore in-scope enterprise assets to a pre-incident and trusted state",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.11.1",
+          "control_name": "Establish and Maintain a Data Recovery Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish a Data Recovery Process",
+              "class": "ORG",
+              "embedding_context": "Establish a Data Recovery Process",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RDI",
+                "name": "Restore Disk Image",
+                "similarity_score": 0.492645
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0021",
+                "name": "Regular backups",
+                "similarity_score": 0.328538
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RDI",
+                  "name": "Restore Disk Image",
+                  "description": "Restoring a previously captured disk image a hard drive.",
+                  "similarity_score": 0.492645
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RD",
+                  "name": "Restore Database",
+                  "description": "Restoring the data in a database.",
+                  "similarity_score": 0.476928
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain a Data Recovery Process",
+              "class": "TECH",
+              "embedding_context": "Maintain a Data Recovery Process",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RDI",
+                "name": "Restore Disk Image",
+                "similarity_score": 0.474797
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0021",
+                "name": "Regular backups",
+                "similarity_score": 0.371032
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RDI",
+                  "name": "Restore Disk Image",
+                  "description": "Restoring a previously captured disk image a hard drive.",
+                  "similarity_score": 0.474797
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.11.2",
+          "control_name": "Perform Automated Backups",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Perform Automated Backups",
+              "class": "TECH",
+              "embedding_context": "Perform Automated Backups",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SJA",
+                "name": "Scheduled Job Analysis",
+                "similarity_score": 0.336716
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0021",
+                "name": "Regular backups",
+                "similarity_score": 0.492942
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "similarity_score": 0.492942
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.11.3",
+          "control_name": "Protect Recovery Data",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Protect Recovery Data",
+              "class": "TECH",
+              "embedding_context": "Protect Recovery Data",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DENCR",
+                "name": "Disk Encryption",
+                "similarity_score": 0.489645
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0021",
+                "name": "Regular backups",
+                "similarity_score": 0.485861
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DENCR",
+                  "name": "Disk Encryption",
+                  "description": "Encrypting a hard disk partition to prevent cleartext access to a file system.",
+                  "similarity_score": 0.489645
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DKE",
+                  "name": "Disk Erasure",
+                  "description": "Disk Erasure is the process of securely deleting all data on a disk to ensure that it cannot be recovered by any means.",
+                  "similarity_score": 0.466425
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RDI",
+                  "name": "Restore Disk Image",
+                  "description": "Restoring a previously captured disk image a hard drive.",
+                  "similarity_score": 0.458118
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "similarity_score": 0.485861
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0035",
+                  "name": "Protection from Reverse Engineering",
+                  "description": "Protect against reverse engineering by using obfuscation techniques, encryption of sensitive hardware components, and applying intellectual property protection measures to prevent the exploitation of vulnerabilities and unauthorized copying.",
+                  "similarity_score": 0.45421
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.11.4",
+          "control_name": "Establish and Maintain an Isolated Instance of Recovery Data",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish an Isolated Instance of Recovery Data",
+              "class": "TECH",
+              "embedding_context": "Establish an Isolated Instance of Recovery Data",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RDI",
+                "name": "Restore Disk Image",
+                "similarity_score": 0.418114
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0021",
+                "name": "Regular backups",
+                "similarity_score": 0.376342
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Maintain an Isolated Instance of Recovery Data",
+              "class": "TECH",
+              "embedding_context": "Maintain an Isolated Instance of Recovery Data",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RDI",
+                "name": "Restore Disk Image",
+                "similarity_score": 0.392804
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0021",
+                "name": "Regular backups",
+                "similarity_score": 0.436094
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.11.5",
+          "control_name": "Test Data Recovery",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Test Data Recovery",
+              "class": "TECH",
+              "embedding_context": "Test Data Recovery",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RDI",
+                "name": "Restore Disk Image",
+                "similarity_score": 0.450904
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0010",
+                "name": "Input Data Restoration",
+                "similarity_score": 0.257484
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RDI",
+                  "name": "Restore Disk Image",
+                  "description": "Restoring a previously captured disk image a hard drive.",
+                  "similarity_score": 0.450904
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

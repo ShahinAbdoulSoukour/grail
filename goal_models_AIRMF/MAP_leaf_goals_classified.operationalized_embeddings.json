@@ -1,0 +1,988 @@
+{
+  "goal_id": "G0",
+  "clause_id": "MAP",
+  "clause_name": "Map AI Systems and Risks",
+  "goal_name": "Map AI systems and risks",
+  "airmf_function": "MAP",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To establish a clear understanding of AI systems, their context, impacts, and risks.",
+      "goal_name": "Establish a clear understanding of AI systems, their context, impacts, and risks",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "MAP 1.1",
+          "control_name": "Intended purposes, beneficial uses, context-specific laws, norms, and expectations are understood and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Understand intended purposes, beneficial uses, context-specific laws, norms, and expectations",
+              "class": "ORG",
+              "embedding_context": "Understand intended purposes, beneficial uses, context-specific laws, norms, and expectations",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OM",
+                "name": "Organization Mapping",
+                "similarity_score": 0.364809
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.340125
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document intended purposes, beneficial uses, context-specific laws, norms, and expectations",
+              "class": "ORG",
+              "embedding_context": "Document intended purposes, beneficial uses, context-specific laws, norms, and expectations",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.312427
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.280973
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "MAP 1.2",
+          "control_name": "Interdisciplinary AI actors, competencies, and participation reflect diversity and expertise.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Ensure interdisciplinary AI actors, competencies, and participation reflect diversity and expertise",
+              "class": "ORG",
+              "embedding_context": "Ensure interdisciplinary AI actors, competencies, and participation reflect diversity and expertise",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OM",
+                "name": "Organization Mapping",
+                "similarity_score": 0.248688
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.390624
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "MAP 1.3",
+          "control_name": "The organization mission and relevant goals for AI technology are understood and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Understand the organization mission and relevant goals for AI technology",
+              "class": "ORG",
+              "embedding_context": "Understand the organization mission and relevant goals for AI technology",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OM",
+                "name": "Organization Mapping",
+                "similarity_score": 0.352806
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.504183
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.504183
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Document the organization mission and relevant goals for AI technology",
+              "class": "ORG",
+              "embedding_context": "Document the organization mission and relevant goals for AI technology",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OM",
+                "name": "Organization Mapping",
+                "similarity_score": 0.341458
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.519419
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.519419
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "MAP 1.4",
+          "control_name": "The business value or context of business use has been clearly defined or re-evaluated.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Define the business value or context of business use",
+              "class": "ORG",
+              "embedding_context": "Define the business value or context of business use",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.321194
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.234552
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Re-evaluate the business value or context of business use",
+              "class": "ORG",
+              "embedding_context": "Re-evaluate the business value or context of business use",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.276029
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.232763
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "MAP 1.5",
+          "control_name": "Organizational risk tolerances are determined and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Determine organizational risk tolerances",
+              "class": "ORG",
+              "embedding_context": "Determine organizational risk tolerances",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.416184
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.234774
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.5.2",
+              "goal_name": "Document organizational risk tolerances",
+              "class": "ORG",
+              "embedding_context": "Document organizational risk tolerances",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AVE",
+                "name": "Asset Vulnerability Enumeration",
+                "similarity_score": 0.348567
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.317587
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "MAP 1.6",
+          "control_name": "System requirements are elicited and socio-technical implications are considered.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Elicit system requirements and socio-technical implications are considered",
+              "class": "ORG",
+              "embedding_context": "Elicit system requirements and socio-technical implications are considered",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.284153
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0002",
+                "name": "Human Approval",
+                "similarity_score": 0.361034
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "MAP 2.1",
+          "control_name": "The specific tasks and methods used to implement the tasks the AI system will support are defined.",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Define the specific tasks and methods used to implement the tasks the AI system will support",
+              "class": "TECH",
+              "embedding_context": "Define the specific tasks and methods used to implement the tasks the AI system will support",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-IAA",
+                "name": "Identifier Activity Analysis",
+                "similarity_score": 0.351768
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.489685
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.489685
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "similarity_score": 0.483577
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "similarity_score": 0.472533
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0003",
+                  "name": "End-to-end encryption",
+                  "description": "Implement end-to-end encryption (e.g., TLS, HTTPS) to protect the integrity and confidentiality of communications between AI systems.",
+                  "similarity_score": 0.450921
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0010",
+                  "name": "Input validation",
+                  "description": "Implement input validation and content filtering",
+                  "similarity_score": 0.450804
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "MAP 2.2",
+          "control_name": "Information about knowledge limits and human oversight of the AI system is documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Document information about knowledge limits and human oversight of the AI system",
+              "class": "ORG",
+              "embedding_context": "Document information about knowledge limits and human oversight of the AI system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AA",
+                "name": "Agent Authentication",
+                "similarity_score": 0.295235
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.599372
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.599372
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "similarity_score": 0.498568
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.48584
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "similarity_score": 0.480782
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.473787
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "MAP 2.3",
+          "control_name": "Scientific integrity and TEVV considerations are identified and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Identify scientific integrity and TEVV considerations",
+              "class": "ORG",
+              "embedding_context": "Identify scientific integrity and TEVV considerations",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FMCV",
+                "name": "File Metadata Consistency Validation",
+                "similarity_score": 0.358617
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0008",
+                "name": "Legitimacy Verification",
+                "similarity_score": 0.40001
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.9.2",
+              "goal_name": "Document scientific integrity and TEVV considerations",
+              "class": "ORG",
+              "embedding_context": "Document scientific integrity and TEVV considerations",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FMCV",
+                "name": "File Metadata Consistency Validation",
+                "similarity_score": 0.373606
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0008",
+                "name": "Legitimacy Verification",
+                "similarity_score": 0.387715
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "MAP 3.1",
+          "control_name": "Potential benefits of intended AI system functionality and performance are examined and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Examine potential benefits of intended AI system functionality and performance",
+              "class": "ORG",
+              "embedding_context": "Examine potential benefits of intended AI system functionality and performance",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.306507
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.441845
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.10.2",
+              "goal_name": "Document potential benefits of intended AI system functionality and performance",
+              "class": "ORG",
+              "embedding_context": "Document potential benefits of intended AI system functionality and performance",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.307065
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.516237
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.516237
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.464776
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "MAP 3.2",
+          "control_name": "Potential costs from expected or realized AI errors or functionality are examined and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Examine potential costs from expected or realized AI errors or functionality",
+              "class": "ORG",
+              "embedding_context": "Examine potential costs from expected or realized AI errors or functionality",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.289823
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0034",
+                "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                "similarity_score": 0.421359
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.11.2",
+              "goal_name": "Document potential costs from expected or realized AI errors or functionality",
+              "class": "ORG",
+              "embedding_context": "Document potential costs from expected or realized AI errors or functionality",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AVE",
+                "name": "Asset Vulnerability Enumeration",
+                "similarity_score": 0.282088
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.444708
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.12",
+          "control_id": "MAP 3.3",
+          "control_name": "Targeted application scope is specified and documented based on system capability and context.",
+          "subgoals": [
+            {
+              "goal_id": "G1.12.1",
+              "goal_name": "Specify targeted application scope",
+              "class": "TECH",
+              "embedding_context": "Specify targeted application scope",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ABPI",
+                "name": "Application-based Process Isolation",
+                "similarity_score": 0.371041
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0025",
+                "name": "Plugin Scope Control",
+                "similarity_score": 0.424734
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.12.2",
+              "goal_name": "Document targeted application scope based on system capability and context",
+              "class": "ORG",
+              "embedding_context": "Document targeted application scope based on system capability and context",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ODM",
+                "name": "Operational Dependency Mapping",
+                "similarity_score": 0.308044
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.344902
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.13",
+          "control_id": "MAP 3.4",
+          "control_name": "Processes for operator and practitioner proficiency are defined, assessed, and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.13.1",
+              "goal_name": "Define processes for operator and practitioner proficiency",
+              "class": "ORG",
+              "embedding_context": "Define processes for operator and practitioner proficiency",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OAM",
+                "name": "Operational Activity Mapping",
+                "similarity_score": 0.30073
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.25713
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.13.2",
+              "goal_name": "Assess processes for operator and practitioner proficiency",
+              "class": "ORG",
+              "embedding_context": "Assess processes for operator and practitioner proficiency",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.264423
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.21678
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.13.3",
+              "goal_name": "Document processes for operator and practitioner proficiency",
+              "class": "ORG",
+              "embedding_context": "Document processes for operator and practitioner proficiency",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OM",
+                "name": "Organization Mapping",
+                "similarity_score": 0.284252
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.220504
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.14",
+          "control_id": "MAP 3.5",
+          "control_name": "Processes for human oversight are defined, assessed, and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.14.1",
+              "goal_name": "Define processes for human oversight",
+              "class": "ORG",
+              "embedding_context": "Define processes for human oversight",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.476392
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0028",
+                "name": "human-in-the-Loop",
+                "similarity_score": 0.443114
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "similarity_score": 0.476392
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.14.2",
+              "goal_name": "Assess processes for human oversight",
+              "class": "ORG",
+              "embedding_context": "Assess processes for human oversight",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.431835
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0028",
+                "name": "human-in-the-Loop",
+                "similarity_score": 0.381807
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.14.3",
+              "goal_name": "Document processes for human oversight",
+              "class": "ORG",
+              "embedding_context": "Document processes for human oversight",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OM",
+                "name": "Organization Mapping",
+                "similarity_score": 0.359265
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0002",
+                "name": "Human Approval",
+                "similarity_score": 0.385468
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.15",
+          "control_id": "MAP 4.1",
+          "control_name": "Approaches for mapping AI technology and legal risks of components, including third-party data or software, are documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.15.1",
+              "goal_name": "Document approaches for mapping AI technology and legal risks of components, including third-party data or software,",
+              "class": "ORG",
+              "embedding_context": "Document approaches for mapping AI technology and legal risks of components, including third-party data or software,",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OM",
+                "name": "Organization Mapping",
+                "similarity_score": 0.405955
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.641494
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.641494
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.53771
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "similarity_score": 0.529261
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0017",
+                  "name": "Model Distribution Methods",
+                  "description": "Deploying ML models to edge devices can increase the attack surface of the system. Consider serving models in the cloud to reduce the level of access the adversary has to the model. Also consider computing features in the cloud to prevent gray-box attacks, where an adversary has access to the model preprocessing methods.",
+                  "similarity_score": 0.515688
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.512745
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.16",
+          "control_id": "MAP 4.2",
+          "control_name": "Internal risk controls for components of the AI system, including third-party AI technologies, are identified and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.16.1",
+              "goal_name": "Identify internal risk controls for components of the AI system, including third-party AI technologies,",
+              "class": "ORG",
+              "embedding_context": "Identify internal risk controls for components of the AI system, including third-party AI technologies,",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.482848
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.590448
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.482848
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.590448
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.583092
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0031",
+                  "name": "Implement Security Control during hardware manufacturing",
+                  "description": "Implement strict security controls and auditing processes during the manufacturing phase, including secure supply chain practices and hardware verification methods, to prevent unauthorized modifications to hardware components or firmware.",
+                  "similarity_score": 0.575705
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0034",
+                  "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                  "description": "",
+                  "similarity_score": 0.567093
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "similarity_score": 0.556697
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.16.2",
+              "goal_name": "Document internal risk controls for components of the AI system, including third-party AI technologies,",
+              "class": "ORG",
+              "embedding_context": "Document internal risk controls for components of the AI system, including third-party AI technologies,",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.44574
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.625352
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.625352
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.608114
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0031",
+                  "name": "Implement Security Control during hardware manufacturing",
+                  "description": "Implement strict security controls and auditing processes during the manufacturing phase, including secure supply chain practices and hardware verification methods, to prevent unauthorized modifications to hardware components or firmware.",
+                  "similarity_score": 0.576475
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "similarity_score": 0.571858
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "similarity_score": 0.557553
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.17",
+          "control_id": "MAP 5.1",
+          "control_name": "Likelihood and magnitude of each identified impact are documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.17.1",
+              "goal_name": "Document likelihood and magnitude of each identified impact",
+              "class": "ORG",
+              "embedding_context": "Document likelihood and magnitude of each identified impact",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FHRA",
+                "name": "File Hash Reputation Analysis",
+                "similarity_score": 0.360809
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0034",
+                "name": "Monitoring of access logs",
+                "similarity_score": 0.238144
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.18",
+          "control_id": "MAP 5.2",
+          "control_name": "Practices and personnel for supporting regular engagement with relevant AI actors and feedback are in place.",
+          "subgoals": [
+            {
+              "goal_id": "G1.18.1",
+              "goal_name": "Ensure practices and personnel for supporting regular engagement with relevant AI actors and feedback are in place",
+              "class": "ORG",
+              "embedding_context": "Ensure practices and personnel for supporting regular engagement with relevant AI actors and feedback are in place",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AA",
+                "name": "Agent Authentication",
+                "similarity_score": 0.312578
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0028",
+                "name": "human-in-the-Loop",
+                "similarity_score": 0.426505
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.7.3",
+  "clause_name": "Termination and change of employment",
+  "goal_name": "Manage termination and change of employment",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To protect the organization's interests as part of the process of changing or terminating employment.",
+      "goal_name": "Protect the organization's interests as part of the process of changing or terminating employment",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.7.3.1",
+          "control_name": "Information security responsibilities and duties that remain valid after termination or change of employment shall be defined, communicated to the employee or contractor and enforced.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Define information security responsibilities and duties that remain valid after termination or change of employment",
+              "class": "ORG",
+              "embedding_context": "Define information security responsibilities and duties that remain valid after termination or change of employment",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.356249
+                  },
+                  {
+                    "id": "D3-ULA",
+                    "name": "Unlock Account",
+                    "similarity_score": 0.310673
+                  },
+                  {
+                    "id": "D3-CERO",
+                    "name": "Certificate Rotation",
+                    "similarity_score": 0.310401
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.303409
+                  },
+                  {
+                    "id": "D3-PR",
+                    "name": "Password Rotation",
+                    "similarity_score": 0.291817
+                  },
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.28912
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.288407
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.281845
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.28129
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.278524
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.360714
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.335369
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.323592
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.316747
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.312166
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.309347
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.302818
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.297597
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.294306
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.293762
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access Modeling captures access permissions and identities, ensuring responsibilities are documented and enforced even after employment changes."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "reason": "Enforces least privilege to ensure minimal access rights remain valid post-termination, aligning with defined security responsibilities."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "reason": "Limits permissions to the minimum required, ensuring ongoing compliance with security responsibilities after employment status changes."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Communicate information security responsibilities and duties that remain valid after termination or change of employment to the employee or contractor",
+              "class": "ORG",
+              "embedding_context": "Communicate information security responsibilities and duties that remain valid after termination or change of employment to the employee or contractor",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.329106
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.27962
+                  },
+                  {
+                    "id": "D3-RIC",
+                    "name": "Reissue Credential",
+                    "similarity_score": 0.279607
+                  },
+                  {
+                    "id": "D3-CERO",
+                    "name": "Certificate Rotation",
+                    "similarity_score": 0.274813
+                  },
+                  {
+                    "id": "D3-ULA",
+                    "name": "Unlock Account",
+                    "similarity_score": 0.270839
+                  },
+                  {
+                    "id": "D3-CI",
+                    "name": "Configuration Inventory",
+                    "similarity_score": 0.262508
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.249392
+                  },
+                  {
+                    "id": "D3-RE",
+                    "name": "Restore Email",
+                    "similarity_score": 0.248705
+                  },
+                  {
+                    "id": "D3-PR",
+                    "name": "Password Rotation",
+                    "similarity_score": 0.241299
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.24126
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.340969
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.317412
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.315386
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.307884
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.306273
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.304648
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.302964
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.298293
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.298018
+                  },
+                  {
+                    "id": "OWASP.M0032",
+                    "name": "Secure Coding",
+                    "similarity_score": 0.297034
+                  }
+                ]
+              },
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Enforce information security responsibilities and duties that remain valid after termination or change of employment",
+              "class": "ORG",
+              "embedding_context": "Enforce information security responsibilities and duties that remain valid after termination or change of employment",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.344003
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.343185
+                  },
+                  {
+                    "id": "D3-AL",
+                    "name": "Account Locking",
+                    "similarity_score": 0.310309
+                  },
+                  {
+                    "id": "D3-RIC",
+                    "name": "Reissue Credential",
+                    "similarity_score": 0.309155
+                  },
+                  {
+                    "id": "D3-CERO",
+                    "name": "Certificate Rotation",
+                    "similarity_score": 0.302613
+                  },
+                  {
+                    "id": "D3-ULA",
+                    "name": "Unlock Account",
+                    "similarity_score": 0.301627
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.301427
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.29394
+                  },
+                  {
+                    "id": "D3-AMED",
+                    "name": "Access Mediation",
+                    "similarity_score": 0.29171
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.290505
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.366529
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.343193
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.340383
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.333294
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.332243
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.332091
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.331094
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.330991
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.32327
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.315867
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AL",
+                  "name": "Account Locking",
+                  "description": "The process of temporarily disabling user accounts on a system or domain.",
+                  "reason": "Disables user accounts upon termination to immediately revoke access and enforce security responsibilities."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DAM",
+                  "name": "Domain Account Monitoring",
+                  "description": "Monitoring the existence of or changes to Domain User Accounts.",
+                  "reason": "Monitors domain user accounts to detect and address lingering access post-termination, ensuring ongoing compliance with security duties."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

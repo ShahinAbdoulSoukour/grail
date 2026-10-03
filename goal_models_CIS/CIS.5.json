@@ -1,0 +1,89 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.5",
+  "clause_name": "Account Management",
+  "goal_name": "Ensure account management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Use processes and tools to assign and manage authorization to credentials for user accounts, including administrator accounts, as well as service accounts, to enterprise assets and software.",
+      "goal_name": "Use processes and tools to assign and manage authorization to credentials for user accounts, including administrator accounts, as well as service accounts, to enterprise assets and software",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.5.1",
+          "control_name": "Establish and Maintain an Inventory of Accounts",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish an Inventory of Accounts"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain an Inventory of Accounts"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.5.2",
+          "control_name": "Use Unique Passwords",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Use Unique Passwords"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.5.3",
+          "control_name": "Disable Dormant Accounts",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Disable Dormant Accounts"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.5.4",
+          "control_name": "Restrict Administrator Privileges to Dedicated Administrator Accounts",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Restrict Administrator Privileges to Dedicated Administrator Accounts"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.5.5",
+          "control_name": "Establish and Maintain an Inventory of Service Accounts",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Establish an Inventory of Service Accounts"
+            },
+            {
+              "goal_id": "G1.5.2",
+              "goal_name": "Maintain an Inventory of Service Accounts"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.5.6",
+          "control_name": "Centralize Account Management",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Centralize Account Management"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

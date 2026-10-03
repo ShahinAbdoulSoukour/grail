@@ -1,0 +1,1465 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.8",
+  "clause_name": "Audit Log Management",
+  "goal_name": "Audit log management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Collect, alert, review, and retain audit logs of events that could help detect, understand, or recover from an attack.",
+      "goal_name": "Collect, alert, review, and retain audit logs of events that could help detect, understand, or recover from an attack",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.8.1",
+          "control_name": "Retain Audit Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Retain Audit Logs",
+              "class": "TECH",
+              "embedding_context": "Retain Audit Logs",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.287374
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.211561
+                  },
+                  {
+                    "id": "D3-RE",
+                    "name": "Restore Email",
+                    "similarity_score": 0.209246
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.183444
+                  },
+                  {
+                    "id": "D3-RF",
+                    "name": "Restore File",
+                    "similarity_score": 0.169207
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.166781
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.166781
+                  },
+                  {
+                    "id": "D3-VS",
+                    "name": "Video Surveillance",
+                    "similarity_score": 0.166129
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.164388
+                  },
+                  {
+                    "id": "D3-USICA",
+                    "name": "User Session Init Config Analysis",
+                    "similarity_score": 0.157097
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.339192
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.256507
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.227068
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.219141
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.161869
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.148192
+                  },
+                  {
+                    "id": "OWASP.M0030",
+                    "name": "Review Model Output",
+                    "similarity_score": 0.135207
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.120931
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.119183
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Hardware fault-tolerant architectures",
+                    "similarity_score": 0.1095
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "reason": "Regular backups ensure audit logs are retained by creating copies that can be restored if original logs are deleted or corrupted."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.8.2",
+          "control_name": "Collect Audit Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Collect Audit Logs",
+              "class": "TECH",
+              "embedding_context": "Collect Audit Logs",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.356189
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.290823
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.277557
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.240414
+                  },
+                  {
+                    "id": "D3-FIM",
+                    "name": "File Integrity Monitoring",
+                    "similarity_score": 0.235377
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.232359
+                  },
+                  {
+                    "id": "D3-VS",
+                    "name": "Video Surveillance",
+                    "similarity_score": 0.229841
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.227486
+                  },
+                  {
+                    "id": "D3-USICA",
+                    "name": "User Session Init Config Analysis",
+                    "similarity_score": 0.2262
+                  },
+                  {
+                    "id": "D3-FCA",
+                    "name": "File Creation Analysis",
+                    "similarity_score": 0.218251
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.41144
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.278949
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.245856
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.225049
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.207424
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.1808
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.177534
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.15917
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.158258
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.157766
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "reason": "Operational Process Monitoring directly collects event logs, which are a core component of audit logs."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "reason": "Monitoring of access logs explicitly aligns with the goal of collecting audit logs."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.8.3",
+          "control_name": "Ensure Adequate Audit Log Storage",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Ensure Adequate Audit Log Storage",
+              "class": "TECH",
+              "embedding_context": "Ensure Adequate Audit Log Storage",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.349718
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.271076
+                  },
+                  {
+                    "id": "D3-DI",
+                    "name": "Data Inventory",
+                    "similarity_score": 0.268764
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.244307
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.23931
+                  },
+                  {
+                    "id": "D3-FIM",
+                    "name": "File Integrity Monitoring",
+                    "similarity_score": 0.239268
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.232258
+                  },
+                  {
+                    "id": "D3-SFA",
+                    "name": "System File Analysis",
+                    "similarity_score": 0.22925
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.226584
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.220158
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.397951
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.348035
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.322871
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.292431
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.287739
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.264537
+                  },
+                  {
+                    "id": "OWASP.M0030",
+                    "name": "Review Model Output",
+                    "similarity_score": 0.215344
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.207858
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.202145
+                  },
+                  {
+                    "id": "AML.M0034",
+                    "name": "Hardware fault-tolerant architectures",
+                    "similarity_score": 0.20101
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "reason": "Regular backups ensure audit logs are stored securely and can be recovered, directly supporting adequate storage."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "reason": "Monitoring access logs ensures audit logs are actively captured and stored, fulfilling the requirement for adequate storage."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.8.4",
+          "control_name": "Standardize Time Synchronization",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Standardize Time Synchronization",
+              "class": "TECH",
+              "embedding_context": "Standardize Time Synchronization",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.234733
+                  },
+                  {
+                    "id": "D3-PUM",
+                    "name": "Platform Uptime Monitoring",
+                    "similarity_score": 0.173712
+                  },
+                  {
+                    "id": "D3-SCP",
+                    "name": "System Configuration Permissions",
+                    "similarity_score": 0.164038
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.162314
+                  },
+                  {
+                    "id": "D3-OVAR",
+                    "name": "OT Variable Access Restriction",
+                    "similarity_score": 0.161418
+                  },
+                  {
+                    "id": "D3-TBI",
+                    "name": "TPM Boot Integrity",
+                    "similarity_score": 0.157554
+                  },
+                  {
+                    "id": "D3-DEM",
+                    "name": "Data Exchange Mapping",
+                    "similarity_score": 0.150825
+                  },
+                  {
+                    "id": "D3-OTP",
+                    "name": "One-time Password",
+                    "similarity_score": 0.139174
+                  },
+                  {
+                    "id": "D3-OLV",
+                    "name": "Operational Logic Validation",
+                    "similarity_score": 0.137539
+                  },
+                  {
+                    "id": "D3-SFCV",
+                    "name": "Stack Frame Canary Validation",
+                    "similarity_score": 0.137331
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.153726
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.146413
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.142294
+                  },
+                  {
+                    "id": "OWASP.M0012",
+                    "name": "API Rate Limits",
+                    "similarity_score": 0.12654
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.124407
+                  },
+                  {
+                    "id": "CAPEC.M0003",
+                    "name": "End-to-end encryption",
+                    "similarity_score": 0.122971
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.117627
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.112441
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.107882
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.104026
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OVAR",
+                  "name": "OT Variable Access Restriction",
+                  "description": "Assign read/write access controls on designated registers or data tags to prevent unauthorized writes.",
+                  "reason": "Restricting access to OT variables (e.g., time-related registers/data tags) prevents unauthorized modifications that could disrupt standardized time synchronization across systems."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.8.5",
+          "control_name": "Collect Detailed Audit Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Collect Detailed Audit Logs",
+              "class": "TECH",
+              "embedding_context": "Collect Detailed Audit Logs",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.363588
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.291395
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.280021
+                  },
+                  {
+                    "id": "D3-USICA",
+                    "name": "User Session Init Config Analysis",
+                    "similarity_score": 0.246359
+                  },
+                  {
+                    "id": "D3-PLA",
+                    "name": "Process Lineage Analysis",
+                    "similarity_score": 0.246009
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.241382
+                  },
+                  {
+                    "id": "D3-FCA",
+                    "name": "File Creation Analysis",
+                    "similarity_score": 0.24129
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.236694
+                  },
+                  {
+                    "id": "D3-VS",
+                    "name": "Video Surveillance",
+                    "similarity_score": 0.224036
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.223694
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.412951
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.278428
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.2463
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.222357
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.215748
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.199225
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.177466
+                  },
+                  {
+                    "id": "OWASP.M0030",
+                    "name": "Review Model Output",
+                    "similarity_score": 0.166956
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.166668
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.164765
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "reason": "Operational Process Monitoring collects Event Log and OT Process Data Historian artifacts, which are directly relevant to detailed audit logs."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "reason": "Monitoring of access logs directly supports collecting detailed audit logs as required by the goal."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0024",
+                  "name": "Monitoring and auditing",
+                  "description": "Regularly monitoring and auditing the model’s use can help detect and prevent theft by detecting when an attacker is attempting to access or steal the model.",
+                  "reason": "Monitoring and auditing explicitly involves collecting detailed logs to detect unauthorized activities, aligning with the goal."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.8.6",
+          "control_name": "Collect DNS Query Audit Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Collect DNS Query Audit Logs",
+              "class": "TECH",
+              "embedding_context": "Collect DNS Query Audit Logs",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-DNSTA",
+                    "name": "DNS Traffic Analysis",
+                    "similarity_score": 0.45438
+                  },
+                  {
+                    "id": "D3-CA",
+                    "name": "Certificate Analysis",
+                    "similarity_score": 0.308295
+                  },
+                  {
+                    "id": "D3-RRID",
+                    "name": "Reverse Resolution IP Denylisting",
+                    "similarity_score": 0.303627
+                  },
+                  {
+                    "id": "D3-FRIDL",
+                    "name": "Forward Resolution IP Denylisting",
+                    "similarity_score": 0.302407
+                  },
+                  {
+                    "id": "D3-FRDDL",
+                    "name": "Forward Resolution Domain Denylisting",
+                    "similarity_score": 0.302392
+                  },
+                  {
+                    "id": "D3-DNSDL",
+                    "name": "DNS Denylisting",
+                    "similarity_score": 0.299846
+                  },
+                  {
+                    "id": "D3-HDL",
+                    "name": "Homoglyph Denylisting",
+                    "similarity_score": 0.299668
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.296955
+                  },
+                  {
+                    "id": "D3-DNRA",
+                    "name": "Domain Name Reputation Analysis",
+                    "similarity_score": 0.294746
+                  },
+                  {
+                    "id": "D3-IPRA",
+                    "name": "IP Reputation Analysis",
+                    "similarity_score": 0.29061
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.427037
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.262851
+                  },
+                  {
+                    "id": "CAPEC.M0002",
+                    "name": "Implement deep packet inspection (DPI)",
+                    "similarity_score": 0.262592
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.259671
+                  },
+                  {
+                    "id": "AML.M0015",
+                    "name": "Adversarial Input Detection",
+                    "similarity_score": 0.240347
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.203184
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.200601
+                  },
+                  {
+                    "id": "CAPEC.M0004",
+                    "name": "Network segmentation",
+                    "similarity_score": 0.183747
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.183475
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.180528
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "reason": "Monitoring of access logs directly supports collecting DNS query audit logs as part of system access tracking."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.8.7",
+          "control_name": "Collect URL Request Audit Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Collect URL Request Audit Logs",
+              "class": "TECH",
+              "embedding_context": "Collect URL Request Audit Logs",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-URA",
+                    "name": "URL Reputation Analysis",
+                    "similarity_score": 0.343333
+                  },
+                  {
+                    "id": "D3-UA",
+                    "name": "URL Analysis",
+                    "similarity_score": 0.333957
+                  },
+                  {
+                    "id": "D3-WSAA",
+                    "name": "Web Session Activity Analysis",
+                    "similarity_score": 0.272649
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.272546
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.268682
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.259227
+                  },
+                  {
+                    "id": "D3-DNSTA",
+                    "name": "DNS Traffic Analysis",
+                    "similarity_score": 0.253567
+                  },
+                  {
+                    "id": "D3-HD",
+                    "name": "Homoglyph Detection",
+                    "similarity_score": 0.251321
+                  },
+                  {
+                    "id": "D3-CSPP",
+                    "name": "Client-server Payload Profiling",
+                    "similarity_score": 0.246834
+                  },
+                  {
+                    "id": "D3-RTA",
+                    "name": "RPC Traffic Analysis",
+                    "similarity_score": 0.246075
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.458657
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.292098
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.274937
+                  },
+                  {
+                    "id": "OWASP.M0015",
+                    "name": "Plugin Testing",
+                    "similarity_score": 0.214035
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.212997
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.205306
+                  },
+                  {
+                    "id": "OWASP.M0012",
+                    "name": "API Rate Limits",
+                    "similarity_score": 0.205188
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.191297
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.190807
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.180715
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "reason": "Monitoring of access logs directly aligns with collecting URL request audit logs as specified in the goal."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.8.8",
+          "control_name": "Collect Command-Line Audit Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Collect Command-Line Audit Logs",
+              "class": "TECH",
+              "embedding_context": "Collect Command-Line Audit Logs",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.368261
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.304471
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.300367
+                  },
+                  {
+                    "id": "D3-USICA",
+                    "name": "User Session Init Config Analysis",
+                    "similarity_score": 0.275001
+                  },
+                  {
+                    "id": "D3-FCA",
+                    "name": "File Creation Analysis",
+                    "similarity_score": 0.260904
+                  },
+                  {
+                    "id": "D3-PLA",
+                    "name": "Process Lineage Analysis",
+                    "similarity_score": 0.258538
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.25475
+                  },
+                  {
+                    "id": "D3-SICA",
+                    "name": "System Init Config Analysis",
+                    "similarity_score": 0.234602
+                  },
+                  {
+                    "id": "D3-OSM",
+                    "name": "Operating System Monitoring",
+                    "similarity_score": 0.234216
+                  },
+                  {
+                    "id": "D3-FIM",
+                    "name": "File Integrity Monitoring",
+                    "similarity_score": 0.226958
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.339188
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.21786
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.214519
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.165899
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.1569
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.137922
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.124441
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.115123
+                  },
+                  {
+                    "id": "OWASP.M0030",
+                    "name": "Review Model Output",
+                    "similarity_score": 0.107262
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.103739
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "reason": "Monitoring of access logs directly supports collecting command-line audit logs as specified in the goal."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.8.9",
+          "control_name": "Centralize Audit Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Centralize Audit Logs",
+              "class": "TECH",
+              "embedding_context": "Centralize Audit Logs",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.334971
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.286918
+                  },
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.266143
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.255207
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.251581
+                  },
+                  {
+                    "id": "D3-USICA",
+                    "name": "User Session Init Config Analysis",
+                    "similarity_score": 0.25011
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.248902
+                  },
+                  {
+                    "id": "D3-PLA",
+                    "name": "Process Lineage Analysis",
+                    "similarity_score": 0.236272
+                  },
+                  {
+                    "id": "D3-LAM",
+                    "name": "Local Account Monitoring",
+                    "similarity_score": 0.235039
+                  },
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.232727
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.422481
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.272595
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.267919
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.252046
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.243396
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.22202
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.215569
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.206453
+                  },
+                  {
+                    "id": "AML.M0021",
+                    "name": "Regular backups",
+                    "similarity_score": 0.201573
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.194406
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "reason": "Monitoring of access logs directly supports centralizing audit logs by ensuring systematic collection and monitoring of log data."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "CIS.8.11",
+          "control_name": "Conduct Audit Log Reviews",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Conduct Audit Log Reviews",
+              "class": "ORG",
+              "embedding_context": "Conduct Audit Log Reviews",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.332666
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.273135
+                  },
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.259962
+                  },
+                  {
+                    "id": "D3-SJA",
+                    "name": "Scheduled Job Analysis",
+                    "similarity_score": 0.257685
+                  },
+                  {
+                    "id": "D3-USICA",
+                    "name": "User Session Init Config Analysis",
+                    "similarity_score": 0.234318
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.229887
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.228987
+                  },
+                  {
+                    "id": "D3-SFA",
+                    "name": "System File Analysis",
+                    "similarity_score": 0.228926
+                  },
+                  {
+                    "id": "D3-FIM",
+                    "name": "File Integrity Monitoring",
+                    "similarity_score": 0.226303
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.224148
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.373202
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.237612
+                  },
+                  {
+                    "id": "OWASP.M0030",
+                    "name": "Review Model Output",
+                    "similarity_score": 0.212152
+                  },
+                  {
+                    "id": "OWASP.M0017",
+                    "name": "Anomaly detection",
+                    "similarity_score": 0.211371
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.206138
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.196804
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.195671
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.1919
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.175103
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.170593
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "reason": "Monitors event logs, which are a key component of audit logs, enabling review of operational activities."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "reason": "Directly involves monitoring access logs, a core activity in audit log reviews."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "CIS.8.12",
+          "control_name": "Collect Service Provider Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Collect Service Provider Logs",
+              "class": "TECH",
+              "embedding_context": "Collect Service Provider Logs",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-EHB",
+                    "name": "Endpoint Health Beacon",
+                    "similarity_score": 0.336414
+                  },
+                  {
+                    "id": "D3-OPM",
+                    "name": "Operational Process Monitoring",
+                    "similarity_score": 0.332156
+                  },
+                  {
+                    "id": "D3-SVCDM",
+                    "name": "Service Dependency Mapping",
+                    "similarity_score": 0.29853
+                  },
+                  {
+                    "id": "D3-SDM",
+                    "name": "System Daemon Monitoring",
+                    "similarity_score": 0.286582
+                  },
+                  {
+                    "id": "D3-AEM",
+                    "name": "Application Exception Monitoring",
+                    "similarity_score": 0.275096
+                  },
+                  {
+                    "id": "D3-PUM",
+                    "name": "Platform Uptime Monitoring",
+                    "similarity_score": 0.274485
+                  },
+                  {
+                    "id": "D3-PMAD",
+                    "name": "Protocol Metadata Anomaly Detection",
+                    "similarity_score": 0.271177
+                  },
+                  {
+                    "id": "D3-UGLPA",
+                    "name": "User Geolocation Logon Pattern Analysis",
+                    "similarity_score": 0.269327
+                  },
+                  {
+                    "id": "D3-NNI",
+                    "name": "Network Node Inventory",
+                    "similarity_score": 0.267785
+                  },
+                  {
+                    "id": "D3-RTA",
+                    "name": "RPC Traffic Analysis",
+                    "similarity_score": 0.249856
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.420166
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.31511
+                  },
+                  {
+                    "id": "OWASP.M0007",
+                    "name": "Supply Chain Verification",
+                    "similarity_score": 0.251354
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.229116
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.22434
+                  },
+                  {
+                    "id": "OWASP.M0012",
+                    "name": "API Rate Limits",
+                    "similarity_score": 0.221233
+                  },
+                  {
+                    "id": "OWASP.M0011",
+                    "name": "Resource Caps",
+                    "similarity_score": 0.184175
+                  },
+                  {
+                    "id": "CAPEC.M0002",
+                    "name": "Implement deep packet inspection (DPI)",
+                    "similarity_score": 0.181154
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.179506
+                  },
+                  {
+                    "id": "OWASP.M0013",
+                    "name": "Queue Management",
+                    "similarity_score": 0.170594
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AEM",
+                  "name": "Application Exception Monitoring",
+                  "description": "Monitoring the failures of system counters and timers.",
+                  "reason": "Application Exception Monitoring directly collects logs as part of its purpose, aligning with the goal of collecting service provider logs."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "reason": "Monitoring of access logs explicitly targets log collection, which is directly relevant to the leaf goal."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

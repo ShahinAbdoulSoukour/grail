@@ -1,0 +1,260 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.15",
+  "clause_name": "Service Provider Management",
+  "goal_name": "Ensure service provider management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Develop a process to evaluate service providers who hold sensitive data, or are responsible for an enterprise’s critical IT platforms or processes, to ensure these providers are protecting those platforms and data appropriately.",
+      "goal_name": "Develop a process to evaluate service providers who hold sensitive data, or are responsible for an enterprise’s critical IT platforms or processes, to ensure these providers are protecting those platforms and data appropriately",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.15.1",
+          "control_name": "Establish and Maintain an Inventory of Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish an Inventory of Service Providers",
+              "class": "ORG",
+              "embedding_context": "Establish an Inventory of Service Providers",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NNI",
+                "name": "Network Node Inventory",
+                "similarity_score": 0.374375
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.34001
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain an Inventory of Service Providers",
+              "class": "ORG",
+              "embedding_context": "Maintain an Inventory of Service Providers",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NNI",
+                "name": "Network Node Inventory",
+                "similarity_score": 0.399836
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.401247
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.15.2",
+          "control_name": "Establish and Maintain a Service Provider Management Policy",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Service Provider Management Policy",
+              "class": "ORG",
+              "embedding_context": "Establish a Service Provider Management Policy",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.365598
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0033",
+                "name": "Network Restrictions",
+                "similarity_score": 0.357938
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Service Provider Management Policy",
+              "class": "ORG",
+              "embedding_context": "Maintain a Service Provider Management Policy",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.354668
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0033",
+                "name": "Network Restrictions",
+                "similarity_score": 0.391449
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.15.3",
+          "control_name": "Classify Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Classify Service Providers",
+              "class": "TECH",
+              "embedding_context": "Classify Service Providers",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SVCDM",
+                "name": "Service Dependency Mapping",
+                "similarity_score": 0.370083
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0012",
+                "name": "API Rate Limits",
+                "similarity_score": 0.287429
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.15.4",
+          "control_name": "Ensure Service Provider Contracts Include Security Requirements",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Ensure Service Provider Contracts Include Security Requirements",
+              "class": "ORG",
+              "embedding_context": "Ensure Service Provider Contracts Include Security Requirements",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-TL",
+                "name": "Trusted Library",
+                "similarity_score": 0.348207
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0007",
+                "name": "Supply Chain Verification",
+                "similarity_score": 0.4846
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0007",
+                  "name": "Supply Chain Verification",
+                  "description": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "similarity_score": 0.4846
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.15.5",
+          "control_name": "Assess Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Assess Service Providers",
+              "class": "ORG",
+              "embedding_context": "Assess Service Providers",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-EHB",
+                "name": "Endpoint Health Beacon",
+                "similarity_score": 0.273091
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0007",
+                "name": "Supply Chain Verification",
+                "similarity_score": 0.243126
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.15.6",
+          "control_name": "Monitor Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Monitor Service Providers",
+              "class": "TECH",
+              "embedding_context": "Monitor Service Providers",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-EHB",
+                "name": "Endpoint Health Beacon",
+                "similarity_score": 0.478925
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0014",
+                "name": "Resource Monitoring",
+                "similarity_score": 0.405438
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EHB",
+                  "name": "Endpoint Health Beacon",
+                  "description": "Monitoring the security status of an endpoint by sending periodic messages with health status, where absence of a response may indicate that the endpoint has been compromised.",
+                  "similarity_score": 0.478925
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.15.7",
+          "control_name": "Securely Decommission Service Providers",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Securely Decommission Service Providers",
+              "class": "TECH",
+              "embedding_context": "Securely Decommission Service Providers",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ST",
+                "name": "Session Termination",
+                "similarity_score": 0.438895
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0033",
+                "name": "Network Restrictions",
+                "similarity_score": 0.341015
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "goal_id": "G0",
+  "clause_id": "IR",
+  "clause_name": "Incident Response",
+  "goal_name": "Ensure incident response",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure effective preparation, handling, and response to security incidents.",
+      "goal_name": "Ensure effective preparation, handling, and response to security incidents",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "IR-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate incident response controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate incident response controls"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate incident response controls"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate incident response controls"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "IR-2",
+          "control_name": "Provide incident response training to personnel with incident response roles and responsibilities.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Provide incident response training to personnel with incident response roles and responsibilities"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "IR-3",
+          "control_name": "Test the incident response capability.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Test the incident response capability"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "IR-4",
+          "control_name": "Implement an incident handling capability for security incidents.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Implement an incident handling capability for security incidents"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.9.4",
+  "clause_name": "System and application access control",
+  "goal_name": "Ensure system and application access control",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To prevent unauthorized access to systems and applications.",
+      "goal_name": "Prevent unauthorized access to systems and applications",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.9.4.1",
+          "control_name": "Access to information and application system functions shall be restricted in accordance with the access control policy.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Restrict access to information and application system functions in accordance with the access control policy",
+              "class": "TECH",
+              "artifact": "ControlFlowPolicy",
+              "actions": [
+                {
+                  "id": "D3-CFI",
+                  "label": "Control Flow Integrity",
+                  "verb": "enforces",
+                  "definition": "Enforcing legal control flow transfers during application process execution.",
+                  "source": "D3FEND"
+                },
+                {
+                  "id": "OWASP.M0021",
+                  "label": "Data Access Control",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Limit external data source access.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.9.4.2",
+          "control_name": "Where required by the access control policy, access to systems and applications shall be controlled by a secure log-on procedure.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Control where required by the access control policy, access to systems and applications",
+              "agent": "a secure log-on procedure",
+              "class": "TECH",
+              "artifact": "ControlFlowPolicy",
+              "actions": [
+                {
+                  "id": "D3-CFI",
+                  "label": "Control Flow Integrity",
+                  "verb": "enforces",
+                  "definition": "Enforcing legal control flow transfers during application process execution.",
+                  "source": "D3FEND"
+                },
+                {
+                  "id": "OWASP.M0021",
+                  "label": "Data Access Control",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Limit external data source access.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.9.4.3",
+          "control_name": "Password management systems shall be interactive and shall ensure quality passwords.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Ensure password management systems are interactive and shall ensure quality passwords",
+              "class": "TECH",
+              "artifact": "Password",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.9.4.4",
+          "control_name": "The use of utility programs that might be capable of overriding system and application controls shall be restricted and tightly controlled.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Restrict the use of utility programs that might be capable of overriding system and application controls and tightly controlled",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "A.9.4.5",
+          "control_name": "Access to program source code shall be restricted.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Restrict access to program source code",
+              "class": "TECH",
+              "artifact": "File",
+              "attack": "AML.A0014",
+              "actions": [
+                {
+                  "id": "D3-RFAM",
+                  "label": "Remote File Access Mediation",
+                  "verb": "isolates",
+                  "definition": "Remote file access mediation is the process of managing and securing access to file systems over a network to ensure that only authorized users or processes can interact with remote files.",
+                  "source": "D3FEND"
+                },
+                {
+                  "id": "D3-LFP",
+                  "label": "Local File Permissions",
+                  "verb": "restricts",
+                  "definition": "Local file permissions is the systematic process of defining, implementing, and managing access control policies that dictate user permissions for accessing files on a local system through the configuration of operating system functionality.",
+                  "source": "D3FEND"
+                },
+                {
+                  "id": "D3-CF",
+                  "label": "Content Filtering",
+                  "verb": "filters",
+                  "definition": "Content Filtering techniques aid in the process of analyzing an input file for malicious or erroneous content and outputing a sanitized version.",
+                  "source": "D3FEND"
+                },
+                {
+                  "id": "OWASP.M0021",
+                  "label": "Data Access Control",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Limit external data source access.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

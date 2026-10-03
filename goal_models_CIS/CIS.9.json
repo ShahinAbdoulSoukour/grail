@@ -1,0 +1,100 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.9",
+  "clause_name": "Email and Web Browser Protections",
+  "goal_name": "Ensure email and web browser protections",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Improve protections and detections of threats from email and web vectors, as these are opportunities for attackers to manipulate human behavior through direct engagement.",
+      "goal_name": "Improve protections and detections of threats from email and web vectors, as these are opportunities for attackers to manipulate human behavior through direct engagement",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.9.1",
+          "control_name": "Ensure Use of Only Fully Supported Browsers and Email Clients",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Ensure Use of Only Fully Supported Browsers and Email Clients"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.9.2",
+          "control_name": "Use DNS Filtering Services",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Use DNS Filtering Services"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.9.3",
+          "control_name": "Maintain and Enforce Network-Based URL Filters",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Maintain Network-Based URL Filters"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Enforce Network-Based URL Filters"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.9.4",
+          "control_name": "Restrict Unnecessary or Unauthorized Browser and Email Client Extensions",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Restrict Unnecessary or Unauthorized Browser and Email Client Extensions"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.9.5",
+          "control_name": "Implement DMARC",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Implement DMARC"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.9.6",
+          "control_name": "Block Unnecessary File Types",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Block Unnecessary File Types"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.9.7",
+          "control_name": "Deploy and Maintain Email Server Anti-Malware Protections",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Deploy Email Server Anti-Malware Protections"
+            },
+            {
+              "goal_id": "G1.7.2",
+              "goal_name": "Maintain Email Server Anti-Malware Protections"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

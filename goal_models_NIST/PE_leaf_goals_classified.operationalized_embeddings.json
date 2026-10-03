@@ -1,0 +1,390 @@
+{
+  "goal_id": "G0",
+  "clause_id": "PE",
+  "clause_name": "Physical and Environmental Protection",
+  "goal_name": "Ensure physical and environmental protection",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure secure physical access to facilities and systems.",
+      "goal_name": "Ensure secure physical access to facilities and systems",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "PE-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate physical and environmental protection controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate physical and environmental protection controls",
+              "class": "ORG",
+              "embedding_context": "Develop policy and procedures to facilitate physical and environmental protection controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.37149
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.289552
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate physical and environmental protection controls",
+              "class": "ORG",
+              "embedding_context": "Document policy and procedures to facilitate physical and environmental protection controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.390238
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.276815
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate physical and environmental protection controls",
+              "class": "ORG",
+              "embedding_context": "Disseminate policy and procedures to facilitate physical and environmental protection controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.391041
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.290389
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "PE-2",
+          "control_name": "Develop and maintain physical access authorizations for designated areas.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Develop physical access authorizations for designated areas",
+              "class": "PHYS",
+              "embedding_context": "Develop physical access authorizations for designated areas",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-PAM",
+                "name": "Physical Access Mediation",
+                "similarity_score": 0.602381
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0029",
+                "name": "Downstream Authorization",
+                "similarity_score": 0.506668
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "similarity_score": 0.602381
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PSM",
+                  "name": "Proximity Sensor Monitoring",
+                  "description": "Monitoring events from proximity sensors that indicate a credential or tagged asset is within the sensor’s read range or a defined zone. Common enabling technologies include RFID, Bluetooth Low Energy (BLE), and Ultra-Wideband (UWB).",
+                  "similarity_score": 0.524412
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.517242
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.499913
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.45201
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0029",
+                  "name": "Downstream Authorization",
+                  "description": "Implement authorization in downstream systems.",
+                  "similarity_score": 0.506668
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain physical access authorizations for designated areas",
+              "class": "PHYS",
+              "embedding_context": "Maintain physical access authorizations for designated areas",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-PAM",
+                "name": "Physical Access Mediation",
+                "similarity_score": 0.593802
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0029",
+                "name": "Downstream Authorization",
+                "similarity_score": 0.500888
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "similarity_score": 0.593802
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.495014
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.483941
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.466422
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PSM",
+                  "name": "Proximity Sensor Monitoring",
+                  "description": "Monitoring events from proximity sensors that indicate a credential or tagged asset is within the sensor’s read range or a defined zone. Common enabling technologies include RFID, Bluetooth Low Energy (BLE), and Ultra-Wideband (UWB).",
+                  "similarity_score": 0.462142
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0029",
+                  "name": "Downstream Authorization",
+                  "description": "Implement authorization in downstream systems.",
+                  "similarity_score": 0.500888
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "similarity_score": 0.468903
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "PE-3",
+          "control_name": "Enforce physical access control to the facility and areas within the facility.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Enforce physical access control to the facility and areas within the facility",
+              "class": "PHYS",
+              "embedding_context": "Enforce physical access control to the facility and areas within the facility",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-PAM",
+                "name": "Physical Access Mediation",
+                "similarity_score": 0.687533
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0001",
+                "name": "Privilege Control",
+                "similarity_score": 0.506992
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "similarity_score": 0.687533
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.598257
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.520615
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PSM",
+                  "name": "Proximity Sensor Monitoring",
+                  "description": "Monitoring events from proximity sensors that indicate a credential or tagged asset is within the sensor’s read range or a defined zone. Common enabling technologies include RFID, Bluetooth Low Energy (BLE), and Ultra-Wideband (UWB).",
+                  "similarity_score": 0.506323
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.484023
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "similarity_score": 0.506992
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0033",
+                  "name": "Network Restrictions",
+                  "description": "Limit LLM access to resources and APIs.",
+                  "similarity_score": 0.483174
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "similarity_score": 0.482379
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "similarity_score": 0.472354
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.45143
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "PE-6",
+          "control_name": "Monitor physical access to the facility and physical areas containing systems.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Monitor physical access to the facility and physical areas containing systems",
+              "class": "PHYS",
+              "embedding_context": "Monitor physical access to the facility and physical areas containing systems",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-PSM",
+                "name": "Proximity Sensor Monitoring",
+                "similarity_score": 0.613392
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0014",
+                "name": "Resource Monitoring",
+                "similarity_score": 0.487695
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PSM",
+                  "name": "Proximity Sensor Monitoring",
+                  "description": "Monitoring events from proximity sensors that indicate a credential or tagged asset is within the sensor’s read range or a defined zone. Common enabling technologies include RFID, Bluetooth Low Energy (BLE), and Ultra-Wideband (UWB).",
+                  "similarity_score": 0.613392
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "similarity_score": 0.519814
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PHAM",
+                  "name": "Physical Access Monitoring",
+                  "description": "Monitoring the physical access of a specified environment through detection, recording, reviewing, and logging of who/what enters and exists areas.",
+                  "similarity_score": 0.51156
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ELM",
+                  "name": "Electronic Lock Monitoring",
+                  "description": "Monitoring electronic lock and door hardware states and access events (e.g., locked/unlocked, access granted/denied, door forced/held, tamper) to detect and respond to unauthorized entry.",
+                  "similarity_score": 0.501767
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PAM",
+                  "name": "Physical Access Mediation",
+                  "description": "Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)",
+                  "similarity_score": 0.493775
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0014",
+                  "name": "Resource Monitoring",
+                  "description": "Continuously monitor resource usage.",
+                  "similarity_score": 0.487695
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

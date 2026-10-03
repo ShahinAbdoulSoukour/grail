@@ -1,0 +1,195 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.8.2",
+  "clause_name": "Information classification",
+  "goal_name": "Ensure information classification",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure that information receives an appropriate level of protection in accordance with its importance to the organization.",
+      "goal_name": "Ensure that information receives an appropriate level of protection in accordance with its importance to the organization",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.8.2.1",
+          "control_name": "Information shall be classified in terms of legal requirements, value, criticality and sensitivity to unauthorised disclosure or modification.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Classify information in terms of legal requirements, value, criticality and sensitivity to unauthorised disclosure or modification",
+              "class": "ORG",
+              "embedding_context": "Classify information in terms of legal requirements, value, criticality and sensitivity to unauthorised disclosure or modification",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.437953
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.514907
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.514907
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.467618
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.8.2.2",
+          "control_name": "An appropriate set of procedures for information labelling shall be developed and implemented in accordance with the information classification scheme adopted by the organization.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Develop an appropriate set of procedures for information labelling",
+              "class": "ORG",
+              "embedding_context": "Develop an appropriate set of procedures for information labelling",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.333805
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0008",
+                "name": "Legitimacy Verification",
+                "similarity_score": 0.310171
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Implement an appropriate set of procedures for information labelling in accordance with the information classification scheme adopted by the organization",
+              "class": "ORG",
+              "embedding_context": "Implement an appropriate set of procedures for information labelling in accordance with the information classification scheme adopted by the organization",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.376161
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.365189
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.8.2.3",
+          "control_name": "Procedures for handling assets shall be developed and implemented in accordance with the information classification scheme adopted by the organization.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Develop procedures for handling assets",
+              "class": "ORG",
+              "embedding_context": "Develop procedures for handling assets",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AI",
+                "name": "Asset Inventory",
+                "similarity_score": 0.464214
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.37212
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AI",
+                  "name": "Asset Inventory",
+                  "description": "Asset inventorying identifies and records the organization's assets and enriches each inventory item with knowledge about their vulnerabilities.",
+                  "similarity_score": 0.464214
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.462455
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "similarity_score": 0.45588
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Implement procedures for handling assets in accordance with the information classification scheme adopted by the organization",
+              "class": "ORG",
+              "embedding_context": "Implement procedures for handling assets in accordance with the information classification scheme adopted by the organization",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.498441
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.424615
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DI",
+                  "name": "Data Inventory",
+                  "description": "Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.",
+                  "similarity_score": 0.498441
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AI",
+                  "name": "Asset Inventory",
+                  "description": "Asset inventorying identifies and records the organization's assets and enriches each inventory item with knowledge about their vulnerabilities.",
+                  "similarity_score": 0.467844
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.460987
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

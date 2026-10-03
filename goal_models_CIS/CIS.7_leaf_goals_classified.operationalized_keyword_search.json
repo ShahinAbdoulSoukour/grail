@@ -1,0 +1,122 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.7",
+  "clause_name": "Continuous Vulnerability Management",
+  "goal_name": "Ensure continuous vulnerability management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Develop a plan to continuously assess and track vulnerabilities on all enterprise assets within the enterprise’s infrastructure, in order to remediate, and minimize, the window of opportunity for attackers. Monitor public and private industry sources for new threat and vulnerability information.",
+      "goal_name": "Develop a plan to continuously assess and track vulnerabilities on all enterprise assets within the enterprise’s infrastructure, in order to remediate, and minimize, the window of opportunity for attackers",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.7.1",
+          "control_name": "Establish and Maintain a Vulnerability Management Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish a Vulnerability Management Process",
+              "class": "ORG",
+              "artifact": "Process",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain a Vulnerability Management Process",
+              "class": "TECH",
+              "artifact": "Process",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.7.2",
+          "control_name": "Establish and Maintain a Remediation Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Remediation Process",
+              "class": "ORG",
+              "artifact": "Process",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Remediation Process",
+              "class": "ORG",
+              "artifact": "Process",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.7.3",
+          "control_name": "Perform Automated Operating System Patch Management",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Perform Automated Operating System Patch Management",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.7.4",
+          "control_name": "Perform Automated Application Patch Management",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Perform Automated Application Patch Management",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.7.5",
+          "control_name": "Perform Automated Vulnerability Scans of Internal Enterprise Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Perform Automated Vulnerability Scans of Internal Enterprise Assets",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.7.6",
+          "control_name": "Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.7.7",
+          "control_name": "Remediate Detected Vulnerabilities",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Remediate Detected Vulnerabilities",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

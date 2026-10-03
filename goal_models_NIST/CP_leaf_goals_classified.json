@@ -1,0 +1,95 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CP",
+  "clause_name": "Contingency Planning",
+  "goal_name": "Ensure contingency planning",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure effective system recovery and continuity during disruptions.",
+      "goal_name": "Ensure effective system recovery and continuity during disruptions",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CP-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate implementation of contingency planning controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate implementation of contingency planning controls",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate implementation of contingency planning controls",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate implementation of contingency planning controls",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CP-2",
+          "control_name": "Develop, document, and maintain a contingency plan for the system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Develop a contingency plan for the system",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Document a contingency plan for the system",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Maintain a contingency plan for the system",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CP-3",
+          "control_name": "Provide contingency training to system users and personnel.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Provide contingency training to system users and personnel",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CP-4",
+          "control_name": "Test contingency plans for the system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Test contingency plans for the system",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CP-9",
+          "control_name": "Conduct backups of user-level and system-level information.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Conduct backups of user-level and system-level information",
+              "class": "TECH"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

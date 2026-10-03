@@ -1,0 +1,362 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.6",
+  "clause_name": "AI system design and development",
+  "goal_name": "Ensure AI system design and development",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "AI systems shall be designed and developed according to defined requirements.",
+      "goal_name": "Design AI systems and Develop AI systems according to defined requirements",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.6.2",
+          "control_name": "AI systems shall be designed and developed according to defined requirements.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Design AI systems",
+              "class": "TECH",
+              "embedding_context": "Design AI systems",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AA",
+                "name": "Agent Authentication",
+                "similarity_score": 0.237325
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0034",
+                "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                "similarity_score": 0.423264
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Develop AI systems according to defined requirements",
+              "class": "ORG",
+              "embedding_context": "Develop AI systems according to defined requirements",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OLV",
+                "name": "Operational Logic Validation",
+                "similarity_score": 0.23597
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.417422
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.6.3",
+          "control_name": "AI systems shall be verified and validated before use.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Verify AI systems",
+              "class": "TECH",
+              "embedding_context": "Verify AI systems",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OLV",
+                "name": "Operational Logic Validation",
+                "similarity_score": 0.325544
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0014",
+                "name": "Verify ML Artifacts",
+                "similarity_score": 0.585086
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0014",
+                  "name": "Verify ML Artifacts",
+                  "description": "Verify the cryptographic checksum of all machine learning artifacts to verify that the file or repositiory was not modified by an attacker.",
+                  "similarity_score": 0.585086
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0030",
+                  "name": "Verify the authenticity of feedback data",
+                  "description": "Use techniques such as digital signatures and checksums to verify that the feedback data received by the system is genuine, and reject any data that does not match the expected format.",
+                  "similarity_score": 0.582302
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.572527
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.552379
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "similarity_score": 0.515092
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Validate AI systems before use",
+              "class": "TECH",
+              "embedding_context": "Validate AI systems before use",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OLV",
+                "name": "Operational Logic Validation",
+                "similarity_score": 0.352046
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0019",
+                "name": "Input Validation",
+                "similarity_score": 0.593033
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0019",
+                  "name": "Input Validation",
+                  "description": "Filter malicious inputs to avoid model poisoning.",
+                  "similarity_score": 0.593033
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.591606
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.574849
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0030",
+                  "name": "Verify the authenticity of feedback data",
+                  "description": "Use techniques such as digital signatures and checksums to verify that the feedback data received by the system is genuine, and reject any data that does not match the expected format.",
+                  "similarity_score": 0.525939
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0018",
+                  "name": "Data Sanitization",
+                  "description": "Use scrubbing to prevent user data in training.",
+                  "similarity_score": 0.52191
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.6.4",
+          "control_name": "Deployment of AI systems shall be controlled.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Control deployment of AI systems",
+              "class": "TECH",
+              "embedding_context": "Control deployment of AI systems",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CI",
+                "name": "Configuration Inventory",
+                "similarity_score": 0.298432
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0035",
+                "name": "Secure Deployment of Models",
+                "similarity_score": 0.566136
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0035",
+                  "name": "Secure Deployment of Models",
+                  "description": "Secure deployment with approval workflows.",
+                  "similarity_score": 0.566136
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0004",
+                  "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                  "description": "",
+                  "similarity_score": 0.477391
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0017",
+                  "name": "Model Distribution Methods",
+                  "description": "Deploying ML models to edge devices can increase the attack surface of the system. Consider serving models in the cloud to reduce the level of access the adversary has to the model. Also consider computing features in the cloud to prevent gray-box attacks, where an adversary has access to the model preprocessing methods.",
+                  "similarity_score": 0.45975
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0031",
+                  "name": "Implement Security Control during hardware manufacturing",
+                  "description": "Implement strict security controls and auditing processes during the manufacturing phase, including secure supply chain practices and hardware verification methods, to prevent unauthorized modifications to hardware components or firmware.",
+                  "similarity_score": 0.457173
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0013",
+                  "name": "Queue Management",
+                  "description": "Control queued and total actions.",
+                  "similarity_score": 0.456952
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.6.5",
+          "control_name": "AI systems shall be operated and monitored.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Operate AI systems",
+              "class": "TECH",
+              "embedding_context": "Operate AI systems",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.251681
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0034",
+                "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                "similarity_score": 0.440641
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Monitor AI systems",
+              "class": "TECH",
+              "embedding_context": "Monitor AI systems",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.423821
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0024",
+                "name": "Monitoring and auditing",
+                "similarity_score": 0.536165
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0024",
+                  "name": "Monitoring and auditing",
+                  "description": "Regularly monitoring and auditing the model’s use can help detect and prevent theft by detecting when an attacker is attempting to access or steal the model.",
+                  "similarity_score": 0.536165
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0014",
+                  "name": "Resource Monitoring",
+                  "description": "Continuously monitor resource usage.",
+                  "similarity_score": 0.49944
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.485559
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0034",
+                  "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                  "description": "",
+                  "similarity_score": 0.455482
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "similarity_score": 0.454832
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "A.6.6",
+          "control_name": "AI systems shall be maintained over their lifecycle.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Maintain AI systems over their lifecycle",
+              "class": "TECH",
+              "embedding_context": "Maintain AI systems over their lifecycle",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.266804
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0021",
+                "name": "Regular backups",
+                "similarity_score": 0.517365
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "similarity_score": 0.517365
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.18",
+  "clause_name": "Penetration Testing",
+  "goal_name": "Ensure penetration testing",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Test the effectiveness and resiliency of enterprise assets through identifying and exploiting weaknesses in controls (people, processes, and technology), and simulating the objectives and actions of an attacker.",
+      "goal_name": "Test the effectiveness and resiliency of enterprise assets through identifying and exploiting weaknesses in controls, and simulating the objectives and actions of an attacker",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.18.1",
+          "control_name": "Establish and Maintain a Penetration Testing Program",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish a Penetration Testing Program",
+              "class": "TECH",
+              "embedding_context": "Establish a Penetration Testing Program",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NVA",
+                "name": "Network Vulnerability Assessment",
+                "similarity_score": 0.324163
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0015",
+                "name": "Plugin Testing",
+                "similarity_score": 0.370186
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain a Penetration Testing Program",
+              "class": "TECH",
+              "embedding_context": "Maintain a Penetration Testing Program",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AH",
+                "name": "Application Hardening",
+                "similarity_score": 0.334456
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0016",
+                "name": "Vulnerability Scanning",
+                "similarity_score": 0.347687
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.18.2",
+          "control_name": "Perform Periodic External Penetration Tests",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Perform Periodic External Penetration Tests",
+              "class": "PHYS",
+              "embedding_context": "Perform Periodic External Penetration Tests",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SJA",
+                "name": "Scheduled Job Analysis",
+                "similarity_score": 0.384508
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0034",
+                "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                "similarity_score": 0.301108
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.18.3",
+          "control_name": "Remediate Penetration Test Findings",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Remediate Penetration Test Findings",
+              "class": "ORG",
+              "embedding_context": "Remediate Penetration Test Findings",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DQSA",
+                "name": "Database Query String Analysis",
+                "similarity_score": 0.341036
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0016",
+                "name": "Vulnerability Scanning",
+                "similarity_score": 0.330945
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.18.4",
+          "control_name": "Validate Security Measures",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Validate Security Measures",
+              "class": "TECH",
+              "embedding_context": "Validate Security Measures",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DLV",
+                "name": "Domain Logic Validation",
+                "similarity_score": 0.515596
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0008",
+                "name": "Legitimacy Verification",
+                "similarity_score": 0.567407
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DLV",
+                  "name": "Domain Logic Validation",
+                  "description": "Validation of variable state in the context of the domain application.",
+                  "similarity_score": 0.515596
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OLV",
+                  "name": "Operational Logic Validation",
+                  "description": "Validation of variable state in the context of the control logic of the operational application.",
+                  "similarity_score": 0.48176
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.462436
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PWA",
+                  "name": "Password Authentication",
+                  "description": "Password authentication is a security mechanism used to verify the identity of a user or entity attempting to access a system or resource by requiring the input of a secret string of characters, known as a password, that is associated with the user or entity.",
+                  "similarity_score": 0.459091
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.457153
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.567407
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0030",
+                  "name": "Verify the authenticity of feedback data",
+                  "description": "Use techniques such as digital signatures and checksums to verify that the feedback data received by the system is genuine, and reject any data that does not match the expected format.",
+                  "similarity_score": 0.548933
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0010",
+                  "name": "Input validation",
+                  "description": "Implement input validation and content filtering",
+                  "similarity_score": 0.540757
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0007",
+                  "name": "Supply Chain Verification",
+                  "description": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "similarity_score": 0.536282
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "similarity_score": 0.528725
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.18.5",
+          "control_name": "Perform Periodic Internal Penetration Tests",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Perform Periodic Internal Penetration Tests",
+              "class": "PHYS",
+              "embedding_context": "Perform Periodic Internal Penetration Tests",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-PSM",
+                "name": "Proximity Sensor Monitoring",
+                "similarity_score": 0.362685
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0034",
+                "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                "similarity_score": 0.313905
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

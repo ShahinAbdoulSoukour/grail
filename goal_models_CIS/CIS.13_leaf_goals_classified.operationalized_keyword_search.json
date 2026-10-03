@@ -1,0 +1,251 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.13",
+  "clause_name": "Network Monitoring and Defense",
+  "goal_name": "Ensure network monitoring and defense",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Operate processes and tooling to establish and maintain comprehensive network monitoring and defense against security threats across the enterprise’s network infrastructure and user base.",
+      "goal_name": "Operate processes and tooling to establish and maintain comprehensive network monitoring and defense against security threats across the enterprise’s network infrastructure and user base",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.13.1",
+          "control_name": "Perform Application Layer Filtering",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Perform Application Layer Filtering",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.13.2",
+          "control_name": "Deploy a Host-Based Intrusion Detection Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Deploy a Host-Based Intrusion Detection Solution",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.13.3",
+          "control_name": "Deploy a Network Intrusion Detection Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Deploy a Network Intrusion Detection Solution",
+              "class": "TECH",
+              "artifact": "NetworkTraffic",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.13.4",
+          "control_name": "Perform Traffic Filtering Between Network Segments",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Perform Traffic Filtering Between Network Segments",
+              "class": "TECH",
+              "artifact": "NetworkTraffic",
+              "attack": "CAPEC.A0008",
+              "actions": [
+                {
+                  "id": "CAPEC.M0004",
+                  "label": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                  "phases": [
+                    "AdditionalActivities"
+                  ],
+                  "definition": "",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "CAPEC.M0002",
+                  "label": "Implement deep packet inspection (DPI)",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Implement deep packet inspection (DPI) to analyze and verify the content of protocol communications.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "OWASP.M0034",
+                  "label": "Monitoring of access logs",
+                  "phases": [
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Regular monitoring of access logs.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.13.5",
+          "control_name": "Manage Access Control for Remote Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Manage Access Control for Remote Assets",
+              "class": "TECH",
+              "artifact": "AccessControlConfiguration",
+              "actions": [
+                {
+                  "id": "D3-CI",
+                  "label": "Configuration Inventory",
+                  "verb": "inventories",
+                  "definition": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "source": "D3FEND"
+                },
+                {
+                  "id": "OWASP.M0021",
+                  "label": "Data Access Control",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Limit external data source access.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.13.6",
+          "control_name": "Collect Network Traffic Flow Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Collect Network Traffic Flow Logs",
+              "class": "TECH",
+              "artifact": "NetworkTraffic",
+              "attack": "CAPEC.A0008",
+              "actions": [
+                {
+                  "id": "D3-APCA",
+                  "label": "Application Protocol Command Analysis",
+                  "verb": "monitors",
+                  "definition": "Analyzing application protocol level remote commands to detect unauthorized activity.",
+                  "source": "D3FEND"
+                },
+                {
+                  "id": "CAPEC.M0004",
+                  "label": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                  "phases": [
+                    "AdditionalActivities"
+                  ],
+                  "definition": "",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "CAPEC.M0002",
+                  "label": "Implement deep packet inspection (DPI)",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Implement deep packet inspection (DPI) to analyze and verify the content of protocol communications.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "OWASP.M0034",
+                  "label": "Monitoring of access logs",
+                  "phases": [
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Regular monitoring of access logs.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.13.7",
+          "control_name": "Deploy a Host-Based Intrusion Prevention Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Deploy a Host-Based Intrusion Prevention Solution",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.13.8",
+          "control_name": "Deploy a Network Intrusion Prevention Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Deploy a Network Intrusion Prevention Solution",
+              "class": "TECH",
+              "artifact": "NetworkTraffic",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.13.9",
+          "control_name": "Deploy Port-Level Access Control",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Deploy Port-Level Access Control",
+              "class": "TECH",
+              "artifact": "AccessControlConfiguration",
+              "actions": [
+                {
+                  "id": "OWASP.M0021",
+                  "label": "Data Access Control",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Limit external data source access.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "CIS.13.11",
+          "control_name": "Tune Security Event Alerting Thresholds",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Ensure tune Security Event Alerting Thresholds",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

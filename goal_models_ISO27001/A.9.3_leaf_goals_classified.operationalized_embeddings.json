@@ -1,0 +1,50 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.9.3",
+  "clause_name": "User responsibilities",
+  "goal_name": "Define user responsibilities",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To make users accountable for safeguarding their authentication information.",
+      "goal_name": "Make users accountable for safeguarding their authentication information",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.9.3.1",
+          "control_name": "Users shall be required to follow the organization's practices in the use of secret authentication information.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Require users to follow the organization's practices in the use of secret authentication information",
+              "class": "ORG",
+              "embedding_context": "Require users to follow the organization's practices in the use of secret authentication information",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CTS",
+                "name": "Credential Transmission Scoping",
+                "similarity_score": 0.406359
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0022",
+                "name": "User Confirmation",
+                "similarity_score": 0.49198
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0022",
+                  "name": "User Confirmation",
+                  "description": "Require manual authorization for sensitive actions.",
+                  "similarity_score": 0.49198
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

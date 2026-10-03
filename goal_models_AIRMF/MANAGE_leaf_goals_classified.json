@@ -1,0 +1,184 @@
+{
+  "goal_id": "G0",
+  "clause_id": "MANAGE",
+  "clause_name": "Manage AI Risks",
+  "goal_name": "Manage AI risks",
+  "airmf_function": "MANAGE",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To treat and monitor AI risks effectively.",
+      "goal_name": "Treat and monitor AI risks effectively",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "MANAGE 1.1",
+          "control_name": "Processes for prioritizing and responding to AI risks are established and aligned with organizational objectives.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish processes for prioritizing and responding to AI risks",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Align processes for prioritizing and responding to AI risks with organizational objectives",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "MANAGE 1.2",
+          "control_name": "AI risk treatment plans are developed, implemented, and maintained.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Develop AI risk treatment plans",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Implement AI risk treatment plans",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Maintain AI risk treatment plans",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "MANAGE 1.3",
+          "control_name": "Plans for monitoring AI risks and for incident response and recovery are established.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Establish plans for monitoring AI risks and for incident response and recovery",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "MANAGE 1.4",
+          "control_name": "Processes for communicating AI risk information and decisions are established.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish processes for communicating AI risk information and decisions",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "MANAGE 1.5",
+          "control_name": "Processes for updating, remediating, or removing AI systems when risk thresholds are exceeded are established.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Exceed processes for updating, remediating, or removing AI systems when risk thresholds are established",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "MANAGE 1.6",
+          "control_name": "Processes for continual improvement of AI risk management are established.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Establish processes for continual improvement of AI risk management",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "MANAGE 2.1",
+          "control_name": "Risk treatment decisions are based on prioritized risks, impact analyses, and organizational risk tolerance.",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Ensure risk treatment decisions are based on prioritized risks, impact analyses, and organizational risk tolerance",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "MANAGE 2.2",
+          "control_name": "Controls and mitigation actions are selected and implemented to address identified risks.",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Select controls and mitigation actions",
+              "class": "TECH"
+            },
+            {
+              "goal_id": "G1.8.2",
+              "goal_name": "Implement controls and mitigation actions to address identified risks",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "MANAGE 2.3",
+          "control_name": "Residual risks are documented, communicated, and accepted by appropriate decision makers.",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Document residual risks",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.9.2",
+              "goal_name": "Communicate residual risks",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.9.3",
+              "goal_name": "Accept residual risks",
+              "agent": "appropriate decision makers",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "MANAGE 2.4",
+          "control_name": "Mechanisms for tracking the effectiveness of controls and for reassessing risks over time are implemented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Implement mechanisms for tracking the effectiveness of controls and for reassessing risks over time",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "MANAGE 2.5",
+          "control_name": "Incident response and recovery processes are exercised and improved using lessons learned.",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Exercise incident response and recovery processes",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.11.2",
+              "goal_name": "Improve incident response and recovery processes using lessons learned",
+              "class": "ORG"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

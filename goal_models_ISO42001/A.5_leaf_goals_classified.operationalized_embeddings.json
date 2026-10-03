@@ -1,0 +1,179 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.5",
+  "clause_name": "AI system impact assessment",
+  "goal_name": "Ensure AI system impact assessment",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Impact assessments shall be performed for AI systems.",
+      "goal_name": "Perform impact assessments for AI systems",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.5.2",
+          "control_name": "Impact assessments shall be performed for AI systems.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Perform impact assessments for AI systems",
+              "class": "TECH",
+              "embedding_context": "Perform impact assessments for AI systems",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.389037
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0008",
+                "name": "Validate ML Model",
+                "similarity_score": 0.498708
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.498708
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.491199
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "similarity_score": 0.477274
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.461709
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.453267
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.5.3",
+          "control_name": "Impact assessments shall be performed at appropriate times across the AI lifecycle.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Perform impact assessments at appropriate times across the AI lifecycle",
+              "class": "ORG",
+              "embedding_context": "Perform impact assessments at appropriate times across the AI lifecycle",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.344999
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.440217
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.5.4",
+          "control_name": "Impact assessment results shall be reviewed and updated when needed.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Review impact assessment results",
+              "class": "ORG",
+              "embedding_context": "Review impact assessment results",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.195985
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0030",
+                "name": "Review Model Output",
+                "similarity_score": 0.271692
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Update impact assessment results when needed",
+              "class": "ORG",
+              "embedding_context": "Update impact assessment results when needed",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-EHB",
+                "name": "Endpoint Health Beacon",
+                "similarity_score": 0.230072
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.213636
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.5.5",
+          "control_name": "Records of impact assessments shall be retained.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Retain records of impact assessments",
+              "class": "ORG",
+              "embedding_context": "Retain records of impact assessments",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.298469
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.250114
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

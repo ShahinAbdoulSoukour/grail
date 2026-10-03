@@ -1,0 +1,60 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.3",
+  "clause_name": "Roles and responsibilities for AI",
+  "goal_name": "Ensure roles and responsibilities for AI",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Roles and responsibilities for AI shall be defined and assigned.",
+      "goal_name": "Define roles and responsibilities for AI and Assign roles and responsibilities for AI",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.3.2",
+          "control_name": "Roles and responsibilities for AI shall be defined and assigned.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Define roles and responsibilities for AI"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Assign roles and responsibilities for AI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.3.3",
+          "control_name": "AI issues shall be reported, escalated, and addressed.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Report AI issues"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Escalate AI issues"
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Address AI issues"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.3.4",
+          "control_name": "Responsibilities toward affected interested parties shall be defined.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Define responsibilities toward affected interested parties"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

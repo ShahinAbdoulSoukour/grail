@@ -1,0 +1,78 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.11",
+  "clause_name": "Data Recovery",
+  "goal_name": "Ensure data recovery",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Establish and maintain data recovery practices sufficient to restore in-scope enterprise assets to a pre-incident and trusted state.",
+      "goal_name": "Establish and maintain data recovery practices sufficient to restore in-scope enterprise assets to a pre-incident and trusted state",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.11.1",
+          "control_name": "Establish and Maintain a Data Recovery Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish a Data Recovery Process"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain a Data Recovery Process"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.11.2",
+          "control_name": "Perform Automated Backups",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Perform Automated Backups"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.11.3",
+          "control_name": "Protect Recovery Data",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Protect Recovery Data"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.11.4",
+          "control_name": "Establish and Maintain an Isolated Instance of Recovery Data",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish an Isolated Instance of Recovery Data"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Maintain an Isolated Instance of Recovery Data"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.11.5",
+          "control_name": "Test Data Recovery",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Test Data Recovery"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

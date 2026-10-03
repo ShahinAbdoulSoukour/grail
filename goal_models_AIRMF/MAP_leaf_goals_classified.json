@@ -1,0 +1,297 @@
+{
+  "goal_id": "G0",
+  "clause_id": "MAP",
+  "clause_name": "Map AI Systems and Risks",
+  "goal_name": "Map AI systems and risks",
+  "airmf_function": "MAP",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To establish a clear understanding of AI systems, their context, impacts, and risks.",
+      "goal_name": "Establish a clear understanding of AI systems, their context, impacts, and risks",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "MAP 1.1",
+          "control_name": "Intended purposes, beneficial uses, context-specific laws, norms, and expectations are understood and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Understand intended purposes, beneficial uses, context-specific laws, norms, and expectations",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document intended purposes, beneficial uses, context-specific laws, norms, and expectations",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "MAP 1.2",
+          "control_name": "Interdisciplinary AI actors, competencies, and participation reflect diversity and expertise.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Ensure interdisciplinary AI actors, competencies, and participation reflect diversity and expertise",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "MAP 1.3",
+          "control_name": "The organization mission and relevant goals for AI technology are understood and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Understand the organization mission and relevant goals for AI technology",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Document the organization mission and relevant goals for AI technology",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "MAP 1.4",
+          "control_name": "The business value or context of business use has been clearly defined or re-evaluated.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Define the business value or context of business use",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Re-evaluate the business value or context of business use",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "MAP 1.5",
+          "control_name": "Organizational risk tolerances are determined and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Determine organizational risk tolerances",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.5.2",
+              "goal_name": "Document organizational risk tolerances",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "MAP 1.6",
+          "control_name": "System requirements are elicited and socio-technical implications are considered.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Elicit system requirements and socio-technical implications are considered",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "MAP 2.1",
+          "control_name": "The specific tasks and methods used to implement the tasks the AI system will support are defined.",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Define the specific tasks and methods used to implement the tasks the AI system will support",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "MAP 2.2",
+          "control_name": "Information about knowledge limits and human oversight of the AI system is documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Document information about knowledge limits and human oversight of the AI system",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "MAP 2.3",
+          "control_name": "Scientific integrity and TEVV considerations are identified and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Identify scientific integrity and TEVV considerations",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.9.2",
+              "goal_name": "Document scientific integrity and TEVV considerations",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "MAP 3.1",
+          "control_name": "Potential benefits of intended AI system functionality and performance are examined and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Examine potential benefits of intended AI system functionality and performance",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.10.2",
+              "goal_name": "Document potential benefits of intended AI system functionality and performance",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "MAP 3.2",
+          "control_name": "Potential costs from expected or realized AI errors or functionality are examined and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Examine potential costs from expected or realized AI errors or functionality",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.11.2",
+              "goal_name": "Document potential costs from expected or realized AI errors or functionality",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.12",
+          "control_id": "MAP 3.3",
+          "control_name": "Targeted application scope is specified and documented based on system capability and context.",
+          "subgoals": [
+            {
+              "goal_id": "G1.12.1",
+              "goal_name": "Specify targeted application scope",
+              "class": "TECH"
+            },
+            {
+              "goal_id": "G1.12.2",
+              "goal_name": "Document targeted application scope based on system capability and context",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.13",
+          "control_id": "MAP 3.4",
+          "control_name": "Processes for operator and practitioner proficiency are defined, assessed, and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.13.1",
+              "goal_name": "Define processes for operator and practitioner proficiency",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.13.2",
+              "goal_name": "Assess processes for operator and practitioner proficiency",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.13.3",
+              "goal_name": "Document processes for operator and practitioner proficiency",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.14",
+          "control_id": "MAP 3.5",
+          "control_name": "Processes for human oversight are defined, assessed, and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.14.1",
+              "goal_name": "Define processes for human oversight",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.14.2",
+              "goal_name": "Assess processes for human oversight",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.14.3",
+              "goal_name": "Document processes for human oversight",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.15",
+          "control_id": "MAP 4.1",
+          "control_name": "Approaches for mapping AI technology and legal risks of components, including third-party data or software, are documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.15.1",
+              "goal_name": "Document approaches for mapping AI technology and legal risks of components, including third-party data or software,",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.16",
+          "control_id": "MAP 4.2",
+          "control_name": "Internal risk controls for components of the AI system, including third-party AI technologies, are identified and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.16.1",
+              "goal_name": "Identify internal risk controls for components of the AI system, including third-party AI technologies,",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.16.2",
+              "goal_name": "Document internal risk controls for components of the AI system, including third-party AI technologies,",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.17",
+          "control_id": "MAP 5.1",
+          "control_name": "Likelihood and magnitude of each identified impact are documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.17.1",
+              "goal_name": "Document likelihood and magnitude of each identified impact",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.18",
+          "control_id": "MAP 5.2",
+          "control_name": "Practices and personnel for supporting regular engagement with relevant AI actors and feedback are in place.",
+          "subgoals": [
+            {
+              "goal_id": "G1.18.1",
+              "goal_name": "Ensure practices and personnel for supporting regular engagement with relevant AI actors and feedback are in place",
+              "class": "ORG"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

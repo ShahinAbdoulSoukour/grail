@@ -1,0 +1,56 @@
+{
+  "goal_id": "G0",
+  "clause_id": "MP",
+  "clause_name": "Media Protection",
+  "goal_name": "Ensure media protection",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure secure access, handling, and protection of information media.",
+      "goal_name": "Ensure secure access, handling, and protection of information media",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "MP-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate media protection controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate media protection controls"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate media protection controls"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate media protection controls"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "MP-2",
+          "control_name": "Restrict access to digital and non-digital media containing information.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Restrict access to digital and non-digital media containing information"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "MP-4",
+          "control_name": "Protect information system media until the media are destroyed or sanitized using approved equipment, techniques, and procedures.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Protect information system media until the media are destroyed or sanitized using approved equipment, techniques, and procedures"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

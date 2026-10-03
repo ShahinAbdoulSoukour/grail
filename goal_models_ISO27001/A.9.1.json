@@ -1,0 +1,46 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.9.1",
+  "clause_name": "Business requirements of access control",
+  "goal_name": "Establish business requirements of access control",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To limit access to information and information processing facilities.",
+      "goal_name": "Limit access to information and information processing facilities",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.9.1.1",
+          "control_name": "An access control policy shall be established, documented and reviewed based on business and information security requirements.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish an access control policy"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document an access control policy"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Review an access control policy based on business and information security requirements"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.9.1.2",
+          "control_name": "Users shall only be provided with access to the network and network services that they have been specifically authorized to use.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Only be provided with access to the network and network services that they have been specifically authorized to use",
+              "agent": "Users"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

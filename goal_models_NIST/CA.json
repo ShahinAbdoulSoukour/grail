@@ -1,0 +1,71 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CA",
+  "clause_name": "Assessment, Authorization, and Monitoring",
+  "goal_name": "Ensure assessment, authorization, and monitoring",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure systems and controls are properly assessed, authorized, and monitored.",
+      "goal_name": "Ensure systems and controls are properly assessed, authorized, and monitored",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CA-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate implementation of assessment, authorization, and monitoring controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate implementation of assessment, authorization, and monitoring controls"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate implementation of assessment, authorization, and monitoring controls"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate implementation of assessment, authorization, and monitoring controls"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CA-2",
+          "control_name": "Assess the controls in the system and environment of operation to determine if they are implemented correctly and operating as intended.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Assess the controls in the system and environment of operation to determine if they are implemented correctly and operating as intended"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CA-3",
+          "control_name": "Authorize connections and information exchange between systems using interconnection agreements.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Authorize connections and information exchange between systems using interconnection agreements"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CA-5",
+          "control_name": "Develop and implement a plan of action and milestones for the system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Develop a plan of action and milestones for the system"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Implement a plan of action and milestones for the system"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

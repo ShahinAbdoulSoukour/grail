@@ -1,0 +1,66 @@
+{
+  "goal_id": "G0",
+  "clause_id": "RA",
+  "clause_name": "Assess Security and Privacy Risks",
+  "goal_name": "Assess security and privacy risks",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure effective assessment of system and information risks.",
+      "goal_name": "Ensure effective assessment of system and information risks",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "RA-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate risk assessment controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate risk assessment controls",
+              "class": "ORG",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate risk assessment controls",
+              "class": "ORG",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate risk assessment controls",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "RA-2",
+          "control_name": "Categorize the system and information processed, stored, and transmitted by the system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Categorize the system and information processed, stored, and transmitted by the system",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "RA-3",
+          "control_name": "Conduct a risk assessment to determine the risk to organizational operations, assets, individuals, other organizations, and the Nation.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Conduct a risk assessment to determine the risk to organizational operations, assets, individuals, other organizations, and the Nation",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

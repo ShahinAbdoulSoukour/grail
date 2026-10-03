@@ -1,0 +1,192 @@
+{
+  "goal_id": "G0",
+  "clause_id": "MA",
+  "clause_name": "Manage System Maintenance",
+  "goal_name": "Manage system maintenance",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure controlled and secure system maintenance.",
+      "goal_name": "Ensure controlled and secure system maintenance",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "MA-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate maintenance controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate maintenance controls",
+              "class": "ORG",
+              "embedding_context": "Develop policy and procedures to facilitate maintenance controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.399501
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.361859
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate maintenance controls",
+              "class": "ORG",
+              "embedding_context": "Document policy and procedures to facilitate maintenance controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CI",
+                "name": "Configuration Inventory",
+                "similarity_score": 0.43607
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.360614
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate maintenance controls",
+              "class": "ORG",
+              "embedding_context": "Disseminate policy and procedures to facilitate maintenance controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CI",
+                "name": "Configuration Inventory",
+                "similarity_score": 0.404356
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.382924
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "MA-2",
+          "control_name": "Perform maintenance on system components in a controlled manner.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Perform maintenance on system components in a controlled manner",
+              "class": "TECH",
+              "embedding_context": "Perform maintenance on system components in a controlled manner",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SDM",
+                "name": "System Daemon Monitoring",
+                "similarity_score": 0.434409
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.359809
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "MA-3",
+          "control_name": "Approve, control, and monitor maintenance tools.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Approve maintenance tools",
+              "class": "TECH",
+              "embedding_context": "Approve maintenance tools",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.356418
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0002",
+                "name": "Human Approval",
+                "similarity_score": 0.324079
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Control maintenance tools",
+              "class": "TECH",
+              "embedding_context": "Control maintenance tools",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.482485
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.34135
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "similarity_score": 0.482485
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.3.3",
+              "goal_name": "Monitor maintenance tools",
+              "class": "TECH",
+              "embedding_context": "Monitor maintenance tools",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.463781
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0014",
+                "name": "Resource Monitoring",
+                "similarity_score": 0.312652
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "similarity_score": 0.463781
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

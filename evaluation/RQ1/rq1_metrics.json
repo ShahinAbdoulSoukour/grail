@@ -1,0 +1,296 @@
+{
+  "generated_at": "2026-10-03T00:25:23+00:00",
+  "inputs": {
+    "kws": "merged_goal_models_kws.ttl",
+    "embedding": "merged_goal_models_embedding.ttl",
+    "llm": "merged_goal_models_llm.ttl"
+  },
+  "class_reference_kg": "embedding",
+  "structure": {
+    "standards": 5,
+    "control_families": 65,
+    "controls": 363,
+    "goals_total": 662,
+    "root_goals": 65,
+    "objective_goals": 65,
+    "leaf_goals": 532,
+    "leaf_goals_per_control_mean": 1.47,
+    "refinement_depth": 3,
+    "leaf_classes": {
+      "TECH": 219,
+      "PHYS": 51,
+      "ORG": 262
+    },
+    "orphan_non_root_goals": 0,
+    "leaves_traceable_to_standard": 532,
+    "leaves_traceable_to_standard_pct": 100.0
+  },
+  "catalog_sizes": {
+    "D3FEND": 271,
+    "OntoSecAI": 79
+  },
+  "strategies": {
+    "kws": {
+      "label": "Keyword +GM",
+      "operationalized_leaves": 104,
+      "operationalized_leaves_pct": 19.5,
+      "per_class": {
+        "TECH": {
+          "operationalized": 58,
+          "total": 219,
+          "pct": 26.5
+        },
+        "PHYS": {
+          "operationalized": 16,
+          "total": 51,
+          "pct": 31.4
+        },
+        "ORG": {
+          "operationalized": 30,
+          "total": 262,
+          "pct": 11.5
+        }
+      },
+      "per_standard": {
+        "ISO 27001": {
+          "operationalized": 23,
+          "total": 72,
+          "pct": 31.9
+        },
+        "NIST": {
+          "operationalized": 29,
+          "total": 132,
+          "pct": 22.0
+        },
+        "CIS Controls": {
+          "operationalized": 38,
+          "total": 181,
+          "pct": 21.0
+        },
+        "AI-RMF": {
+          "operationalized": 9,
+          "total": 96,
+          "pct": 9.4
+        },
+        "ISO 42001": {
+          "operationalized": 5,
+          "total": 51,
+          "pct": 9.8
+        }
+      },
+      "goal_operation_links": 169,
+      "links_by_catalog": {
+        "OntoSecAI": 119,
+        "D3FEND": 50
+      },
+      "operations_per_operationalized_leaf": {
+        "mean": 1.62,
+        "median": 1.0,
+        "max": 4,
+        "distribution": {
+          "1": 66,
+          "2": 15,
+          "3": 19,
+          "4": 4
+        }
+      },
+      "distinct_operations_used": 54,
+      "distinct_operations_by_catalog": {
+        "OntoSecAI": 30,
+        "D3FEND": 24
+      },
+      "catalog_utilization_pct": {
+        "D3FEND": 8.9,
+        "OntoSecAI": 38.0
+      },
+      "scored_links": false,
+      "similarity_scores": null
+    },
+    "embedding": {
+      "label": "Embedding +GM",
+      "operationalized_leaves": 275,
+      "operationalized_leaves_pct": 51.7,
+      "per_class": {
+        "TECH": {
+          "operationalized": 142,
+          "total": 219,
+          "pct": 64.8
+        },
+        "PHYS": {
+          "operationalized": 38,
+          "total": 51,
+          "pct": 74.5
+        },
+        "ORG": {
+          "operationalized": 95,
+          "total": 262,
+          "pct": 36.3
+        }
+      },
+      "per_standard": {
+        "ISO 27001": {
+          "operationalized": 45,
+          "total": 72,
+          "pct": 62.5
+        },
+        "NIST": {
+          "operationalized": 67,
+          "total": 132,
+          "pct": 50.8
+        },
+        "CIS Controls": {
+          "operationalized": 90,
+          "total": 181,
+          "pct": 49.7
+        },
+        "AI-RMF": {
+          "operationalized": 47,
+          "total": 96,
+          "pct": 49.0
+        },
+        "ISO 42001": {
+          "operationalized": 26,
+          "total": 51,
+          "pct": 51.0
+        }
+      },
+      "goal_operation_links": 1280,
+      "links_by_catalog": {
+        "OntoSecAI": 682,
+        "D3FEND": 598
+      },
+      "operations_per_operationalized_leaf": {
+        "mean": 4.65,
+        "median": 5,
+        "max": 10,
+        "distribution": {
+          "1": 58,
+          "2": 33,
+          "3": 27,
+          "4": 17,
+          "5": 49,
+          "6": 22,
+          "7": 9,
+          "8": 12,
+          "9": 9,
+          "10": 39
+        }
+      },
+      "distinct_operations_used": 178,
+      "distinct_operations_by_catalog": {
+        "D3FEND": 114,
+        "OntoSecAI": 64
+      },
+      "catalog_utilization_pct": {
+        "D3FEND": 42.1,
+        "OntoSecAI": 81.0
+      },
+      "scored_links": true,
+      "similarity_scores": {
+        "min": 0.45,
+        "mean": 0.511,
+        "max": 0.719,
+        "count": 1283
+      }
+    },
+    "llm": {
+      "label": "LLM +GM",
+      "operationalized_leaves": 494,
+      "operationalized_leaves_pct": 92.9,
+      "per_class": {
+        "TECH": {
+          "operationalized": 214,
+          "total": 219,
+          "pct": 97.7
+        },
+        "PHYS": {
+          "operationalized": 47,
+          "total": 51,
+          "pct": 92.2
+        },
+        "ORG": {
+          "operationalized": 233,
+          "total": 262,
+          "pct": 88.9
+        }
+      },
+      "per_standard": {
+        "ISO 27001": {
+          "operationalized": 67,
+          "total": 72,
+          "pct": 93.1
+        },
+        "NIST": {
+          "operationalized": 121,
+          "total": 132,
+          "pct": 91.7
+        },
+        "CIS Controls": {
+          "operationalized": 170,
+          "total": 181,
+          "pct": 93.9
+        },
+        "AI-RMF": {
+          "operationalized": 88,
+          "total": 96,
+          "pct": 91.7
+        },
+        "ISO 42001": {
+          "operationalized": 48,
+          "total": 51,
+          "pct": 94.1
+        }
+      },
+      "goal_operation_links": 1567,
+      "links_by_catalog": {
+        "OntoSecAI": 645,
+        "D3FEND": 922
+      },
+      "operations_per_operationalized_leaf": {
+        "mean": 3.17,
+        "median": 3.0,
+        "max": 8,
+        "distribution": {
+          "1": 88,
+          "2": 108,
+          "3": 84,
+          "4": 65,
+          "5": 145,
+          "6": 3,
+          "8": 1
+        }
+      },
+      "distinct_operations_used": 211,
+      "distinct_operations_by_catalog": {
+        "D3FEND": 151,
+        "OntoSecAI": 60
+      },
+      "catalog_utilization_pct": {
+        "D3FEND": 55.7,
+        "OntoSecAI": 75.9
+      },
+      "scored_links": false,
+      "similarity_scores": null
+    }
+  },
+  "agreement": {
+    "kws__embedding": {
+      "leaves_operationalized_by_both": 78,
+      "leaves_sharing_at_least_one_operation": 30,
+      "leaves_sharing_at_least_one_operation_pct": 38.5,
+      "mean_jaccard": 0.101
+    },
+    "kws__llm": {
+      "leaves_operationalized_by_both": 102,
+      "leaves_sharing_at_least_one_operation": 30,
+      "leaves_sharing_at_least_one_operation_pct": 29.4,
+      "mean_jaccard": 0.076
+    },
+    "embedding__llm": {
+      "leaves_operationalized_by_both": 263,
+      "leaves_sharing_at_least_one_operation": 217,
+      "leaves_sharing_at_least_one_operation_pct": 82.5,
+      "mean_jaccard": 0.291
+    }
+  }
+}

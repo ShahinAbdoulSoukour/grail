@@ -1,0 +1,192 @@
+{
+  "goal_id": "G0",
+  "clause_id": "IR",
+  "clause_name": "Incident Response",
+  "goal_name": "Ensure incident response",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure effective preparation, handling, and response to security incidents.",
+      "goal_name": "Ensure effective preparation, handling, and response to security incidents",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "IR-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate incident response controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate incident response controls",
+              "class": "ORG",
+              "embedding_context": "Develop policy and procedures to facilitate incident response controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.382687
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0013",
+                "name": "Queue Management",
+                "similarity_score": 0.37486
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate incident response controls",
+              "class": "ORG",
+              "embedding_context": "Document policy and procedures to facilitate incident response controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CI",
+                "name": "Configuration Inventory",
+                "similarity_score": 0.399853
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.348939
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate incident response controls",
+              "class": "ORG",
+              "embedding_context": "Disseminate policy and procedures to facilitate incident response controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.409483
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0013",
+                "name": "Queue Management",
+                "similarity_score": 0.372301
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "IR-2",
+          "control_name": "Provide incident response training to personnel with incident response roles and responsibilities.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Provide incident response training to personnel with incident response roles and responsibilities",
+              "class": "ORG",
+              "embedding_context": "Provide incident response training to personnel with incident response roles and responsibilities",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OAM",
+                "name": "Operational Activity Mapping",
+                "similarity_score": 0.32799
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.318229
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "IR-3",
+          "control_name": "Test the incident response capability.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Test the incident response capability",
+              "class": "ORG",
+              "embedding_context": "Test the incident response capability",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.428345
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0013",
+                "name": "Queue Management",
+                "similarity_score": 0.34278
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "IR-4",
+          "control_name": "Implement an incident handling capability for security incidents.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Implement an incident handling capability for security incidents",
+              "class": "ORG",
+              "embedding_context": "Implement an incident handling capability for security incidents",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.417412
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0013",
+                "name": "Queue Management",
+                "similarity_score": 0.47689
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0013",
+                  "name": "Queue Management",
+                  "description": "Control queued and total actions.",
+                  "similarity_score": 0.47689
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.458309
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.451886
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "similarity_score": 0.450556
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

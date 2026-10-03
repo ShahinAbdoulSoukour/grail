@@ -1,0 +1,110 @@
+{
+  "goal_id": "G0",
+  "clause_id": "PT",
+  "clause_name": "Protect Personal Data and Privacy",
+  "goal_name": "Protect personal data and privacy",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure lawful and effective protection of personal data.",
+      "goal_name": "Ensure lawful and effective protection of personal data",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "PT-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate privacy controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate privacy controls",
+              "class": "ORG",
+              "attack": "AML.A0015",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate privacy controls",
+              "class": "ORG",
+              "attack": "AML.A0015",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate privacy controls",
+              "class": "ORG",
+              "attack": "AML.A0015",
+              "actions": [
+                {
+                  "id": "AML.M0012",
+                  "label": "Encrypt Sensitive Information",
+                  "phases": [
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0020",
+                  "label": "Encryption",
+                  "phases": [
+                    "DataPreparation"
+                  ],
+                  "definition": "Encrypting the model’s code, training data, and other sensitive information can prevent attackers from being able to access and steal the model.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0029",
+                  "label": "Reducing the training data",
+                  "phases": [
+                    "DataPreparation"
+                  ],
+                  "definition": "Reducing the size of the training dataset or removing redundant or highly correlated features can help reduce the information an attacker can gain from a membership inference attack.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "PT-2",
+          "control_name": "Determine the legal authority and other requirements to process personally identifiable information.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Determine the legal authority and other requirements to process personally identifiable information",
+              "class": "ORG",
+              "artifact": "Process",
+              "actions": [
+                {
+                  "id": "D3-PSMD",
+                  "label": "Process Self-Modification Detection",
+                  "verb": "analyzes",
+                  "definition": "Detects processes that modify, change, or replace their own code at runtime.",
+                  "source": "D3FEND"
+                },
+                {
+                  "id": "D3-PSA",
+                  "label": "Process Spawn Analysis",
+                  "verb": "analyzes",
+                  "definition": "Analyzing spawn arguments or attributes of a process to detect processes that are unauthorized.",
+                  "source": "D3FEND"
+                },
+                {
+                  "id": "D3-PLA",
+                  "label": "Process Lineage Analysis",
+                  "verb": "analyzes",
+                  "definition": "Identification of suspicious processes executing on an end-point device by examining the ancestry and siblings of a process, and the associated metadata of each node on the tree, such as process execution, duration, and order relative to siblings and ancestors.",
+                  "source": "D3FEND"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

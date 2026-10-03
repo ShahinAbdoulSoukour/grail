@@ -1,0 +1,169 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.8.3",
+  "clause_name": "Media handling",
+  "goal_name": "Control media handling",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To prevent unauthorized disclosure, modification, removal or destruction of information stored on media.",
+      "goal_name": "Prevent unauthorized disclosure, modification, removal or destruction of information stored on media",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.8.3.1",
+          "control_name": "Procedures shall be implemented for the management of removable media in accordance with the classification scheme adopted by the organization.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Implement procedures for the management of removable media in accordance with the classification scheme adopted by the organization",
+              "class": "ORG",
+              "embedding_context": "Implement procedures for the management of removable media in accordance with the classification scheme adopted by the organization",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DKF",
+                "name": "Disk Formatting",
+                "similarity_score": 0.466676
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0032",
+                "name": "Utilize integrity controls in hardware",
+                "similarity_score": 0.324813
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DKF",
+                  "name": "Disk Formatting",
+                  "description": "Disk Formatting is the process of preparing a data storage device, such as a hard drive, solid-state drive, or USB flash drive, for initial use.",
+                  "similarity_score": 0.466676
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-IOPR",
+                  "name": "IO Port Restriction",
+                  "description": "Limiting access to computer input/output (IO) ports to restrict unauthorized devices.",
+                  "similarity_score": 0.458887
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.8.3.2",
+          "control_name": "Media shall be disposed of securely when no longer required, using formal procedures.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Dispose of media securely when no longer required, using formal procedures",
+              "class": "TECH",
+              "embedding_context": "Dispose of media securely when no longer required, using formal procedures",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FEV",
+                "name": "File Eviction",
+                "similarity_score": 0.49925
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.289029
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FEV",
+                  "name": "File Eviction",
+                  "description": "File eviction techniques delete files from system storage.",
+                  "similarity_score": 0.49925
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DKE",
+                  "name": "Disk Erasure",
+                  "description": "Disk Erasure is the process of securely deleting all data on a disk to ensure that it cannot be recovered by any means.",
+                  "similarity_score": 0.460716
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.8.3.3",
+          "control_name": "Media containing information shall be protected against unauthorized access, misuse or corruption during transportation.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Protect media containing information against unauthorized access, misuse or corruption during transportation",
+              "class": "PHYS",
+              "embedding_context": "Protect media containing information against unauthorized access, misuse or corruption during transportation",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RFAM",
+                "name": "Remote File Access Mediation",
+                "similarity_score": 0.570775
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0032",
+                "name": "Utilize integrity controls in hardware",
+                "similarity_score": 0.523006
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RFAM",
+                  "name": "Remote File Access Mediation",
+                  "description": "Remote file access mediation is the process of managing and securing access to file systems over a network to ensure that only authorized users or processes can interact with remote files.",
+                  "similarity_score": 0.570775
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FE",
+                  "name": "File Encryption",
+                  "description": "Encrypting a file using a cryptographic key.",
+                  "similarity_score": 0.549568
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-IOPR",
+                  "name": "IO Port Restriction",
+                  "description": "Limiting access to computer input/output (IO) ports to restrict unauthorized devices.",
+                  "similarity_score": 0.51952
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DENCR",
+                  "name": "Disk Encryption",
+                  "description": "Encrypting a hard disk partition to prevent cleartext access to a file system.",
+                  "similarity_score": 0.516623
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CQ",
+                  "name": "Content Quarantine",
+                  "description": "Transfer content that does not comply with policy to a quarantine zone.",
+                  "similarity_score": 0.509044
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0032",
+                  "name": "Utilize integrity controls in hardware",
+                  "description": "Utilize tamper-evident packaging, secure shipping protocols, and block chain-based tracking systems to ensure the integrity of hardware and software during distribution, preventing unauthorized access or modifications.",
+                  "similarity_score": 0.523006
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

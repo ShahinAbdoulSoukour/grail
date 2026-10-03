@@ -1,0 +1,143 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.17",
+  "clause_name": "Incident Response Management",
+  "goal_name": "Ensure incident response management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Establish a program to develop and maintain an incident response capability (e.g., policies, plans, procedures, defined roles, training, and communications) to prepare, detect, and quickly respond to an attack.",
+      "goal_name": "Establish a program to develop and maintain an incident response capability to prepare, detect, and quickly respond to an attack",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.17.1",
+          "control_name": "Designate Personnel to Manage Incident Handling",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Designate Personnel to Manage Incident Handling",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.17.2",
+          "control_name": "Establish and Maintain Contact Information for Reporting Security Incidents",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish Contact Information for Reporting Security Incidents",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain Contact Information for Reporting Security Incidents",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.17.3",
+          "control_name": "Establish and Maintain an Enterprise Process for Reporting Incidents",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Establish an Enterprise Process for Reporting Incidents",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Maintain an Enterprise Process for Reporting Incidents",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.17.4",
+          "control_name": "Establish and Maintain an Incident Response Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish an Incident Response Process",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Maintain an Incident Response Process",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.17.5",
+          "control_name": "Assign Key Roles and Responsibilities",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Assign Key Roles and Responsibilities",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.17.6",
+          "control_name": "Define Mechanisms for Communicating During Incident Response",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Define Mechanisms for Communicating During Incident Response",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.17.7",
+          "control_name": "Conduct Routine Incident Response Exercises",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Conduct Routine Incident Response Exercises",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.17.8",
+          "control_name": "Conduct Post-Incident Reviews",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Conduct Post-Incident Reviews",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.17.9",
+          "control_name": "Establish and Maintain Security Incident Thresholds",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Establish Security Incident Thresholds",
+              "class": "PHYS"
+            },
+            {
+              "goal_id": "G1.9.2",
+              "goal_name": "Maintain Security Incident Thresholds",
+              "class": "TECH"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

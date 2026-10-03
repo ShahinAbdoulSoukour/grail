@@ -1,0 +1,54 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.5.1",
+  "clause_name": "Management direction for information security",
+  "goal_name": "Provide management direction for information security",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To provide management direction and support for information security in accordance with business requirements and relevant laws and regulations.",
+      "goal_name": "Provide management direction and support for information security in accordance with business requirements and relevant laws and regulations",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.5.1.1",
+          "control_name": "A set of policies for information security shall be defined, approved by management, published and communicated to employees and relevant external parties.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Define a set of policies for information security"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Approve a set of policies for information security",
+              "agent": "management"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Publish a set of policies for information security"
+            },
+            {
+              "goal_id": "G1.1.4",
+              "goal_name": "Communicate a set of policies for information security to employees and relevant external parties"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.5.1.2",
+          "control_name": "The policies for information security shall be reviewed at planned intervals or if significant changes occur to ensure their continuing suitability, adequacy and effectiveness.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Review the policies for information security at planned intervals to ensure their continuing suitability, adequacy and effectiveness"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Review the policies for information security if significant changes occur to ensure their continuing suitability, adequacy and effectiveness"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

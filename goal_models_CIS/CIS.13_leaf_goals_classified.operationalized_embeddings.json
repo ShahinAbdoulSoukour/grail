@@ -1,0 +1,572 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.13",
+  "clause_name": "Network Monitoring and Defense",
+  "goal_name": "Ensure network monitoring and defense",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Operate processes and tooling to establish and maintain comprehensive network monitoring and defense against security threats across the enterprise’s network infrastructure and user base.",
+      "goal_name": "Operate processes and tooling to establish and maintain comprehensive network monitoring and defense against security threats across the enterprise’s network infrastructure and user base",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.13.1",
+          "control_name": "Perform Application Layer Filtering",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Perform Application Layer Filtering",
+              "class": "TECH",
+              "embedding_context": "Perform Application Layer Filtering",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SCF",
+                "name": "System Call Filtering",
+                "similarity_score": 0.392376
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "CAPEC.M0001",
+                "name": "Employ network segmentation",
+                "similarity_score": 0.397605
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.13.2",
+          "control_name": "Deploy a Host-Based Intrusion Detection Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Deploy a Host-Based Intrusion Detection Solution",
+              "class": "TECH",
+              "embedding_context": "Deploy a Host-Based Intrusion Detection Solution",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SHN",
+                "name": "Standalone Honeynet",
+                "similarity_score": 0.421162
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0014",
+                "name": "Resource Monitoring",
+                "similarity_score": 0.431918
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.13.3",
+          "control_name": "Deploy a Network Intrusion Detection Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Deploy a Network Intrusion Detection Solution",
+              "class": "TECH",
+              "embedding_context": "Deploy a Network Intrusion Detection Solution",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ANAA",
+                "name": "Administrative Network Activity Analysis",
+                "similarity_score": 0.437551
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "CAPEC.M0001",
+                "name": "Employ network segmentation",
+                "similarity_score": 0.446238
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.13.4",
+          "control_name": "Perform Traffic Filtering Between Network Segments",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Perform Traffic Filtering Between Network Segments",
+              "class": "TECH",
+              "embedding_context": "Perform Traffic Filtering Between Network Segments",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-BDI",
+                "name": "Broadcast Domain Isolation",
+                "similarity_score": 0.500855
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "CAPEC.M0001",
+                "name": "Employ network segmentation",
+                "similarity_score": 0.528999
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-BDI",
+                  "name": "Broadcast Domain Isolation",
+                  "description": "Broadcast isolation restricts the number of computers a host can contact on their LAN.",
+                  "similarity_score": 0.500855
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NTF",
+                  "name": "Network Traffic Filtering",
+                  "description": "Restricting network traffic originating from any location.",
+                  "similarity_score": 0.452763
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NTCD",
+                  "name": "Network Traffic Community Deviation",
+                  "description": "Establishing baseline communities of network hosts and identifying statistically divergent inter-community communication.",
+                  "similarity_score": 0.452471
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0001",
+                  "name": "Employ network segmentation",
+                  "description": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                  "similarity_score": 0.528999
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0004",
+                  "name": "Network segmentation",
+                  "description": "",
+                  "similarity_score": 0.493199
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.13.5",
+          "control_name": "Manage Access Control for Remote Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Manage Access Control for Remote Assets",
+              "class": "TECH",
+              "embedding_context": "Manage Access Control for Remote Assets",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RFAM",
+                "name": "Remote File Access Mediation",
+                "similarity_score": 0.561018
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0027",
+                "name": "Permissions Control",
+                "similarity_score": 0.497152
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RFAM",
+                  "name": "Remote File Access Mediation",
+                  "description": "Remote file access mediation is the process of managing and securing access to file systems over a network to ensure that only authorized users or processes can interact with remote files.",
+                  "similarity_score": 0.561018
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.545952
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-UAP",
+                  "name": "User Account Permissions",
+                  "description": "Restricting a user account's access to resources.",
+                  "similarity_score": 0.540227
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-LFP",
+                  "name": "Local File Permissions",
+                  "description": "Local file permissions is the systematic process of defining, implementing, and managing access control policies that dictate user permissions for accessing files on a local system through the configuration of operating system functionality.",
+                  "similarity_score": 0.506299
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3F-UGPH",
+                  "name": "User Group Permissions",
+                  "description": "Access control where access is determined based on attributes associated with users and the objects being accessed.",
+                  "similarity_score": 0.499398
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "similarity_score": 0.497152
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.13.6",
+          "control_name": "Collect Network Traffic Flow Logs",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Collect Network Traffic Flow Logs",
+              "class": "TECH",
+              "embedding_context": "Collect Network Traffic Flow Logs",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RTA",
+                "name": "RPC Traffic Analysis",
+                "similarity_score": 0.423759
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0034",
+                "name": "Monitoring of access logs",
+                "similarity_score": 0.473884
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "similarity_score": 0.473884
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.13.7",
+          "control_name": "Deploy a Host-Based Intrusion Prevention Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Deploy a Host-Based Intrusion Prevention Solution",
+              "class": "TECH",
+              "embedding_context": "Deploy a Host-Based Intrusion Prevention Solution",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SHN",
+                "name": "Standalone Honeynet",
+                "similarity_score": 0.478302
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0039",
+                "name": "Implement resource isolation techniques",
+                "similarity_score": 0.509451
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SHN",
+                  "name": "Standalone Honeynet",
+                  "description": "An environment created for the purpose of attracting attackers and eliciting their behaviors that is not connected to any production enterprise systems.",
+                  "similarity_score": 0.478302
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-BDI",
+                  "name": "Broadcast Domain Isolation",
+                  "description": "Broadcast isolation restricts the number of computers a host can contact on their LAN.",
+                  "similarity_score": 0.463146
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-IHN",
+                  "name": "Integrated Honeynet",
+                  "description": "The practice of setting decoys in a production environment to entice interaction from attackers.",
+                  "similarity_score": 0.452512
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OSM",
+                  "name": "Operating System Monitoring",
+                  "description": "The operating system software, for D3FEND's purposes, includes the kernel and its process management functions, hardware drivers, initialization or boot logic. It also includes and other key system daemons and their configuration. The monitoring or analysis of these components for unauthorized activity constitute **Operating System Monitoring**.",
+                  "similarity_score": 0.451178
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "similarity_score": 0.509451
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0035",
+                  "name": "Secure Deployment of Models",
+                  "description": "Secure deployment with approval workflows.",
+                  "similarity_score": 0.486571
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0001",
+                  "name": "Employ network segmentation",
+                  "description": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                  "similarity_score": 0.467081
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0014",
+                  "name": "Resource Monitoring",
+                  "description": "Continuously monitor resource usage.",
+                  "similarity_score": 0.462576
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0034",
+                  "name": "Monitoring of access logs",
+                  "description": "Regular monitoring of access logs.",
+                  "similarity_score": 0.453189
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.13.8",
+          "control_name": "Deploy a Network Intrusion Prevention Solution",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Deploy a Network Intrusion Prevention Solution",
+              "class": "TECH",
+              "embedding_context": "Deploy a Network Intrusion Prevention Solution",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ANAA",
+                "name": "Administrative Network Activity Analysis",
+                "similarity_score": 0.487831
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "CAPEC.M0001",
+                "name": "Employ network segmentation",
+                "similarity_score": 0.521003
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ANAA",
+                  "name": "Administrative Network Activity Analysis",
+                  "description": "Detection of unauthorized use of administrative network protocols by analyzing network activity against a baseline.",
+                  "similarity_score": 0.487831
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SHN",
+                  "name": "Standalone Honeynet",
+                  "description": "An environment created for the purpose of attracting attackers and eliciting their behaviors that is not connected to any production enterprise systems.",
+                  "similarity_score": 0.48292
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "similarity_score": 0.477191
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NTSA",
+                  "name": "Network Traffic Signature Analysis",
+                  "description": "Analyzing network traffic and compares it to known signatures",
+                  "similarity_score": 0.453726
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APCA",
+                  "name": "Application Protocol Command Analysis",
+                  "description": "Analyzing application protocol level remote commands to detect unauthorized activity.",
+                  "similarity_score": 0.452494
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0001",
+                  "name": "Employ network segmentation",
+                  "description": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                  "similarity_score": 0.521003
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "similarity_score": 0.490235
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0004",
+                  "name": "Network segmentation",
+                  "description": "",
+                  "similarity_score": 0.4796
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0004",
+                  "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                  "description": "",
+                  "similarity_score": 0.478614
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0035",
+                  "name": "Secure Deployment of Models",
+                  "description": "Secure deployment with approval workflows.",
+                  "similarity_score": 0.47671
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.13.9",
+          "control_name": "Deploy Port-Level Access Control",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Deploy Port-Level Access Control",
+              "class": "TECH",
+              "embedding_context": "Deploy Port-Level Access Control",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NRAM",
+                "name": "Network Resource Access Mediation",
+                "similarity_score": 0.456853
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0027",
+                "name": "Permissions Control",
+                "similarity_score": 0.472052
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.456853
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "similarity_score": 0.472052
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "CIS.13.11",
+          "control_name": "Tune Security Event Alerting Thresholds",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Ensure tune Security Event Alerting Thresholds",
+              "class": "TECH",
+              "embedding_context": "Ensure tune Security Event Alerting Thresholds",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AZET",
+                "name": "Authorization Event Thresholding",
+                "similarity_score": 0.474131
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0020",
+                "name": "Fine-Tuning Caution",
+                "similarity_score": 0.49113
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AZET",
+                  "name": "Authorization Event Thresholding",
+                  "description": "Collecting authorization events, creating a baseline user profile, and determining whether authorization events are consistent with the baseline profile.",
+                  "similarity_score": 0.474131
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ANET",
+                  "name": "Authentication Event Thresholding",
+                  "description": "Collecting authentication events, creating a baseline user profile, and determining whether authentication events are consistent with the baseline profile.",
+                  "similarity_score": 0.451924
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.49113
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0011",
+                  "name": "Resource Caps",
+                  "description": "Limit resource use per request.",
+                  "similarity_score": 0.460827
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0013",
+                  "name": "Queue Management",
+                  "description": "Control queued and total actions.",
+                  "similarity_score": 0.45825
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0012",
+                  "name": "API Rate Limits",
+                  "description": "Enforce rate limits for users or IP addresses.",
+                  "similarity_score": 0.455106
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0014",
+                  "name": "Resource Monitoring",
+                  "description": "Continuously monitor resource usage.",
+                  "similarity_score": 0.454283
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

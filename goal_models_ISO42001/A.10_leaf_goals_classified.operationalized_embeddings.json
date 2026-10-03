@@ -1,0 +1,163 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.10",
+  "clause_name": "Supplier requirements",
+  "goal_name": "Ensure supplier requirements",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Requirements for suppliers and external providers shall be defined.",
+      "goal_name": "Define requirements for suppliers and external providers",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.10.2",
+          "control_name": "Requirements for suppliers and external providers shall be defined.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Define requirements for suppliers and external providers",
+              "class": "ORG",
+              "embedding_context": "Define requirements for suppliers and external providers",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ODM",
+                "name": "Operational Dependency Mapping",
+                "similarity_score": 0.257617
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0007",
+                "name": "Supply Chain Verification",
+                "similarity_score": 0.411349
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.10.3",
+          "control_name": "Requirements from customers and users shall be identified and addressed.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Identify requirements from customers and users",
+              "class": "ORG",
+              "embedding_context": "Identify requirements from customers and users",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ODM",
+                "name": "Operational Dependency Mapping",
+                "similarity_score": 0.259929
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0007",
+                "name": "Supply Chain Verification",
+                "similarity_score": 0.300756
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Address requirements from customers and users",
+              "class": "ORG",
+              "embedding_context": "Address requirements from customers and users",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AM",
+                "name": "Access Modeling",
+                "similarity_score": 0.244499
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0007",
+                "name": "Supply Chain Verification",
+                "similarity_score": 0.262973
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.10.4",
+          "control_name": "Third-party relationships shall be monitored and reviewed.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Monitor Third-party relationships",
+              "class": "TECH",
+              "embedding_context": "Monitor Third-party relationships",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DAM",
+                "name": "Domain Account Monitoring",
+                "similarity_score": 0.428589
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0024",
+                "name": "Monitoring and auditing",
+                "similarity_score": 0.396707
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Review Third-party relationships",
+              "class": "ORG",
+              "embedding_context": "Review Third-party relationships",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SRA",
+                "name": "Sender Reputation Analysis",
+                "similarity_score": 0.315976
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0007",
+                "name": "Supply Chain Verification",
+                "similarity_score": 0.316875
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.10.5",
+          "control_name": "Appropriate contractual controls shall be established.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish appropriate contractual controls",
+              "class": "ORG",
+              "embedding_context": "Establish appropriate contractual controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NRAM",
+                "name": "Network Resource Access Mediation",
+                "similarity_score": 0.312449
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.333325
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

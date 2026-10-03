@@ -1,0 +1,354 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.14",
+  "clause_name": "Security Awareness and Skills Training",
+  "goal_name": "Ensure security awareness and skills training",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Establish and maintain a security awareness program to influence behavior among the workforce to be security conscious and properly skilled to reduce cybersecurity risks to the enterprise.",
+      "goal_name": "Establish and maintain a security awareness program to influence behavior among the workforce to be security conscious and properly skilled to reduce cybersecurity risks to the enterprise",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.14.1",
+          "control_name": "Establish and Maintain a Security Awareness Program",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish a Security Awareness Program",
+              "class": "ORG",
+              "embedding_context": "Establish a Security Awareness Program",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-VS",
+                "name": "Video Surveillance",
+                "similarity_score": 0.378108
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.420734
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain a Security Awareness Program",
+              "class": "ORG",
+              "embedding_context": "Maintain a Security Awareness Program",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.375665
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.46357
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.46357
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.451056
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.14.2",
+          "control_name": "Train Workforce Members to Recognize Social Engineering Attacks",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Train Workforce Members to Recognize Social Engineering Attacks",
+              "class": "ORG",
+              "embedding_context": "Train Workforce Members to Recognize Social Engineering Attacks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.458621
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.481072
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-UBA",
+                  "name": "User Behavior Analysis",
+                  "description": "User behavior analytics (\"UBA\") as defined by Gartner, is a cybersecurity process about detection of insider threats, targeted attacks, and financial fraud. UBA solutions look at patterns of human behavior, and then apply algorithms and statistical analysis to detect meaningful anomalies from those patterns-anomalies that indicate potential threats.' Instead of tracking devices or security events, UBA tracks a system's users. Big data platforms are increasing UBA functionality by allowing them to analyze petabytes worth of data to detect insider threats and advanced persistent threats.",
+                  "similarity_score": 0.458621
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.481072
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "similarity_score": 0.473886
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.14.3",
+          "control_name": "Train Workforce Members on Authentication Best Practices",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Train Workforce Members on Authentication Best Practices",
+              "class": "ORG",
+              "embedding_context": "Train Workforce Members on Authentication Best Practices",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CTS",
+                "name": "Credential Transmission Scoping",
+                "similarity_score": 0.407278
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.466559
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.466559
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.14.4",
+          "control_name": "Train Workforce on Data Handling Best Practices",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Train Workforce on Data Handling Best Practices",
+              "class": "ORG",
+              "embedding_context": "Train Workforce on Data Handling Best Practices",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.329339
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0018",
+                "name": "Data Sanitization",
+                "similarity_score": 0.40574
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.14.5",
+          "control_name": "Train Workforce Members on Causes of Unintentional Data Exposure",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Train Workforce Members on Causes of Unintentional Data Exposure",
+              "class": "ORG",
+              "embedding_context": "Train Workforce Members on Causes of Unintentional Data Exposure",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.394899
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0018",
+                "name": "User Training",
+                "similarity_score": 0.428387
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.14.6",
+          "control_name": "Train Workforce Members on Recognizing and Reporting Security Incidents",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Train Workforce Members on Recognizing and Reporting Security Incidents",
+              "class": "ORG",
+              "embedding_context": "Train Workforce Members on Recognizing and Reporting Security Incidents",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.397621
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.447791
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.14.7",
+          "control_name": "Train Workforce on How to Identify and Report if Their Enterprise Assets are Missing Security Updates",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Train Workforce on How to Identify and Report if Their Enterprise Assets are Missing Security Updates",
+              "class": "ORG",
+              "embedding_context": "Train Workforce on How to Identify and Report if Their Enterprise Assets are Missing Security Updates",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AVE",
+                "name": "Asset Vulnerability Enumeration",
+                "similarity_score": 0.46957
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.481155
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.46957
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.481155
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.14.8",
+          "control_name": "Train Workforce on the Dangers of Connecting to and Transmitting Enterprise Data Over Insecure Networks",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Train Workforce on the Dangers of Connecting to and Transmitting Enterprise Data Over Insecure Networks",
+              "class": "ORG",
+              "embedding_context": "Train Workforce on the Dangers of Connecting to and Transmitting Enterprise Data Over Insecure Networks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NVA",
+                "name": "Network Vulnerability Assessment",
+                "similarity_score": 0.427301
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.462129
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.462129
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.14.9",
+          "control_name": "Conduct Role-Specific Security Awareness and Skills Training",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Conduct Role-Specific Security Awareness and Skills Training",
+              "class": "ORG",
+              "embedding_context": "Conduct Role-Specific Security Awareness and Skills Training",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.393645
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.537142
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.537142
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

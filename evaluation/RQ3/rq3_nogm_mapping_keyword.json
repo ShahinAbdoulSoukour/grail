@@ -1,0 +1,198 @@
+{
+  "method": "keyword",
+  "goal_model_used": false,
+  "controls": [
+    {
+      "id": "REQ-AUTH-001",
+      "description": "An unauthorized access attempt must not result in file access being granted.",
+      "event_types": [
+        "path_traversal"
+      ],
+      "source": "scenario_requirement_description",
+      "operations": [
+        {
+          "operation_id": "D3-FAPA",
+          "operation_name": "File Access Pattern Analysis",
+          "source": "D3FEND",
+          "description": "Analyzing the files accessed by a process to identify unauthorized activity.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#FileAccessPatternAnalysis",
+          "mapping_score": 0.1875
+        },
+        {
+          "operation_id": "D3-RF",
+          "operation_name": "Restore File",
+          "source": "D3FEND",
+          "description": "Restoring a file for an entity to access.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#RestoreFile",
+          "mapping_score": 0.18181818181818182
+        },
+        {
+          "operation_id": "D3-DENCR",
+          "operation_name": "Disk Encryption",
+          "source": "D3FEND",
+          "description": "Encrypting a hard disk partition to prevent cleartext access to a file system.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#DiskEncryption",
+          "mapping_score": 0.13333333333333333
+        },
+        {
+          "operation_id": "D3-CAA",
+          "operation_name": "Connection Attempt Analysis",
+          "source": "D3FEND",
+          "description": "Analyzing failed connections in a network to detect unauthorized activity.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#ConnectionAttemptAnalysis",
+          "mapping_score": 0.125
+        },
+        {
+          "operation_id": "D3-ELM",
+          "operation_name": "Electronic Lock Monitoring",
+          "source": "D3FEND",
+          "description": "Monitoring electronic lock and door hardware states and access events (e.g., locked/unlocked, access granted/denied, door forced/held, tamper) to detect and respond to unauthorized entry.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#ElectronicLockMonitoring",
+          "mapping_score": 0.125
+        }
+      ]
+    },
+    {
+      "id": "REQ-PATH-001",
+      "description": "When path traversal is detected, file access must not be granted.",
+      "event_types": [
+        "path_traversal"
+      ],
+      "source": "scenario_requirement_description",
+      "operations": [
+        {
+          "operation_id": "D3-RF",
+          "operation_name": "Restore File",
+          "source": "D3FEND",
+          "description": "Restoring a file for an entity to access.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#RestoreFile",
+          "mapping_score": 0.18181818181818182
+        },
+        {
+          "operation_id": "D3-DENCR",
+          "operation_name": "Disk Encryption",
+          "source": "D3FEND",
+          "description": "Encrypting a hard disk partition to prevent cleartext access to a file system.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#DiskEncryption",
+          "mapping_score": 0.13333333333333333
+        },
+        {
+          "operation_id": "D3-LFAM",
+          "operation_name": "Local File Access Mediation",
+          "source": "D3FEND",
+          "description": "Local file access mediation is the process of an operating system granting or denying a specific access request to a local file.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#LocalFileAccessMediation",
+          "mapping_score": 0.125
+        },
+        {
+          "operation_id": "D3-DRA",
+          "operation_name": "Disable Remote Access",
+          "source": "D3FEND",
+          "description": "Limiting access to a computing device which is not required through or from a non-organization-controlled network.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#DisableRemoteAccess",
+          "mapping_score": 0.11764705882352941
+        },
+        {
+          "operation_id": "D3-FAPA",
+          "operation_name": "File Access Pattern Analysis",
+          "source": "D3FEND",
+          "description": "Analyzing the files accessed by a process to identify unauthorized activity.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#FileAccessPatternAnalysis",
+          "mapping_score": 0.11764705882352941
+        }
+      ]
+    },
+    {
+      "id": "REQ-THREAT-001",
+      "description": "When a threat is detected, a mitigation must eventually become active.",
+      "event_types": [
+        "path_traversal"
+      ],
+      "source": "scenario_requirement_description",
+      "operations": [
+        {
+          "operation_id": "D3-WSAM",
+          "operation_name": "Web Session Access Mediation",
+          "source": "D3FEND",
+          "description": "Web session access mediation secures user sessions in web applications by employing robust authentication and integrity validation, along with adaptive threat mitigation techniques, to ensure that access to web resources is authorized and protected from session-related attacks.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#WebSessionAccessMediation",
+          "mapping_score": 0.07142857142857142
+        },
+        {
+          "operation_id": "D3-ACA",
+          "operation_name": "Active Certificate Analysis",
+          "source": "D3FEND",
+          "description": "Actively collecting PKI certificates by connecting to the server and downloading its server certificates for analysis.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#ActiveCertificateAnalysis",
+          "mapping_score": 0.0625
+        },
+        {
+          "operation_id": "D3-ST",
+          "operation_name": "Session Termination",
+          "source": "D3FEND",
+          "description": "Forcefully end all active sessions associated with compromised accounts or devices.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#SessionTermination",
+          "mapping_score": 0.0625
+        },
+        {
+          "operation_id": "D3-APLM",
+          "operation_name": "Active Physical Link Mapping",
+          "source": "D3FEND",
+          "description": "Active physical link mapping sends and receives network traffic as a means to map the physical layer.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#ActivePhysicalLinkMapping",
+          "mapping_score": 0.058823529411764705
+        },
+        {
+          "operation_id": "AML.M0024",
+          "operation_name": "Monitoring and auditing",
+          "source": "OntoSecAI",
+          "description": "Regularly monitoring and auditing the model’s use can help detect and prevent theft by detecting when an attacker is attempting to access or steal the model.",
+          "uri": "http://www.semanticweb.org/ubaid/ontologies/2023/5/HES#AML.M0024",
+          "mapping_score": 0.05
+        }
+      ]
+    },
+    {
+      "id": "REQ-CMD-001",
+      "description": "An executed command must be authorized.",
+      "event_types": [
+        "execute_command"
+      ],
+      "source": "scenario_requirement_description",
+      "operations": [
+        {
+          "operation_id": "D3-AA",
+          "operation_name": "Agent Authentication",
+          "source": "D3FEND",
+          "description": "Agent authentication is the process of verifying the identities of agents to ensure they are authorized and trustworthy participants within a system.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#AgentAuthentication",
+          "mapping_score": 0.08333333333333333
+        },
+        {
+          "operation_id": "D3-APCA",
+          "operation_name": "Application Protocol Command Analysis",
+          "source": "D3FEND",
+          "description": "Analyzing application protocol level remote commands to detect unauthorized activity.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#ApplicationProtocolCommandAnalysis",
+          "mapping_score": 0.07692307692307693
+        },
+        {
+          "operation_id": "D3-TAAN",
+          "operation_name": "Transfer Agent Authentication",
+          "source": "D3FEND",
+          "description": "Validating that server components of a messaging infrastructure are authorized to send a particular message.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#TransferAgentAuthentication",
+          "mapping_score": 0.07142857142857142
+        },
+        {
+          "operation_id": "D3-RFAM",
+          "operation_name": "Remote File Access Mediation",
+          "source": "D3FEND",
+          "description": "Remote file access mediation is the process of managing and securing access to file systems over a network to ensure that only authorized users or processes can interact with remote files.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#RemoteFileAccessMediation",
+          "mapping_score": 0.05555555555555555
+        }
+      ]
+    }
+  ]
+}

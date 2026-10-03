@@ -1,0 +1,86 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.18",
+  "clause_name": "Penetration Testing",
+  "goal_name": "Ensure penetration testing",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Test the effectiveness and resiliency of enterprise assets through identifying and exploiting weaknesses in controls (people, processes, and technology), and simulating the objectives and actions of an attacker.",
+      "goal_name": "Test the effectiveness and resiliency of enterprise assets through identifying and exploiting weaknesses in controls, and simulating the objectives and actions of an attacker",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.18.1",
+          "control_name": "Establish and Maintain a Penetration Testing Program",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish a Penetration Testing Program",
+              "class": "TECH",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain a Penetration Testing Program",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.18.2",
+          "control_name": "Perform Periodic External Penetration Tests",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Perform Periodic External Penetration Tests",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.18.3",
+          "control_name": "Remediate Penetration Test Findings",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Remediate Penetration Test Findings",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.18.4",
+          "control_name": "Validate Security Measures",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Validate Security Measures",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.18.5",
+          "control_name": "Perform Periodic Internal Penetration Tests",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Perform Periodic Internal Penetration Tests",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.5",
+  "clause_name": "AI system impact assessment",
+  "goal_name": "Ensure AI system impact assessment",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Impact assessments shall be performed for AI systems.",
+      "goal_name": "Perform impact assessments for AI systems",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.5.2",
+          "control_name": "Impact assessments shall be performed for AI systems.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Perform impact assessments for AI systems"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.5.3",
+          "control_name": "Impact assessments shall be performed at appropriate times across the AI lifecycle.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Perform impact assessments at appropriate times across the AI lifecycle"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.5.4",
+          "control_name": "Impact assessment results shall be reviewed and updated when needed.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Review impact assessment results"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Update impact assessment results when needed"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.5.5",
+          "control_name": "Records of impact assessments shall be retained.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Retain records of impact assessments"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

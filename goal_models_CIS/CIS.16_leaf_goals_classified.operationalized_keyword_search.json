@@ -1,0 +1,391 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.16",
+  "clause_name": "Application Software Security",
+  "goal_name": "Ensure application software security",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Manage the security life cycle of in-house developed, hosted, or acquired software to prevent, detect, and remediate security weaknesses before they can impact the enterprise.",
+      "goal_name": "Manage the security life cycle of in-house developed, hosted, or acquired software to prevent, detect, and remediate security weaknesses before they can impact the enterprise",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.16.1",
+          "control_name": "Apply Secure Design Principles in Application Architectures",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Apply Secure Design Principles in Application Architectures",
+              "class": "TECH",
+              "actions": [
+                {
+                  "id": "AML.M0034",
+                  "label": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                  "phases": [
+                    "HardwareSecurityEngineering"
+                  ],
+                  "definition": "",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.16.2",
+          "control_name": "Establish and Maintain a Process to Accept and Address Software Vulnerabilities",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Process to Accept and Address Software Vulnerabilities",
+              "class": "ORG",
+              "artifact": "Software",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Process to Accept and Address Software Vulnerabilities",
+              "class": "TECH",
+              "artifact": "Software",
+              "actions": [
+                {
+                  "id": "D3-SU",
+                  "label": "Software Update",
+                  "verb": "updates",
+                  "definition": "Replacing old software on a computer system component.",
+                  "source": "D3FEND"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.16.3",
+          "control_name": "Perform Root Cause Analysis on Security Vulnerabilities",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Perform Root Cause Analysis on Security Vulnerabilities",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.16.4",
+          "control_name": "Establish and Manage an Inventory of Third-Party Software Components",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish an Inventory of Third-Party Software Components",
+              "class": "TECH",
+              "artifact": "Software",
+              "attack": "AML.A0011",
+              "actions": [
+                {
+                  "id": "AML.M0001",
+                  "label": "Limit Release of Public Information",
+                  "phases": [
+                    "AccessManagement"
+                  ],
+                  "definition": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0016",
+                  "label": "Vulnerability Scanning",
+                  "phases": [
+                    "ModelEvaluation",
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "OWASP.M0007",
+                  "label": "Supply Chain Verification",
+                  "phases": [
+                    "Business&DataUnderstanding"
+                  ],
+                  "definition": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Manage an Inventory of Third-Party Software Components",
+              "class": "TECH",
+              "artifact": "Software",
+              "attack": "AML.A0011",
+              "actions": [
+                {
+                  "id": "D3-SWI",
+                  "label": "Software Inventory",
+                  "verb": "inventories",
+                  "definition": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "source": "D3FEND"
+                },
+                {
+                  "id": "AML.M0001",
+                  "label": "Limit Release of Public Information",
+                  "phases": [
+                    "AccessManagement"
+                  ],
+                  "definition": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0016",
+                  "label": "Vulnerability Scanning",
+                  "phases": [
+                    "ModelEvaluation",
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "OWASP.M0007",
+                  "label": "Supply Chain Verification",
+                  "phases": [
+                    "Business&DataUnderstanding"
+                  ],
+                  "definition": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.16.5",
+          "control_name": "Use Up-to-Date and Trusted Third-Party Software Components",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Use Up-to-Date and Trusted Third-Party Software Components",
+              "class": "TECH",
+              "artifact": "Software",
+              "attack": "AML.A0011",
+              "actions": [
+                {
+                  "id": "AML.M0001",
+                  "label": "Limit Release of Public Information",
+                  "phases": [
+                    "AccessManagement"
+                  ],
+                  "definition": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0016",
+                  "label": "Vulnerability Scanning",
+                  "phases": [
+                    "ModelEvaluation",
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "OWASP.M0007",
+                  "label": "Supply Chain Verification",
+                  "phases": [
+                    "Business&DataUnderstanding"
+                  ],
+                  "definition": "Verify external data sources and maintain \"ML-BOM\" records.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.16.6",
+          "control_name": "Establish and Maintain a Severity Rating System and Process for Application Vulnerabilities",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Establish a Severity Rating System and Process for Application Vulnerabilities",
+              "class": "TECH",
+              "artifact": "Process",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.6.2",
+              "goal_name": "Maintain a Severity Rating System and Process for Application Vulnerabilities",
+              "class": "TECH",
+              "artifact": "Process",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.16.7",
+          "control_name": "Use Standard Hardening Configuration Templates for Application Infrastructure",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Use Standard Hardening Configuration Templates for Application Infrastructure",
+              "class": "TECH",
+              "artifact": "ApplicationConfiguration",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.16.8",
+          "control_name": "Separate Production and Non-Production Systems",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Separate Production and Non-Production Systems",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.16.9",
+          "control_name": "Train Developers in Application Security Concepts and Secure Coding",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Train Developers in Application Security Concepts and Secure Coding",
+              "class": "TECH",
+              "actions": [
+                {
+                  "id": "OWASP.M0032",
+                  "label": "Secure Coding",
+                  "phases": [
+                    "ModelEvaluation",
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Establish guidelines to prevent vulnerabilities.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "CIS.16.11",
+          "control_name": "Leverage Vetted Modules or Services for Application Security Components",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Ensure leverage Vetted Modules or Services for Application Security Components",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "CIS.16.12",
+          "control_name": "Implement Code-Level Security Checks",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Implement Code-Level Security Checks",
+              "class": "TECH",
+              "attack": "AML.A0014",
+              "actions": [
+                {
+                  "id": "AML.M0011",
+                  "label": "Restrict Library Loading",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Prevent abuse of library loading mechanisms in the operating system and software to load untrusted code by configuring appropriate library loading mechanisms and investigating potential vulnerable software.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for loading of malicious libraries.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0013",
+                  "label": "Code Signing",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Enforce binary and application integrity with digital signature verification to prevent untrusted code from executing. Adversaries can embed malicious code in ML software, models and Library. Enforcement of code signing can prevent the compromise of the machine learning supply chain and prevent execution of malicious code.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0016",
+                  "label": "Vulnerability Scanning",
+                  "phases": [
+                    "ModelEvaluation",
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.12",
+          "control_id": "CIS.16.13",
+          "control_name": "Conduct Application Penetration Testing",
+          "subgoals": [
+            {
+              "goal_id": "G1.12.1",
+              "goal_name": "Conduct Application Penetration Testing",
+              "class": "TECH",
+              "actions": [
+                {
+                  "id": "AML.M0034",
+                  "label": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                  "phases": [
+                    "HardwareSecurityEngineering"
+                  ],
+                  "definition": "",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.13",
+          "control_id": "CIS.16.14",
+          "control_name": "Conduct Threat Modeling",
+          "subgoals": [
+            {
+              "goal_id": "G1.13.1",
+              "goal_name": "Conduct Threat Modeling",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

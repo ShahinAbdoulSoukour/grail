@@ -1,0 +1,408 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.9.4",
+  "clause_name": "System and application access control",
+  "goal_name": "Ensure system and application access control",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To prevent unauthorized access to systems and applications.",
+      "goal_name": "Prevent unauthorized access to systems and applications",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.9.4.1",
+          "control_name": "Access to information and application system functions shall be restricted in accordance with the access control policy.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Restrict access to information and application system functions in accordance with the access control policy",
+              "class": "TECH",
+              "embedding_context": "Restrict access to information and application system functions in accordance with the access control policy",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SCF",
+                "name": "System Call Filtering",
+                "similarity_score": 0.576844
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0027",
+                "name": "Permissions Control",
+                "similarity_score": 0.633609
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SCF",
+                  "name": "System Call Filtering",
+                  "description": "Controlling access to local computer system resources with kernel-level capabilities.",
+                  "similarity_score": 0.576844
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.555501
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.549766
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.537146
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.525899
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "similarity_score": 0.633609
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "similarity_score": 0.608621
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "similarity_score": 0.584349
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.567725
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0033",
+                  "name": "Network Restrictions",
+                  "description": "Limit LLM access to resources and APIs.",
+                  "similarity_score": 0.541399
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.9.4.2",
+          "control_name": "Where required by the access control policy, access to systems and applications shall be controlled by a secure log-on procedure.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Control where required by the access control policy, access to systems and applications",
+              "agent": "a secure log-on procedure",
+              "class": "TECH",
+              "embedding_context": "Control where required by the access control policy, access to systems and applications",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AMED",
+                "name": "Access Mediation",
+                "similarity_score": 0.566173
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0027",
+                "name": "Permissions Control",
+                "similarity_score": 0.641603
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AMED",
+                  "name": "Access Mediation",
+                  "description": "Access mediation is the process of granting or denying specific requests to: 1) obtain and use information and related information processing services; and 2) enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances). Access mediation decisions should enforce least privilege by granting access for scoped durations to prevent privilege creep and, where applicable, implement just-in-time (JIT) access. Denial decisions may prevent initial access or terminate access that has already been granted, ensuring continuous enforcement of security policies.",
+                  "similarity_score": 0.566173
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "similarity_score": 0.564784
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.536309
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SCF",
+                  "name": "System Call Filtering",
+                  "description": "Controlling access to local computer system resources with kernel-level capabilities.",
+                  "similarity_score": 0.534392
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.532712
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "similarity_score": 0.641603
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0001",
+                  "name": "Privilege Control",
+                  "description": "Limit LLM access and apply role-based permissions.",
+                  "similarity_score": 0.594301
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.562965
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "similarity_score": 0.550539
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0005",
+                  "name": "Resource allocation limits",
+                  "description": "Implement resource allocation limits and quotas to prevent any single process or user from consuming excessive resources.",
+                  "similarity_score": 0.529757
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.9.4.3",
+          "control_name": "Password management systems shall be interactive and shall ensure quality passwords.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Ensure password management systems are interactive and shall ensure quality passwords",
+              "class": "TECH",
+              "embedding_context": "Ensure password management systems are interactive and shall ensure quality passwords",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SPP",
+                "name": "Strong Password Policy",
+                "similarity_score": 0.517416
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0010",
+                "name": "Input validation",
+                "similarity_score": 0.412756
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SPP",
+                  "name": "Strong Password Policy",
+                  "description": "Modifying system configuration to increase password strength.",
+                  "similarity_score": 0.517416
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PWA",
+                  "name": "Password Authentication",
+                  "description": "Password authentication is a security mechanism used to verify the identity of a user or entity attempting to access a system or resource by requiring the input of a secret string of characters, known as a password, that is associated with the user or entity.",
+                  "similarity_score": 0.454534
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PR",
+                  "name": "Password Rotation",
+                  "description": "Password rotation is a security policy that mandates the periodic change of user account passwords to mitigate the risk of unauthorized access due to compromised credentials.",
+                  "similarity_score": 0.453012
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.9.4.4",
+          "control_name": "The use of utility programs that might be capable of overriding system and application controls shall be restricted and tightly controlled.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Restrict the use of utility programs that might be capable of overriding system and application controls and tightly controlled",
+              "class": "TECH",
+              "embedding_context": "Restrict the use of utility programs that might be capable of overriding system and application controls and tightly controlled",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SCF",
+                "name": "System Call Filtering",
+                "similarity_score": 0.581258
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "CAPEC.M0005",
+                "name": "Resource allocation limits",
+                "similarity_score": 0.51776
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SCF",
+                  "name": "System Call Filtering",
+                  "description": "Controlling access to local computer system resources with kernel-level capabilities.",
+                  "similarity_score": 0.581258
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPR",
+                  "name": "Operating Mode Restriction",
+                  "description": "Restricting unauthorized changes to the operating mode prevents devices from switching into inappropriate or vulnerable states during normal use.",
+                  "similarity_score": 0.502673
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EDL",
+                  "name": "Executable Denylisting",
+                  "description": "Blocking the execution of files on a host in accordance with defined application policy rules.",
+                  "similarity_score": 0.483822
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OVAR",
+                  "name": "OT Variable Access Restriction",
+                  "description": "Assign read/write access controls on designated registers or data tags to prevent unauthorized writes.",
+                  "similarity_score": 0.472295
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-LFAM",
+                  "name": "Local File Access Mediation",
+                  "description": "Local file access mediation is the process of an operating system granting or denying a specific access request to a local file.",
+                  "similarity_score": 0.46897
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0005",
+                  "name": "Resource allocation limits",
+                  "description": "Implement resource allocation limits and quotas to prevent any single process or user from consuming excessive resources.",
+                  "similarity_score": 0.51776
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0024",
+                  "name": "Limit Plugin Functions",
+                  "description": "Allow only essential functions for LLM agents.",
+                  "similarity_score": 0.488392
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0026",
+                  "name": "Granular Functionality",
+                  "description": "Avoid open-ended functions; use specific plugins.",
+                  "similarity_score": 0.479271
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0011",
+                  "name": "Restrict Library Loading",
+                  "description": "Prevent abuse of library loading mechanisms in the operating system and software to load untrusted code by configuring appropriate library loading mechanisms and investigating potential vulnerable software.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for loading of malicious libraries.",
+                  "similarity_score": 0.465961
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "similarity_score": 0.460519
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "A.9.4.5",
+          "control_name": "Access to program source code shall be restricted.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Restrict access to program source code",
+              "class": "TECH",
+              "embedding_context": "Restrict access to program source code",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-TL",
+                "name": "Trusted Library",
+                "similarity_score": 0.509428
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0027",
+                "name": "Permissions Control",
+                "similarity_score": 0.45292
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-TL",
+                  "name": "Trusted Library",
+                  "description": "A trusted library is a collection of pre-verified and secure code modules or components that are used within software applications to perform specific functions. These libraries are considered reliable and have been vetted for security vulnerabilities, ensuring they do not introduce risks into the application.",
+                  "similarity_score": 0.509428
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OVAR",
+                  "name": "OT Variable Access Restriction",
+                  "description": "Assign read/write access controls on designated registers or data tags to prevent unauthorized writes.",
+                  "similarity_score": 0.469687
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0027",
+                  "name": "Permissions Control",
+                  "description": "Limit permissions to the minimum required.",
+                  "similarity_score": 0.45292
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

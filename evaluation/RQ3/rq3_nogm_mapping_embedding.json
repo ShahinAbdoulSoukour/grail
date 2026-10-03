@@ -1,0 +1,84 @@
+{
+  "method": "embedding",
+  "goal_model_used": false,
+  "controls": [
+    {
+      "id": "REQ-AUTH-001",
+      "description": "An unauthorized access attempt must not result in file access being granted.",
+      "event_types": [
+        "path_traversal"
+      ],
+      "source": "scenario_requirement_description",
+      "operations": [
+        {
+          "operation_id": "OWASP.M0027",
+          "operation_name": "Permissions Control",
+          "source": "OntoSecAI",
+          "description": "Limit permissions to the minimum required.",
+          "uri": "http://www.semanticweb.org/ubaid/ontologies/2023/5/HES#OWASP.M0027",
+          "mapping_score": 0.5387197732925415
+        },
+        {
+          "operation_id": "D3-UAP",
+          "operation_name": "User Account Permissions",
+          "source": "D3FEND",
+          "description": "Restricting a user account's access to resources.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#UserAccountPermissions",
+          "mapping_score": 0.5178821682929993
+        },
+        {
+          "operation_id": "D3-EDL",
+          "operation_name": "Executable Denylisting",
+          "source": "D3FEND",
+          "description": "Blocking the execution of files on a host in accordance with defined application policy rules.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#ExecutableDenylisting",
+          "mapping_score": 0.46304062008857727
+        },
+        {
+          "operation_id": "D3-LFP",
+          "operation_name": "Local File Permissions",
+          "source": "D3FEND",
+          "description": "Local file permissions is the systematic process of defining, implementing, and managing access control policies that dictate user permissions for accessing files on a local system through the configuration of operating system functionality.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#LocalFilePermissions",
+          "mapping_score": 0.4564751386642456
+        }
+      ]
+    },
+    {
+      "id": "REQ-PATH-001",
+      "description": "When path traversal is detected, file access must not be granted.",
+      "event_types": [
+        "path_traversal"
+      ],
+      "source": "scenario_requirement_description",
+      "operations": [
+        {
+          "operation_id": "D3-EDL",
+          "operation_name": "Executable Denylisting",
+          "source": "D3FEND",
+          "description": "Blocking the execution of files on a host in accordance with defined application policy rules.",
+          "uri": "http://d3fend.mitre.org/ontologies/d3fend.owl#ExecutableDenylisting",
+          "mapping_score": 0.4595370292663574
+        }
+      ]
+    },
+    {
+      "id": "REQ-THREAT-001",
+      "description": "When a threat is detected, a mitigation must eventually become active.",
+      "event_types": [
+        "path_traversal"
+      ],
+      "source": "scenario_requirement_description",
+      "operations": []
+    },
+    {
+      "id": "REQ-CMD-001",
+      "description": "An executed command must be authorized.",
+      "event_types": [
+        "execute_command"
+      ],
+      "source": "scenario_requirement_description",
+      "operations": []
+    }
+  ]
+}

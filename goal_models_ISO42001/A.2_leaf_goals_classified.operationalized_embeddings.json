@@ -1,0 +1,149 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.2",
+  "clause_name": "AI policy",
+  "goal_name": "Ensure AI policy",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "The organization shall establish an AI policy.",
+      "goal_name": "Establish an AI policy",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.2.2",
+          "control_name": "The organization shall establish an AI policy.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish an AI policy",
+              "agent": "The organization",
+              "class": "ORG",
+              "embedding_context": "Establish an AI policy",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.385032
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0028",
+                "name": "human-in-the-Loop",
+                "similarity_score": 0.513605
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "similarity_score": 0.513605
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.497729
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0007",
+                  "name": "Sanitize Training Data",
+                  "description": "Detect and remove or remediate poisoned training data. Training data should be sanitized prior to model training and recurrently for an active learning model.\nImplement a filter to limit ingested training data. Establish a content policy that would remove unwanted content such as certain explicit or offensive language from being used.",
+                  "similarity_score": 0.461088
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "similarity_score": 0.451065
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.2.3",
+          "control_name": "The AI policy shall be aligned with other relevant organizational policies.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Align the AI policy with other relevant organizational policies",
+              "class": "ORG",
+              "embedding_context": "Align the AI policy with other relevant organizational policies",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-APA",
+                "name": "Access Policy Administration",
+                "similarity_score": 0.356225
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.486858
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.486858
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.479935
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.2.4",
+          "control_name": "The AI policy shall be reviewed at planned intervals and when significant changes occur.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Review the AI policy at planned intervals and when significant changes occur",
+              "class": "ORG",
+              "embedding_context": "Review the AI policy at planned intervals and when significant changes occur",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.320854
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0030",
+                "name": "Review Model Output",
+                "similarity_score": 0.471368
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0030",
+                  "name": "Review Model Output",
+                  "description": "Regularly review LLM outputs with consistency\nchecks",
+                  "similarity_score": 0.471368
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

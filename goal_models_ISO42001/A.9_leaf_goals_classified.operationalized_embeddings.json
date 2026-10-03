@@ -1,0 +1,252 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.9",
+  "clause_name": "Responsible use",
+  "goal_name": "Ensure responsible use",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "AI systems shall be used responsibly.",
+      "goal_name": "Use AI systems responsibly",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.9.2",
+          "control_name": "AI systems shall be used responsibly.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Use AI systems responsibly",
+              "class": "ORG",
+              "embedding_context": "Use AI systems responsibly",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.318718
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0007",
+                "name": "Sanitize Training Data",
+                "similarity_score": 0.549119
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0007",
+                  "name": "Sanitize Training Data",
+                  "description": "Detect and remove or remediate poisoned training data. Training data should be sanitized prior to model training and recurrently for an active learning model.\nImplement a filter to limit ingested training data. Establish a content policy that would remove unwanted content such as certain explicit or offensive language from being used.",
+                  "similarity_score": 0.549119
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.531522
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.530701
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0019",
+                  "name": "Input Validation",
+                  "description": "Filter malicious inputs to avoid model poisoning.",
+                  "similarity_score": 0.530469
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "similarity_score": 0.526981
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.9.3",
+          "control_name": "Human oversight shall be defined and implemented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Define human oversight",
+              "class": "ORG",
+              "embedding_context": "Define human oversight",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.304334
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0028",
+                "name": "human-in-the-Loop",
+                "similarity_score": 0.33907
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Implement human oversight",
+              "class": "ORG",
+              "embedding_context": "Implement human oversight",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.455768
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0028",
+                "name": "human-in-the-Loop",
+                "similarity_score": 0.52321
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "similarity_score": 0.455768
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "similarity_score": 0.52321
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0002",
+                  "name": "Human Approval",
+                  "description": "Require user consent for privileged actions.",
+                  "similarity_score": 0.493204
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.9.4",
+          "control_name": "Use of AI systems shall be monitored for unintended behavior.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Monitor use of AI systems for unintended behavior",
+              "class": "TECH",
+              "embedding_context": "Monitor use of AI systems for unintended behavior",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.457714
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0024",
+                "name": "Monitoring and auditing",
+                "similarity_score": 0.552017
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-UBA",
+                  "name": "User Behavior Analysis",
+                  "description": "User behavior analytics (\"UBA\") as defined by Gartner, is a cybersecurity process about detection of insider threats, targeted attacks, and financial fraud. UBA solutions look at patterns of human behavior, and then apply algorithms and statistical analysis to detect meaningful anomalies from those patterns-anomalies that indicate potential threats.' Instead of tracking devices or security events, UBA tracks a system's users. Big data platforms are increasing UBA functionality by allowing them to analyze petabytes worth of data to detect insider threats and advanced persistent threats.",
+                  "similarity_score": 0.457714
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0024",
+                  "name": "Monitoring and auditing",
+                  "description": "Regularly monitoring and auditing the model’s use can help detect and prevent theft by detecting when an attacker is attempting to access or steal the model.",
+                  "similarity_score": 0.552017
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0028",
+                  "name": "human-in-the-Loop",
+                  "description": "Require human approval for actions.",
+                  "similarity_score": 0.529396
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.527496
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0017",
+                  "name": "Anomaly detection",
+                  "description": "Sign models and code, apply anomaly detection, and monitor.",
+                  "similarity_score": 0.51466
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.48063
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.9.5",
+          "control_name": "Inputs and outputs of AI systems shall be monitored as needed.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Monitor inputs and outputs of AI systems as needed",
+              "class": "TECH",
+              "embedding_context": "Monitor inputs and outputs of AI systems as needed",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.377151
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0024",
+                "name": "Monitoring and auditing",
+                "similarity_score": 0.452167
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0024",
+                  "name": "Monitoring and auditing",
+                  "description": "Regularly monitoring and auditing the model’s use can help detect and prevent theft by detecting when an attacker is attempting to access or steal the model.",
+                  "similarity_score": 0.452167
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

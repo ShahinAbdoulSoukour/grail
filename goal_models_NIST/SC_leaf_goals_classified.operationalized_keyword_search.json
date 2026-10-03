@@ -1,0 +1,123 @@
+{
+  "goal_id": "G0",
+  "clause_id": "SC",
+  "clause_name": "Protect Systems and Communications",
+  "goal_name": "Protect systems and communications",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure secure and protected system communications.",
+      "goal_name": "Ensure secure and protected system communications",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "SC-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate system and communications protection controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate system and communications protection controls",
+              "class": "TECH",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate system and communications protection controls",
+              "class": "PHYS",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate system and communications protection controls",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "SC-7",
+          "control_name": "Monitor and control communications at external boundaries and key internal boundaries.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Monitor communications at external boundaries and key internal boundaries",
+              "class": "TECH",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Control communications at external boundaries and key internal boundaries",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "SC-8",
+          "control_name": "Protect the confidentiality and integrity of transmitted information.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Protect the confidentiality and integrity of transmitted information",
+              "class": "TECH",
+              "attack": "AML.A0015",
+              "actions": [
+                {
+                  "id": "AML.M0012",
+                  "label": "Encrypt Sensitive Information",
+                  "phases": [
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0020",
+                  "label": "Encryption",
+                  "phases": [
+                    "DataPreparation"
+                  ],
+                  "definition": "Encrypting the model’s code, training data, and other sensitive information can prevent attackers from being able to access and steal the model.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0029",
+                  "label": "Reducing the training data",
+                  "phases": [
+                    "DataPreparation"
+                  ],
+                  "definition": "Reducing the size of the training dataset or removing redundant or highly correlated features can help reduce the information an attacker can gain from a membership inference attack.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "SC-12",
+          "control_name": "Establish and manage cryptographic keys for the system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish cryptographic keys for the system",
+              "class": "TECH",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Manage cryptographic keys for the system",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

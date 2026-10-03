@@ -1,0 +1,780 @@
+{
+  "goal_id": "G0",
+  "clause_id": "MANAGE",
+  "clause_name": "Manage AI Risks",
+  "goal_name": "Manage AI risks",
+  "airmf_function": "MANAGE",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To treat and monitor AI risks effectively.",
+      "goal_name": "Treat and monitor AI risks effectively",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "MANAGE 1.1",
+          "control_name": "Processes for prioritizing and responding to AI risks are established and aligned with organizational objectives.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish processes for prioritizing and responding to AI risks",
+              "class": "ORG",
+              "embedding_context": "Establish processes for prioritizing and responding to AI risks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.439798
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.571408
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.571408
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.570934
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.570058
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "similarity_score": 0.56816
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.551993
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Align processes for prioritizing and responding to AI risks with organizational objectives",
+              "class": "ORG",
+              "embedding_context": "Align processes for prioritizing and responding to AI risks with organizational objectives",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.458644
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.548051
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ORA",
+                  "name": "Operational Risk Assessment",
+                  "description": "Operational risk assessment identifies and models the vulnerabilities of, and risks to, an organization's activities individually and as a whole.",
+                  "similarity_score": 0.458644
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.548051
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.534537
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.523155
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "similarity_score": 0.519662
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.502428
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "MANAGE 1.2",
+          "control_name": "AI risk treatment plans are developed, implemented, and maintained.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Develop AI risk treatment plans",
+              "class": "ORG",
+              "embedding_context": "Develop AI risk treatment plans",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.328582
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0018",
+                "name": "User Training",
+                "similarity_score": 0.4728
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "similarity_score": 0.4728
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0007",
+                  "name": "Sanitize Training Data",
+                  "description": "Detect and remove or remediate poisoned training data. Training data should be sanitized prior to model training and recurrently for an active learning model.\nImplement a filter to limit ingested training data. Establish a content policy that would remove unwanted content such as certain explicit or offensive language from being used.",
+                  "similarity_score": 0.456225
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Implement AI risk treatment plans",
+              "class": "ORG",
+              "embedding_context": "Implement AI risk treatment plans",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.343975
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0018",
+                "name": "User Training",
+                "similarity_score": 0.502613
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "similarity_score": 0.502613
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.489831
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0007",
+                  "name": "Sanitize Training Data",
+                  "description": "Detect and remove or remediate poisoned training data. Training data should be sanitized prior to model training and recurrently for an active learning model.\nImplement a filter to limit ingested training data. Establish a content policy that would remove unwanted content such as certain explicit or offensive language from being used.",
+                  "similarity_score": 0.487419
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.48047
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.474223
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Maintain AI risk treatment plans",
+              "class": "ORG",
+              "embedding_context": "Maintain AI risk treatment plans",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.322321
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0021",
+                "name": "Regular backups",
+                "similarity_score": 0.475345
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "similarity_score": 0.475345
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.458317
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "MANAGE 1.3",
+          "control_name": "Plans for monitoring AI risks and for incident response and recovery are established.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Establish plans for monitoring AI risks and for incident response and recovery",
+              "class": "TECH",
+              "embedding_context": "Establish plans for monitoring AI risks and for incident response and recovery",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.503367
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0034",
+                "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                "similarity_score": 0.611932
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.503367
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-UBA",
+                  "name": "User Behavior Analysis",
+                  "description": "User behavior analytics (\"UBA\") as defined by Gartner, is a cybersecurity process about detection of insider threats, targeted attacks, and financial fraud. UBA solutions look at patterns of human behavior, and then apply algorithms and statistical analysis to detect meaningful anomalies from those patterns-anomalies that indicate potential threats.' Instead of tracking devices or security events, UBA tracks a system's users. Big data platforms are increasing UBA functionality by allowing them to analyze petabytes worth of data to detect insider threats and advanced persistent threats.",
+                  "similarity_score": 0.452691
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0034",
+                  "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                  "description": "",
+                  "similarity_score": 0.611932
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0004",
+                  "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                  "description": "",
+                  "similarity_score": 0.583171
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.579607
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "similarity_score": 0.570979
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.565523
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "MANAGE 1.4",
+          "control_name": "Processes for communicating AI risk information and decisions are established.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish processes for communicating AI risk information and decisions",
+              "class": "ORG",
+              "embedding_context": "Establish processes for communicating AI risk information and decisions",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.37563
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0018",
+                "name": "User Training",
+                "similarity_score": 0.550826
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "similarity_score": 0.550826
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.5484
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.533282
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.524604
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0004",
+                  "name": "Trust Boundaries",
+                  "description": "Treat LLM as untrusted and visually highlight unreliable responses.",
+                  "similarity_score": 0.521698
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "MANAGE 1.5",
+          "control_name": "Processes for updating, remediating, or removing AI systems when risk thresholds are exceeded are established.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Exceed processes for updating, remediating, or removing AI systems when risk thresholds are established",
+              "class": "TECH",
+              "embedding_context": "Exceed processes for updating, remediating, or removing AI systems when risk thresholds are established",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.389604
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0020",
+                "name": "Fine-Tuning Caution",
+                "similarity_score": 0.547638
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.547638
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0025",
+                  "name": "Model retraining",
+                  "description": "Regularly retraining the model can help to prevent the information leaked by model inversion attacks from becoming outdated. This can be done by incorporating new data and correcting any inaccuracies in the model’s predictions.",
+                  "similarity_score": 0.546555
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.53582
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "similarity_score": 0.517365
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0004",
+                  "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                  "description": "",
+                  "similarity_score": 0.503596
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "MANAGE 1.6",
+          "control_name": "Processes for continual improvement of AI risk management are established.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Establish processes for continual improvement of AI risk management",
+              "class": "ORG",
+              "embedding_context": "Establish processes for continual improvement of AI risk management",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.409196
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0018",
+                "name": "User Training",
+                "similarity_score": 0.582252
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "similarity_score": 0.582252
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0009",
+                  "name": "Use-Case Specific Training",
+                  "description": "Create separate models for different usecases.",
+                  "similarity_score": 0.565219
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.559136
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "similarity_score": 0.54731
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0025",
+                  "name": "Model retraining",
+                  "description": "Regularly retraining the model can help to prevent the information leaked by model inversion attacks from becoming outdated. This can be done by incorporating new data and correcting any inaccuracies in the model’s predictions.",
+                  "similarity_score": 0.541516
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "MANAGE 2.1",
+          "control_name": "Risk treatment decisions are based on prioritized risks, impact analyses, and organizational risk tolerance.",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Ensure risk treatment decisions are based on prioritized risks, impact analyses, and organizational risk tolerance",
+              "class": "ORG",
+              "embedding_context": "Ensure risk treatment decisions are based on prioritized risks, impact analyses, and organizational risk tolerance",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.430576
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0036",
+                "name": "Principle of least privilege",
+                "similarity_score": 0.242812
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "MANAGE 2.2",
+          "control_name": "Controls and mitigation actions are selected and implemented to address identified risks.",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Select controls and mitigation actions",
+              "class": "TECH",
+              "embedding_context": "Select controls and mitigation actions",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OLV",
+                "name": "Operational Logic Validation",
+                "similarity_score": 0.363975
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0026",
+                "name": "Granular Functionality",
+                "similarity_score": 0.388621
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.8.2",
+              "goal_name": "Implement controls and mitigation actions to address identified risks",
+              "class": "ORG",
+              "embedding_context": "Implement controls and mitigation actions to address identified risks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.466551
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.43067
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ORA",
+                  "name": "Operational Risk Assessment",
+                  "description": "Operational risk assessment identifies and models the vulnerabilities of, and risks to, an organization's activities individually and as a whole.",
+                  "similarity_score": 0.466551
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.454512
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "MANAGE 2.3",
+          "control_name": "Residual risks are documented, communicated, and accepted by appropriate decision makers.",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Document residual risks",
+              "class": "ORG",
+              "embedding_context": "Document residual risks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RF",
+                "name": "Restore File",
+                "similarity_score": 0.330661
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0021",
+                "name": "Regular backups",
+                "similarity_score": 0.325278
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.9.2",
+              "goal_name": "Communicate residual risks",
+              "class": "ORG",
+              "embedding_context": "Communicate residual risks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.340005
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0004",
+                "name": "Trust Boundaries",
+                "similarity_score": 0.366168
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.9.3",
+              "goal_name": "Accept residual risks",
+              "agent": "appropriate decision makers",
+              "class": "ORG",
+              "embedding_context": "Accept residual risks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.249094
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0021",
+                "name": "Regular backups",
+                "similarity_score": 0.222576
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "MANAGE 2.4",
+          "control_name": "Mechanisms for tracking the effectiveness of controls and for reassessing risks over time are implemented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Implement mechanisms for tracking the effectiveness of controls and for reassessing risks over time",
+              "class": "ORG",
+              "embedding_context": "Implement mechanisms for tracking the effectiveness of controls and for reassessing risks over time",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.456964
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.371834
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "similarity_score": 0.456964
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "MANAGE 2.5",
+          "control_name": "Incident response and recovery processes are exercised and improved using lessons learned.",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Exercise incident response and recovery processes",
+              "class": "ORG",
+              "embedding_context": "Exercise incident response and recovery processes",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RNA",
+                "name": "Restore Network Access",
+                "similarity_score": 0.176816
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0009",
+                "name": "Use Multi-Modal Sensors",
+                "similarity_score": 0.088455
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.11.2",
+              "goal_name": "Improve incident response and recovery processes using lessons learned",
+              "class": "ORG",
+              "embedding_context": "Improve incident response and recovery processes using lessons learned",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RD",
+                "name": "Restore Database",
+                "similarity_score": 0.330911
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0013",
+                "name": "Queue Management",
+                "similarity_score": 0.24289
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

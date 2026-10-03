@@ -1,0 +1,170 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.16",
+  "clause_name": "Application Software Security",
+  "goal_name": "Ensure application software security",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Manage the security life cycle of in-house developed, hosted, or acquired software to prevent, detect, and remediate security weaknesses before they can impact the enterprise.",
+      "goal_name": "Manage the security life cycle of in-house developed, hosted, or acquired software to prevent, detect, and remediate security weaknesses before they can impact the enterprise",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.16.1",
+          "control_name": "Apply Secure Design Principles in Application Architectures",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Apply Secure Design Principles in Application Architectures"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.16.2",
+          "control_name": "Establish and Maintain a Process to Accept and Address Software Vulnerabilities",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Process to Accept and Address Software Vulnerabilities"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Process to Accept and Address Software Vulnerabilities"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.16.3",
+          "control_name": "Perform Root Cause Analysis on Security Vulnerabilities",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Perform Root Cause Analysis on Security Vulnerabilities"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.16.4",
+          "control_name": "Establish and Manage an Inventory of Third-Party Software Components",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish an Inventory of Third-Party Software Components"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Manage an Inventory of Third-Party Software Components"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.16.5",
+          "control_name": "Use Up-to-Date and Trusted Third-Party Software Components",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Use Up-to-Date and Trusted Third-Party Software Components"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.16.6",
+          "control_name": "Establish and Maintain a Severity Rating System and Process for Application Vulnerabilities",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Establish a Severity Rating System and Process for Application Vulnerabilities"
+            },
+            {
+              "goal_id": "G1.6.2",
+              "goal_name": "Maintain a Severity Rating System and Process for Application Vulnerabilities"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.16.7",
+          "control_name": "Use Standard Hardening Configuration Templates for Application Infrastructure",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Use Standard Hardening Configuration Templates for Application Infrastructure"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.16.8",
+          "control_name": "Separate Production and Non-Production Systems",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Separate Production and Non-Production Systems"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "CIS.16.9",
+          "control_name": "Train Developers in Application Security Concepts and Secure Coding",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Train Developers in Application Security Concepts and Secure Coding"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "CIS.16.11",
+          "control_name": "Leverage Vetted Modules or Services for Application Security Components",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Ensure leverage Vetted Modules or Services for Application Security Components"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "CIS.16.12",
+          "control_name": "Implement Code-Level Security Checks",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Implement Code-Level Security Checks"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.12",
+          "control_id": "CIS.16.13",
+          "control_name": "Conduct Application Penetration Testing",
+          "subgoals": [
+            {
+              "goal_id": "G1.12.1",
+              "goal_name": "Conduct Application Penetration Testing"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.13",
+          "control_id": "CIS.16.14",
+          "control_name": "Conduct Threat Modeling",
+          "subgoals": [
+            {
+              "goal_id": "G1.13.1",
+              "goal_name": "Conduct Threat Modeling"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

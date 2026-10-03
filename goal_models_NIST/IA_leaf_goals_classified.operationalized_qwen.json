@@ -1,0 +1,1251 @@
+{
+  "goal_id": "G0",
+  "clause_id": "IA",
+  "clause_name": "Identification and Authentication",
+  "goal_name": "Ensure identification and authentication",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure secure identification and authentication of users, processes, and devices.",
+      "goal_name": "Ensure secure identification and authentication of users, processes, and devices",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "IA-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate implementation of identification and authentication controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate implementation of identification and authentication controls",
+              "class": "PHYS",
+              "embedding_context": "Develop policy and procedures to facilitate implementation of identification and authentication controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.507414
+                  },
+                  {
+                    "id": "D3-BAN",
+                    "name": "Biometric Authentication",
+                    "similarity_score": 0.500348
+                  },
+                  {
+                    "id": "D3-ANET",
+                    "name": "Authentication Event Thresholding",
+                    "similarity_score": 0.477037
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.465421
+                  },
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.460808
+                  },
+                  {
+                    "id": "D3-MFA",
+                    "name": "Multi-factor Authentication",
+                    "similarity_score": 0.459992
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.444738
+                  },
+                  {
+                    "id": "D3-TBA",
+                    "name": "Token-based Authentication",
+                    "similarity_score": 0.437951
+                  },
+                  {
+                    "id": "D3-SPP",
+                    "name": "Strong Password Policy",
+                    "similarity_score": 0.437524
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.434116
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.507004
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.475994
+                  },
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.455119
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.453926
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.452379
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.447357
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.428254
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.425602
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.411643
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.406818
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access Modeling directly supports developing policies by capturing access permissions and managing identities, which is essential for implementation of identification controls."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MFA",
+                  "name": "Multi-factor Authentication",
+                  "description": "Requiring proof of two or more pieces of evidence in order to authenticate a user.",
+                  "reason": "Multi-factor Authentication provides concrete procedures for enforcing authentication controls as required by the goal."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SPP",
+                  "name": "Strong Password Policy",
+                  "description": "Modifying system configuration to increase password strength.",
+                  "reason": "Strong Password Policy directly contributes to implementing authentication controls by strengthening credential requirements."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0023",
+                  "name": "Authentication Identities",
+                  "description": "Use OAuth2 and API Keys for custom authorization.",
+                  "reason": "Authentication Identities using OAuth2/API Keys provides specific procedures for implementing identification and authentication controls."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "reason": "Advanced verification mechanisms enhance authentication controls by ensuring identity authenticity through digital signatures and trusted frameworks."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate implementation of identification and authentication controls",
+              "class": "PHYS",
+              "embedding_context": "Document policy and procedures to facilitate implementation of identification and authentication controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.538726
+                  },
+                  {
+                    "id": "D3-ANET",
+                    "name": "Authentication Event Thresholding",
+                    "similarity_score": 0.469227
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.46511
+                  },
+                  {
+                    "id": "D3-MFA",
+                    "name": "Multi-factor Authentication",
+                    "similarity_score": 0.459725
+                  },
+                  {
+                    "id": "D3-BAN",
+                    "name": "Biometric Authentication",
+                    "similarity_score": 0.45861
+                  },
+                  {
+                    "id": "D3-TBA",
+                    "name": "Token-based Authentication",
+                    "similarity_score": 0.458175
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.455839
+                  },
+                  {
+                    "id": "D3-PWA",
+                    "name": "Password Authentication",
+                    "similarity_score": 0.448083
+                  },
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.436091
+                  },
+                  {
+                    "id": "D3-CS",
+                    "name": "Credential Scrubbing",
+                    "similarity_score": 0.433015
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.521587
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.498112
+                  },
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.46995
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.466578
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.45821
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.457645
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.446765
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.438223
+                  },
+                  {
+                    "id": "OWASP.M0010",
+                    "name": "Input validation",
+                    "similarity_score": 0.437786
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.437273
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access Modeling directly supports documenting access permissions and identity management procedures, which is essential for implementing identification and authentication controls."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0023",
+                  "name": "Authentication Identities",
+                  "description": "Use OAuth2 and API Keys for custom authorization.",
+                  "reason": "Authentication Identities provides a specific method (OAuth2/API Keys) for authorization, which can be documented as part of implementation procedures for authentication controls."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate implementation of identification and authentication controls",
+              "class": "ORG",
+              "embedding_context": "Disseminate policy and procedures to facilitate implementation of identification and authentication controls",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.499586
+                  },
+                  {
+                    "id": "D3-ANET",
+                    "name": "Authentication Event Thresholding",
+                    "similarity_score": 0.462592
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.45471
+                  },
+                  {
+                    "id": "D3-BAN",
+                    "name": "Biometric Authentication",
+                    "similarity_score": 0.454346
+                  },
+                  {
+                    "id": "D3-CCSA",
+                    "name": "Credential Compromise Scope Analysis",
+                    "similarity_score": 0.431162
+                  },
+                  {
+                    "id": "D3-SPP",
+                    "name": "Strong Password Policy",
+                    "similarity_score": 0.425127
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.42379
+                  },
+                  {
+                    "id": "D3-PAM",
+                    "name": "Physical Access Mediation",
+                    "similarity_score": 0.423381
+                  },
+                  {
+                    "id": "D3-APA",
+                    "name": "Access Policy Administration",
+                    "similarity_score": 0.417722
+                  },
+                  {
+                    "id": "D3-MFA",
+                    "name": "Multi-factor Authentication",
+                    "similarity_score": 0.414995
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.50236
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.47886
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.459987
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.449416
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.445935
+                  },
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.442253
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.434698
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.422545
+                  },
+                  {
+                    "id": "AML.M0031",
+                    "name": "Implement Security Control during hardware manufacturing",
+                    "similarity_score": 0.420517
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.415594
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-APA",
+                  "name": "Access Policy Administration",
+                  "description": "Access policy administration is the systematic process of defining, implementing, and managing access control policies that dictate user permissions to resources.",
+                  "reason": "Access Policy Administration directly supports defining and managing access control policies, which aligns with disseminating policy and procedures for implementation."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access Modeling captures access permissions and identity management details, providing structured documentation to support implementation procedures."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "IA-2",
+          "control_name": "Uniquely identify and authenticate organizational users, processes acting on behalf of users, and devices.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Uniquely identify organizational users, processes acting on behalf of users, and devices",
+              "class": "TECH",
+              "embedding_context": "Uniquely identify organizational users, processes acting on behalf of users, and devices",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.606228
+                  },
+                  {
+                    "id": "D3-JFAPA",
+                    "name": "Job Function Access Pattern Analysis",
+                    "similarity_score": 0.496989
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.485277
+                  },
+                  {
+                    "id": "D3-UGLPA",
+                    "name": "User Geolocation Logon Pattern Analysis",
+                    "similarity_score": 0.483887
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.476167
+                  },
+                  {
+                    "id": "D3-PLA",
+                    "name": "Process Lineage Analysis",
+                    "similarity_score": 0.475395
+                  },
+                  {
+                    "id": "D3-OM",
+                    "name": "Organization Mapping",
+                    "similarity_score": 0.474518
+                  },
+                  {
+                    "id": "D3-LAM",
+                    "name": "Local Account Monitoring",
+                    "similarity_score": 0.471522
+                  },
+                  {
+                    "id": "D3-UDTA",
+                    "name": "User Data Transfer Analysis",
+                    "similarity_score": 0.454539
+                  },
+                  {
+                    "id": "D3-UBA",
+                    "name": "User Behavior Analysis",
+                    "similarity_score": 0.43836
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.463113
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.434844
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.433976
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.421856
+                  },
+                  {
+                    "id": "OWASP.M0014",
+                    "name": "Resource Monitoring",
+                    "similarity_score": 0.419884
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.408613
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.407955
+                  },
+                  {
+                    "id": "AML.M0024",
+                    "name": "Monitoring and auditing",
+                    "similarity_score": 0.400531
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.399899
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.399738
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access Modeling maps identities (users, processes, devices) and their permissions, enabling unique identification through structured digital identity tracking."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DAM",
+                  "name": "Domain Account Monitoring",
+                  "description": "Monitoring the existence of or changes to Domain User Accounts.",
+                  "reason": "Domain Account Monitoring tracks domain user accounts, ensuring unique identification of organizational users via persistent monitoring of account existence and changes."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PLA",
+                  "name": "Process Lineage Analysis",
+                  "description": "Identification of suspicious processes executing on an end-point device by examining the ancestry and siblings of a process, and the associated metadata of each node on the tree, such as process execution, duration, and order relative to siblings and ancestors.",
+                  "reason": "Process Lineage Analysis examines process ancestry and metadata to uniquely identify processes acting on behalf of users by analyzing their execution context."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0023",
+                  "name": "Authentication Identities",
+                  "description": "Use OAuth2 and API Keys for custom authorization.",
+                  "reason": "Authentication Identities uses OAuth2/API keys to uniquely identify users and processes through standardized, cryptographic authentication mechanisms."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Uniquely authenticate organizational users, processes acting on behalf of users, and devices",
+              "class": "TECH",
+              "embedding_context": "Uniquely authenticate organizational users, processes acting on behalf of users, and devices",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.572669
+                  },
+                  {
+                    "id": "D3-MFA",
+                    "name": "Multi-factor Authentication",
+                    "similarity_score": 0.480018
+                  },
+                  {
+                    "id": "D3-CTS",
+                    "name": "Credential Transmission Scoping",
+                    "similarity_score": 0.467419
+                  },
+                  {
+                    "id": "D3-TBA",
+                    "name": "Token-based Authentication",
+                    "similarity_score": 0.450714
+                  },
+                  {
+                    "id": "D3-WSAM",
+                    "name": "Web Session Access Mediation",
+                    "similarity_score": 0.440535
+                  },
+                  {
+                    "id": "D3-NRAM",
+                    "name": "Network Resource Access Mediation",
+                    "similarity_score": 0.437529
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.437498
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.43524
+                  },
+                  {
+                    "id": "D3-NAM",
+                    "name": "Network Access Mediation",
+                    "similarity_score": 0.415361
+                  },
+                  {
+                    "id": "D3-PWA",
+                    "name": "Password Authentication",
+                    "similarity_score": 0.413502
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.582199
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.538487
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.505537
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.498603
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.464944
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.42449
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.414849
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.406156
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.398654
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.398485
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MFA",
+                  "name": "Multi-factor Authentication",
+                  "description": "Requiring proof of two or more pieces of evidence in order to authenticate a user.",
+                  "reason": "Multi-factor authentication provides unique verification by requiring multiple evidence types, directly supporting the authentication of users and processes."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-TBA",
+                  "name": "Token-based Authentication",
+                  "description": "Token-based authentication is an authentication protocol where users verify their identity in exchange for a unique access token. Users can then access the website, application, or resource for the life of the token without having to re-enter their credentials.",
+                  "reason": "Token-based authentication uniquely identifies agents via access tokens, ensuring secure and verifiable authentication for devices and processes."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0023",
+                  "name": "Authentication Identities",
+                  "description": "Use OAuth2 and API Keys for custom authorization.",
+                  "reason": "OAuth2 and API keys provide unique identifiers for authentication, aligning with the goal of uniquely authenticating users and systems."
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "reason": "Advanced verification mechanisms like digital signatures ensure authenticity of identities and content, supporting unique authentication of devices and processes."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access modeling ensures identities (users, processes, devices) are uniquely mapped and managed, directly contributing to authentication requirements."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "IA-3",
+          "control_name": "Uniquely identify and authenticate devices before establishing a connection.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Uniquely identify devices before establishing a connection",
+              "class": "TECH",
+              "embedding_context": "Uniquely identify devices before establishing a connection",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-PSM",
+                    "name": "Proximity Sensor Monitoring",
+                    "similarity_score": 0.450603
+                  },
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.447193
+                  },
+                  {
+                    "id": "D3-RFUM",
+                    "name": "Remote Firmware Update Monitoring",
+                    "similarity_score": 0.421011
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.408978
+                  },
+                  {
+                    "id": "D3-FV",
+                    "name": "Firmware Verification",
+                    "similarity_score": 0.405048
+                  },
+                  {
+                    "id": "D3-BAN",
+                    "name": "Biometric Authentication",
+                    "similarity_score": 0.402181
+                  },
+                  {
+                    "id": "D3-PFV",
+                    "name": "Peripheral Firmware Verification",
+                    "similarity_score": 0.401021
+                  },
+                  {
+                    "id": "D3-CDP",
+                    "name": "Change Default Password",
+                    "similarity_score": 0.399985
+                  },
+                  {
+                    "id": "D3-OPR",
+                    "name": "Operating Mode Restriction",
+                    "similarity_score": 0.379632
+                  },
+                  {
+                    "id": "D3-DLIC",
+                    "name": "Driver Load Integrity Checking",
+                    "similarity_score": 0.372928
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.37612
+                  },
+                  {
+                    "id": "AML.M0032",
+                    "name": "Utilize integrity controls in hardware",
+                    "similarity_score": 0.35755
+                  },
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.354532
+                  },
+                  {
+                    "id": "AML.M0033",
+                    "name": "Malicious Logic Detection in hardware",
+                    "similarity_score": 0.327354
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.317479
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.315705
+                  },
+                  {
+                    "id": "AML.M0009",
+                    "name": "Use Multi-Modal Sensors",
+                    "similarity_score": 0.313842
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.312832
+                  },
+                  {
+                    "id": "AML.M0030",
+                    "name": "Verify the authenticity of feedback data",
+                    "similarity_score": 0.312738
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.312708
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-LAMED",
+                  "name": "LAN Access Mediation",
+                  "description": "LAN access mediation encompasses the application of strict access control policies, systematic verification of devices, and authentication mechanisms to govern connectivity to a Local Area Network.",
+                  "reason": "LAN Access Mediation systematically verifies devices through authentication mechanisms, directly supporting the identification of devices before establishing network connections."
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Uniquely authenticate devices before establishing a connection",
+              "class": "PHYS",
+              "embedding_context": "Uniquely authenticate devices before establishing a connection",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-CDP",
+                    "name": "Change Default Password",
+                    "similarity_score": 0.484114
+                  },
+                  {
+                    "id": "D3-MFA",
+                    "name": "Multi-factor Authentication",
+                    "similarity_score": 0.462188
+                  },
+                  {
+                    "id": "D3-CTS",
+                    "name": "Credential Transmission Scoping",
+                    "similarity_score": 0.432768
+                  },
+                  {
+                    "id": "D3-BAN",
+                    "name": "Biometric Authentication",
+                    "similarity_score": 0.426727
+                  },
+                  {
+                    "id": "D3-TBA",
+                    "name": "Token-based Authentication",
+                    "similarity_score": 0.416074
+                  },
+                  {
+                    "id": "D3-PWA",
+                    "name": "Password Authentication",
+                    "similarity_score": 0.412302
+                  },
+                  {
+                    "id": "D3-CBAN",
+                    "name": "Certificate-based Authentication",
+                    "similarity_score": 0.41133
+                  },
+                  {
+                    "id": "D3-DRA",
+                    "name": "Disable Remote Access",
+                    "similarity_score": 0.395673
+                  },
+                  {
+                    "id": "D3-IOPR",
+                    "name": "IO Port Restriction",
+                    "similarity_score": 0.395215
+                  },
+                  {
+                    "id": "D3-LAMED",
+                    "name": "LAN Access Mediation",
+                    "similarity_score": 0.392708
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.43892
+                  },
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.397548
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.395575
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.361018
+                  },
+                  {
+                    "id": "AML.M0038",
+                    "name": "Prevent Manipulation",
+                    "similarity_score": 0.350276
+                  },
+                  {
+                    "id": "OWASP.M0028",
+                    "name": "human-in-the-Loop",
+                    "similarity_score": 0.345967
+                  },
+                  {
+                    "id": "AML.M0009",
+                    "name": "Use Multi-Modal Sensors",
+                    "similarity_score": 0.327723
+                  },
+                  {
+                    "id": "OWASP.M0033",
+                    "name": "Network Restrictions",
+                    "similarity_score": 0.320566
+                  },
+                  {
+                    "id": "AML.M0019",
+                    "name": "Control Access to ML Models and Data in Production",
+                    "similarity_score": 0.306982
+                  },
+                  {
+                    "id": "OWASP.M0012",
+                    "name": "API Rate Limits",
+                    "similarity_score": 0.296
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CBAN",
+                  "name": "Certificate-based Authentication",
+                  "description": "Requiring a digital certificate in order to authenticate a user.",
+                  "reason": "Certificate-based Authentication directly requires a digital certificate to authenticate devices, ensuring unique identification before connection."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "IA-4",
+          "control_name": "Manage user identifiers by, for example, disabling inactive identifiers and ensuring uniqueness.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Manage user identifiers by, for example, disabling inactive identifiers and ensuring uniqueness",
+              "class": "TECH",
+              "embedding_context": "Manage user identifiers by, for example, disabling inactive identifiers and ensuring uniqueness",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.451272
+                  },
+                  {
+                    "id": "D3-AL",
+                    "name": "Account Locking",
+                    "similarity_score": 0.447567
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.389466
+                  },
+                  {
+                    "id": "D3-ANCI",
+                    "name": "Authentication Cache Invalidation",
+                    "similarity_score": 0.388588
+                  },
+                  {
+                    "id": "D3-ANET",
+                    "name": "Authentication Event Thresholding",
+                    "similarity_score": 0.388557
+                  },
+                  {
+                    "id": "D3-BAN",
+                    "name": "Biometric Authentication",
+                    "similarity_score": 0.380745
+                  },
+                  {
+                    "id": "D3-DAM",
+                    "name": "Domain Account Monitoring",
+                    "similarity_score": 0.375217
+                  },
+                  {
+                    "id": "D3-LAM",
+                    "name": "Local Account Monitoring",
+                    "similarity_score": 0.364165
+                  },
+                  {
+                    "id": "D3-CR",
+                    "name": "Credential Revocation",
+                    "similarity_score": 0.352282
+                  },
+                  {
+                    "id": "D3-IRA",
+                    "name": "Identifier Reputation Analysis",
+                    "similarity_score": 0.345358
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.405986
+                  },
+                  {
+                    "id": "OWASP.M0027",
+                    "name": "Permissions Control",
+                    "similarity_score": 0.383937
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.367535
+                  },
+                  {
+                    "id": "OWASP.M0001",
+                    "name": "Privilege Control",
+                    "similarity_score": 0.364678
+                  },
+                  {
+                    "id": "OWASP.M0018",
+                    "name": "Data Sanitization",
+                    "similarity_score": 0.360373
+                  },
+                  {
+                    "id": "OWASP.M0026",
+                    "name": "Granular Functionality",
+                    "similarity_score": 0.349699
+                  },
+                  {
+                    "id": "AML.M0004",
+                    "name": "Restrict Number of Queries",
+                    "similarity_score": 0.348167
+                  },
+                  {
+                    "id": "AML.M0036",
+                    "name": "Principle of least privilege",
+                    "similarity_score": 0.342473
+                  },
+                  {
+                    "id": "CAPEC.M0005",
+                    "name": "Resource allocation limits",
+                    "similarity_score": 0.342187
+                  },
+                  {
+                    "id": "OWASP.M0021",
+                    "name": "Data Access Control",
+                    "similarity_score": 0.34008
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AL",
+                  "name": "Account Locking",
+                  "description": "The process of temporarily disabling user accounts on a system or domain.",
+                  "reason": "Account Locking directly disables inactive user accounts, aligning with the goal of managing identifiers by deactivating unused ones."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "IA-5",
+          "control_name": "Manage information system authenticators by defining initial content, changing them periodically, and protecting them.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Manage information system authenticators by defining initial content, changing them periodically, and protecting them",
+              "class": "TECH",
+              "embedding_context": "Manage information system authenticators by defining initial content, changing them periodically, and protecting them",
+              "qwen_candidates": {
+                "D3FEND": [
+                  {
+                    "id": "D3-AM",
+                    "name": "Access Modeling",
+                    "similarity_score": 0.572738
+                  },
+                  {
+                    "id": "D3-CTS",
+                    "name": "Credential Transmission Scoping",
+                    "similarity_score": 0.540378
+                  },
+                  {
+                    "id": "D3-TBA",
+                    "name": "Token-based Authentication",
+                    "similarity_score": 0.53862
+                  },
+                  {
+                    "id": "D3-WSAM",
+                    "name": "Web Session Access Mediation",
+                    "similarity_score": 0.529088
+                  },
+                  {
+                    "id": "D3-MFA",
+                    "name": "Multi-factor Authentication",
+                    "similarity_score": 0.523126
+                  },
+                  {
+                    "id": "D3-AA",
+                    "name": "Agent Authentication",
+                    "similarity_score": 0.520149
+                  },
+                  {
+                    "id": "D3-AZET",
+                    "name": "Authorization Event Thresholding",
+                    "similarity_score": 0.508555
+                  },
+                  {
+                    "id": "D3-CRO",
+                    "name": "Credential Rotation",
+                    "similarity_score": 0.505287
+                  },
+                  {
+                    "id": "D3-ANET",
+                    "name": "Authentication Event Thresholding",
+                    "similarity_score": 0.503662
+                  },
+                  {
+                    "id": "D3-PWA",
+                    "name": "Password Authentication",
+                    "similarity_score": 0.50009
+                  }
+                ],
+                "OntoSecAI": [
+                  {
+                    "id": "OWASP.M0029",
+                    "name": "Downstream Authorization",
+                    "similarity_score": 0.615621
+                  },
+                  {
+                    "id": "OWASP.M0023",
+                    "name": "Authentication Identities",
+                    "similarity_score": 0.569859
+                  },
+                  {
+                    "id": "AML.M0040",
+                    "name": "Deploy advanced verification mechanisms",
+                    "similarity_score": 0.561382
+                  },
+                  {
+                    "id": "OWASP.M0003",
+                    "name": "Segregate Content",
+                    "similarity_score": 0.549214
+                  },
+                  {
+                    "id": "OWASP.M0022",
+                    "name": "User Confirmation",
+                    "similarity_score": 0.544
+                  },
+                  {
+                    "id": "OWASP.M0002",
+                    "name": "Human Approval",
+                    "similarity_score": 0.534841
+                  },
+                  {
+                    "id": "OWASP.M0034",
+                    "name": "Monitoring of access logs",
+                    "similarity_score": 0.530721
+                  },
+                  {
+                    "id": "OWASP.M0009",
+                    "name": "Use-Case Specific Training",
+                    "similarity_score": 0.529656
+                  },
+                  {
+                    "id": "OWASP.M0008",
+                    "name": "Legitimacy Verification",
+                    "similarity_score": 0.520226
+                  },
+                  {
+                    "id": "OWASP.M0016",
+                    "name": "Inventory Management",
+                    "similarity_score": 0.513323
+                  }
+                ]
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CRO",
+                  "name": "Credential Rotation",
+                  "description": "Credential rotation is a security procedure in which authentication credentials, such as passwords, API keys, or certificates, are regularly changed or replaced to minimize the risk of unauthorized access.",
+                  "reason": "Credential rotation directly addresses changing authenticators periodically to minimize unauthorized access risks."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CTS",
+                  "name": "Credential Transmission Scoping",
+                  "description": "Limiting the transmission of a credential to a scoped set of relying parties.",
+                  "reason": "Credential transmission scoping protects authenticators by isolating their transmission to scoped relying parties."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MFA",
+                  "name": "Multi-factor Authentication",
+                  "description": "Requiring proof of two or more pieces of evidence in order to authenticate a user.",
+                  "reason": "Multi-factor authentication strengthens protection of authenticators by requiring multiple verification factors."
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "reason": "Access modeling defines initial authenticator content by managing user accounts and permissions across systems."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

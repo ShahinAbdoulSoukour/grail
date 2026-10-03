@@ -1,0 +1,74 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.6.1",
+  "clause_name": "Internal organization",
+  "goal_name": "Establish internal organization",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To establish a management framework to initiate and control the implementation and operation of information security within the organization.",
+      "goal_name": "Establish a management framework to initiate and control the implementation and operation of information security within the organization",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.6.1.1",
+          "control_name": "All information security responsibilities shall be defined and allocated.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Define all information security responsibilities"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Allocate all information security responsibilities"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.6.1.2",
+          "control_name": "Conflicting duties and areas of responsibility shall be segregated to reduce opportunities for unauthorized or unintentional modification or misuse of the organization's assets.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Segregate conflicting duties and areas of responsibility to reduce opportunities for unauthorized or unintentional modification or misuse of the organization's assets"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.6.1.3",
+          "control_name": "Appropriate contacts with relevant authorities shall be maintained.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Maintain appropriate contacts with relevant authorities"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.6.1.4",
+          "control_name": "Appropriate contacts with special interest groups or other specialist security forums and professional associations shall be maintained.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Maintain appropriate contacts with special interest groups or other specialist security forums and professional associations"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "A.6.1.5",
+          "control_name": "Information security shall be addressed in project management, regardless of the type of the project.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Address information security in project management, regardless of the type of the project"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

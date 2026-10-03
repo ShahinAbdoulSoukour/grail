@@ -1,0 +1,178 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.9",
+  "clause_name": "Email and Web Browser Protections",
+  "goal_name": "Ensure email and web browser protections",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Improve protections and detections of threats from email and web vectors, as these are opportunities for attackers to manipulate human behavior through direct engagement.",
+      "goal_name": "Improve protections and detections of threats from email and web vectors, as these are opportunities for attackers to manipulate human behavior through direct engagement",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.9.1",
+          "control_name": "Ensure Use of Only Fully Supported Browsers and Email Clients",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Ensure Use of Only Fully Supported Browsers and Email Clients",
+              "class": "TECH",
+              "artifact": "Email",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.9.2",
+          "control_name": "Use DNS Filtering Services",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Use DNS Filtering Services",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.9.3",
+          "control_name": "Maintain and Enforce Network-Based URL Filters",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Maintain Network-Based URL Filters",
+              "class": "TECH",
+              "artifact": "NetworkTraffic",
+              "actions": [
+                {
+                  "id": "D3-APCA",
+                  "label": "Application Protocol Command Analysis",
+                  "verb": "monitors",
+                  "definition": "Analyzing application protocol level remote commands to detect unauthorized activity.",
+                  "source": "D3FEND"
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Enforce Network-Based URL Filters",
+              "class": "TECH",
+              "artifact": "NetworkTraffic",
+              "actions": [
+                {
+                  "id": "D3-NTF",
+                  "label": "Network Traffic Filtering",
+                  "verb": "filters",
+                  "definition": "Restricting network traffic originating from any location.",
+                  "source": "D3FEND"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.9.4",
+          "control_name": "Restrict Unnecessary or Unauthorized Browser and Email Client Extensions",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Restrict Unnecessary or Unauthorized Browser and Email Client Extensions",
+              "class": "TECH",
+              "artifact": "Email",
+              "actions": [
+                {
+                  "id": "D3-RFAM",
+                  "label": "Remote File Access Mediation",
+                  "verb": "isolates",
+                  "definition": "Remote file access mediation is the process of managing and securing access to file systems over a network to ensure that only authorized users or processes can interact with remote files.",
+                  "source": "D3FEND"
+                },
+                {
+                  "id": "D3-LFP",
+                  "label": "Local File Permissions",
+                  "verb": "restricts",
+                  "definition": "Local file permissions is the systematic process of defining, implementing, and managing access control policies that dictate user permissions for accessing files on a local system through the configuration of operating system functionality.",
+                  "source": "D3FEND"
+                },
+                {
+                  "id": "D3-CF",
+                  "label": "Content Filtering",
+                  "verb": "filters",
+                  "definition": "Content Filtering techniques aid in the process of analyzing an input file for malicious or erroneous content and outputing a sanitized version.",
+                  "source": "D3FEND"
+                },
+                {
+                  "id": "D3-EF",
+                  "label": "Email Filtering",
+                  "verb": "filters",
+                  "definition": "Filtering incoming email traffic based on specific criteria.",
+                  "source": "D3FEND"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.9.5",
+          "control_name": "Implement DMARC",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Implement DMARC",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.9.6",
+          "control_name": "Block Unnecessary File Types",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Block Unnecessary File Types",
+              "class": "TECH",
+              "artifact": "FileContentBlock",
+              "actions": [
+                {
+                  "id": "D3-CM",
+                  "label": "Content Modification",
+                  "verb": "filters",
+                  "definition": "Modify content that does not comply with policy.",
+                  "source": "D3FEND"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.9.7",
+          "control_name": "Deploy and Maintain Email Server Anti-Malware Protections",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Deploy Email Server Anti-Malware Protections",
+              "class": "TECH",
+              "artifact": "Email",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.7.2",
+              "goal_name": "Maintain Email Server Anti-Malware Protections",
+              "class": "TECH",
+              "artifact": "Email",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

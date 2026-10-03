@@ -1,0 +1,126 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.2",
+  "clause_name": "Inventory and Control of Software Assets",
+  "goal_name": "Ensure inventory and control of software assets",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Actively manage (inventory, track, and correct) all software (operating systems and applications) on the network so that only authorized software is installed and can execute, and that unauthorized and unmanaged software is found and prevented from installation or execution.",
+      "goal_name": "Actively manage all software on the network so that only authorized software is installed and can execute, and that unauthorized and unmanaged software is found and prevented from installation or execution",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.2.1",
+          "control_name": "Establish and Maintain a Software Inventory",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish a Software Inventory",
+              "class": "TECH",
+              "artifact": "Software",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain a Software Inventory",
+              "class": "TECH",
+              "artifact": "Software",
+              "actions": [
+                {
+                  "id": "D3-SU",
+                  "label": "Software Update",
+                  "verb": "updates",
+                  "definition": "Replacing old software on a computer system component.",
+                  "source": "D3FEND"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.2.2",
+          "control_name": "Ensure Authorized Software is Currently Supported",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Ensure Authorized Software is Currently Supported",
+              "class": "TECH",
+              "artifact": "Software",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.2.3",
+          "control_name": "Address Unauthorized Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Address Unauthorized Software",
+              "class": "TECH",
+              "artifact": "Software",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.2.4",
+          "control_name": "Utilize Automated Software Inventory Tools",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Utilize Automated Software Inventory Tools",
+              "class": "TECH",
+              "artifact": "Software",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.2.5",
+          "control_name": "Allowlist Authorized Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Allowlist Authorized Software",
+              "class": "TECH",
+              "artifact": "Software",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.2.6",
+          "control_name": "Allowlist Authorized Libraries",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Allowlist Authorized Libraries",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.2.7",
+          "control_name": "Allowlist Authorized Scripts",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Allowlist Authorized Scripts",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

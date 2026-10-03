@@ -1,0 +1,396 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.7",
+  "clause_name": "Continuous Vulnerability Management",
+  "goal_name": "Ensure continuous vulnerability management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Develop a plan to continuously assess and track vulnerabilities on all enterprise assets within the enterprise’s infrastructure, in order to remediate, and minimize, the window of opportunity for attackers. Monitor public and private industry sources for new threat and vulnerability information.",
+      "goal_name": "Develop a plan to continuously assess and track vulnerabilities on all enterprise assets within the enterprise’s infrastructure, in order to remediate, and minimize, the window of opportunity for attackers",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.7.1",
+          "control_name": "Establish and Maintain a Vulnerability Management Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish a Vulnerability Management Process",
+              "class": "ORG",
+              "embedding_context": "Establish a Vulnerability Management Process",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AVE",
+                "name": "Asset Vulnerability Enumeration",
+                "similarity_score": 0.547909
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.45855
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.547909
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.542259
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ORA",
+                  "name": "Operational Risk Assessment",
+                  "description": "Operational risk assessment identifies and models the vulnerabilities of, and risks to, an organization's activities individually and as a whole.",
+                  "similarity_score": 0.496845
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "similarity_score": 0.470115
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.45855
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain a Vulnerability Management Process",
+              "class": "TECH",
+              "embedding_context": "Maintain a Vulnerability Management Process",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AVE",
+                "name": "Asset Vulnerability Enumeration",
+                "similarity_score": 0.494097
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.453235
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.494097
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.487879
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.453235
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.7.2",
+          "control_name": "Establish and Maintain a Remediation Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Remediation Process",
+              "class": "ORG",
+              "embedding_context": "Establish a Remediation Process",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RNA",
+                "name": "Restore Network Access",
+                "similarity_score": 0.380487
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0007",
+                "name": "Sanitize Training Data",
+                "similarity_score": 0.217076
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Remediation Process",
+              "class": "ORG",
+              "embedding_context": "Maintain a Remediation Process",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-PT",
+                "name": "Process Termination",
+                "similarity_score": 0.382378
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.22979
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.7.3",
+          "control_name": "Perform Automated Operating System Patch Management",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Perform Automated Operating System Patch Management",
+              "class": "TECH",
+              "embedding_context": "Perform Automated Operating System Patch Management",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SU",
+                "name": "Software Update",
+                "similarity_score": 0.449859
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.370385
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.7.4",
+          "control_name": "Perform Automated Application Patch Management",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Perform Automated Application Patch Management",
+              "class": "TECH",
+              "embedding_context": "Perform Automated Application Patch Management",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SU",
+                "name": "Software Update",
+                "similarity_score": 0.446773
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.401848
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.7.5",
+          "control_name": "Perform Automated Vulnerability Scans of Internal Enterprise Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Perform Automated Vulnerability Scans of Internal Enterprise Assets",
+              "class": "TECH",
+              "embedding_context": "Perform Automated Vulnerability Scans of Internal Enterprise Assets",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AVE",
+                "name": "Asset Vulnerability Enumeration",
+                "similarity_score": 0.591961
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0016",
+                "name": "Vulnerability Scanning",
+                "similarity_score": 0.515919
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.591961
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.50632
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CIA",
+                  "name": "Container Image Analysis",
+                  "description": "Analyzing a Container Image with respect to a set of policies.",
+                  "similarity_score": 0.454911
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "similarity_score": 0.450031
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "similarity_score": 0.515919
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.475453
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.7.6",
+          "control_name": "Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets",
+              "class": "TECH",
+              "embedding_context": "Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AVE",
+                "name": "Asset Vulnerability Enumeration",
+                "similarity_score": 0.596636
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0016",
+                "name": "Vulnerability Scanning",
+                "similarity_score": 0.506393
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.596636
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.497245
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "similarity_score": 0.466938
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CIA",
+                  "name": "Container Image Analysis",
+                  "description": "Analyzing a Container Image with respect to a set of policies.",
+                  "similarity_score": 0.460869
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "similarity_score": 0.506393
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.464241
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.7.7",
+          "control_name": "Remediate Detected Vulnerabilities",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Remediate Detected Vulnerabilities",
+              "class": "TECH",
+              "embedding_context": "Remediate Detected Vulnerabilities",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DCE",
+                "name": "Dead Code Elimination",
+                "similarity_score": 0.444724
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0016",
+                "name": "Vulnerability Scanning",
+                "similarity_score": 0.505241
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "similarity_score": 0.505241
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

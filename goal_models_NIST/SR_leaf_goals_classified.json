@@ -1,0 +1,71 @@
+{
+  "goal_id": "G0",
+  "clause_id": "SR",
+  "clause_name": "Manage Supply Chain Risks",
+  "goal_name": "Manage supply chain risks",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure effective management of supply chain risks.",
+      "goal_name": "Ensure effective management of supply chain risks",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "SR-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate supply chain risk management controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate supply chain risk management controls",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate supply chain risk management controls",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate supply chain risk management controls",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "SR-2",
+          "control_name": "Develop a supply chain risk management plan for the system, system component, or service.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Develop a supply chain risk management plan for the system, system component, or service",
+              "class": "ORG"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "SR-3",
+          "control_name": "Establish, document, and implement controls and processes for managing supply chain risks.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Establish controls and processes for managing supply chain risks",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Document controls and processes for managing supply chain risks",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.3.3",
+              "goal_name": "Implement controls and processes for managing supply chain risks",
+              "class": "ORG"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

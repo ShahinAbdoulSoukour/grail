@@ -1,0 +1,104 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.10",
+  "clause_name": "Malware Defenses",
+  "goal_name": "Ensure malware defenses",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Prevent or control the installation, spread, and execution of malicious applications, code, or scripts on enterprise assets.",
+      "goal_name": "Prevent or control the installation, spread, and execution of malicious applications, code, or scripts on enterprise assets",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.10.1",
+          "control_name": "Deploy and Maintain Anti-Malware Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Deploy Anti-Malware Software",
+              "class": "TECH"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain Anti-Malware Software",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.10.2",
+          "control_name": "Configure Automatic Anti-Malware Signature Updates",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Configure Automatic Anti-Malware Signature Updates",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.10.3",
+          "control_name": "Disable Autorun and Autoplay for Removable Media",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Disable Autorun and Autoplay for Removable Media",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.10.4",
+          "control_name": "Configure Automatic Anti-Malware Scanning of Removable Media",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Configure Automatic Anti-Malware Scanning of Removable Media",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.10.5",
+          "control_name": "Enable Anti-Exploitation Features",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Enable Anti-Exploitation Features",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.10.6",
+          "control_name": "Centrally Manage Anti-Malware Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Centrally Manage Anti-Malware Software",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.10.7",
+          "control_name": "Use Behavior-Based Anti-Malware Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Use Behavior-Based Anti-Malware Software",
+              "class": "TECH"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

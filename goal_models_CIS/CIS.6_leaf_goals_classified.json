@@ -1,0 +1,121 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.6",
+  "clause_name": "Access Control Management",
+  "goal_name": "Ensure access control management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Use processes and tools to create, assign, manage, and revoke access credentials and privileges for user, administrator, and service accounts for enterprise assets and software.",
+      "goal_name": "Use processes and tools to create, assign, manage, and revoke access credentials and privileges for user, administrator, and service accounts for enterprise assets and software",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.6.1",
+          "control_name": "Establish an Access Granting Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish an Access Granting Process",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.6.2",
+          "control_name": "Establish an Access Revoking Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish an Access Revoking Process",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.6.3",
+          "control_name": "Require MFA for Externally-Exposed Applications",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Require MFA for Externally-Exposed Applications",
+              "class": "PHYS"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.6.4",
+          "control_name": "Require MFA for Remote Network Access",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Require MFA for Remote Network Access",
+              "class": "PHYS"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.6.5",
+          "control_name": "Require MFA for Administrative Access",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Require MFA for Administrative Access",
+              "class": "PHYS"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.6.6",
+          "control_name": "Establish and Maintain an Inventory of Authentication and Authorization Systems",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Establish an Inventory of Authentication and Authorization Systems",
+              "class": "TECH"
+            },
+            {
+              "goal_id": "G1.6.2",
+              "goal_name": "Maintain an Inventory of Authentication and Authorization Systems",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.6.7",
+          "control_name": "Centralize Access Control",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Centralize Access Control",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.6.8",
+          "control_name": "Define and Maintain Role-Based Access Control",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Define Role-Based Access Control",
+              "class": "PHYS"
+            },
+            {
+              "goal_id": "G1.8.2",
+              "goal_name": "Maintain Role-Based Access Control",
+              "class": "TECH"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

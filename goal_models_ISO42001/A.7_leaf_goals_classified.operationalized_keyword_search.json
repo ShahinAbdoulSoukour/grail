@@ -1,0 +1,122 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.7",
+  "clause_name": "Data acquisition",
+  "goal_name": "Ensure data acquisition",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Data used for AI systems shall be acquired appropriately.",
+      "goal_name": "Acquire data used for AI systems appropriately",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.7.2",
+          "control_name": "Data used for AI systems shall be acquired appropriately.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Acquire data used for AI systems appropriately",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.7.3",
+          "control_name": "Data quality requirements shall be defined and checked.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Define data quality requirements",
+              "class": "ORG",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Check data quality requirements",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.7.4",
+          "control_name": "Data preparation activities shall be controlled.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Control data preparation activities",
+              "class": "TECH",
+              "actions": [
+                {
+                  "id": "OWASP.M0021",
+                  "label": "Data Access Control",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Limit external data source access.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.7.5",
+          "control_name": "Data provenance shall be tracked and maintained.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Track data provenance",
+              "class": "TECH",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Maintain data provenance",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "A.7.6",
+          "control_name": "Data selection criteria shall be defined and applied.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Define data selection criteria",
+              "class": "ORG",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.5.2",
+              "goal_name": "Apply data selection criteria",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "A.7.7",
+          "control_name": "Data shall be handled securely and appropriately.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Handle data securely and appropriately",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

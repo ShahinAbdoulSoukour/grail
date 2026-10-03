@@ -1,0 +1,66 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.8.2",
+  "clause_name": "Information classification",
+  "goal_name": "Ensure information classification",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure that information receives an appropriate level of protection in accordance with its importance to the organization.",
+      "goal_name": "Ensure that information receives an appropriate level of protection in accordance with its importance to the organization",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.8.2.1",
+          "control_name": "Information shall be classified in terms of legal requirements, value, criticality and sensitivity to unauthorised disclosure or modification.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Classify information in terms of legal requirements, value, criticality and sensitivity to unauthorised disclosure or modification",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.8.2.2",
+          "control_name": "An appropriate set of procedures for information labelling shall be developed and implemented in accordance with the information classification scheme adopted by the organization.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Develop an appropriate set of procedures for information labelling",
+              "class": "ORG",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Implement an appropriate set of procedures for information labelling in accordance with the information classification scheme adopted by the organization",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.8.2.3",
+          "control_name": "Procedures for handling assets shall be developed and implemented in accordance with the information classification scheme adopted by the organization.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Develop procedures for handling assets",
+              "class": "ORG",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Implement procedures for handling assets in accordance with the information classification scheme adopted by the organization",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.9",
+  "clause_name": "Responsible use",
+  "goal_name": "Ensure responsible use",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "AI systems shall be used responsibly.",
+      "goal_name": "Use AI systems responsibly",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.9.2",
+          "control_name": "AI systems shall be used responsibly.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Use AI systems responsibly",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.9.3",
+          "control_name": "Human oversight shall be defined and implemented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Define human oversight",
+              "class": "ORG",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Implement human oversight",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.9.4",
+          "control_name": "Use of AI systems shall be monitored for unintended behavior.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Monitor use of AI systems for unintended behavior",
+              "class": "TECH",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.9.5",
+          "control_name": "Inputs and outputs of AI systems shall be monitored as needed.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Monitor inputs and outputs of AI systems as needed",
+              "class": "TECH",
+              "attack": "AML.A0021",
+              "actions": [
+                {
+                  "id": "AML.M0040",
+                  "label": "Deploy advanced verification mechanisms",
+                  "phases": [
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "OWASP.M0017",
+                  "label": "Anomaly detection",
+                  "phases": [
+                    "Deployment"
+                  ],
+                  "definition": "Sign models and code, apply anomaly detection, and monitor.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

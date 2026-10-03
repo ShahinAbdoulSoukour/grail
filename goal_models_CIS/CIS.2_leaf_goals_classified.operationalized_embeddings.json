@@ -1,0 +1,305 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.2",
+  "clause_name": "Inventory and Control of Software Assets",
+  "goal_name": "Ensure inventory and control of software assets",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Actively manage (inventory, track, and correct) all software (operating systems and applications) on the network so that only authorized software is installed and can execute, and that unauthorized and unmanaged software is found and prevented from installation or execution.",
+      "goal_name": "Actively manage all software on the network so that only authorized software is installed and can execute, and that unauthorized and unmanaged software is found and prevented from installation or execution",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.2.1",
+          "control_name": "Establish and Maintain a Software Inventory",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish a Software Inventory",
+              "class": "TECH",
+              "embedding_context": "Establish a Software Inventory",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SWI",
+                "name": "Software Inventory",
+                "similarity_score": 0.642291
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.493777
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "similarity_score": 0.642291
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "similarity_score": 0.452518
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AVE",
+                  "name": "Asset Vulnerability Enumeration",
+                  "description": "Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.",
+                  "similarity_score": 0.452114
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.493777
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain a Software Inventory",
+              "class": "TECH",
+              "embedding_context": "Maintain a Software Inventory",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SWI",
+                "name": "Software Inventory",
+                "similarity_score": 0.641831
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.545057
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "similarity_score": 0.641831
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "similarity_score": 0.465006
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.545057
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.2.2",
+          "control_name": "Ensure Authorized Software is Currently Supported",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Ensure Authorized Software is Currently Supported",
+              "class": "TECH",
+              "embedding_context": "Ensure Authorized Software is Currently Supported",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-RFUM",
+                "name": "Remote Firmware Update Monitoring",
+                "similarity_score": 0.368985
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0022",
+                "name": "User Confirmation",
+                "similarity_score": 0.372567
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.2.3",
+          "control_name": "Address Unauthorized Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Address Unauthorized Software",
+              "class": "TECH",
+              "embedding_context": "Address Unauthorized Software",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-EAL",
+                "name": "Executable Allowlisting",
+                "similarity_score": 0.413549
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0011",
+                "name": "Restrict Library Loading",
+                "similarity_score": 0.341378
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.2.4",
+          "control_name": "Utilize Automated Software Inventory Tools",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Utilize Automated Software Inventory Tools",
+              "class": "TECH",
+              "embedding_context": "Utilize Automated Software Inventory Tools",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SWI",
+                "name": "Software Inventory",
+                "similarity_score": 0.620973
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.530466
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SWI",
+                  "name": "Software Inventory",
+                  "description": "Software inventorying identifies and records the software items in the organization's architecture.",
+                  "similarity_score": 0.620973
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CI",
+                  "name": "Configuration Inventory",
+                  "description": "Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.",
+                  "similarity_score": 0.463936
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0016",
+                  "name": "Inventory Management",
+                  "description": "Maintain an up-to-date inventory",
+                  "similarity_score": 0.530466
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.2.5",
+          "control_name": "Allowlist Authorized Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Allowlist Authorized Software",
+              "class": "TECH",
+              "embedding_context": "Allowlist Authorized Software",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-EAL",
+                "name": "Executable Allowlisting",
+                "similarity_score": 0.440097
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0002",
+                "name": "Human Approval",
+                "similarity_score": 0.452476
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0002",
+                  "name": "Human Approval",
+                  "description": "Require user consent for privileged actions.",
+                  "similarity_score": 0.452476
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.2.6",
+          "control_name": "Allowlist Authorized Libraries",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Allowlist Authorized Libraries",
+              "class": "PHYS",
+              "embedding_context": "Allowlist Authorized Libraries",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-EAL",
+                "name": "Executable Allowlisting",
+                "similarity_score": 0.35771
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0011",
+                "name": "Restrict Library Loading",
+                "similarity_score": 0.401303
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.2.7",
+          "control_name": "Allowlist Authorized Scripts",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Allowlist Authorized Scripts",
+              "class": "PHYS",
+              "embedding_context": "Allowlist Authorized Scripts",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-EDL",
+                "name": "Executable Denylisting",
+                "similarity_score": 0.371867
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0027",
+                "name": "Permissions Control",
+                "similarity_score": 0.404945
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

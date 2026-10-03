@@ -1,0 +1,167 @@
+{
+  "goal_id": "G0",
+  "clause_id": "RA",
+  "clause_name": "Assess Security and Privacy Risks",
+  "goal_name": "Assess security and privacy risks",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure effective assessment of system and information risks.",
+      "goal_name": "Ensure effective assessment of system and information risks",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "RA-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate risk assessment controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate risk assessment controls",
+              "class": "ORG",
+              "embedding_context": "Develop policy and procedures to facilitate risk assessment controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.457306
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.349531
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ORA",
+                  "name": "Operational Risk Assessment",
+                  "description": "Operational risk assessment identifies and models the vulnerabilities of, and risks to, an organization's activities individually and as a whole.",
+                  "similarity_score": 0.457306
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate risk assessment controls",
+              "class": "ORG",
+              "embedding_context": "Document policy and procedures to facilitate risk assessment controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.445678
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0032",
+                "name": "Secure Coding",
+                "similarity_score": 0.32847
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate risk assessment controls",
+              "class": "ORG",
+              "embedding_context": "Disseminate policy and procedures to facilitate risk assessment controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.413635
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0031",
+                "name": "Implement Security Control during hardware manufacturing",
+                "similarity_score": 0.333642
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "RA-2",
+          "control_name": "Categorize the system and information processed, stored, and transmitted by the system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Categorize the system and information processed, stored, and transmitted by the system",
+              "class": "TECH",
+              "embedding_context": "Categorize the system and information processed, stored, and transmitted by the system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSM",
+                "name": "System Mapping",
+                "similarity_score": 0.500112
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0032",
+                "name": "Utilize integrity controls in hardware",
+                "similarity_score": 0.339724
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSM",
+                  "name": "System Mapping",
+                  "description": "System mapping encompasses the techniques to identify the organization's systems, how they are configured and decomposed into subsystems and components, how they are dependent on one another, and where they are physically located.",
+                  "similarity_score": 0.500112
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.450005
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "RA-3",
+          "control_name": "Conduct a risk assessment to determine the risk to organizational operations, assets, individuals, other organizations, and the Nation.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Conduct a risk assessment to determine the risk to organizational operations, assets, individuals, other organizations, and the Nation",
+              "class": "ORG",
+              "embedding_context": "Conduct a risk assessment to determine the risk to organizational operations, assets, individuals, other organizations, and the Nation",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.526863
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.301462
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ORA",
+                  "name": "Operational Risk Assessment",
+                  "description": "Operational risk assessment identifies and models the vulnerabilities of, and risks to, an organization's activities individually and as a whole.",
+                  "similarity_score": 0.526863
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

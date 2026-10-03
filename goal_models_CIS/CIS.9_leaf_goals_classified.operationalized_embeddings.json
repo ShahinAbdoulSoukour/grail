@@ -1,0 +1,324 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.9",
+  "clause_name": "Email and Web Browser Protections",
+  "goal_name": "Ensure email and web browser protections",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Improve protections and detections of threats from email and web vectors, as these are opportunities for attackers to manipulate human behavior through direct engagement.",
+      "goal_name": "Improve protections and detections of threats from email and web vectors, as these are opportunities for attackers to manipulate human behavior through direct engagement",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.9.1",
+          "control_name": "Ensure Use of Only Fully Supported Browsers and Email Clients",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Ensure Use of Only Fully Supported Browsers and Email Clients",
+              "class": "TECH",
+              "embedding_context": "Ensure Use of Only Fully Supported Browsers and Email Clients",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-EBWSAM",
+                "name": "Endpoint-based Web Server Access Mediation",
+                "similarity_score": 0.326661
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0026",
+                "name": "Granular Functionality",
+                "similarity_score": 0.375008
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.9.2",
+          "control_name": "Use DNS Filtering Services",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Use DNS Filtering Services",
+              "class": "TECH",
+              "embedding_context": "Use DNS Filtering Services",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DNSDL",
+                "name": "DNS Denylisting",
+                "similarity_score": 0.71902
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0015",
+                "name": "Adversarial Input Detection",
+                "similarity_score": 0.328748
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DNSDL",
+                  "name": "DNS Denylisting",
+                  "description": "Blocking DNS Network Traffic based on criteria such as IP address, domain name, or DNS query type.",
+                  "similarity_score": 0.71902
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DNSAL",
+                  "name": "DNS Allowlisting",
+                  "description": "Permitting only approved domains and their subdomains to be resolved.",
+                  "similarity_score": 0.694667
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FRDDL",
+                  "name": "Forward Resolution Domain Denylisting",
+                  "description": "Blocking a lookup based on the query's domain name value.",
+                  "similarity_score": 0.674105
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FRIDL",
+                  "name": "Forward Resolution IP Denylisting",
+                  "description": "Blocking a DNS lookup's answer's IP address value.",
+                  "similarity_score": 0.65431
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-RRID",
+                  "name": "Reverse Resolution IP Denylisting",
+                  "description": "Blocking a reverse lookup based on the query's IP address value.",
+                  "similarity_score": 0.632745
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.9.3",
+          "control_name": "Maintain and Enforce Network-Based URL Filters",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Maintain Network-Based URL Filters",
+              "class": "TECH",
+              "embedding_context": "Maintain Network-Based URL Filters",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NTPM",
+                "name": "Network Traffic Policy Mapping",
+                "similarity_score": 0.393627
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "CAPEC.M0001",
+                "name": "Employ network segmentation",
+                "similarity_score": 0.334272
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Enforce Network-Based URL Filters",
+              "class": "TECH",
+              "embedding_context": "Enforce Network-Based URL Filters",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DNSAL",
+                "name": "DNS Allowlisting",
+                "similarity_score": 0.526269
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0010",
+                "name": "Input validation",
+                "similarity_score": 0.434875
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DNSAL",
+                  "name": "DNS Allowlisting",
+                  "description": "Permitting only approved domains and their subdomains to be resolved.",
+                  "similarity_score": 0.526269
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FRDDL",
+                  "name": "Forward Resolution Domain Denylisting",
+                  "description": "Blocking a lookup based on the query's domain name value.",
+                  "similarity_score": 0.48331
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NTPM",
+                  "name": "Network Traffic Policy Mapping",
+                  "description": "Network traffic policy mapping identifies and models the allowed pathways of data at the network, transport, and/or application levels.",
+                  "similarity_score": 0.476736
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-HDDL",
+                  "name": "Hierarchical Domain Denylisting",
+                  "description": "Blocking the resolution of any subdomain of a specified domain name.",
+                  "similarity_score": 0.471177
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-CV",
+                  "name": "Content Validation",
+                  "description": "Verify and validate contents complies with policy",
+                  "similarity_score": 0.46915
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.9.4",
+          "control_name": "Restrict Unnecessary or Unauthorized Browser and Email Client Extensions",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Restrict Unnecessary or Unauthorized Browser and Email Client Extensions",
+              "class": "TECH",
+              "embedding_context": "Restrict Unnecessary or Unauthorized Browser and Email Client Extensions",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DTP",
+                "name": "Domain Trust Policy",
+                "similarity_score": 0.370351
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0024",
+                "name": "Limit Plugin Functions",
+                "similarity_score": 0.418381
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.9.5",
+          "control_name": "Implement DMARC",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Implement DMARC",
+              "class": "TECH",
+              "embedding_context": "Implement DMARC",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-MBSV",
+                "name": "Memory Block Start Validation",
+                "similarity_score": 0.390966
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0032",
+                "name": "Utilize integrity controls in hardware",
+                "similarity_score": 0.296054
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.9.6",
+          "control_name": "Block Unnecessary File Types",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Block Unnecessary File Types",
+              "class": "TECH",
+              "embedding_context": "Block Unnecessary File Types",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-EDL",
+                "name": "Executable Denylisting",
+                "similarity_score": 0.459714
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0011",
+                "name": "Restrict Library Loading",
+                "similarity_score": 0.369763
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EDL",
+                  "name": "Executable Denylisting",
+                  "description": "Blocking the execution of files on a host in accordance with defined application policy rules.",
+                  "similarity_score": 0.459714
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.9.7",
+          "control_name": "Deploy and Maintain Email Server Anti-Malware Protections",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Deploy Email Server Anti-Malware Protections",
+              "class": "TECH",
+              "embedding_context": "Deploy Email Server Anti-Malware Protections",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SMRA",
+                "name": "Sender MTA Reputation Analysis",
+                "similarity_score": 0.415905
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.370355
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.7.2",
+              "goal_name": "Maintain Email Server Anti-Malware Protections",
+              "class": "TECH",
+              "embedding_context": "Maintain Email Server Anti-Malware Protections",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-EF",
+                "name": "Email Filtering",
+                "similarity_score": 0.391539
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.333201
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

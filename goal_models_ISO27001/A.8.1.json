@@ -1,0 +1,72 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.8.1",
+  "clause_name": "Responsibility for assets",
+  "goal_name": "Assign responsibility for assets",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To identify organizational assets and define appropriate protection responsibilities.",
+      "goal_name": "Identify organizational assets and define appropriate protection responsibilities",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.8.1.1",
+          "control_name": "Assets associated with information and information processing facilities shall be identified and an inventory of these assets shall be drawn up and maintained.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Identify assets associated with information and information processing facilities and an inventory of these assets shall be drawn up"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain assets associated with information and information processing facilities"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.8.1.2",
+          "control_name": "Assets maintained in the inventory shall be owned.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Ensure assets maintained in the inventory are owned"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.8.1.3",
+          "control_name": "Rules for the acceptable use of information and of assets associated with information and information processing facilities shall be identified, documented and implemented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Identify rules for the acceptable use of information and of assets associated with information and information processing facilities"
+            },
+            {
+              "goal_id": "G1.3.2",
+              "goal_name": "Document rules for the acceptable use of information and of assets associated with information and information processing facilities"
+            },
+            {
+              "goal_id": "G1.3.3",
+              "goal_name": "Implement rules for the acceptable use of information and of assets associated with information and information processing facilities"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.8.1.4",
+          "control_name": "All employees and external party users shall return all of the organizational assets in their possession upon termination of their employment, contract or agreement.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Return all of the organizational assets in their possession upon termination of their employment, contract or agreement",
+              "agent": "All employees and external party users"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

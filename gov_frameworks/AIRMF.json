@@ -1,0 +1,84 @@
+{
+  "GOVERN": {
+    "title": "Govern AI Risk Management",
+    "objective": "To establish and maintain effective AI risk management.",
+    "controls": {
+      "GOVERN 1": "Organizational policies, processes, and procedures for mapping, measuring, and managing AI risks are established, implemented, and maintained.",
+      "GOVERN 2": "Roles and responsibilities for AI risk management are clearly defined, documented, and understood.",
+      "GOVERN 3": "AI risk management is integrated into organizational culture and decision making.",
+      "GOVERN 4": "Processes to monitor compliance with laws, regulations, and ethical norms are established.",
+      "GOVERN 5": "Resources are allocated for AI risk management activities.",
+      "GOVERN 6": "Processes for internal and external communication about AI risks are defined and implemented.",
+      "GOVERN 7": "The organization establishes mechanisms for accountability and transparency related to AI systems."
+    }
+  },
+  "MAP": {
+    "title": "Map AI Systems and Risks",
+    "objective": "To establish a clear understanding of AI systems, their context, impacts, and risks.",
+    "controls": {
+      "MAP 1.1": "Intended purposes, beneficial uses, context-specific laws, norms, and expectations are understood and documented.",
+      "MAP 1.2": "Interdisciplinary AI actors, competencies, and participation reflect diversity and expertise.",
+      "MAP 1.3": "The organization mission and relevant goals for AI technology are understood and documented.",
+      "MAP 1.4": "The business value or context of business use has been clearly defined or re-evaluated.",
+      "MAP 1.5": "Organizational risk tolerances are determined and documented.",
+      "MAP 1.6": "System requirements are elicited and socio-technical implications are considered.",
+      "MAP 2.1": "The specific tasks and methods used to implement the tasks the AI system will support are defined.",
+      "MAP 2.2": "Information about knowledge limits and human oversight of the AI system is documented.",
+      "MAP 2.3": "Scientific integrity and TEVV considerations are identified and documented.",
+      "MAP 3.1": "Potential benefits of intended AI system functionality and performance are examined and documented.",
+      "MAP 3.2": "Potential costs from expected or realized AI errors or functionality are examined and documented.",
+      "MAP 3.3": "Targeted application scope is specified and documented based on system capability and context.",
+      "MAP 3.4": "Processes for operator and practitioner proficiency are defined, assessed, and documented.",
+      "MAP 3.5": "Processes for human oversight are defined, assessed, and documented.",
+      "MAP 4.1": "Approaches for mapping AI technology and legal risks of components, including third-party data or software, are documented.",
+      "MAP 4.2": "Internal risk controls for components of the AI system, including third-party AI technologies, are identified and documented.",
+      "MAP 5.1": "Likelihood and magnitude of each identified impact are documented.",
+      "MAP 5.2": "Practices and personnel for supporting regular engagement with relevant AI actors and feedback are in place."
+    }
+  },
+  "MEASURE": {
+    "title": "Measure AI Risks and Performance",
+    "objective": "To measure and evaluate AI risks, performance, and reliability.",
+    "controls": {
+      "MEASURE 1.1": "Approaches and metrics for measurement of AI risks are selected for implementation starting with the most significant risks.",
+      "MEASURE 1.2": "Appropriateness of AI metrics and effectiveness of existing controls are regularly assessed and updated.",
+      "MEASURE 1.3": "Independent assessors and relevant stakeholders are involved in regular assessments and updates as needed.",
+      "MEASURE 2.1": "Test sets, metrics, and details about the tools used during TEVV are documented.",
+      "MEASURE 2.2": "Evaluations involving human subjects meet applicable requirements and are representative of the relevant population.",
+      "MEASURE 2.3": "AI system performance or assurance criteria are measured and documented.",
+      "MEASURE 2.4": "The functionality and behavior of the AI system and its components are monitored when in production.",
+      "MEASURE 2.5": "The AI system to be deployed is demonstrated to be valid and reliable.",
+      "MEASURE 2.6": "The AI system is evaluated regularly for safety risks and demonstrated to be safe within risk tolerance.",
+      "MEASURE 2.7": "AI system security and resilience are evaluated and documented.",
+      "MEASURE 2.8": "Risks associated with transparency and accountability are examined and documented.",
+      "MEASURE 2.9": "The AI model is explained, validated, and documented, and output is interpreted within context.",
+      "MEASURE 2.10": "Privacy risk of the AI system is examined and documented.",
+      "MEASURE 2.11": "Fairness and bias are evaluated and results are documented.",
+      "MEASURE 2.12": "Environmental impact and sustainability are assessed and documented.",
+      "MEASURE 2.13": "Effectiveness of the TEVV metrics and processes are evaluated and documented.",
+      "MEASURE 3.1": "Approaches, personnel, and documentation are in place to regularly identify and track existing, unanticipated, and emergent risks.",
+      "MEASURE 3.2": "Risk tracking approaches are considered where AI risks are difficult to assess or metrics are not yet available.",
+      "MEASURE 3.3": "Feedback processes for end users and impacted communities are established and integrated into evaluation metrics.",
+      "MEASURE 4.1": "Measurement approaches are connected to deployment contexts and informed by domain experts and end users.",
+      "MEASURE 4.2": "Measurement results are informed by input from domain experts and relevant AI actors to validate intended performance.",
+      "MEASURE 4.3": "Measurable performance improvements or declines are identified and documented."
+    }
+  },
+  "MANAGE": {
+    "title": "Manage AI Risks",
+    "objective": "To treat and monitor AI risks effectively.",
+    "controls": {
+      "MANAGE 1.1": "Processes for prioritizing and responding to AI risks are established and aligned with organizational objectives.",
+      "MANAGE 1.2": "AI risk treatment plans are developed, implemented, and maintained.",
+      "MANAGE 1.3": "Plans for monitoring AI risks and for incident response and recovery are established.",
+      "MANAGE 1.4": "Processes for communicating AI risk information and decisions are established.",
+      "MANAGE 1.5": "Processes for updating, remediating, or removing AI systems when risk thresholds are exceeded are established.",
+      "MANAGE 1.6": "Processes for continual improvement of AI risk management are established.",
+      "MANAGE 2.1": "Risk treatment decisions are based on prioritized risks, impact analyses, and organizational risk tolerance.",
+      "MANAGE 2.2": "Controls and mitigation actions are selected and implemented to address identified risks.",
+      "MANAGE 2.3": "Residual risks are documented, communicated, and accepted by appropriate decision makers.",
+      "MANAGE 2.4": "Mechanisms for tracking the effectiveness of controls and for reassessing risks over time are implemented.",
+      "MANAGE 2.5": "Incident response and recovery processes are exercised and improved using lessons learned."
+    }
+  }
+}

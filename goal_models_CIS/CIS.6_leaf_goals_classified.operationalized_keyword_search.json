@@ -1,0 +1,206 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.6",
+  "clause_name": "Access Control Management",
+  "goal_name": "Ensure access control management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Use processes and tools to create, assign, manage, and revoke access credentials and privileges for user, administrator, and service accounts for enterprise assets and software.",
+      "goal_name": "Use processes and tools to create, assign, manage, and revoke access credentials and privileges for user, administrator, and service accounts for enterprise assets and software",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.6.1",
+          "control_name": "Establish an Access Granting Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Establish an Access Granting Process",
+              "class": "TECH",
+              "artifact": "Process",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.6.2",
+          "control_name": "Establish an Access Revoking Process",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish an Access Revoking Process",
+              "class": "TECH",
+              "artifact": "Process",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.6.3",
+          "control_name": "Require MFA for Externally-Exposed Applications",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Require MFA for Externally-Exposed Applications",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.6.4",
+          "control_name": "Require MFA for Remote Network Access",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Require MFA for Remote Network Access",
+              "class": "PHYS",
+              "artifact": "NetworkTraffic",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.6.5",
+          "control_name": "Require MFA for Administrative Access",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Require MFA for Administrative Access",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.6.6",
+          "control_name": "Establish and Maintain an Inventory of Authentication and Authorization Systems",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Establish an Inventory of Authentication and Authorization Systems",
+              "class": "TECH",
+              "attack": "AML.A0012",
+              "actions": [
+                {
+                  "id": "AML.M0009",
+                  "label": "Use Multi-Modal Sensors",
+                  "phases": [
+                    "ModelEngineering"
+                  ],
+                  "definition": "Incorporate various biometric sensors to improve authentication accuracy and resilience.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                },
+                {
+                  "id": "AML.M0019",
+                  "label": "Control Access to ML Models and Data in Production",
+                  "phases": [
+                    "Deployment",
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Require users to verify their identities before accessing a production model. Require authentication for API endpoints and monitor production model queries to ensure compliance with usage policies and to prevent model misuse.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.6.2",
+              "goal_name": "Maintain an Inventory of Authentication and Authorization Systems",
+              "class": "TECH",
+              "attack": "AML.A0012",
+              "actions": [
+                {
+                  "id": "AML.M0019",
+                  "label": "Control Access to ML Models and Data in Production",
+                  "phases": [
+                    "Deployment",
+                    "Monitoring&Maintenance"
+                  ],
+                  "definition": "Require users to verify their identities before accessing a production model. Require authentication for API endpoints and monitor production model queries to ensure compliance with usage policies and to prevent model misuse.",
+                  "via": "attack",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.6.7",
+          "control_name": "Centralize Access Control",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Centralize Access Control",
+              "class": "TECH",
+              "artifact": "AccessControlConfiguration",
+              "actions": [
+                {
+                  "id": "OWASP.M0021",
+                  "label": "Data Access Control",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Limit external data source access.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.6.8",
+          "control_name": "Define and Maintain Role-Based Access Control",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Define Role-Based Access Control",
+              "class": "PHYS",
+              "artifact": "AccessControlConfiguration",
+              "actions": [
+                {
+                  "id": "OWASP.M0021",
+                  "label": "Data Access Control",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Limit external data source access.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            },
+            {
+              "goal_id": "G1.8.2",
+              "goal_name": "Maintain Role-Based Access Control",
+              "class": "TECH",
+              "artifact": "AccessControlConfiguration",
+              "actions": [
+                {
+                  "id": "OWASP.M0021",
+                  "label": "Data Access Control",
+                  "phases": [
+                    "SoftwareSecurityEngineering"
+                  ],
+                  "definition": "Limit external data source access.",
+                  "via": "mitigation",
+                  "source": "OntoSecAI"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

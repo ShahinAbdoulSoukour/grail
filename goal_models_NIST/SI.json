@@ -1,0 +1,75 @@
+{
+  "goal_id": "G0",
+  "clause_id": "SI",
+  "clause_name": "Maintain System and Information Integrity",
+  "goal_name": "Maintain system and information integrity",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure the integrity, security, and timely detection of system threats.",
+      "goal_name": "Ensure the integrity, security, and timely detection of system threats",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "SI-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate system and information integrity controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate system and information integrity controls"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate system and information integrity controls"
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate system and information integrity controls"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "SI-2",
+          "control_name": "Identify, report, and correct system flaws in a timely manner.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Identify system flaws in a timely manner"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Report system flaws in a timely manner"
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Correct system flaws in a timely manner"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "SI-3",
+          "control_name": "Implement malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Implement malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "SI-4",
+          "control_name": "Monitor the system to detect attacks and indicators of potential attacks.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Monitor the system to detect attacks and indicators of potential attacks"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

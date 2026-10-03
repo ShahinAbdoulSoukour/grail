@@ -1,0 +1,82 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.6",
+  "clause_name": "AI system design and development",
+  "goal_name": "Ensure AI system design and development",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "AI systems shall be designed and developed according to defined requirements.",
+      "goal_name": "Design AI systems and Develop AI systems according to defined requirements",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.6.2",
+          "control_name": "AI systems shall be designed and developed according to defined requirements.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Design AI systems"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Develop AI systems according to defined requirements"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.6.3",
+          "control_name": "AI systems shall be verified and validated before use.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Verify AI systems"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Validate AI systems before use"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "A.6.4",
+          "control_name": "Deployment of AI systems shall be controlled.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Control deployment of AI systems"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "A.6.5",
+          "control_name": "AI systems shall be operated and monitored.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Operate AI systems"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Monitor AI systems"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "A.6.6",
+          "control_name": "AI systems shall be maintained over their lifecycle.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Maintain AI systems over their lifecycle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

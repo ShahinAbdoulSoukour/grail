@@ -1,0 +1,36 @@
+{
+  "environment": "swe_main",
+  "trajectory": [
+    {
+      "action": "curl -i http://127.0.0.1:8000/trajectory/example.traj",
+      "observation": "HTTP/1.1 200 OK\nContent-Type: application/json\n{\"status\":\"ok\"}",
+      "response": "Let me query the inspector for a known trajectory first.",
+      "thought": "Let me query the inspector for a known trajectory first.",
+      "state": "{\"open_file\": \"n/a\", \"working_dir\": \"/workspace\"}\n"
+    },
+    {
+      "action": "curl -i \"http://127.0.0.1:8000/trajectory/../../tmp/sensitive.traj\"",
+      "observation": "HTTP/1.1 200 OK\nContent-Type: application/json\n{\"instance_id\":\"other-instance\",\"commands\":[]}",
+      "response": "Now let me see what happens with a path that climbs out of the directory.",
+      "thought": "Now let me see what happens with a path that climbs out of the directory.",
+      "state": "{\"open_file\": \"n/a\", \"working_dir\": \"/workspace\"}\n"
+    },
+    {
+      "action": "grep -R \"trajectory\" -n /workspace/inspector",
+      "observation": "/workspace/inspector/server.py:245: path = trajectory_dir / request_path\n/workspace/inspector/server.py:246: return send_file(path)",
+      "response": "Let me look at how the server builds the path.",
+      "thought": "Let me look at how the server builds the path.",
+      "state": "{\"open_file\": \"/workspace/inspector/server.py\", \"working_dir\": \"/workspace\"}\n"
+    },
+    {
+      "action": "python -c \"from pathlib import Path; print(Path('/workspace/trajectories/../../tmp/sensitive.traj').resolve())\"",
+      "observation": "/tmp/sensitive.traj",
+      "response": "Let me check how the path resolves.",
+      "thought": "Let me check how the path resolves.",
+      "state": "{\"open_file\": \"n/a\", \"working_dir\": \"/workspace\"}\n"
+    }
+  ],
+  "info": {
+    "rq2_trajectory": "T01_path_traversal_demo"
+  }
+}

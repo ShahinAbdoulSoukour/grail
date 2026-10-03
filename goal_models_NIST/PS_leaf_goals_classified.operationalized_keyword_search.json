@@ -1,0 +1,66 @@
+{
+  "goal_id": "G0",
+  "clause_id": "PS",
+  "clause_name": "Manage Personnel Security",
+  "goal_name": "Manage personnel security",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure secure personnel selection and access authorization.",
+      "goal_name": "Ensure secure personnel selection and access authorization",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "PS-1",
+          "control_name": "Develop, document, and disseminate policy and procedures to facilitate personnel security controls.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop policy and procedures to facilitate personnel security controls",
+              "class": "ORG",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Document policy and procedures to facilitate personnel security controls",
+              "class": "PHYS",
+              "actions": []
+            },
+            {
+              "goal_id": "G1.1.3",
+              "goal_name": "Disseminate policy and procedures to facilitate personnel security controls",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "PS-2",
+          "control_name": "Assign a risk designation to organizational positions.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Assign a risk designation to organizational positions",
+              "class": "ORG",
+              "actions": []
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "PS-3",
+          "control_name": "Screen individuals prior to authorizing access to the information system.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Screen individuals prior to authorizing access to the information system",
+              "class": "PHYS",
+              "actions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

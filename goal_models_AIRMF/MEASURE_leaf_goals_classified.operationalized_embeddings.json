@@ -1,0 +1,1349 @@
+{
+  "goal_id": "G0",
+  "clause_id": "MEASURE",
+  "clause_name": "Measure AI Risks and Performance",
+  "goal_name": "Measure AI risks and performance",
+  "airmf_function": "MEASURE",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To measure and evaluate AI risks, performance, and reliability.",
+      "goal_name": "Measure and evaluate AI risks, performance, and reliability",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "MEASURE 1.1",
+          "control_name": "Approaches and metrics for measurement of AI risks are selected for implementation starting with the most significant risks.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Select approaches and metrics for measurement of AI risks for implementation starting with the most significant risks",
+              "class": "ORG",
+              "embedding_context": "Select approaches and metrics for measurement of AI risks for implementation starting with the most significant risks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.453454
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0008",
+                "name": "Validate ML Model",
+                "similarity_score": 0.577417
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.453454
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.577417
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.568593
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.561335
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "similarity_score": 0.552396
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0018",
+                  "name": "User Training",
+                  "description": "Educate ML model developers on secure coding practices and ML vulnerabilities.",
+                  "similarity_score": 0.551461
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "MEASURE 1.2",
+          "control_name": "Appropriateness of AI metrics and effectiveness of existing controls are regularly assessed and updated.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Assess appropriateness of AI metrics and effectiveness of existing controls",
+              "class": "ORG",
+              "embedding_context": "Assess appropriateness of AI metrics and effectiveness of existing controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.347095
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0008",
+                "name": "Validate ML Model",
+                "similarity_score": 0.478143
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.478143
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0030",
+                  "name": "Review Model Output",
+                  "description": "Regularly review LLM outputs with consistency\nchecks",
+                  "similarity_score": 0.464206
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.452188
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Update appropriateness of AI metrics and effectiveness of existing controls",
+              "class": "TECH",
+              "embedding_context": "Update appropriateness of AI metrics and effectiveness of existing controls",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.318709
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0020",
+                "name": "Fine-Tuning Caution",
+                "similarity_score": 0.463746
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.463746
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "MEASURE 1.3",
+          "control_name": "Independent assessors and relevant stakeholders are involved in regular assessments and updates as needed.",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Involve independent assessors and relevant stakeholders in regular assessments and updates as needed",
+              "class": "ORG",
+              "embedding_context": "Involve independent assessors and relevant stakeholders in regular assessments and updates as needed",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.271756
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.279858
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "MEASURE 2.1",
+          "control_name": "Test sets, metrics, and details about the tools used during TEVV are documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Document test sets, metrics, and details about the tools used during TEVV",
+              "class": "ORG",
+              "embedding_context": "Document test sets, metrics, and details about the tools used during TEVV",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FMCV",
+                "name": "File Metadata Consistency Validation",
+                "similarity_score": 0.314701
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0016",
+                "name": "Vulnerability Scanning",
+                "similarity_score": 0.36418
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "MEASURE 2.2",
+          "control_name": "Evaluations involving human subjects meet applicable requirements and are representative of the relevant population.",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Ensure evaluations involving human subjects meet applicable requirements and are representative of the relevant population",
+              "class": "ORG",
+              "embedding_context": "Ensure evaluations involving human subjects meet applicable requirements and are representative of the relevant population",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.2144
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0008",
+                "name": "Legitimacy Verification",
+                "similarity_score": 0.312656
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "MEASURE 2.3",
+          "control_name": "AI system performance or assurance criteria are measured and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Measure AI system performance or assurance criteria",
+              "class": "TECH",
+              "embedding_context": "Measure AI system performance or assurance criteria",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AEM",
+                "name": "Application Exception Monitoring",
+                "similarity_score": 0.394886
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0008",
+                "name": "Validate ML Model",
+                "similarity_score": 0.513731
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.513731
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0030",
+                  "name": "Verify the authenticity of feedback data",
+                  "description": "Use techniques such as digital signatures and checksums to verify that the feedback data received by the system is genuine, and reject any data that does not match the expected format.",
+                  "similarity_score": 0.511622
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0034",
+                  "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                  "description": "",
+                  "similarity_score": 0.476145
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.464054
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            },
+            {
+              "goal_id": "G1.6.2",
+              "goal_name": "Document AI system performance or assurance criteria",
+              "class": "ORG",
+              "embedding_context": "Document AI system performance or assurance criteria",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.304055
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0008",
+                "name": "Legitimacy Verification",
+                "similarity_score": 0.464126
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.464126
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "MEASURE 2.4",
+          "control_name": "The functionality and behavior of the AI system and its components are monitored when in production.",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Monitor the functionality and behavior of the AI system and its components when in production",
+              "class": "TECH",
+              "embedding_context": "Monitor the functionality and behavior of the AI system and its components when in production",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.440624
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0024",
+                "name": "Monitoring and auditing",
+                "similarity_score": 0.488279
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0024",
+                  "name": "Monitoring and auditing",
+                  "description": "Regularly monitoring and auditing the model’s use can help detect and prevent theft by detecting when an attacker is attempting to access or steal the model.",
+                  "similarity_score": 0.488279
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0031",
+                  "name": "Implement Security Control during hardware manufacturing",
+                  "description": "Implement strict security controls and auditing processes during the manufacturing phase, including secure supply chain practices and hardware verification methods, to prevent unauthorized modifications to hardware components or firmware.",
+                  "similarity_score": 0.482569
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0014",
+                  "name": "Resource Monitoring",
+                  "description": "Continuously monitor resource usage.",
+                  "similarity_score": 0.464556
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "MEASURE 2.5",
+          "control_name": "The AI system to be deployed is demonstrated to be valid and reliable.",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Demonstrate the AI system to be deployed to be valid and reliable",
+              "class": "TECH",
+              "embedding_context": "Demonstrate the AI system to be deployed to be valid and reliable",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.416098
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0040",
+                "name": "Deploy advanced verification mechanisms",
+                "similarity_score": 0.555907
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "similarity_score": 0.555907
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0035",
+                  "name": "Secure Deployment of Models",
+                  "description": "Secure deployment with approval workflows.",
+                  "similarity_score": 0.554889
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0030",
+                  "name": "Verify the authenticity of feedback data",
+                  "description": "Use techniques such as digital signatures and checksums to verify that the feedback data received by the system is genuine, and reject any data that does not match the expected format.",
+                  "similarity_score": 0.552182
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.544414
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.531703
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.9",
+          "control_id": "MEASURE 2.6",
+          "control_name": "The AI system is evaluated regularly for safety risks and demonstrated to be safe within risk tolerance.",
+          "subgoals": [
+            {
+              "goal_id": "G1.9.1",
+              "goal_name": "Evaluate the AI system regularly for safety risks",
+              "class": "ORG",
+              "embedding_context": "Evaluate the AI system regularly for safety risks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.406831
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0008",
+                "name": "Validate ML Model",
+                "similarity_score": 0.536086
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.536086
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0019",
+                  "name": "Input Validation",
+                  "description": "Filter malicious inputs to avoid model poisoning.",
+                  "similarity_score": 0.522736
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0034",
+                  "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                  "description": "",
+                  "similarity_score": 0.500911
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0016",
+                  "name": "Vulnerability Scanning",
+                  "description": "Vulnerability scanning is used to find potentially exploitable software vulnerabilities to remediate them.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for arbitrary code execution. Both model artifacts and downstream products produced by models should be scanned for known vulnerabilities.",
+                  "similarity_score": 0.500612
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "similarity_score": 0.49133
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            },
+            {
+              "goal_id": "G1.9.2",
+              "goal_name": "Demonstrate the AI system to be safe within risk tolerance",
+              "class": "ORG",
+              "embedding_context": "Demonstrate the AI system to be safe within risk tolerance",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.373891
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0019",
+                "name": "Input Validation",
+                "similarity_score": 0.587928
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0019",
+                  "name": "Input Validation",
+                  "description": "Filter malicious inputs to avoid model poisoning.",
+                  "similarity_score": 0.587928
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0026",
+                  "name": "Secure communication channels",
+                  "description": "Communication channels between the model and the interface responsible for displaying the results should be secured using secure protocols such as SSL/TLS.",
+                  "similarity_score": 0.557444
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.549457
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.540989
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.534784
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.10",
+          "control_id": "MEASURE 2.7",
+          "control_name": "AI system security and resilience are evaluated and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.10.1",
+              "goal_name": "Evaluate AI system security and resilience",
+              "class": "TECH",
+              "embedding_context": "Evaluate AI system security and resilience",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.550503
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0034",
+                "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                "similarity_score": 0.669295
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.550503
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NVA",
+                  "name": "Network Vulnerability Assessment",
+                  "description": "Network vulnerability assessment relates all the vulnerabilities of a network's components in the context of their configuration and interdependencies and can also include assessing risk emerging from the network's design as a whole, not just the sum of individual network node or network segment vulnerabilities.",
+                  "similarity_score": 0.466282
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0034",
+                  "name": "Design hardware with fault-tolerant architectures, employ error-correcting codes (ECC), and conduct regular fault injection testing to identify and mitigate vulnerabilities that could be exploited through hardware fault injection.",
+                  "description": "",
+                  "similarity_score": 0.669295
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0004",
+                  "name": "Employ network segmentation to limit the impact of injected traffic on critical AI systems and isolate affected components.",
+                  "description": "",
+                  "similarity_score": 0.65273
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.634755
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0034",
+                  "name": "Hardware fault-tolerant architectures",
+                  "description": "",
+                  "similarity_score": 0.62829
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0030",
+                  "name": "Review Model Output",
+                  "description": "Regularly review LLM outputs with consistency\nchecks",
+                  "similarity_score": 0.617582
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.10.2",
+              "goal_name": "Document AI system security and resilience",
+              "class": "TECH",
+              "embedding_context": "Document AI system security and resilience",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AA",
+                "name": "Agent Authentication",
+                "similarity_score": 0.412797
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.569977
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.569977
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0003",
+                  "name": "Segregate Content",
+                  "description": "Separate untrusted content from user prompts.",
+                  "similarity_score": 0.554606
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "similarity_score": 0.545628
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.540817
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0021",
+                  "name": "Regular backups",
+                  "description": "Regularly backing up the model’s code, training data, and other sensitive information can ensure that it can be recovered in the event of a theft.",
+                  "similarity_score": 0.531899
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.11",
+          "control_id": "MEASURE 2.8",
+          "control_name": "Risks associated with transparency and accountability are examined and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.11.1",
+              "goal_name": "Examine risks associated with transparency and accountability",
+              "class": "ORG",
+              "embedding_context": "Examine risks associated with transparency and accountability",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.263822
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.271687
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.11.2",
+              "goal_name": "Document risks associated with transparency and accountability",
+              "class": "ORG",
+              "embedding_context": "Document risks associated with transparency and accountability",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.292132
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.33538
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.12",
+          "control_id": "MEASURE 2.9",
+          "control_name": "The AI model is explained, validated, and documented, and output is interpreted within context.",
+          "subgoals": [
+            {
+              "goal_id": "G1.12.1",
+              "goal_name": "Explain the AI model",
+              "class": "TECH",
+              "embedding_context": "Explain the AI model",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AA",
+                "name": "Agent Authentication",
+                "similarity_score": 0.331151
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0022",
+                "name": "Model Obfuscation",
+                "similarity_score": 0.429336
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.12.2",
+              "goal_name": "Validate the AI model",
+              "class": "ORG",
+              "embedding_context": "Validate the AI model",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OLV",
+                "name": "Operational Logic Validation",
+                "similarity_score": 0.335114
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0008",
+                "name": "Validate ML Model",
+                "similarity_score": 0.570185
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.570185
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0019",
+                  "name": "Input Validation",
+                  "description": "Filter malicious inputs to avoid model poisoning.",
+                  "similarity_score": 0.529803
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.517458
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0030",
+                  "name": "Verify the authenticity of feedback data",
+                  "description": "Use techniques such as digital signatures and checksums to verify that the feedback data received by the system is genuine, and reject any data that does not match the expected format.",
+                  "similarity_score": 0.50417
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0040",
+                  "name": "Deploy advanced verification mechanisms",
+                  "description": "Deploy advanced content verification mechanisms, such as digital signatures and trusted identity frameworks, to ensure the authenticity of content and identities, preventing AI systems from making decisions based on spoofed or false data.",
+                  "similarity_score": 0.470597
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            },
+            {
+              "goal_id": "G1.12.3",
+              "goal_name": "Document the AI model",
+              "class": "ORG",
+              "embedding_context": "Document the AI model",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OM",
+                "name": "Organization Mapping",
+                "similarity_score": 0.300101
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0009",
+                "name": "Use-Case Specific Training",
+                "similarity_score": 0.444385
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.12.4",
+              "goal_name": "Interpret output within context",
+              "class": "ORG",
+              "embedding_context": "Interpret output within context",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-PCSV",
+                "name": "Process Code Segment Verification",
+                "similarity_score": 0.219021
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0006",
+                "name": "Output Encoding",
+                "similarity_score": 0.211033
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.13",
+          "control_id": "MEASURE 2.10",
+          "control_name": "Privacy risk of the AI system is examined and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.13.1",
+              "goal_name": "Examine privacy risk of the AI system",
+              "class": "TECH",
+              "embedding_context": "Examine privacy risk of the AI system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-UBA",
+                "name": "User Behavior Analysis",
+                "similarity_score": 0.392099
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.662857
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.662857
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0012",
+                  "name": "Encrypt Sensitive Information",
+                  "description": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "similarity_score": 0.6191
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0026",
+                  "name": "Secure communication channels",
+                  "description": "Communication channels between the model and the interface responsible for displaying the results should be secured using secure protocols such as SSL/TLS.",
+                  "similarity_score": 0.584202
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.579773
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0020",
+                  "name": "Encryption",
+                  "description": "Encrypting the model’s code, training data, and other sensitive information can prevent attackers from being able to access and steal the model.",
+                  "similarity_score": 0.576718
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            },
+            {
+              "goal_id": "G1.13.2",
+              "goal_name": "Document privacy risk of the AI system",
+              "class": "PHYS",
+              "embedding_context": "Document privacy risk of the AI system",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AA",
+                "name": "Agent Authentication",
+                "similarity_score": 0.329119
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.610732
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.610732
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0012",
+                  "name": "Encrypt Sensitive Information",
+                  "description": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "similarity_score": 0.536635
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0018",
+                  "name": "Data Sanitization",
+                  "description": "Use scrubbing to prevent user data in training.",
+                  "similarity_score": 0.513435
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0008",
+                  "name": "Legitimacy Verification",
+                  "description": "Ensure data legitimacy throughout training stages.",
+                  "similarity_score": 0.510588
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0020",
+                  "name": "Encryption",
+                  "description": "Encrypting the model’s code, training data, and other sensitive information can prevent attackers from being able to access and steal the model.",
+                  "similarity_score": 0.491596
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.14",
+          "control_id": "MEASURE 2.11",
+          "control_name": "Fairness and bias are evaluated and results are documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.14.1",
+              "goal_name": "Evaluate fairness and bias and results are documented",
+              "class": "ORG",
+              "embedding_context": "Evaluate fairness and bias and results are documented",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-IRA",
+                "name": "Identifier Reputation Analysis",
+                "similarity_score": 0.28338
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0008",
+                "name": "Validate ML Model",
+                "similarity_score": 0.291721
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.15",
+          "control_id": "MEASURE 2.12",
+          "control_name": "Environmental impact and sustainability are assessed and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.15.1",
+              "goal_name": "Assess environmental impact and sustainability",
+              "class": "ORG",
+              "embedding_context": "Assess environmental impact and sustainability",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-NVA",
+                "name": "Network Vulnerability Assessment",
+                "similarity_score": 0.21276
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0014",
+                "name": "Resource Monitoring",
+                "similarity_score": 0.088407
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.15.2",
+              "goal_name": "Document environmental impact and sustainability",
+              "class": "ORG",
+              "embedding_context": "Document environmental impact and sustainability",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OM",
+                "name": "Organization Mapping",
+                "similarity_score": 0.257596
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.101877
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.16",
+          "control_id": "MEASURE 2.13",
+          "control_name": "Effectiveness of the TEVV metrics and processes are evaluated and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.16.1",
+              "goal_name": "Evaluate effectiveness of the TEVV metrics and processes",
+              "class": "ORG",
+              "embedding_context": "Evaluate effectiveness of the TEVV metrics and processes",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.307506
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0008",
+                "name": "Validate ML Model",
+                "similarity_score": 0.231456
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.16.2",
+              "goal_name": "Document effectiveness of the TEVV metrics and processes",
+              "class": "ORG",
+              "embedding_context": "Document effectiveness of the TEVV metrics and processes",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-DI",
+                "name": "Data Inventory",
+                "similarity_score": 0.313907
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0008",
+                "name": "Legitimacy Verification",
+                "similarity_score": 0.245413
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.17",
+          "control_id": "MEASURE 3.1",
+          "control_name": "Approaches, personnel, and documentation are in place to regularly identify and track existing, unanticipated, and emergent risks.",
+          "subgoals": [
+            {
+              "goal_id": "G1.17.1",
+              "goal_name": "Ensure approaches, personnel, and documentation are in place to regularly identify and track existing, unanticipated, and emergent risks",
+              "class": "ORG",
+              "embedding_context": "Ensure approaches, personnel, and documentation are in place to regularly identify and track existing, unanticipated, and emergent risks",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.488386
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.406239
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-ORA",
+                  "name": "Operational Risk Assessment",
+                  "description": "Operational risk assessment identifies and models the vulnerabilities of, and risks to, an organization's activities individually and as a whole.",
+                  "similarity_score": 0.488386
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-OPM",
+                  "name": "Operational Process Monitoring",
+                  "description": "Monitoring physical parameters and operator actions related to an operational environment.",
+                  "similarity_score": 0.462599
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SYSVA",
+                  "name": "System Vulnerability Assessment",
+                  "description": "System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.",
+                  "similarity_score": 0.460241
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.18",
+          "control_id": "MEASURE 3.2",
+          "control_name": "Risk tracking approaches are considered where AI risks are difficult to assess or metrics are not yet available.",
+          "subgoals": [
+            {
+              "goal_id": "G1.18.1",
+              "goal_name": "Consider risk tracking approaches where AI risks are difficult to assess or metrics are not yet available",
+              "class": "ORG",
+              "embedding_context": "Consider risk tracking approaches where AI risks are difficult to assess or metrics are not yet available",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-ORA",
+                "name": "Operational Risk Assessment",
+                "similarity_score": 0.418172
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0001",
+                "name": "Limit Release of Public Information",
+                "similarity_score": 0.48975
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0001",
+                  "name": "Limit Release of Public Information",
+                  "description": "Limit the public release of technical information about the machine learning stack used in an organization's products or services. Technical knowledge of how machine learning is used can be leveraged by adversaries to perform targeting and tailor attacks to the target system. Additionally, consider limiting the release of organizational information - including physical locations, researcher names, and department structures - from which technical details such as machine learning techniques, model architectures, or datasets may be inferred.",
+                  "similarity_score": 0.48975
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0020",
+                  "name": "Fine-Tuning Caution",
+                  "description": "Be careful with sensitive data in model fine-tuning.",
+                  "similarity_score": 0.455668
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0008",
+                  "name": "Validate ML Model",
+                  "description": "Validate that machine learning models perform as intended by testing for backdoor triggers or adversarial bias. Monitor model for concept drift and training data drift, which may indicate data tampering and poisoning.",
+                  "similarity_score": 0.454546
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.19",
+          "control_id": "MEASURE 3.3",
+          "control_name": "Feedback processes for end users and impacted communities are established and integrated into evaluation metrics.",
+          "subgoals": [
+            {
+              "goal_id": "G1.19.1",
+              "goal_name": "Establish feedback processes for end users and impacted communities",
+              "class": "ORG",
+              "embedding_context": "Establish feedback processes for end users and impacted communities",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OM",
+                "name": "Organization Mapping",
+                "similarity_score": 0.231946
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0030",
+                "name": "Verify the authenticity of feedback data",
+                "similarity_score": 0.215705
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.19.2",
+              "goal_name": "Integrate feedback processes for end users and impacted communities into evaluation metrics",
+              "class": "ORG",
+              "embedding_context": "Integrate feedback processes for end users and impacted communities into evaluation metrics",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OM",
+                "name": "Organization Mapping",
+                "similarity_score": 0.243079
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0030",
+                "name": "Verify the authenticity of feedback data",
+                "similarity_score": 0.18952
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.20",
+          "control_id": "MEASURE 4.1",
+          "control_name": "Measurement approaches are connected to deployment contexts and informed by domain experts and end users.",
+          "subgoals": [
+            {
+              "goal_id": "G1.20.1",
+              "goal_name": "Ensure measurement approaches are connected to deployment contexts and informed by domain experts and end users",
+              "class": "ORG",
+              "embedding_context": "Ensure measurement approaches are connected to deployment contexts and informed by domain experts and end users",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-SYSVA",
+                "name": "System Vulnerability Assessment",
+                "similarity_score": 0.420705
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0014",
+                "name": "Resource Monitoring",
+                "similarity_score": 0.372459
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.21",
+          "control_id": "MEASURE 4.2",
+          "control_name": "Measurement results are informed by input from domain experts and relevant AI actors to validate intended performance.",
+          "subgoals": [
+            {
+              "goal_id": "G1.21.1",
+              "goal_name": "Inform measurement results to validate intended performance",
+              "agent": "input from domain experts and relevant AI actors",
+              "class": "ORG",
+              "embedding_context": "Inform measurement results to validate intended performance",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.339746
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0030",
+                "name": "Verify the authenticity of feedback data",
+                "similarity_score": 0.34546
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.22",
+          "control_id": "MEASURE 4.3",
+          "control_name": "Measurable performance improvements or declines are identified and documented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.22.1",
+              "goal_name": "Identify measurable performance improvements or declines",
+              "class": "ORG",
+              "embedding_context": "Identify measurable performance improvements or declines",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-AEM",
+                "name": "Application Exception Monitoring",
+                "similarity_score": 0.336449
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0014",
+                "name": "Resource Monitoring",
+                "similarity_score": 0.190189
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.22.2",
+              "goal_name": "Document measurable performance improvements or declines",
+              "class": "ORG",
+              "embedding_context": "Document measurable performance improvements or declines",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-OPM",
+                "name": "Operational Process Monitoring",
+                "similarity_score": 0.333576
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0014",
+                "name": "Resource Monitoring",
+                "similarity_score": 0.160673
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

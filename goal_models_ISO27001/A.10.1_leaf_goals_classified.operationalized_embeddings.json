@@ -1,0 +1,230 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.10.1",
+  "clause_name": "Cryptographic controls",
+  "goal_name": "Apply cryptographic controls",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure proper and effective use of cryptography to protect the confidentiality, authenticity and/or integrity of information.",
+      "goal_name": "Ensure proper and effective use of cryptography to protect the confidentiality, authenticity and/or integrity of information",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.10.1.1",
+          "control_name": "A policy on the use of cryptographic controls for protection of information shall be developed and implemented.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Develop a policy on the use of cryptographic controls for protection of information",
+              "class": "TECH",
+              "embedding_context": "Develop a policy on the use of cryptographic controls for protection of information",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-MENCR",
+                "name": "Message Encryption",
+                "similarity_score": 0.48274
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0032",
+                "name": "Secure Coding",
+                "similarity_score": 0.552569
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MENCR",
+                  "name": "Message Encryption",
+                  "description": "Encrypting a message body using a cryptographic key.",
+                  "similarity_score": 0.48274
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.468633
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FE",
+                  "name": "File Encryption",
+                  "description": "Encrypting a file using a cryptographic key.",
+                  "similarity_score": 0.462439
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.552569
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "similarity_score": 0.545337
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0002",
+                  "name": "Human Approval",
+                  "description": "Require user consent for privileged actions.",
+                  "similarity_score": 0.531753
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0003",
+                  "name": "Segregate Content",
+                  "description": "Separate untrusted content from user prompts.",
+                  "similarity_score": 0.527849
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0012",
+                  "name": "Encrypt Sensitive Information",
+                  "description": "Encrypt sensitive data such as ML models to protect against adversaries attempting to access sensitive data.",
+                  "similarity_score": 0.526861
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Implement a policy on the use of cryptographic controls for protection of information",
+              "class": "TECH",
+              "embedding_context": "Implement a policy on the use of cryptographic controls for protection of information",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-MENCR",
+                "name": "Message Encryption",
+                "similarity_score": 0.482232
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0021",
+                "name": "Data Access Control",
+                "similarity_score": 0.563141
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-MENCR",
+                  "name": "Message Encryption",
+                  "description": "Encrypting a message body using a cryptographic key.",
+                  "similarity_score": 0.482232
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AM",
+                  "name": "Access Modeling",
+                  "description": "Access modeling captures and records the access permissions granted to identities (e.g., administrators, users, groups, systems) and optionally includes details on how these identities are stored, managed, and shared across systems.",
+                  "similarity_score": 0.475198
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FE",
+                  "name": "File Encryption",
+                  "description": "Encrypting a file using a cryptographic key.",
+                  "similarity_score": 0.461052
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-NRAM",
+                  "name": "Network Resource Access Mediation",
+                  "description": "Control of access to organizational systems and services by users or processes over a network.",
+                  "similarity_score": 0.452025
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0021",
+                  "name": "Data Access Control",
+                  "description": "Limit external data source access.",
+                  "similarity_score": 0.563141
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0032",
+                  "name": "Secure Coding",
+                  "description": "Establish guidelines to prevent vulnerabilities.",
+                  "similarity_score": 0.555877
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0002",
+                  "name": "Human Approval",
+                  "description": "Require user consent for privileged actions.",
+                  "similarity_score": 0.548523
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0003",
+                  "name": "Segregate Content",
+                  "description": "Separate untrusted content from user prompts.",
+                  "similarity_score": 0.544583
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0010",
+                  "name": "Input validation",
+                  "description": "Implement input validation and content filtering",
+                  "similarity_score": 0.534692
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.10.1.2",
+          "control_name": "A policy on the use, protection and lifetime of cryptographic keys shall be developed and implemented through their whole lifecycle.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Develop a policy on the use, protection and lifetime of cryptographic keys",
+              "class": "TECH",
+              "embedding_context": "Develop a policy on the use, protection and lifetime of cryptographic keys",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FE",
+                "name": "File Encryption",
+                "similarity_score": 0.377466
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.435377
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Implement a policy on the use, protection and lifetime of cryptographic keys through their whole lifecycle",
+              "class": "TECH",
+              "embedding_context": "Implement a policy on the use, protection and lifetime of cryptographic keys through their whole lifecycle",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-CERO",
+                "name": "Certificate Rotation",
+                "similarity_score": 0.387125
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.442539
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

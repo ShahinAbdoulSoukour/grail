@@ -1,0 +1,333 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.10",
+  "clause_name": "Malware Defenses",
+  "goal_name": "Ensure malware defenses",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Prevent or control the installation, spread, and execution of malicious applications, code, or scripts on enterprise assets.",
+      "goal_name": "Prevent or control the installation, spread, and execution of malicious applications, code, or scripts on enterprise assets",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.10.1",
+          "control_name": "Deploy and Maintain Anti-Malware Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Deploy Anti-Malware Software",
+              "class": "TECH",
+              "embedding_context": "Deploy Anti-Malware Software",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FH",
+                "name": "File Hashing",
+                "similarity_score": 0.489998
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0013",
+                "name": "Code Signing",
+                "similarity_score": 0.386482
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FH",
+                  "name": "File Hashing",
+                  "description": "Employing file hash comparisons to detect known malware.",
+                  "similarity_score": 0.489998
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DA",
+                  "name": "Dynamic Analysis",
+                  "description": "Executing or opening a file in a synthetic \"sandbox\" environment to determine if the file is a malicious program or if the file exploits another program such as a document reader.",
+                  "similarity_score": 0.45853
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            },
+            {
+              "goal_id": "G1.1.2",
+              "goal_name": "Maintain Anti-Malware Software",
+              "class": "TECH",
+              "embedding_context": "Maintain Anti-Malware Software",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FH",
+                "name": "File Hashing",
+                "similarity_score": 0.448766
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.36556
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.10.2",
+          "control_name": "Configure Automatic Anti-Malware Signature Updates",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Configure Automatic Anti-Malware Signature Updates",
+              "class": "TECH",
+              "embedding_context": "Configure Automatic Anti-Malware Signature Updates",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FH",
+                "name": "File Hashing",
+                "similarity_score": 0.42523
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0013",
+                "name": "Code Signing",
+                "similarity_score": 0.482456
+              },
+              "actions": [
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0013",
+                  "name": "Code Signing",
+                  "description": "Enforce binary and application integrity with digital signature verification to prevent untrusted code from executing. Adversaries can embed malicious code in ML software, models and Library. Enforcement of code signing can prevent the compromise of the machine learning supply chain and prevent execution of malicious code.",
+                  "similarity_score": 0.482456
+                }
+              ],
+              "operationalization_status": "OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.10.3",
+          "control_name": "Disable Autorun and Autoplay for Removable Media",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Disable Autorun and Autoplay for Removable Media",
+              "class": "TECH",
+              "embedding_context": "Disable Autorun and Autoplay for Removable Media",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-IOPR",
+                "name": "IO Port Restriction",
+                "similarity_score": 0.42256
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0011",
+                "name": "Restrict Library Loading",
+                "similarity_score": 0.230311
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.10.4",
+          "control_name": "Configure Automatic Anti-Malware Scanning of Removable Media",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Configure Automatic Anti-Malware Scanning of Removable Media",
+              "class": "TECH",
+              "embedding_context": "Configure Automatic Anti-Malware Scanning of Removable Media",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FH",
+                "name": "File Hashing",
+                "similarity_score": 0.437334
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0011",
+                "name": "Restrict Library Loading",
+                "similarity_score": 0.322034
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.10.5",
+          "control_name": "Enable Anti-Exploitation Features",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Enable Anti-Exploitation Features",
+              "class": "TECH",
+              "embedding_context": "Enable Anti-Exploitation Features",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-PSEP",
+                "name": "Process Segment Execution Prevention",
+                "similarity_score": 0.575489
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0026",
+                "name": "Granular Functionality",
+                "similarity_score": 0.575865
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-PSEP",
+                  "name": "Process Segment Execution Prevention",
+                  "description": "Preventing execution of any address in a memory region other than the code segment.",
+                  "similarity_score": 0.575489
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-SCF",
+                  "name": "System Call Filtering",
+                  "description": "Controlling access to local computer system resources with kernel-level capabilities.",
+                  "similarity_score": 0.557105
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-AH",
+                  "name": "Application Hardening",
+                  "description": "Application Hardening makes an executable application more resilient to a class of exploits which either introduce new code or execute unwanted existing code. These techniques may be applied at compile-time or on an application binary.",
+                  "similarity_score": 0.548164
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EDL",
+                  "name": "Executable Denylisting",
+                  "description": "Blocking the execution of files on a host in accordance with defined application policy rules.",
+                  "similarity_score": 0.541185
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-EI",
+                  "name": "Execution Isolation",
+                  "description": "Execution Isolation techniques prevent application processes from accessing non-essential system resources, such as memory, devices, or files.",
+                  "similarity_score": 0.52747
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "OWASP.M0026",
+                  "name": "Granular Functionality",
+                  "description": "Avoid open-ended functions; use specific plugins.",
+                  "similarity_score": 0.575865
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0039",
+                  "name": "Implement resource isolation techniques",
+                  "description": "Implement resource isolation techniques, such as virtualization and containerization, and monitor resource usage to prevent manipulation that could lead to denial of service or data leakage in shared environments.",
+                  "similarity_score": 0.537743
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0036",
+                  "name": "Principle of least privilege",
+                  "description": "Implement robust access control mechanisms, enforce the principle of least privilege, and regularly update and patch systems to close security gaps that could be exploited for privilege escalation.",
+                  "similarity_score": 0.524222
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "AML.M0011",
+                  "name": "Restrict Library Loading",
+                  "description": "Prevent abuse of library loading mechanisms in the operating system and software to load untrusted code by configuring appropriate library loading mechanisms and investigating potential vulnerable software.\nFile formats such as pickle files that are commonly used to store machine learning models can contain exploits that allow for loading of malicious libraries.",
+                  "similarity_score": 0.510981
+                },
+                {
+                  "source": "OntoSecAI",
+                  "id": "CAPEC.M0005",
+                  "name": "Resource allocation limits",
+                  "description": "Implement resource allocation limits and quotas to prevent any single process or user from consuming excessive resources.",
+                  "similarity_score": 0.510153
+                }
+              ],
+              "operationalization_status": "D3FEND+OntoSecAI"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.10.6",
+          "control_name": "Centrally Manage Anti-Malware Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Centrally Manage Anti-Malware Software",
+              "class": "TECH",
+              "embedding_context": "Centrally Manage Anti-Malware Software",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FH",
+                "name": "File Hashing",
+                "similarity_score": 0.42185
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "OWASP.M0016",
+                "name": "Inventory Management",
+                "similarity_score": 0.38898
+              },
+              "actions": [],
+              "operationalization_status": "none_above_threshold"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.10.7",
+          "control_name": "Use Behavior-Based Anti-Malware Software",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Use Behavior-Based Anti-Malware Software",
+              "class": "TECH",
+              "embedding_context": "Use Behavior-Based Anti-Malware Software",
+              "best_D3FEND_candidate": {
+                "source": "D3FEND",
+                "id": "D3-FH",
+                "name": "File Hashing",
+                "similarity_score": 0.504273
+              },
+              "best_OntoSecAI_candidate": {
+                "source": "OntoSecAI",
+                "id": "AML.M0011",
+                "name": "Restrict Library Loading",
+                "similarity_score": 0.426752
+              },
+              "actions": [
+                {
+                  "source": "D3FEND",
+                  "id": "D3-FH",
+                  "name": "File Hashing",
+                  "description": "Employing file hash comparisons to detect known malware.",
+                  "similarity_score": 0.504273
+                },
+                {
+                  "source": "D3FEND",
+                  "id": "D3-DA",
+                  "name": "Dynamic Analysis",
+                  "description": "Executing or opening a file in a synthetic \"sandbox\" environment to determine if the file is a malicious program or if the file exploits another program such as a document reader.",
+                  "similarity_score": 0.467844
+                }
+              ],
+              "operationalization_status": "D3FEND"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

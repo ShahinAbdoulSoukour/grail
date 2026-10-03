@@ -1,0 +1,49 @@
+{
+  "goal_id": "G0",
+  "clause_id": "A.6.2",
+  "clause_name": "Mobile devices and teleworking",
+  "goal_name": "Secure mobile devices and teleworking",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "To ensure the security of teleworking and use of mobile devices.",
+      "goal_name": "Ensure the security of teleworking and use of mobile devices",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "A.6.2.1",
+          "control_name": "A policy and supporting security measures shall be adopted to manage the risks introduced by using mobile devices.",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Adopt a policy and supporting security measures to manage the risks introduced by using mobile devices",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "A.6.2.2",
+          "control_name": "A policy and supporting security measures shall be implemented to protect information accessed, processed or stored at teleworking sites.",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Implement a policy and supporting security measures to protect information accessed",
+              "class": "TECH"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Process a policy and supporting security measures",
+              "class": "TECH"
+            },
+            {
+              "goal_id": "G1.2.3",
+              "goal_name": "Store a policy and supporting security measures at teleworking sites",
+              "class": "PHYS"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

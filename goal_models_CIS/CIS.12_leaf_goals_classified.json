@@ -1,0 +1,126 @@
+{
+  "goal_id": "G0",
+  "clause_id": "CIS.12",
+  "clause_name": "Network Infrastructure Management",
+  "goal_name": "Ensure network infrastructure management",
+  "subgoals": [
+    {
+      "goal_id": "G1",
+      "objective_name": "Establish, implement, and actively manage (track, report, correct) network devices, in order to prevent attackers from exploiting vulnerable network services and access points.",
+      "goal_name": "Establish, implement, and actively manage network devices, in order to prevent attackers from exploiting vulnerable network services and access points",
+      "subgoals": [
+        {
+          "goal_id": "G1.1",
+          "control_id": "CIS.12.1",
+          "control_name": "Ensure Network Infrastructure is Up-to-Date",
+          "subgoals": [
+            {
+              "goal_id": "G1.1.1",
+              "goal_name": "Ensure Network Infrastructure is Up-to-Date",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.2",
+          "control_id": "CIS.12.2",
+          "control_name": "Establish and Maintain a Secure Network Architecture",
+          "subgoals": [
+            {
+              "goal_id": "G1.2.1",
+              "goal_name": "Establish a Secure Network Architecture",
+              "class": "TECH"
+            },
+            {
+              "goal_id": "G1.2.2",
+              "goal_name": "Maintain a Secure Network Architecture",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.3",
+          "control_id": "CIS.12.3",
+          "control_name": "Securely Manage Network Infrastructure",
+          "subgoals": [
+            {
+              "goal_id": "G1.3.1",
+              "goal_name": "Securely Manage Network Infrastructure",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.4",
+          "control_id": "CIS.12.4",
+          "control_name": "Establish and Maintain Architecture Diagram(s)",
+          "subgoals": [
+            {
+              "goal_id": "G1.4.1",
+              "goal_name": "Establish Architecture Diagram(s)",
+              "class": "ORG"
+            },
+            {
+              "goal_id": "G1.4.2",
+              "goal_name": "Maintain Architecture Diagram(s)",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.5",
+          "control_id": "CIS.12.5",
+          "control_name": "Centralize Network Authentication, Authorization, and Auditing (AAA)",
+          "subgoals": [
+            {
+              "goal_id": "G1.5.1",
+              "goal_name": "Centralize Network Authentication, Authorization, and Auditing (AAA)",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.6",
+          "control_id": "CIS.12.6",
+          "control_name": "Use of Secure Network Management and Communication Protocols",
+          "subgoals": [
+            {
+              "goal_id": "G1.6.1",
+              "goal_name": "Use of Secure Network Management and Communication Protocols",
+              "class": "TECH"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.7",
+          "control_id": "CIS.12.7",
+          "control_name": "Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise’s AAA Infrastructure",
+          "subgoals": [
+            {
+              "goal_id": "G1.7.1",
+              "goal_name": "Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise’s AAA Infrastructure",
+              "class": "PHYS"
+            }
+          ]
+        },
+        {
+          "goal_id": "G1.8",
+          "control_id": "CIS.12.8",
+          "control_name": "Establish and Maintain Dedicated Computing Resources for All Administrative Work",
+          "subgoals": [
+            {
+              "goal_id": "G1.8.1",
+              "goal_name": "Establish Dedicated Computing Resources for All Administrative Work",
+              "class": "TECH"
+            },
+            {
+              "goal_id": "G1.8.2",
+              "goal_name": "Maintain Dedicated Computing Resources for All Administrative Work",
+              "class": "TECH"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
